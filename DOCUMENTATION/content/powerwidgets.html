@@ -1,0 +1,968 @@
+<section>
+    <h2>Power Widgets</h2>
+    <p>
+One of the main features of this theme are the power widgets, these widgets are used to display content in a organized and customizable way. All widgets have main settings and single options(done with HTML5 data attributes), this allows each widget to be flexible. The widgets are used in combination with our custom grid, this way you can set up your own custom layout of widgets.
+    <br/>
+    <a href="http://codecanyon.net/item/power-widgets-manage-and-display-your-content/2901689">http://codecanyon.net/item/power-widgets-manage-and-display-your-content/2901689</a>
+    </p>
+   
+   <div class="spacer-30"></div>
+
+	<h3>How to use</h3>
+    <p>How to use HTML elements.</p>
+    
+    <div class="spacer-10"></div>
+                                                    
+    <pre>&lt;div class="powerwidget" id="widget-id"&gt;
+    &lt;header&gt;
+    &lt;h2&gt;Widget Title&lt;/h2&gt;                           
+    &lt;/header&gt;
+    &lt;div&gt;
+    &lt;!-- content goes here --&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+	<div class="spacer-30"></div>
+
+    <h3>Widget with inner space, edit box &amp; timestamp</h3>
+    <p>You can add a edit box to the widget as a option.</p>
+    
+    <div class="spacer-10"></div>
+
+    <pre>&lt;div class="powerwidget" id="widget-id"&gt;
+    &lt;header&gt;
+    &lt;h2&gt;Widget Title&lt;/h2&gt;                           
+    &lt;/header&gt;
+    &lt;div&gt;
+    
+    &lt;div class="powerwidget-editbox"&gt;
+        &lt;div&gt;
+            &lt;label&gt;Title:&lt;/label&gt;
+            &lt;input type="text" /&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+            &lt;label&gt;Styles:&lt;/label&gt;
+            &lt;span data-widget-setstyle="red" class="red-btn"&gt;&lt;/span&gt;
+            &lt;span data-widget-setstyle="green" class="green-btn"&gt;&lt;/span&gt;
+            &lt;span data-widget-setstyle="purple" class="purple-btn"&gt;&lt;/span&gt;
+            &lt;span data-widget-setstyle="black" class="black-btn"&gt;&lt;/span&gt;
+            &lt;span data-widget-setstyle="darkgrey" class="darkgrey-btn"&gt;&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+     
+    &lt;div class="powerwidget-timestamp"&gt;&lt;/div&gt;
+                
+    &lt;div class="inner-spacer"&gt; 
+    &lt;!-- content goes here --&gt;
+    &lt;/div&gt;
+    
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+	<div class="spacer-30"></div>
+               
+    <h3>Usage Data Atributes</h3>
+    <p>Data atrributes are used by some of our custom plugins to set/get data.</p>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col" class="w160">HTML5 data attributes</th>
+                <th scope="col" class="w70">Place at</th>
+                <th scope="col" class="w120">Example value(s)</th>
+                <th scope="col">Desctription</th>
+                <th scope="col" class="w35">Full</th>
+                <th scope="col" class="w35">Lite *</th>
+                <th scope="col" class="w40">Since</th>
+            </tr>                                            
+        </thead> 
+        <tbody>
+            <tr>
+                <td>data-widget-sortable</td>
+                <td>powerwidget</td>
+                <td>false</td>
+                <td>Prevent a widget from being sortable(can only be used with the value 'false').</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>data-widget-icon</td>
+                <td>powerwidget</td>
+                <td>icon-backup</td>
+                <td>Use a icon in the widgets header(see icon page for icons).</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>data-widget-togglebutton</td>
+                <td>powerwidget</td>
+                <td>false</td>
+                <td>Prevent a widget from having a toggle button(can only be used with the value 'false').</td>
+                <td>yes</td>
+                <td>no</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>data-widget-deletebutton</td>
+                <td>powerwidget</td>
+                <td>false</td>
+                <td>Prevent a widget from having a delete button(can only be used with the value 'false').</td>
+                <td>yes</td>
+                <td>no</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>data-widget-editbutton</td>
+                <td>powerwidget</td>
+                <td>false</td>
+                <td>Prevent a widget from having a edit button(can only be used with the value 'false').</td>
+                <td>yes</td>
+                <td>no</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>data-widget-fullscreenbutton</td>
+                <td>powerwidget</td>
+                <td>false</td>
+                <td>Prevent a widget from having a fullscreen button(can only be used with the value 'false').</td>
+                <td>yes</td>
+                <td>no</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>data-widget-load</td>
+                <td>powerwidget</td>
+                <td>widget-ajax.php</td>
+                <td>The file that is loaded with ajax.</td>
+                <td>yes</td>
+                <td>no</td>
+                <td>1.0</td>
+            </tr>                                                  
+            <tr>
+                <td>data-widget-refresh</td>
+                <td>powerwidget</td>
+                <td>10</td>
+                <td>Seconds to refresh a ajax file(see 'data-widget-load').</td>
+                <td>yes</td>
+                <td>no</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>data-widget-refreshbutton</td>
+                <td>powerwidget</td>
+                <td>false</td>
+                <td>Prevent a ajax widget from showing a refresh button(can only be used with the value 'false').</td>
+                <td>yes</td>
+                <td>no</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>data-widget-hidden</td>
+                <td>powerwidget</td>
+                <td>false</td>
+                <td>Hide a widget at load(can only be used with the value 'true'). You can show it by selecting the matching checkbox in the widget management panel(seperate plugin).</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>1.0</td>
+            </tr>                                                                     
+            <tr>
+                <td>data-widget-collapsed</td>
+                <td>powerwidget</td>
+                <td>false</td>
+                <td>Collapse a widget upon load(can only be used with the value 'true'). This will allways be collapsed every page load.</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>1.0</td>
+            </tr>                                                 
+            <tr>
+                <td>data-widget-grid</td>
+                <td></td>
+                <td>false</td>
+                <td>You can exclude grids from being a sortable/droppable area, this means that all widgets in this area will work, but cant be sortable/droppable and that all other
+                widgets cant be dropped in this area. Add this attribute(can only be used with the value 'false') to a grid element.</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>data-widget-setstyle</td>
+                <td></td>
+                <td>red</td>
+                <td>This dataset can be used in the edit box wrapper, it allows you to set a different style. This dataset can be used on every element aslong its inside the widget.</td>
+                <td>yes</td>
+                <td>no</td>
+                <td>1.0</td>
+            </tr>                                                                                                                                                           
+        </tbody>
+        <tfoot>
+             <tr>
+                <td colspan="7">These HTML5 attributes are used as individual widget options. Main options can be changed in the widgets plugin it self. 
+                Notice: data attributes can only have 1 boolan value(see above)!
+                * Lite version of the plugin which only has a couple of basic features.</td>
+             </tr>
+        </tfoot>  
+    </table> 
+    
+    <div class="spacer-30"></div>
+
+    <h3>Usage classes</h3>
+    <p>Defined classes related to a piece of code or plugin.</p>
+    
+    <div class="spacer-10"></div>
+                                                                                                                                                         
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Available class</th>
+                <th scope="col">Element</th>
+                <th scope="col">Desctription</th>
+                <th class="tbversion" scope="col">Since</th>
+            </tr>                                            
+        </thead> 
+        <tbody>
+            <tr>
+                <td>e-widget</td>
+                <td>div</td>
+                <td>Main widget class.</td>
+                <td>1.0</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <div class="spacer-30"></div>
+                                
+    <h3>Usage plugin</h3>
+    <p>How to use our custom made jQuery plugins.</p>
+    
+    <div class="spacer-10"></div>
+                                                                                                      
+    <pre>$('div#content').powerWidgets({
+    grid: '',
+    widgets: '.powerwidget',
+    localStorage: true,
+    deleteSettingsKey: '',
+    settingsKeyLabel: 'Reset settings?',
+    deletePositionKey: '',
+    positionKeyLabel: 'Reset position?',
+    sortable: true,
+    buttonsHidden: false,
+    toggleButton: true,
+    toggleClass: 'min-10 | plus-10',
+    toggleSpeed: 200,
+    onToggle: function(){},
+    deleteButton: true,
+    deleteClass: 'trashcan-10',
+    deleteSpeed: 200,
+    onDelete: function(){},
+    editButton: true,
+    editPlaceholder: '',
+    editClass: 'pencil-10 | delete-10',
+    editSpeed: 200,
+    onEdit: function(){},
+    fullscreenButton: true,
+    fullscreenClass: 'fullscreen-10 | normalscreen-10',	
+    fullscreenDiff: 3,		
+    onFullscreen: function(){},
+    customButton: true,
+    customClass: '',
+    customStart: function(){},
+    customEnd: function(){},
+    buttonOrder: '%refresh% %delete% %custom% %edit% %fullscreen% %toggle%',
+    opacity: 1.0,
+    dragHandle: '> header',
+    placeholderClass: 'powerwidget-placeholder',
+    indicator: true,
+    indicatorTime: 600,
+    ajax: true,
+    loadingLabel: 'loading...',
+    timestampPlaceholder: '',
+    timestampFormat: 'Last update: %m%/%d%/%y% %h%:%i%:%s%',
+    refreshButton: true,
+    refreshButtonClass: 'refresh-10',
+    labelError:'Sorry but there was a error:',
+    labelUpdated: 'Last Update:',
+    labelRefresh: 'Refresh',
+    labelDelete: 'Delete widget:',
+    afterLoad: function(){},	
+    rtl: false	
+});</pre> 
+
+	<div class="spacer-30"></div>
+                         
+    <h3>Usage plugin(lite version)</h3>
+    <p>How to use the plugin.</p>
+    
+    <div class="spacer-10"></div>
+  
+    <pre>$('#thismustbeanid').powerWidgetsLite({ // see list below for options });</pre>
+    
+    <div class="spacer-30"></div>
+                                
+    <h3>Plugin options</h3>
+    <p>Most of our custom made jQuery plugins have options/settings.</p>
+    
+    <div class="spacer-10"></div>
+                                                                  
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Plugin options</th>
+                <th scope="col">Type</th>
+                <th scope="col">Default</th>
+                <th scope="col">Desctription</th>
+                <th scope="col" class="w35">Full</th>
+                <th scope="col" class="w35">Lite *</th>
+                <th scope="col" class="w40">Since</th>
+            </tr>                                            
+        </thead> 
+        <tbody>
+            <tr>
+                <td>grid</td>
+                <td>string</td>
+                <td></td>
+                <td>This is the class or element that are used for the sorting(if option sortable is set to true) of a widget.</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>1.0</td>
+            </tr>                                                  
+            <tr>
+                <td>widgets</td>
+                <td>string</td>
+                <td>.powerwidget</td>
+                <td>Widgets class.</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>localStorage</td>
+                <td>boolean</td>
+                <td>true</td>
+                <td>Everyting is saved in to the local storage, but you can turn this off.</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>deleteSettingsKey</td>
+                <td>string</td>
+                <td></td>
+                <td>You can delete the local storage settings key(if you are using local storage). The settings key is used to store things, style and title.
+                This must be an unique(just for that page) Id or class for example: '#thelink'.</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>settingsKeyLabel</td>
+                <td>string</td>
+                <td>Reset settings?</td>
+                <td>Set the text for the 'deleteSettingsKey' confirm dialog.</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>deletePositionKey</td>
+                <td>string</td>
+                <td></td>
+                <td>You can delete the local storage position key(if you are using local storage). The positions key is used to store the position of the widgets.
+                This must be an unique(just for that page) Id or class for example: '#thelink'.</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>settingsKeyLabel</td>
+                <td>string</td>
+                <td>Reset positions?</td>
+                <td>Set the text for the 'deletePositionKey' confirm dialog.</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>1.0</td>
+            </tr>                    
+            <tr>
+                <td>sortable</td>
+                <td>boolean</td>
+                <td>true</td>
+                <td>You can allow widgets to be sortable.</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>buttonsHidden</td>
+                <td>boolean</td>
+                <td>false</td>
+                <td>If you are using action button, you can set them to visible, or hidden. If you choose hidden(value true) the buttons will be 
+                showen if you hover over the widgets header.</td>
+                <td>yes</td>
+                <td>no</td>
+                <td>1.0</td>
+            </tr>  
+            <tr>
+                <td>toggleButton</td>
+                <td>boolean</td>
+                <td>true</td>
+                <td>Show a toggle button.</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>toggleClass</td>
+                <td>string</td>
+                <td>min-10 | plus-10</td>
+                <td>The button class, active and non-active state. The two classes must be seperated by a '|' in order to work.</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>toggleSpeed</td>
+                <td>number(integer)</td>
+                <td>200</td>
+                <td>The speed of the collapsable effect.</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>onToggle</td>
+                <td>function</td>
+                <td>function(){}</td>
+                <td>Callback function that runs if you toggle a widget.</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>deleteButton</td>
+                <td>boolean</td>
+                <td>true</td>
+                <td>Show a delete button.</td>
+                <td>yes</td>
+                <td>no</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>deleteClass</td>
+                <td>string</td>
+                <td>trashcan-10</td>
+                <td>The button class.</td>
+                <td>yes</td>
+                <td>no</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>deleteSpeed</td>
+                <td>number(integer)</td>
+                <td>200</td>
+                <td>The speed of the deleting effect.</td>
+                <td>yes</td>
+                <td>no</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>onDelete</td>
+                <td>function</td>
+                <td>function(){}</td>
+                <td>Callback function that runs once the widget has been deleted.</td>
+                <td>yes</td>
+                <td>no</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>editButton</td>
+                <td>boolean</td>
+                <td>true</td>
+                <td>Show a edit button.</td>
+                <td>yes</td>
+                <td>no</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>editPlaceholder</td>
+                <td>string</td>
+                <td></td>
+                <td>The class of the edit box wrapper, which contains the title input and styling setters(see the markup demo above for an example).</td>
+                <td>yes</td>
+                <td>no</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>editClass</td>
+                <td>string</td>
+                <td>pencil-10 | delete-10</td>
+                <td>The edit class, active and non-active state. The two classes must be seperated by a '|' in order to work.</td>
+                <td>yes</td>
+                <td>no</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>editSpeed</td>
+                <td>number(integer)</td>
+                <td>200</td>
+                <td>The speed of the edit effect.</td>
+                <td>yes</td>
+                <td>no</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>onEdit</td>
+                <td>function</td>
+                <td>function(){}</td>
+                <td>Callback function that runs once you close the edit box.</td>
+                <td>yes</td>
+                <td>no</td>
+                <td>1.0</td>
+            </tr>                     
+            <tr>
+                <td>fullscreenButton</td>
+                <td>boolean</td>
+                <td>true</td>
+                <td>Show a fullscreen button.</td>
+                <td>yes</td>
+                <td>no</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>fullscreenClass</td>
+                <td>string</td>
+                <td>fullscreen-10 | normalscreen-10</td>
+                <td>The fullscreen class, active and non-active state. The two classes must be seperated by a '|' in order to work.</td>
+                <td>yes</td>
+                <td>no</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>fullscreenDiff</td>
+                <td>number(integer)</td>
+                <td>3</td>
+                <td>If you change the layout fo the widget, you can use this to make sure the that fullscreen is fullscreen(if needed).</td>
+                <td>yes</td>
+                <td>no</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>onfullscreen</td>
+                <td>function</td>
+                <td>function(){}</td>
+                <td>Callback function that runs once you go to fullscreen mode.</td>
+                <td>yes</td>
+                <td>no</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>customButton</td>
+                <td>boolean</td>
+                <td>true</td>
+                <td>Show a custom button.</td>
+                <td>yes</td>
+                <td>no</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>customClass</td>
+                <td>string</td>
+                <td></td>
+                <td>The custom class, active and non-active state. The two classes must be seperated by a '|' in order to work.</td>
+                <td>yes</td>
+                <td>no</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>customStart</td>
+                <td>function</td>
+                <td>function(){}</td>
+                <td>Callback function that runs once you start the custom button.</td>
+                <td>yes</td>
+                <td>no</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>customEnd</td>
+                <td>function</td>
+                <td>function(){}</td>
+                <td>Callback function that runs once you end the custom button.</td>
+                <td>yes</td>
+                <td>no</td>
+                <td>1.0</td>
+            </tr>                  
+            <tr>
+                <td>buttonOrder</td>
+                <td>string</td>
+                <td>%refresh% %delete% %custom% %edit% %fullscreen% %toggle%</td>
+                <td>You can change the order of the buttons</td>
+                <td>yes</td>
+                <td>no</td>
+                <td>1.0</td>
+            </tr>    
+            <tr>
+                <td>opacity</td>
+                <td>number(float)</td>
+                <td>1.0</td>
+                <td>The opacity of the widgets once you drag them.</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>dragHandle</td>
+                <td>string</td>
+                <td>> header</td>
+                <td>Choose the element that you want to use as an drag handle. The widgets main class is the parents class.</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>placeholderClass</td>
+                <td>string</td>
+                <td>powerwidget-placeholder</td>
+                <td>This is the class thats used for the placeholder.</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>indicator</td>
+                <td>boolean</td>
+                <td>true</td>
+                <td>Shows a animated image if there has been made a change in the widget(AJAX, deleting, toggle...).</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>indicatorTime</td>
+                <td>number(integer)</td>
+                <td>600</td>
+                <td>The speed of the indicator image(animated loader image). This is in milliseconds.</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>ajax</td>
+                <td>boolean</td>
+                <td>true</td>
+                <td>Allow widgets to use ajax.</td>
+                <td>yes</td>
+                <td>no</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>loadingLabel</td>
+                <td>string</td>
+                <td>loading...</td>
+                <td>Placeholder text at the start of every page load.</td>
+                <td>yes</td>
+                <td>no</td>
+                <td>1.0</td>
+            </tr>                                                                                                            
+            <tr>
+                <td>timestampPlaceholder</td>
+                <td>string</td> 
+                <td></td>
+                <td>Show a timestamp form the last update. Only use classes.</td>
+                <td>yes</td>
+                <td>no</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>timestampFormat</td>
+                <td>string</td>
+                <td>Last update: %m%/%d%/%y% %h%:%i%:%s%</td>
+                <td>Choose the output format.</td>
+                <td>yes</td>
+                <td>no</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>refreshButton</td>
+                <td>boolean</td> 
+                <td>true</td>
+                <td>Allow users to refresh the ajax content manually.</td>
+                <td>yes</td>
+                <td>no</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>refreshClass</td>
+                <td>string</td>
+                <td>refresh-10</td>
+                <td>The class of the refresh button.</td>
+                <td>yes</td>
+                <td>no</td>
+                <td>1.0</td>
+            </tr>                             
+            <tr>
+                <td>labelError</td>
+                <td>string</td>
+                <td>Sorry but there was a error:</td>
+                <td>Label of the ajax error(label + error code(s)).</td>
+                <td>yes</td>
+                <td>no</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>labelUpdated</td>
+                <td>string</td>
+                <td>Last Update:</td>
+                <td>Label for the timestamp, which will be showen every time it has been updated.</td>
+                <td>yes</td>
+                <td>no</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>labelRefresh</td>
+                <td>string</td>
+                <td>Refresh</td>
+                <td>Label for the refresh button, this button will allow u to refresh the ajax content.</td>
+                <td>yes</td>
+                <td>no</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>afterLoad</td>
+                <td>function</td>
+                <td>function(){}</td>
+                <td>Callback function that runs if the widget loads any ajax content.</td>
+                <td>yes</td>
+                <td>no</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>rtl</td>
+                <td>boolean</td>
+                <td>false</td>
+                <td>Need rtl, use this.</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>1.0</td>
+            </tr>                            
+        </tbody>
+        <tfoot>                    
+            <tr>
+                <td colspan="7">* Lite version of the plugin which only has a couple of basic features.</td>
+            </tr> 
+        </tfoot>                                                                                                                                                                                                                                                                   
+    </table>
+    
+    <div class="spacer-30"></div>
+    
+    <h3>Globally And Per-Call Overridable Options</h3>
+    <p>This plugin has per-call(as the example above shows) and globally overridable options. Globally options can be used to override the default options, this is best used if you want to override the plugin options by default, this will prevent any issues with the plugin, as you dont have to change any thing in the plugin core it self. 
+    <br/><br/><b>How to use: </b><mark>$.fn.pluginName.key = 'value';</mark></p>            
+    
+    <div class="spacer-20"></div>
+    <div class="line"></div>
+    <div class="spacer-20"></div>
+    
+    <h2>Power Widgets Panel</h2>
+    <p>This theme allows you to use the widgets panel as a management tool for the power widgets. You can remove this panel/plugin if you want, because the Power widgets plugin doesn't need the eWidgetPanel plugin to work.</p>
+
+	<div class="spacer-30"></div>
+    
+    <h3>How to use</h3>
+    <p>How to use HTML elements.</p>
+    
+    <div class="spacer-10"></div>
+                                                    
+    <pre>&lt;div id="changeme" class="powerwidgetspanel"&gt;
+    &lt;header&gt;
+    &lt;h2&gt;Power widgets panel&lt;/h2&gt;
+    &lt;/header&gt;
+    
+    &lt;div class="powerwidgetspanel-widget" data-widget-id="widget1"&gt;
+    &lt;input type="checkbox" checked/&gt;
+    &lt;label&gt;Basic widget&lt;/label&gt;
+    &lt;/div&gt;
+    
+    ...
+    ...
+    ...
+&lt;/div&gt;</pre>
+
+	<div class="spacer-30"></div>
+                                
+    <h3>Usage Data Atributes</h3>
+    <p>Data atrributes are used by some of our custom plugins to set/get data.</p>
+    
+    <div class="spacer-10"></div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">HTML5 data attributes</th>
+                <th scope="col">Class</th>
+                <th scope="col">Example</th>
+                <th scope="col">Desctription</th>
+                <th class="tbversion" scope="col">Since</th>
+            </tr>                                            
+        </thead> 
+        <tbody>
+            <tr>
+                <td>data-panel-widget-id</td>
+                <td></td>
+                <td>widget1</td>
+                <td>This is the link to the widget, so this must match the widgets ID.</td>
+                <td>1.0</td>
+            </tr> 
+        </tbody>
+        <tfoot>
+             <tr>
+                <td colspan="5">These HTML5 attributes are used as individual widget options. Main options can be changed in the widgets plugin(see below). Notice: data attributes can only have 1 boolan value, so it's just true or false!</td>
+             </tr>
+        </tfoot>  
+    </table>
+    
+    <div class="spacer-30"></div> 
+
+    <h3>Usage classes</h3>
+    <p>Defined classes related to a piece of code or plugin.</p>
+    
+    <div class="spacer-10"></div>
+                                                                                                                                                         
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Available class</th>
+                <th scope="col">Element</th>
+                <th scope="col">Desctription</th>
+                <th class="tbversion" scope="col">Since</th>
+            </tr>                                            
+        </thead> 
+        <tbody>
+           <tr>
+              <td>powerwidgetspanel-widget</td>
+              <td>div</td>
+              <td>Main widget checkbox holder class.</td>
+              <td>1.0</td>
+           </tr> 
+        </tbody>
+    </table>
+    
+    <div class="spacer-30"></div>
+                                
+    <h3>Usage plugin</h3>
+    <p>How to use our custom made jQuery plugins.</p>
+    
+    <div class="spacer-10"></div>
+                                                                                                      
+    <pre>$('#powerwidgetspanel').powerWidgetsPanel({
+    target: '#options',
+    widgets: '.powerwidget',
+    localStorage: true,
+    trigger: '',
+    triggerClass:'plus-10 | min-10',
+    effectPanel: 'slide',
+    speedPanel: 200,
+    effectWidget: 'slide',
+    speedWidget: 200,
+    onToggle: function(){}
+});</pre>
+
+	<div class="spacer-30"></div>
+
+    <h3>Plugin options</h3>
+    <p>Most of our custom made jQuery plugins have options/settings.</p>
+    
+    <div class="spacer-10"></div>
+                                                                  
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col" class="w120">Plugin options</th>
+                <th scope="col">Type</th>
+                <th scope="col">Default</th>
+                <th scope="col">Desctription</th>
+                <th scope="col" class="w40">Since</th>
+            </tr>                                            
+        </thead> 
+        <tbody>
+            <tr>
+                <td>target</td>
+                <td>string</td>
+                <td></td>
+                <td>This is the id of the wrapper that holds the widgets. This must match the id of the powerwidgets plugin.</td>
+                <td>1.0</td>
+            </tr>                                                  
+            <tr>
+                <td>widgets</td>
+                <td>string</td>
+                <td>.powerwidget</td>
+                <td>Widgets class.</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>localStorage</td>
+                <td>boolean</td>
+                <td>true</td>
+                <td>Everyting is saved in to the local storage, but you can turn this off.</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>trigger</td>
+                <td>string</td>
+                <td></td>
+                <td>This is the trigger that shows or hides the panel. You dont have to use this.</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>triggerClass</td>
+                <td>string</td>
+                <td>plus-10 | min-10</td>
+                <td>The trigger button class, active and non-active state. The two classes must be seperated by a '|' in order to work.</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>effectPanel</td>
+                <td>string</td>
+                <td>slide</td>
+                <td>The effect of the panel. You can choose between 'slide' and 'fade'.</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>effectPanel</td>
+                <td>number(integer)</td>
+                <td>200</td>
+                <td>The speed of the panel effect.</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>effectWidget</td>
+                <td>string</td>
+                <td>slide</td>
+                <td>The effect of the widget. You can choose between 'slide' and 'fade'.</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>effectWidget</td>
+                <td>number(integer)</td>
+                <td>200</td>
+                <td>The speed of the widget effect.</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>onToggle</td>
+                <td>function</td>
+                <td>function(){}</td>
+                <td>Callback function that runs if you toggle the panel.</td>
+                <td>1.0</td>
+            </tr>                                                                                                               
+        </tbody>
+    </table> 
+    
+    <div class="spacer-30"></div>
+    
+    <h3>Globally And Per-Call Overridable Options</h3>
+    <p>This plugin has per-call(as the example above shows) and globally overridable options. Globally options can be used to override the default options, this is best used if you want to override the plugin options by default, this will prevent any issues with the plugin, as you dont have to change any thing in the plugin core it self. 
+    <br/><br/><b>How to use: </b><mark>$.fn.pluginName.key = 'value';</mark></p> 
+    
+    <div class="spacer-30"></div>           
+
+</section>

@@ -1,0 +1,1102 @@
+/*
+ * ************************************************************* *
+ * Name        : Elite                                           *
+ * Theme URI   :                                                 *
+ * Description : Master stylesheet.                              *
+ * Version     : Version 1                                       *
+ * Author      : CreativeMilk                                    *
+ * Author URI  : www.creativemilk.net                            *
+ * Updated     : --/--/----                                      *
+ * Copyright   : (c) 2011 CreativeMilk                           *
+ * ************************************************************* *
+ */
+ 
+/*
+ * ===============================================================
+ * IMPORT CSS FILES 
+ * ===============================================================
+ */
+
+/* Notice IE allows only max 31 import css files 
+   CSS file are mostly per plugin, all thirdparty
+   has been dropped in the thirdparty css file.
+   Most will know that this isn't the best way to use CSS,
+   so copy past everything you are using in the main
+   CSS file, keep in mind that you use the right order.
+*/
+
+@import url('buttons-icons.css');
+@import url('powerwidgets.css');
+@import url('eblocks.css');
+@import url('etabs.css');
+@import url('toolbar.css');
+@import url('tables.css');
+@import url('einputexpand.css');
+@import url('lists-blocks.css');
+@import url('eprogressbar.css');
+@import url('menu.css');
+@import url('forms.css');
+@import url('breadcrumbs.css');
+@import url('media.css');
+@import url('demo.css');
+@import url('enotify.css');
+@import url('errorpages.css');
+@import url('eselect.css');
+@import url('search.css');
+@import url('efile.css');
+@import url('planning.css');
+@import url('eoskeyboard.css');
+@import url('thirdparty-custom.css');
+@import url('econtactform.css');
+@import url('eshowpassword.css');
+@import url('echeckbox.css');
+@import url('eradio.css');
+@import url('escrollbar.css');
+@import url('etour.css');
+@import url('entypo/stylesheet.css');
+
+/*
+ * ===============================================================
+ * BASIC CSS SELECTORS
+ * ===============================================================
+ */
+ 
+html{
+	font-family : Arial, Helvetica, sans-serif;
+	font-size   : 12px;
+	line-height : 20px;        
+	height      : 100%;
+	min-width   : 100%;
+}
+body{	
+	width      : 100%;
+	min-height : 100%;
+	height     : 100%;
+}
+
+/*
+ * ===============================================================
+ * LAYOUT SIZES
+ * All sizes(exclude fluid) have a margin on both sides of 10px, 
+ * this means that the layout size 960px is actually 940px 
+ * with 10px on each side.
+ * ===============================================================
+ */
+ 
+/* Default(fluid). ----------- */
+
+.layout_fluid #container{
+	width        : 90%;
+	margin-left  : 5%;
+	margin-right : 5%;
+}
+
+/* 768px (IPAD portrait). ----------- */
+
+.layout_768 #container{
+	width        : 748px;
+	margin-left  : auto;
+	margin-right : auto;
+}
+
+/* 1024px . ----------- */
+
+.layout_960 #container{
+	width        : 940px;
+	margin-left  : auto;
+	margin-right : auto;
+}
+
+/* 1024px . ----------- */
+
+.layout_1024 #container{
+	width        : 1004px;
+	margin-left  : auto;
+	margin-right : auto;
+}
+
+/* 1200px . ----------- */
+
+.layout_1200 #container{
+	width        : 1180px;
+	margin-left  : auto;
+	margin-right : auto;
+}
+
+/* 1600px . ----------- */
+
+.layout_1600 #container{
+	width        : 1580px;
+	margin-left  : auto;
+	margin-right : auto;
+}
+
+/*
+ * ===============================================================
+ * CONTAINERS
+ * ===============================================================
+ */
+ 
+div#container{
+	height   : 100%;
+	position : relative;	
+}
+#error-container{
+	width  : 290px;
+	margin : 0 auto;
+}
+
+/*
+ * ===============================================================
+ * HEADER
+ * ===============================================================
+ */
+ 
+#header{
+	height                             : 56px;
+	border-top                         : none!important;
+	-webkit-border-bottom-right-radius : 3px;
+	-webkit-border-bottom-left-radius  : 3px;
+	-moz-border-radius-bottomright     : 3px;
+	-moz-border-radius-bottomleft      : 3px;
+	border-bottom-right-radius         : 3px;
+	border-bottom-left-radius          : 3px;
+}
+#header-border{
+	border-top                         : none!important;
+	height                             : 30px;
+	padding                            : 10px 15px;
+	margin                             : 0 5px 5px 5px;
+	-webkit-border-bottom-right-radius : 3px;
+	-webkit-border-bottom-left-radius  : 3px;
+	-moz-border-radius-bottomright     : 3px;
+	-moz-border-radius-bottomleft      : 3px;
+	border-bottom-right-radius         : 3px;
+	border-bottom-left-radius          : 3px;	
+}
+#logo{
+	float          : left;
+	font-size      : 26px;
+	font-family    : Arial, Helvetica, sans-serif;
+	font-weight    : bold;
+	letter-spacing : -1px;
+	margin         : 5px 0 0 0;
+}
+
+/*
+ * ===============================================================
+ * CONTENT
+ * ===============================================================
+ */
+
+#content{
+	padding  : 1px 0;
+	position : relative;
+	margin   : 20px 0;
+}
+#content-border{
+	margin  : 4px 5px;
+	display : block;			
+}
+#content,
+#content-border{
+	-webkit-border-radius   : 3px;
+	-khtml-border-radius    : 3px;
+	-moz-border-radius      : 3px;
+	border-radius           : 3px;
+	-webkit-background-clip : padding-box; 
+	-moz-background-clip    : padding; 
+	background-clip         : padding-box;
+}
+#content-inner{
+	padding  : 0;
+	margin   : 0 0 0 219px;
+	position : relative;
+}
+.mainmenu-to-icon #content-inner{
+	margin : 0 0 0 100px
+}
+#content-main{
+	float : left;
+	width : 100%;
+}
+#content-main-inner{
+	padding  : 0 15px 0 15px;
+	position : relative;
+	height   : 100%;
+}
+#content-header{
+	height                          : 50px;
+	-webkit-border-top-right-radius : 3px;
+	-webkit-border-top-left-radius  : 3px;		
+	-moz-border-radius-topright     : 3px;
+	-moz-border-radius-topleft      : 3px;
+	border-top-right-radius         : 3px;
+	border-top-left-radius          : 3px;
+}
+#content-header .left{
+	width    : 219px;
+	height   : 50px;
+	float    : left;
+	position : relative;
+}
+#content-header .right .button-icon-text,
+#content-header .right .button-text-icon{
+	float:left;
+}
+.mainmenu-to-icon #content-header > .left{
+	display : none;
+}
+#content-header .right{
+	padding : 10px 15px;
+	display : block;
+	float   : none;
+}
+#content-header #toggle-sidebar{
+	float  : left;
+	margin : 0 5px 0 15px;
+}
+.mainmenu-to-icon #content-header #toggle-sidebar{
+	margin : 0 5px 0 0;
+}
+#content-header .right > .preloader{
+	width               : 30px;
+	height              : 30px;
+	float               : left;
+	margin              : 0 0 0 10px;
+	background-repeat   : no-repeat;
+	background-position : center center;
+	display             : none;	
+}
+
+/* Grid change buttons. ----------- */
+
+#widgets-controls{
+	width  : auto;
+	float  : right;
+	margin : 0 5px 0 0;
+}
+#widgets-controls .preloader{
+	width               : 30px;
+	height              : 30px;
+	float               : left;
+	margin              : 0;
+	background-repeat   : no-repeat;
+	background-position : center center;
+	display             : none;	
+}
+#widgets-controls .powerwidgetspanel-switch,
+#widgets-controls .icon-group{
+	float : left;
+	margin: 0 0 0 5px;
+}
+#content-header .e-menu,
+#content-header .e-splitmenu{
+	float  : right;
+	margin : 0 -5px 0 0;
+}
+#content-header .basic-button,
+#content-header .button-icon,
+#content-header .button-icon-text,
+#content-header .button-text-icon,
+#content-header .button-split,
+#content-header .button-split-rev,
+#content-header .button-icon,
+#content-header .button-icon-text,
+#content-header .button-text-icon{
+	float        : right;
+	line-height  : 28px;
+	margin-right : -5px;
+}
+#content-header .e-menu > li > a {
+	float   : right;
+	padding : 4px 21px 6px 10px;
+}
+
+/* Page/section header. ----------- */
+
+.page-header{
+	margin : 30px 0 23px 0;
+}
+.page-header > h2{
+	width       : auto;
+	float       : left;
+	font-weight : normal;
+	font-size   : 26px;
+	margin      : 0 0 3px 0;
+}
+.page-header > p{
+	width  : 100%;
+	margin : 0;
+	clear  : both;
+}
+.section-header{
+	margin : 0 0 10px 0;
+}
+.section-header > h3{
+	width     : 100%;
+	margin    : 0;
+	font-size : 16px;	
+}
+.section-header > p{
+	width  : 100%;
+	margin : 0 0 10px 0;
+}
+.page-helper{
+	padding               : 0 5px;
+	height                : 20px;
+	line-height           : 20px;
+	float                 : left;
+	margin                : 0 0 0 10px;
+	font-weight           : bold;
+	-webkit-border-radius : 3px;
+	-khtml-border-radius  : 3px;
+	-moz-border-radius    : 3px;
+	border-radius         : 3px;
+}
+a.page-helper{
+	margin : 0 0 0 5px;
+}
+.page-header > a:hover{
+	background-image:none;
+}
+.basic-wrapper{
+	margin : 0;
+}
+
+/* Content footer. ----------- */
+
+#content-footer{
+	height : 50px;
+}
+#content-footer > .left{
+	width   : 189px;
+	height  : 30px;
+	padding : 10px 15px;
+	float   : left;
+}
+#content-footer > .left .right a{
+	margin : 0 0 5px 5px;
+}
+#content-footer > .right{
+	height  : 30px;
+	padding : 10px 15px;
+	display : block;
+	float   : none;	
+}
+#content-footer > .right .left{
+	height      : 33px;
+	line-height : 33px;
+	margin      : 0 0 0 15px;
+	font-size   : 11px;	
+}
+#content-footer > .right .right{
+	height      : 33px;
+	line-height : 33px;
+	font-size   : 11px;	
+}
+.mainmenu-to-icon #content-footer > .left{
+	display : none;
+}
+.mainmenu-to-icon #content-footer > .right .left{
+	margin : 0;
+}
+#toggle-mainmenu{
+	position : absolute;
+	left     : 15px;
+	top      : 10px;
+	display  : none;
+}
+
+/*
+ * ===============================================================
+ * SIDEBAR
+ * ===============================================================
+ */
+ 
+aside{
+	width    : 219px;
+	float    : left;
+	margin   : 0 0 0 -220px;
+	padding  : 0 0 124px 0;
+	position : relative;
+}
+aside.mainmenu-hide{
+	display : block;
+}
+
+/* Sidebar profile. ----------- */
+
+#sidebar-profile{
+	height  : 70px;
+	padding : 15px;	
+}
+#main-avatar{
+	width    : 64px;
+	height   : 64px;
+	float    : left;
+	padding  : 0.167em;
+	position : relative;
+}
+#main-avatar .indicator{
+    width                 : 21px;
+    height                : 21px;
+    line-height           : 21px;
+    text-align            : center;
+    font-size             : 10px;
+    position              : absolute;
+    left                  : 5px;
+    bottom                : 5px;
+	-webkit-border-radius : 3px;
+	-khtml-border-radius  : 3px;
+	-moz-border-radius    : 3px;
+	border-radius         : 3px;
+}
+#main-avatar img{
+	width  : 100%;
+	height : 100%;
+	float  : left;
+}
+#profile-info{
+	height  : 71px;
+	padding : 0 0 0 80px;
+}
+#profile-info div{
+	width : 100%;
+	float : left;
+}
+#profile-info a b{
+	font-size : 15px;
+	float     : left;
+	margin    : 0 0 5px 0;
+}
+#profile-info a{
+	float       : left;
+	clear       : both;
+	font-size   : 11px;
+	margin      : 0;
+	line-height : 16px;
+}
+#profile-info a:hover{
+	text-decoration : underline;
+}
+
+/* Sidebar meta. ----------- */
+
+#sidebar-meta{
+	height   : 124px;
+	width    : 219px;
+	position : absolute;
+	bottom   : 0;
+	left     : -220px;
+}
+#sidebar-meta-inner{
+	margin : 15px;
+}
+#sidebar-meta-inner > div{
+	width  : 100%;
+	float  : left;
+	margin : 0 0 10px 0;
+}
+#sidebar-meta-inner > div p{
+	margin : 0 0 -5px 0;
+}
+#sidebar-meta .pbar{
+	height  : 12px;
+	padding : 1px;
+}
+#sidebar-meta .pbar span{
+	height : 12px;
+	float  : left;
+}
+#sidebar-meta .pbar,
+#sidebar-meta .pbar span{
+	-webkit-border-radius : 3px;
+	-khtml-border-radius  : 3px;
+	-moz-border-radius    : 3px;
+	border-radius         : 3px;	
+}
+.mainmenu-to-icon #sidebar-meta{
+	display:none
+}
+
+/*
+ * ===============================================================
+ * MISC
+ * ===============================================================
+ */
+ 
+#scrolltotop{
+	width                 : 30px;
+	height                : 30px;
+	position              : fixed;
+	right                 : 15px;
+	bottom                : 15px;
+	cursor                : pointer;
+	-webkit-border-radius : 3px;
+	-khtml-border-radius  : 3px;
+	-moz-border-radius    : 3px;
+	border-radius         : 3px;
+	display               : none;
+}
+#scrolltotop span{
+	font-size    : 0; 
+	line-height  : 0; 
+	width        : 0;
+	position     : absolute;
+	top          : 50%;
+	left         : 50%;
+	margin       : -3px 0 0 -6px;
+	border-right : 6px solid transparent;
+	border-left  : 6px solid transparent;
+	border-top   : none;
+}
+
+/* Extra grid classes (used for the gird control buttons). ----------- */
+
+#content-main-inner .g_one{
+	width  : 100%;
+	margin : 0!important;
+}
+#content-main-inner .g_half{
+	width        : 49%;
+	margin-right : 2%!important;
+}
+#content-main-inner .g_half-end{
+	width  : 49%;
+	margin : 0!important;
+}
+
+/* Clearfix. ----------- */
+
+body:before,
+body:after,
+#container:before,
+#container:after,
+#content-inner:before,
+#content-inner:after,
+#error-container:before,
+#error-container:after,
+.powerwidget > div:before,
+.powerwidget > div:after,
+.e-block > div:before,
+.e-block > div:after,
+form:before,
+form:after,
+.powerwidget-placeholder:before,
+.powerwidget-placeholder:after,
+.toolbar:before,
+.toolbar:after,
+.dialog:before,
+.dialog:after,
+.dataTables_wrapper:before,
+.dataTables_wrapper:after,
+.external-events-box:before,
+.external-events-box:after,
+.demo-table:before,
+.demo-table:after,
+.etabs-vertical:before,
+.etabs-vertical:after,
+.inner-spacer:before,
+.inner-spacer:after,
+.actionbar:before,
+.actionbar:after,
+.etabs:before,
+.etabs:after,
+#appointment-info-box:before,
+#appointment-info-box:after{
+	content     : "\0020";
+	display     : block;
+	height      : 0;
+	overflow    : hidden; 
+	font-size   : 0;
+	line-height : 0;
+	visibility  : hidden;
+}
+body:after,
+#container:after,
+#content-inner:after,
+#error-container:after,
+.powerwidget > div:after,
+.e-block > div:after,
+form:after,
+.toolbar:after,
+.dataTables_wrapper:after,
+.external-events-box:after,
+.powerwidget-placeholder:after,
+.demo-table:after,
+.etabs-vertical:after,
+.inner-spacer:after,
+.actionbar:after,
+.etabs:after,
+#appointment-info-box:after{
+	clear : both; 
+}
+body:after,
+#container:after,
+#content-inner:after,
+#error-container:after,
+.powerwidget,
+.e-block,
+.powerwidget > div,
+.e-block > div,
+form,
+.toolbar,
+.dataTables_wrapper,
+.external-events-box:after,
+.powerwidget-placeholder:after,
+.demo-table:after,
+.etabs-vertical:after,
+.inner-spacer:after,
+.actionbar:after,
+.etabs:after,
+#appointment-info-box:after{
+	zoom : 1;/*IE*/
+}
+
+/* 
+ * ===============================================================
+ * DEMO CODE/HELPERS
+ * ===============================================================
+ */
+
+/* Menu ----------- */ 
+ 
+#context-menu{
+	padding    : 10px 5px;
+	text-align : center;
+}
+
+/* CSS used for the grid page ----------- */
+
+.demo-grid-box{
+	min-height : 60px;
+	padding    : 5px;
+	margin     : 0 0 15px 0;
+}
+.demo-grid-box p{
+	float   : left;
+	padding : 0 5px;
+}
+.actionbar{
+	padding : 10px 10px 5px 10px;
+}
+#countdown-1,
+#countdown-2{
+	height      : 30px;
+	line-height : 30px;
+}
+.dummy-img-dialog{
+	float  : left;
+	margin : 0 10px 0 0
+}
+
+/*
+ * ===============================================================
+ * CHROME FIXES
+ * Chrome has issue with the 'width auto', this will break words.
+ * ===============================================================
+ */
+ 
+/*
+   As some of use will do this with jQuery $.browser we do it this way.
+   Notive that jQuery $.browser will be removed as of jQuery 2.0 .
+   Chrome and em units, a big mess...lets hope for a bug fix.
+ */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	.e-menu > li > a{
+		padding : 0 27px 0 10px;
+	} 
+	.button-text,
+	.etabs > li a,
+	.css-menu > li > a{
+		padding : 0 10px;
+	} 
+	.ui-dialog-content .etabs li:first-child{
+		border-left: none;
+	}
+	.table-wrapper{
+		margin : -1px -0.167em -1px -1px;
+	}
+	.toolbar-window{
+		padding:0 24px;
+	}
+	
+}
+
+/*
+ * ===============================================================
+ * MEDIA QUERIES 
+ * ===============================================================
+ */
+ 
+/* mobile */
+@media all and (max-width : 599px){
+
+	.layout_fluid.layout_responsive #container,
+	.layout_768.layout_responsive #container,
+	.layout_960.layout_responsive #container,
+	.layout_1024.layout_responsive #container,
+	.layout_1200.layout_responsive #container,
+	.layout_1600.layout_responsive #container{
+		width        : 95%;
+		margin-left  : 2.5%;
+		margin-right : 2.5%;
+	}
+	
+	.layout_responsive .g_1,
+	.layout_responsive .g_1_2,  .layout_responsive .g_1_2_last,
+	.layout_responsive .g_1_3,  .layout_responsive .g_1_3_last,
+	.layout_responsive .g_1_4,  .layout_responsive .g_1_4_last, 
+	.layout_responsive .g_1_5,  .layout_responsive .g_1_5_last,
+	.layout_responsive .g_1_6,  .layout_responsive .g_1_6_last,
+	.layout_responsive .g_2_3,  .layout_responsive .g_2_3_last,
+	.layout_responsive .g_2_4,  .layout_responsive .g_2_4_last,
+	.layout_responsive .g_2_5,  .layout_responsive .g_2_5_last,
+	.layout_responsive .g_2_6,  .layout_responsive .g_2_6_last,
+	.layout_responsive .g_3_4,  .layout_responsive .g_3_4_last,
+	.layout_responsive .g_3_5,  .layout_responsive .g_3_5_last,
+	.layout_responsive .g_3_6,  .layout_responsive .g_3_6_last,
+	.layout_responsive .g_4_5,  .layout_responsive .g_4_5_last,
+	.layout_responsive .g_4_6,  .layout_responsive .g_4_6_last,
+	.layout_responsive .g_5_6,  .layout_responsive .g_5_6_last,
+	.layout_responsive .g_1_7,  .layout_responsive .g_1_7_last,
+	.layout_responsive .g_2_7,  .layout_responsive .g_2_7_last,
+	.layout_responsive .g_3_7,  .layout_responsive .g_3_7_last,
+	.layout_responsive .g_4_7,  .layout_responsive .g_4_7_last,
+    .layout_responsive .g_5_7,  .layout_responsive .g_5_7_last,
+	.layout_responsive .g_6_7,  .layout_responsive .g_6_7_last,
+	.layout_responsive .g_1_8,  .layout_responsive .g_1_8_last,
+	.layout_responsive .g_2_8,  .layout_responsive .g_2_8_last,
+	.layout_responsive .g_3_8,  .layout_responsive .g_3_8_last,
+	.layout_responsive .g_4_8,  .layout_responsive .g_4_8_last,
+	.layout_responsive .g_5_8,  .layout_responsive .g_5_8_last,
+	.layout_responsive .g_6_8,  .layout_responsive .g_6_8_last,
+	.layout_responsive .g_7_8,  .layout_responsive .g_7_8_last,
+	.layout_responsive .g_1_9,  .layout_responsive .g_1_9_last,
+	.layout_responsive .g_2_9,  .layout_responsive .g_2_9_last,
+	.layout_responsive .g_3_9,  .layout_responsive .g_3_9_last,
+	.layout_responsive .g_4_9,  .layout_responsive .g_4_9_last,
+	.layout_responsive .g_5_9,  .layout_responsive .g_5_9_last,
+	.layout_responsive .g_6_9,  .layout_responsive .g_6_9_last,
+	.layout_responsive .g_7_9,  .layout_responsive .g_7_9_last,
+	.layout_responsive .g_8_9,  .layout_responsive .g_8_9_last,
+	.layout_responsive .g_1_10, .layout_responsive .g_1_10_last,
+	.layout_responsive .g_2_10, .layout_responsive .g_2_10_last,
+	.layout_responsive .g_3_10, .layout_responsive .g_3_10_last,
+	.layout_responsive .g_4_10, .layout_responsive .g_4_10_last,
+	.layout_responsive .g_5_10, .layout_responsive .g_5_10_last,
+	.layout_responsive .g_6_10, .layout_responsive .g_6_10_last,
+	.layout_responsive .g_7_10, .layout_responsive .g_7_10_last,
+	.layout_responsive .g_8_10, .layout_responsive .g_8_10_last,
+	.layout_responsive .g_9_10, .layout_responsive .g_9_10_last,
+	.layout_responsive .g_1_11, .layout_responsive .g_1_11_last,
+	.layout_responsive .g_2_11, .layout_responsive .g_2_11_last,
+	.layout_responsive .g_3_11, .layout_responsive .g_3_11_last,
+	.layout_responsive .g_4_11, .layout_responsive .g_4_11_last,
+	.layout_responsive .g_5_11, .layout_responsive .g_5_11_last,
+	.layout_responsive .g_6_11, .layout_responsive .g_6_11_last,
+	.layout_responsive .g_7_11, .layout_responsive .g_7_11_last,
+	.layout_responsive .g_8_11, .layout_responsive .g_8_11_last,
+	.layout_responsive .g_9_11, .layout_responsive .g_9_11_last,
+	.layout_responsive .g_10_11, .layout_responsive .g_10_11_last{
+		width         : 100%!important;
+		margin-left   : 0!important;
+		margin-right  : 0!important;
+		margin-bottom : 10px!important;
+	}	
+	.layout_responsive .powerwidget > div > .spacer-20,
+	.layout_responsive .powerwidget .inner-spacer > .spacer-20,
+	.layout_responsive .powerwidget .inner-spacer > form > .spacer-20,
+	.layout_responsive .powerwidget .inner-spacer > form > fieldset > .spacer-20{
+		height : 10px!important;
+	}	
+	.layout_responsive #header-inner,
+	.layout_responsive #content,
+    .layout_responsive #content-inner{
+		border-left : none;	
+	}
+	.layout_responsive #header-menu > li{
+		display : none;
+	}
+	.layout_responsive #header-menu > li.e-menu-profile{
+		display : block;
+	}
+	.layout_responsive aside{
+		margin  : 0;
+		padding : 0;
+		width   : 100%;
+		display : block;		
+	}
+	.layout_responsive aside.mainmenu-hide{
+		display : none;
+	}	
+	.layout_responsive #content-inner,
+	.layout_responsive #content-main{
+		margin : 0;
+	}
+	.layout_responsive #content-header .left{
+		width : 100%;
+	}
+	.layout_responsive #toggle-mainmenu{
+		display : block;
+	}
+	.layout_responsive #e-livesearch{
+		margin : 10px 15px 10px 50px;
+	}
+	.layout_responsive #content-footer > .left{
+		display : none;
+	}
+	.layout_responsive #content-footer > .right .left{
+		margin : 0;
+	}
+	.layout_responsive #mainsearch{
+		margin : 10px 15px 10px 50px;
+	}
+	.layout_responsive #main-menu > ul > .sub-page-active,
+	.layout_responsive #main-menu > ul > li:hover, 
+    .layout_responsive #main-menu > ul > .page-active{
+		 border-right : none!important;
+	 }
+	.layout_responsive .collapsed-mainmenu{
+		float    : left;
+		margin   : 0 0 -1px -4.25em;
+		padding  : 0;
+		position : relative;
+		width    : 50px;
+	}
+	.layout_responsive .collapsed-mainmenu #sidebar-profile,
+	.layout_responsive .collapsed-mainmenu ul li a span,
+	.layout_responsive .collapsed-mainmenu ul ul{
+		display : none;
+	}
+	.layout_responsive .collapsed-mainmenu #main-menu > ul > li > a{
+		text-indent         : -99999px;
+		padding             : 0;
+		width               : 100%;
+		background-position : center center;
+	}
+	.layout_responsive .mainmenu-to-icon{
+	}
+	.layout_responsive .appointment-planner .ap-time-row,
+	.layout_responsive .appointment-planner .time-block > div,
+	.layout_responsive .appointment-planner .day-block > div{
+		height : 50px;
+	}
+	.layout_responsive .appointment-planner .time-block,
+	.layout_responsive .appointment-planner .day-block{
+		height      : 4.25em;
+		line-height : 2em
+	}
+	.layout_responsive .appointment-planner .time-block > div{
+		padding : 0 5px;
+	}
+	.layout_responsive .appointment-planner .day-block-header h3{
+		font-size : 24px;
+	}
+	.layout_responsive .appointment-planner .day-block-header p{
+		font-size : 10px;
+	}		
+	/*hide parts*/
+	.layout_responsive .no-mobile,
+	.layout_responsive .page-helper,
+	.layout_responsive #content-header > .right,
+	.layout_responsive #sidebar-profile,
+	.layout_responsive .doc-table,
+	.layout_responsive .demo-code,
+	.layout_responsive #sidebar-meta,
+	.layout_responsive .ls-tab-hide{
+		display : none!important;
+	}
+	
+	#e-styleswitcher{
+		display : none;
+	}
+}
+
+/* tablets and to mobile */
+@media all and (max-width : 960px) and (min-width : 600px){
+
+	.layout_fluid.layout_responsive #container,
+	.layout_768.layout_responsive #container,
+	.layout_960.layout_responsive #container,
+	.layout_1024.layout_responsive #container,
+	.layout_1200.layout_responsive #container,
+	.layout_1600.layout_responsive #container{
+		width        : 95%;
+		margin-left  : 2.5%;
+		margin-right : 2.5%;
+	}
+	
+	.layout_responsive .g_1,
+	.layout_responsive .g_1_2,  .layout_responsive .g_1_2_last,
+	.layout_responsive .g_1_3,  .layout_responsive .g_1_3_last,
+	.layout_responsive .g_1_4,  .layout_responsive .g_1_4_last, 
+	.layout_responsive .g_1_5,  .layout_responsive .g_1_5_last,
+	.layout_responsive .g_1_6,  .layout_responsive .g_1_6_last,
+	.layout_responsive .g_2_3,  .layout_responsive .g_2_3_last,
+	.layout_responsive .g_2_4,  .layout_responsive .g_2_4_last,
+	.layout_responsive .g_2_5,  .layout_responsive .g_2_5_last,
+	.layout_responsive .g_2_6,  .layout_responsive .g_2_6_last,
+	.layout_responsive .g_3_4,  .layout_responsive .g_3_4_last,
+	.layout_responsive .g_3_5,  .layout_responsive .g_3_5_last,
+	.layout_responsive .g_3_6,  .layout_responsive .g_3_6_last,
+	.layout_responsive .g_4_5,  .layout_responsive .g_4_5_last,
+	.layout_responsive .g_4_6,  .layout_responsive .g_4_6_last,
+	.layout_responsive .g_5_6,  .layout_responsive .g_5_6_last,
+	.layout_responsive .g_1_7,  .layout_responsive .g_1_7_last,
+	.layout_responsive .g_2_7,  .layout_responsive .g_2_7_last,
+	.layout_responsive .g_3_7,  .layout_responsive .g_3_7_last,
+	.layout_responsive .g_4_7,  .layout_responsive .g_4_7_last,
+    .layout_responsive .g_5_7,  .layout_responsive .g_5_7_last,
+	.layout_responsive .g_6_7,  .layout_responsive .g_6_7_last,
+	.layout_responsive .g_1_8,  .layout_responsive .g_1_8_last,
+	.layout_responsive .g_2_8,  .layout_responsive .g_2_8_last,
+	.layout_responsive .g_3_8,  .layout_responsive .g_3_8_last,
+	.layout_responsive .g_4_8,  .layout_responsive .g_4_8_last,
+	.layout_responsive .g_5_8,  .layout_responsive .g_5_8_last,
+	.layout_responsive .g_6_8,  .layout_responsive .g_6_8_last,
+	.layout_responsive .g_7_8,  .layout_responsive .g_7_8_last,
+	.layout_responsive .g_1_9,  .layout_responsive .g_1_9_last,
+	.layout_responsive .g_2_9,  .layout_responsive .g_2_9_last,
+	.layout_responsive .g_3_9,  .layout_responsive .g_3_9_last,
+	.layout_responsive .g_4_9,  .layout_responsive .g_4_9_last,
+	.layout_responsive .g_5_9,  .layout_responsive .g_5_9_last,
+	.layout_responsive .g_6_9,  .layout_responsive .g_6_9_last,
+	.layout_responsive .g_7_9,  .layout_responsive .g_7_9_last,
+	.layout_responsive .g_8_9,  .layout_responsive .g_8_9_last,
+	.layout_responsive .g_1_10, .layout_responsive .g_1_10_last,
+	.layout_responsive .g_2_10, .layout_responsive .g_2_10_last,
+	.layout_responsive .g_3_10, .layout_responsive .g_3_10_last,
+	.layout_responsive .g_4_10, .layout_responsive .g_4_10_last,
+	.layout_responsive .g_5_10, .layout_responsive .g_5_10_last,
+	.layout_responsive .g_6_10, .layout_responsive .g_6_10_last,
+	.layout_responsive .g_7_10, .layout_responsive .g_7_10_last,
+	.layout_responsive .g_8_10, .layout_responsive .g_8_10_last,
+	.layout_responsive .g_9_10, .layout_responsive .g_9_10_last,
+	.layout_responsive .g_1_11, .layout_responsive .g_1_11_last,
+	.layout_responsive .g_2_11, .layout_responsive .g_2_11_last,
+	.layout_responsive .g_3_11, .layout_responsive .g_3_11_last,
+	.layout_responsive .g_4_11, .layout_responsive .g_4_11_last,
+	.layout_responsive .g_5_11, .layout_responsive .g_5_11_last,
+	.layout_responsive .g_6_11, .layout_responsive .g_6_11_last,
+	.layout_responsive .g_7_11, .layout_responsive .g_7_11_last,
+	.layout_responsive .g_8_11, .layout_responsive .g_8_11_last,
+	.layout_responsive .g_9_11, .layout_responsive .g_9_11_last,
+	.layout_responsive .g_10_11, .layout_responsive .g_10_11_last{
+		width         : 100%!important;
+		margin-left   : 0!important;
+		margin-right  : 0!important;
+		margin-bottom : 10px!important;
+	}
+	.layout_responsive .powerwidget > div > .spacer-20,
+	.layout_responsive .powerwidget .inner-spacer > .spacer-20,
+	.layout_responsive .powerwidget .inner-spacer > form > .spacer-20,
+	.layout_responsive .powerwidget .inner-spacer > form > fieldset > .spacer-20{
+		height : 10px!important;
+	}
+	.layout_responsive .ls-tab-hide{
+		display : none;
+	}
+	.layout_responsive .fc-header-center h2{
+		font-size   : 24px;
+		font-weight : normal;
+	}
+	.layout_responsive #content-inner{
+	 	margin : 0 0 0 100px;
+	}
+	.layout_responsive aside{
+		float    : left;
+		margin   : 0 0 -1px -8.417em;
+		padding  : 0;
+		position : relative;
+		width    : 100px;
+	}
+	.layout_responsive .mainmenu-sub-hide,
+	.layout_responsive #profile-info,
+	.layout_responsive #main-menu ul li a span{
+		display : none;
+	}
+	.layout_responsive #main-menu ul li a span.plix-16{
+		display : block;
+		top     : 15px;
+		left    : 50%;
+		margin  : 0 0 0 -8px;
+	}	
+	.layout_responsive #main-menu > ul > li > a{
+		width               : 100%;
+		background-position : center 10px;
+		padding             : 40px 0 10px 0;
+		text-align          : center;
+		font-size           : 11px;
+		line-height         : 24px!important;
+	}
+	.layout_responsive #main-menu > ul > li > ul > li a{
+		padding    : 0;
+		text-align : center;
+	}
+	.layout_responsive #main-menu > ul > li > a .color-indicator {
+		display : block;
+		margin  : 0;
+		right   : 5px;
+		top     : 5px;
+	}	
+	.layout_responsive  #main-menu > ul > li > ul > li a,
+	.layout_responsive  #main-menu > ul > li > ul > li:last-child a{
+		background-image : none
+	}
+	.layout_responsive #content-footer > .left{
+		display : none;
+		padding : 0;
+	}
+	.layout_responsive #content-header .right{
+		padding : 10px 15px 10px 0;
+	}
+	.layout_responsive #main-breadcrumbs{
+		margin : 0 5px 0 15px
+	}
+	/* Tables */
+	.layout_responsive #basic-table .rt-1,
+	.layout_responsive #basic-table .rt-3{
+		display : none;
+	}
+	.layout_responsive #tableexample1 .rt-1,
+	.layout_responsive #tableexample1 .rt-4{
+		display : none;
+	}
+	.layout_responsive #tableexample2 .rt-1,
+	.layout_responsive #tableexample2 .rt-4,
+	.layout_responsive #tableexample2 .rt-5{
+		display : none;
+	}	
+	.layout_responsive #tableexample3 .rt-5,
+	.layout_responsive #tableexample3 .rt-6{
+		display : none;
+	}
+	.layout_responsive #tableexample4 .rt-2,
+	.layout_responsive #tableexample4 .rt-3{
+		display : none;
+	}
+	.layout_responsive .appointment-planner .ap-time-row,
+	.layout_responsive .appointment-planner .time-block > div,
+	.layout_responsive .appointment-planner .day-block > div{
+		height : 50px;
+	}
+	.layout_responsive .appointment-planner .time-block,
+	.layout_responsive .appointment-planner .day-block{
+		height      : 51px;
+		line-height : 51px;
+	}
+	.layout_responsive .appointment-planner .time-block > div{
+		padding    : 0;
+		text-align : center
+	}
+	/*hide parts*/
+	.layout_responsive #toggle-sidebar,
+	.layout_responsive #widgets-controls .icon-group,
+	.layout_responsive .ls-tab-hide,
+	.layout_responsive #content-header .left,
+	.layout_responsive #sidebar-meta{
+		display : none!important;
+	}
+}

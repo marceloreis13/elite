@@ -1,0 +1,536 @@
+<section>
+    <h2>Basic page template</h2>
+    <p>This is a basic page sliced up into parts, this way you can see the structure of the template.</p>
+    
+    <div class="spacer-30"></div>
+    
+    <h3>Document head</h3>
+    <p>The document header, which includes stuff like CSS and Javascript files.</p>
+                                                                   
+    <div class="spacer-10"></div> 
+    
+    <pre>&lt;!DOCTYPE html&gt;
+&lt;!--[if lt IE 7]&gt;  &lt;html class="ie ie6 lte9 lte8 lte7 no-js"&gt; &lt;![endif]--&gt;
+&lt;!--[if IE 7]&gt;     &lt;html class="ie ie7 lte9 lte8 lte7 no-js"&gt; &lt;![endif]--&gt;
+&lt;!--[if IE 8]&gt;     &lt;html class="ie ie8 lte9 lte8 no-js"&gt;      &lt;![endif]--&gt;
+&lt;!--[if IE 9]&gt;     &lt;html class="ie ie9 lte9 no-js"&gt;           &lt;![endif]--&gt;
+&lt;!--[if gt IE 9]&gt;  &lt;html class="no-js"&gt;                       &lt;![endif]--&gt;
+&lt;!--[if !IE]&gt;&lt;!--&gt; &lt;html class="no-js"&gt;                   &lt;!--&lt;![endif]--&gt;
+&lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"&gt;
+
+    &lt;title&gt;ELITE - A Powerfull Responsive Admin Theme&lt;/title&gt;
+       
+    &lt;!-- // Mobile meta/files // --&gt;
+   
+    &lt;!-- For iPhone 4 with high-resolution Retina display: --&gt;
+    &lt;link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/mobile/apple-touch-icon-114x114.png" /&gt;
+    &lt;!-- For first-generation iPad: --&gt;
+    &lt;link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/mobile/apple-touch-icon-72x72.png" /&gt;
+    &lt;!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: --&gt;
+    &lt;link rel="apple-touch-icon-precomposed" href="images/mobile/apple-touch-icon.png" /&gt;
+    &lt;!-- For nokia devices: --&gt;
+    &lt;link rel="shortcut icon" href="images/apple-touch-icon.png" /&gt;
+    &lt;!-- Viewport for older phones - http://davidbcalhoun.com/tag/handheldfriendly --&gt;
+    &lt;meta name="HandheldFriendly" content="true"/&gt;   
+    &lt;!-- Viewport - http://davidbcalhoun.com/tag/handheldfriendly --&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /&gt; 
+    &lt;!-- This file contains some fixes, splash screen and web app code --&gt; 
+    &lt;script src="js/mobiledevices.js"&gt;&lt;/script&gt;
+    
+    &lt;!-- // Internet Explore // --&gt;
+    
+    &lt;!-- IE9 Pinned Sites: http://msdn.microsoft.com/en-us/library/gg131029.aspx --&gt;
+    &lt;meta name="application-name" content="Elite Admin Skin"&gt;
+    &lt;meta name="msapplication-tooltip" content="Cross-platform admin skin."&gt;
+    &lt;meta name="msapplication-starturl" content="http://themes.creativemilk.net/elite/html/index.html"&gt;
+    &lt;!-- These custom tasks are examples, you need to edit them to show actual pages --&gt;
+    &lt;meta name="msapplication-task" content="name=Home;action-uri=http://themes.creativemilk.net/elite/html/index.html;icon-uri=http://themes.creativemilk.net/elite/html/images/favicons/favicon.ico"&gt;
+    &lt;meta http-equiv="cleartype" content="on" /&gt; 
+    
+    &lt;!--[if lt IE 8]&gt;
+	&lt;script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"&gt;&lt;/script&gt;
+    &lt;![endif]--&gt;
+            
+    &lt;!-- // Stylesheets // --&gt;
+
+    &lt;!-- Framework --&gt;
+    &lt;link rel="stylesheet" href="css/framework.css"/&gt;
+    &lt;!-- Main --&gt;
+    &lt;link rel="stylesheet" href="css/style.css"/&gt;
+    &lt;!-- jQuery UI --&gt; 
+    &lt;link rel="stylesheet" href="css/ui/jquery.ui.base.css"/&gt;
+    &lt;!-- Styling --&gt;
+    &lt;link rel="stylesheet" href="css/theme/darkblue.css" id="themesheet"/&gt;
+    &lt;!--[if IE 7]&gt;
+    &lt;link rel="stylesheet" href="css/destroy-ie6-ie7.css"/&gt;
+    &lt;![endif]--&gt;
+      
+    &lt;!-- // Misc // --&gt;
+    
+    &lt;link rel="shortcut icon" href="images/favicons/favicon.ico" /&gt;
+    
+    &lt;!-- // jQuery/UI core // --&gt;
+    
+    &lt;script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"&gt;&lt;/script&gt;
+    &lt;script&gt;!window.jQuery && document.write('&lt;script src="js/jquery-1.7.2.min.js"&gt;&lt;\/script&gt;')&lt;/script&gt;
+    &lt;script src="http://code.jquery.com/ui/1.8.22/jquery-ui.min.js"&gt;&lt;/script&gt;
+    &lt;script&gt;!window.jQueryUI && document.write('&lt;script src="js/jquery-ui-1.8.22.min.js"&gt;&lt;\/script&gt;')&lt;/script&gt;
+        
+    &lt;!-- // Thirdparty plugins // --&gt;
+    
+    &lt;!-- MouseWheel --&gt;  
+    &lt;script src="js/jquery.mousewheel.min.js"&gt;&lt;/script&gt;
+    &lt;!-- UI Spinner --&gt;
+    &lt;script src="js/jquery.ui.spinner.js"&gt;&lt;/script&gt;
+    &lt;!-- Tooltip --&gt;               
+    &lt;script src="js/tipsy.js"&gt;&lt;/script&gt;
+    &lt;!-- Treeview --&gt;                         
+    &lt;script src="js/treeview.js"&gt;&lt;/script&gt;
+    &lt;!-- Calendar --&gt;                         
+    &lt;script src="js/fullcalendar.min.js"&gt;&lt;/script&gt; 
+    &lt;!-- selectToUISlider --&gt;                
+    &lt;script src="js/selectToUISlider.jQuery.js"&gt;&lt;/script&gt; 
+    &lt;!-- context Menu --&gt;         
+    &lt;script src="js/jquery.contextMenu.js"&gt;&lt;/script&gt; 
+    &lt;!-- File Explore --&gt;              
+    &lt;script src="js/elfinder.min.js"&gt;&lt;/script&gt; 
+    &lt;!-- AutoGrow Textarea --&gt;                   
+    &lt;script src="js/autogrow-textarea.js"&gt;&lt;/script&gt; 
+    &lt;!-- Resizable Textarea --&gt;               
+    &lt;script src="js/textarearesizer.min.js"&gt;&lt;/script&gt;
+    &lt;!-- HTML5 WYSIWYG --&gt;  
+    &lt;script src="wysiwyghtml5/parser_rules/advanced.js"&gt;&lt;/script&gt;
+    &lt;script src="wysiwyghtml5/dist/wysihtml5-0.3.0.js"&gt;&lt;/script&gt;    
+    &lt;!-- Lightbox --&gt;                      
+    &lt;script src="js/jquery.colorbox-min.js"&gt;&lt;/script&gt;
+    &lt;!-- DataTables --&gt;
+    &lt;script src="js/jquery.dataTables.min.js"&gt;&lt;/script&gt;            
+    &lt;!-- Masked inputs --&gt;
+    &lt;script src="js/jquery.maskedinput-1.3.min.js"&gt;&lt;/script&gt; 
+    &lt;!-- IE7 JSON FIX --&gt;
+    &lt;script src="js/json2.js"&gt;&lt;/script&gt;
+    &lt;!-- HTML5 audio player --&gt;
+    &lt;script src="audiojs/audiojs/audio.min.js"&gt;&lt;/script&gt; 
+             
+    &lt;!-- // Custom theme plugins // --&gt;
+    
+    &lt;!-- Stylesheet switcher --&gt; 
+    &lt;script src="js/e_styleswitcher.1.0.min.js"&gt;&lt;/script&gt;                 
+    &lt;!-- Widgets --&gt;
+    &lt;script src="js/powerwidgets.1.0.min.js"&gt;&lt;/script&gt;
+    &lt;!-- Widgets panel --&gt;
+    &lt;script src="js/powerwidgetspanel.1.0.min.js"&gt;&lt;/script&gt;
+    &lt;!-- Select styling --&gt;
+    &lt;script src="js/e_select.1.0.min.js"&gt;&lt;/script&gt;    
+    &lt;!-- Checkbox solution --&gt;
+    &lt;script src="js/e_checkbox.1.0.min.js"&gt;&lt;/script&gt;
+    &lt;!-- Radio button replacement --&gt;
+    &lt;script src="js/e_radio.1.0.min.js"&gt;&lt;/script&gt;    
+    &lt;!-- Tabs --&gt;
+    &lt;script src="js/e_tabs.1.0.min.js"&gt;&lt;/script&gt;
+    &lt;!-- File styling --&gt;
+    &lt;script src="js/e_file.1.0.min.js"&gt;&lt;/script&gt;    
+    &lt;!-- MainMenu --&gt;
+    &lt;script src="js/e_mainmenu.1.0.min.js"&gt;&lt;/script&gt;
+    &lt;!-- Menu --&gt;
+    &lt;script src="js/e_menu.1.0.min.js"&gt;&lt;/script&gt;
+    &lt;!-- Input popup box --&gt;
+    &lt;script src="js/e_inputexpand.1.0.min.js"&gt;&lt;/script&gt;
+    &lt;!-- Progressbar --&gt;
+    &lt;script src="js/e_progressbar.1.0.min.js"&gt;&lt;/script&gt;
+    &lt;!-- Scrollbar replacemt --&gt;
+    &lt;script src="js/e_scrollbar.1.0.min.js"&gt;&lt;/script&gt; 
+    &lt;!-- Onscreen keyboard --&gt;
+    &lt;script src="js/e_oskeyboard.1.0.min.js"&gt;&lt;/script&gt;
+    &lt;!-- Textarea limiter --&gt;
+    &lt;script src="js/e_textarealimiter.1.0.min.js"&gt;&lt;/script&gt;
+    &lt;!-- Contact form with validation --&gt;
+    &lt;script src="js/e_contactform.1.0.min.js"&gt;&lt;/script&gt;
+    &lt;!-- Responsive table helper --&gt;
+    &lt;script src="js/e_responsivetable.1.0.min.js"&gt;&lt;/script&gt;
+    &lt;!-- Gallery --&gt;
+    &lt;script src="js/e_gallery.1.0.min.js"&gt;&lt;/script&gt;
+    &lt;!-- Live search --&gt;
+    &lt;script src="js/e_livesearch.1.0.min.js"&gt;&lt;/script&gt;
+    &lt;!-- Notify --&gt;
+    &lt;script src="js/e_notify.1.0.min.js"&gt;&lt;/script&gt;  
+    &lt;!-- Countdown --&gt;  
+    &lt;script src="js/e_countdown.1.0.min.js"&gt;&lt;/script&gt; 
+    &lt;!-- Clone script --&gt;
+    &lt;script src="js/e_clone.1.0.min.js"&gt;&lt;/script&gt; 
+    &lt;!-- Chained inputs --&gt;
+    &lt;script src="js/e_chainedinputs.1.0.min.js"&gt;&lt;/script&gt;
+    &lt;!-- Show password --&gt;     
+    &lt;script src="js/e_showpassword.1.0.min.js"&gt;&lt;/script&gt;        
+    &lt;!-- All plugins are set here --&gt;
+    &lt;script src="js/plugins.js"&gt;&lt;/script&gt;
+    &lt;!-- Custom code --&gt;
+    &lt;script src="js/main.js"&gt;&lt;/script&gt;  
+            
+    &lt;!-- // HTML5/CSS3 support // --&gt;
+
+    &lt;script src="js/modernizr.min.js"&gt;&lt;/script&gt;
+                
+&lt;/head&gt;</pre>
+
+    <div class="spacer-30"></div>
+    
+    <h3>Main header</h3>
+    <p>The main header. Starts with the body and conainer id.</p>
+                                                                   
+    <div class="spacer-10"></div> 
+    
+    <pre>&lt;body class="layout_fluid layout_responsive"&gt;   
+	&lt;div id="container"&gt;
+    
+        &lt;!-- MAIN HEADER --&gt;
+                
+        &lt;header id="header"&gt;
+        	&lt;div id="header-border"&gt;
+                &lt;div id="header-inner"&gt;
+                
+                    &lt;div class="left"&gt;
+                        &lt;a href="index.html" id="logo"&gt;ELITE&lt;/a&gt;
+                    &lt;/div&gt;&lt;!-- End .left --&gt;
+                    
+                    &lt;div class="right"&gt;
+                        &lt;!-- eMenu --&gt;
+                        &lt;nav&gt;
+                            &lt;ul class="e-splitmenu" id="header-menu"&gt;
+                                &lt;li&gt;&lt;span&gt;Menu&lt;/span&gt;&lt;a href="javascript:void(0);"&gt;&lt;span class="arrow-down-10 plix-10"&gt;&lt;/span&gt;&lt;/a&gt;
+                                
+                                     &lt;div&gt;
+                                        &lt;ul&gt;
+                                            &lt;li&gt;&lt;a href="index.html"&gt;&lt;span class="stats2-10 plix-10"&gt;&lt;/span&gt; Stats&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a href="index.html"&gt;&lt;span class="lock-10 plix-10"&gt;&lt;/span&gt; Security&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a href="index.html"&gt;&lt;span class="download-10 plix-10"&gt;&lt;/span&gt; Downloads&lt;/a&gt;&lt;/li&gt;
+                                        &lt;/ul&gt;                                      
+                                    &lt;/div&gt;                               
+
+                                &lt;/li&gt;
+                                &lt;li&gt;&lt;span&gt;Settings&lt;/span&gt;&lt;a href="javascript:void(0);"&gt;&lt;span class="arrow-down-10 plix-10"&gt;&lt;/span&gt;&lt;/a&gt;
+                                
+                                     &lt;div&gt;
+                                        &lt;ul&gt;
+                                            &lt;li&gt;&lt;a href="index.html"&gt;&lt;span class="home-10 plix-10"&gt;&lt;/span&gt; Basic Settings&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a href="index.html"&gt;&lt;span class="settings-10 plix-10"&gt;&lt;/span&gt; Site Settings&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a href="index.html"&gt;&lt;span class="comment-10 plix-10"&gt;&lt;/span&gt; User Settings&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a href="index.html"&gt;&lt;span class="bookmark-10 plix-10"&gt;&lt;/span&gt; Server Settings&lt;/a&gt;&lt;/li&gt;
+                                        &lt;/ul&gt;                                      
+                                    &lt;/div&gt;
+                                    
+                                &lt;/li&gt;
+                                    &lt;li class="e-menu-profile"&gt;
+                                    &lt;a href="javascript:void(0);"&gt;&lt;span class="arrow-down-10 plix-10"&gt;&lt;/span&gt;&lt;/a&gt; 
+                                    &lt;img src="images/avatar.jpg" alt=""/&gt;
+                                    
+                                    &lt;div&gt;
+                                        &lt;ul&gt;
+                                            &lt;li&gt;&lt;a href="index.html"&gt;&lt;span class="mail-10 plix-10"&gt;&lt;/span&gt; Inbox&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a href="index.html"&gt;&lt;span class="upload-10 plix-10"&gt;&lt;/span&gt; Settings&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a href="index.html"&gt;&lt;span class="info-10 plix-10"&gt;&lt;/span&gt; Logout&lt;/a&gt;&lt;/li&gt;
+                                        &lt;/ul&gt;                                      
+                                    &lt;/div&gt; 
+                                            
+                                &lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/nav&gt;
+                    &lt;/div&gt;&lt;!-- End .right --&gt; 
+                    
+                &lt;/div&gt;&lt;!-- End #header-border --&gt; 
+            &lt;/div&gt;&lt;!-- End #header-inner --&gt;  
+                
+	&lt;/header&gt;&lt;!-- End #header --&gt;</pre>
+
+    <div class="spacer-30"></div>
+    
+    <h3>Content header</h3>
+    <p>The content header, which includes things like a search, breadcrumbs and buttons. Starts with the content id.</p>
+                                                                   
+    <div class="spacer-10"></div> 
+    
+    <pre>&lt;!-- CONTENT --&gt;
+                 
+        &lt;div id="content"&gt;
+            &lt;div id="content-border"&gt;
+            
+                &lt;!-- CONTENT HEADER --&gt;
+                
+                &lt;header id="content-header"&gt;
+                    &lt;div class="left"&gt;
+                    	&lt;a href="#" id="toggle-mainmenu" class="button-icon tip-s" title="Toggle Main Menu"&gt;&lt;span class="arrow-up-10 plix-10"&gt;&lt;/span&gt;&lt;/a&gt;
+                        
+                        &lt;!-- main search form --&gt;
+                        &lt;form method="post" id="mainsearch"&gt;
+                            &lt;input type="text" placeholder="Live search..." name="" autocomplete="off"/&gt;
+                            &lt;input type="submit" value="" /&gt;
+                        &lt;/form&gt;
+                    &lt;/div&gt;&lt;!-- End .left --&gt; 
+                    &lt;div class="right"&gt;
+                    	&lt;!-- sidebar switch --&gt;
+                    	&lt;a href="#" id="toggle-sidebar" class="button-icon tip-s" title="Switch Main Menu"&gt;&lt;span class="arrow-left-10 plix-10"&gt;&lt;/span&gt;&lt;/a&gt;
+                        
+                        &lt;!-- breadcrumbs --&gt;
+                        &lt;nav id="main-breadcrumbs"&gt;
+                            &lt;ul&gt;
+                                &lt;li class="bc-tab-first"&gt;
+                                    &lt;a href="index.html"&gt;Home&lt;/a&gt;
+                                &lt;/li&gt;
+                                &lt;li&gt;
+                                    &lt;a href="index.html"&gt;Interface Elements&lt;/a&gt;
+                                &lt;/li&gt;
+                                &lt;li class="bc-tab-last"&gt;EAccordion&lt;/li&gt;
+                            &lt;/ul&gt;          
+                        &lt;/nav&gt;
+                        
+                        &lt;!-- demo dialog button --&gt;
+                        &lt;a href="#" id="open-main-dialog" class="button-text-icon tip-w" title="Some tooltip pointing right"&gt;&lt;span class="fullscreen-10 plix-10"&gt;&lt;/span&gt; Dialog&lt;/a&gt;
+                        
+                        &lt;!-- the main page dialog --&gt;
+                        &lt;div id="main-page-dialog" title="Welcome to Elite" style="display:none"&gt;
+                        &lt;img src="images/jquery-ui-logo.png" alt="" class="dummy-img-dialog"/&gt;
+                        dialog content
+                        &lt;/div&gt;
+                        
+                        &lt;span class="preloader"&gt;&lt;/span&gt;
+                        
+                        &lt;!-- widgets controls --&gt;
+                        &lt;div id="widgets-controls"&gt;
+                            &lt;span class="preloader"&gt;&lt;/span&gt;                       
+                            &lt;div class="chained-icons-button"&gt; 
+                                &lt;a href="javascript:void(0);" class="changeto-grid selected tip-s" title="Show grid"&gt;&lt;span class="grid-10 plix-10"&gt;&lt;/span&gt;&lt;/a&gt;
+                                &lt;span&gt;&lt;/span&gt;
+                                &lt;a href="javascript:void(0);" class="changeto-rows tip-s" title="Show rows"&gt;&lt;span class="rows-10 plix-10"&gt;&lt;/span&gt;&lt;/a&gt;
+                            &lt;/div&gt;
+                            
+                            &lt;!-- widgets management switch --&gt;
+                            &lt;a href="javascript:void(0);" class="button-icon tip-s" title="Manage widgets" id="powerwidget-panel-switch"&gt;&lt;span class="settings-10 plix-10"&gt;&lt;/span&gt;&lt;/a&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;&lt;!-- End .right --&gt;
+                    
+                &lt;/header&gt;&lt;!-- End #content-header --&gt;</pre>
+
+    <div class="spacer-30"></div>
+    
+    <h3>Sidebar</h3>
+    <p>The sidebar which contains the main menu. Starts with the content-inner id.</p>
+                                                                   
+    <div class="spacer-10"></div> 
+    
+    <pre>&lt;div id="content-inner"&gt;
+    
+    		&lt;!-- SIDEBAR --&gt;
+                    
+                    &lt;aside&gt;
+                    
+                    	&lt;!-- SIDEBAR PROFILE --&gt;
+                        
+                    	&lt;div id="sidebar-profile"&gt;
+                            &lt;div id="main-avatar"&gt;
+                            	&lt;span class="indicator"&gt;38&lt;/span&gt;
+                                &lt;img src="images/avatar.jpg" alt=""/&gt;
+                            &lt;/div&gt;
+                            &lt;div id="profile-info"&gt;
+                                &lt;div&gt;
+                                    &lt;a href="#"&gt;&lt;b&gt;Administrator&lt;/b&gt;&lt;/a&gt;
+                                    &lt;a href="#"&gt;Profile settings&lt;/a&gt;
+                                    &lt;a href="#"&gt;Server settings&lt;/a&gt;
+                                    &lt;a href="#"&gt;Logout&lt;/a&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        
+                        &lt;!-- MAIN MENU --&gt;
+                        
+                        &lt;nav id="main-menu"&gt;
+                            &lt;ul&gt;
+                                &lt;li&gt;&lt;a href="index.html"&gt;&lt;span class="home-16 plix-16"&gt;&lt;/span&gt; Dashboard&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="documentation.html"&gt;&lt;span class="note-16 plix-16"&gt;&lt;/span&gt; Documentation&lt;/a&gt;
+                                
+                                    &lt;ul&gt;
+                                    	&lt;li&gt;&lt;a href="doc-accordion.html"&gt;Accordion&lt;/a&gt;&lt;/li&gt; 
+                                    	&lt;li&gt;&lt;a href="doc-breadcrumbs.html"&gt;Breadcrumbs&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="doc-buttons.html"&gt;Buttons&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="doc-calendar.html"&gt;Calendar&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="doc-charts.html"&gt;Charts&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="doc-dialogs.html"&gt;Dialogs&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="doc-editors.html"&gt;Editors&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="doc-extra.html"&gt;Extra&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="doc-fileexplore.html"&gt;File Explore&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="doc-forms.html"&gt;Forms&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="doc-grid.html"&gt;Grid&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="doc-icons.html"&gt;Icons&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="doc-listsblocks.html"&gt;Lists &amp; Blocks&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="doc-media.html"&gt;Media&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="doc-menus.html"&gt;Menus&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="doc-misc.html"&gt;Misc&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="doc-search.html"&gt;Search&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="doc-tables.html"&gt;Tables&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="doc-tabs.html"&gt;Tabs&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="doc-toolbars.html"&gt;Toolbars&lt;/a&gt;&lt;/li&gt; 
+                                        &lt;li&gt;&lt;a href="doc-widgets.html"&gt;Widgets&lt;/a&gt;&lt;/li&gt;                                         
+                                    &lt;/ul&gt; 
+                                                                   
+                                &lt;/li&gt;
+                                &lt;li&gt;&lt;a href="calendar.html"&gt;&lt;span class="calendar-16 plix-16"&gt;&lt;/span&gt;Calendar&lt;span class="color-indicator"&gt;28&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="javascript:void(0);"&gt;&lt;span class="postcard-16 plix-16"&gt;&lt;/span&gt; Form Elements &lt;span class="button-icon"&gt;&lt;span class="plus-10 plix-10"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;
+
+                                    &lt;ul&gt;
+                                    	&lt;li&gt;&lt;a href="editors.html"&gt;Editors&lt;/a&gt;&lt;/li&gt;
+                                    	&lt;li&gt;&lt;a href="forms.html"&gt;Forms&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="login.html"&gt;Login form 1&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="login-2.html"&gt;Login form 2&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="login-3.html"&gt;Login form 3&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="login-4.html"&gt;Login form 4&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="search.html"&gt;Search&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="wizard.html"&gt;Wizard&lt;/a&gt;&lt;/li&gt;                                         
+                                    &lt;/ul&gt;
+                                
+                                &lt;/li&gt;
+                                &lt;li&gt;&lt;a href="media.html"&gt;&lt;span class="image-16 plix-16"&gt;&lt;/span&gt; Media&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="planning.html"&gt;&lt;span class="pencil-16 plix-16"&gt;&lt;/span&gt; Planning&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="maps.html"&gt;&lt;span class="map-16 plix-16"&gt;&lt;/span&gt; Google Maps &lt;span class="indicator tip-w" title="Some tip goes here"&gt;tooltip&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="fileexplore.html"&gt;&lt;span class="folder-16 plix-16"&gt;&lt;/span&gt; File Explore&lt;/a&gt;&lt;/li&gt; 
+                                &lt;li&gt;&lt;a href="javascript:void(0);"&gt;&lt;span class="warning-16 plix-16"&gt;&lt;/span&gt; Error pages&lt;span class="button-icon"&gt;&lt;span class="plus-10 plix-10"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;
+
+                                    &lt;ul&gt;
+                                    	&lt;li&gt;&lt;a href="400.html"&gt;400&lt;/a&gt;&lt;/li&gt;
+                                    	&lt;li&gt;&lt;a href="401.html"&gt;401&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="403.html"&gt;403&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="404.html"&gt;404&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="500.html"&gt;500&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="503.html"&gt;503&lt;/a&gt;&lt;/li&gt;                                         
+                                    &lt;/ul&gt;
+                                
+                                &lt;/li&gt;                                                               
+                                &lt;li&gt;&lt;a href="widgets.html"&gt;&lt;span class="rows4-16 plix-16"&gt;&lt;/span&gt; Widgets&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="tables.html"&gt;&lt;span class="cells-16 plix-16"&gt;&lt;/span&gt; Tables&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="charts.html"&gt;&lt;span class="stats2-16 plix-16"&gt;&lt;/span&gt; Charts &lt;/a&gt;&lt;/li&gt;
+                                &lt;li class="menu-open page-active"&gt;&lt;a href="javascript:void(0);"&gt;&lt;span class="controls-16 plix-16"&gt;&lt;/span&gt; Interface Elements &lt;span class="button-icon"&gt;&lt;span class="min-10 plix-10"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;
+                                
+                                    &lt;ul&gt;
+                                    	&lt;li class="page-active"&gt;&lt;a href="accordion.html"&gt;Accordion&lt;/a&gt;&lt;/li&gt;                                        
+                                        &lt;li&gt;&lt;a href="breadcrumbs.html"&gt;Breadcrumbs&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="buttons.html"&gt;Buttons&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="dialogs.html"&gt;Dialogs&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="icons.html"&gt;Icons&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="listsblocks.html"&gt;Lists &amp; Blocks&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="menus.html"&gt;Menus&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="misc.html"&gt;Misc&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="tabs.html"&gt;Tabs&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="toolbars.html"&gt;Toolbars&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;         
+                                                           
+                                &lt;/li&gt;
+                                &lt;li&gt;&lt;a href="grid.html"&gt;&lt;span class="layout3-16 plix-16"&gt;&lt;/span&gt; Grid &lt;span class="indicator"&gt;960&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/nav&gt;                      
+                    &lt;/aside&gt;
+                    
+                    &lt;!-- sidebar meta stats --&gt;
+                    &lt;div id="sidebar-meta"&gt;
+                    	&lt;div id="sidebar-meta-inner"&gt;
+                        	&lt;div&gt;
+                                &lt;p class="left"&gt;Space&lt;/p&gt; 
+                                &lt;p class="right"&gt;4,551 MB / 10 GB&lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;div class="pbar"&gt;
+                               &lt;span style="width:50%"&gt;&lt;/span&gt;                            
+                            &lt;/div&gt;
+                        	&lt;div&gt;
+                                &lt;p class="left"&gt;Traffic&lt;/p&gt; 
+                                &lt;p class="right"&gt;8,001 MB / 10 GB&lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;div class="pbar"&gt;
+                               &lt;span style="width:81%"&gt;&lt;/span&gt;                            
+                            &lt;/div&gt;
+                        &lt;/div&gt;  
+                    &lt;/div&gt;</pre>
+
+    <div class="spacer-30"></div>
+    
+    <h3>Main content</h3>
+    <p>The main content, which contains stuff like the widgets. Starts with the content-inner id.</p>
+                                                                   
+    <div class="spacer-10"></div> 
+    
+    <pre>&lt;!-- CONTENT --&gt;
+                    
+          &lt;div id="content-main"&gt;
+              &lt;div id="content-main-inner"&gt;
+  
+                  &lt;!-- widgets management panel --&gt; 
+                  &lt;div id="powerwidgetspanel" class="powerwidgetspanel"&gt;
+                      &lt;header&gt;
+                          &lt;h2&gt;Power widgets panel&lt;/h2&gt;
+                      &lt;/header&gt;
+                      &lt;div class="powerwidgetspanel-widget" data-widget-id="widget1"&gt;
+                          &lt;input type="checkbox"/&gt;
+                          &lt;label&gt;Accordion&lt;/label&gt;
+                      &lt;/div&gt;
+                  &lt;/div&gt;    
+  
+                  &lt;div class="page-header"&gt;
+                      &lt;h2&gt;Accordion&lt;/h2&gt;
+                      &lt;span class="page-helper"&gt;1.0&lt;/span&gt;
+                      &lt;a href="doc-accordion.html" class="page-helper"&gt;Documentation&lt;/a&gt;
+                       &lt;a href="#" class="page-helper empty-local-storage"&gt;Clear storage&lt;/a&gt;
+                      &lt;p&gt;jQuery UI Accordion.&lt;/p&gt;
+                  &lt;/div&gt;
+                  
+                  content goes here
+                  
+                  &lt;/div&gt;&lt;!-- End #content-main-inner --&gt; 
+               &lt;/div&gt;&lt;!-- End #content-main --&gt; 
+            &lt;/div&gt;&lt;!-- End #content-inner --&gt; </pre> 
+                  
+    <div class="spacer-30"></div>
+    
+    <h3>Main footer</h3>
+    <p>The main footer, which  contains stuff like the copyright info. End with the closing of the document.</p>
+                                                                   
+    <div class="spacer-10"></div> 
+    
+    <pre>&lt;!-- CONTENT FOOTER --&gt; 
+     
+                &lt;footer id="content-footer"&gt;
+                    &lt;div class="left"&gt;
+						&lt;div class="left"&gt;
+                               &lt;a href="#" class="button-icon tip-s" title="Some action"&gt;
+                                  &lt;span class="folder-10 plix-10"&gt;&lt;/span&gt;
+                              &lt;/a&gt;                                                        
+                              &lt;a href="#" class="button-icon tip-s" title="Some action"&gt;
+                                  &lt;span class="pencil-10 plix-10"&gt;&lt;/span&gt;
+                              &lt;/a&gt;
+                          &lt;/div&gt;&lt;!-- End .left --&gt;
+                          &lt;div class="right"&gt;
+                              &lt;a href="#" class="button-icon tip-s" title="Some action"&gt;
+                                  &lt;span class="refresh-10 plix-10"&gt;&lt;/span&gt;
+                              &lt;/a&gt; 
+                          &lt;/div&gt; &lt;!-- End .right --&gt; 
+                    &lt;/div&gt;&lt;!-- End .left --&gt; 
+                    &lt;div class="right"&gt;
+                    	&lt;div class="left"&gt;
+                    	Copyright © 2011 CreativeMilk - Template by &lt;a href="http://bit.ly/ldjfWQ"&gt;www.creativemilk.net&lt;/a&gt;
+                        &lt;/div&gt;&lt;!-- End .left --&gt;
+                        &lt;div class="right"&gt;
+                        	&lt;div class="theme-version"&gt;Version 1.0&lt;/div&gt;
+                        &lt;/div&gt;&lt;!-- End .right --&gt;
+                    &lt;/div&gt;&lt;!-- End .right --&gt;                
+                &lt;/footer&gt;&lt;!-- End #content-footer --&gt;                 
+            &lt;/div&gt;&lt;!-- End #content-border --&gt; 
+        &lt;/div&gt;&lt;!-- End #content --&gt; 
+            
+    &lt;/div&gt;&lt;!-- End #container --&gt;
+    
+    &lt;!-- scroll to top link --&gt;
+    &lt;div id="scrolltotop"&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt; 
+    
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+          
+    <div class="spacer-30"></div>                         
+</section>      

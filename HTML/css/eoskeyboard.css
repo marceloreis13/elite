@@ -1,0 +1,129 @@
+/*
+ * ************************************************************* *
+ * Name        : eOsKeyboard                                     *
+ * Description : CSS for the onscreen keyboard plugin            *
+ * Version     : Version 1                                       *
+ * Author      : CreativeMilk                                    *
+ * Author URI  : www.creativemilk.net                            *
+ * Updated     : --/--/----                                      *
+ * Copyright   : (c) 2011 CreativeMilk                           *
+ * ************************************************************* *
+ */
+
+.e-oskeyboard{
+	width    : 454px;
+	height   : 174px;
+	position : absolute;
+	padding  : 10px 5px 5px 10px;
+	display  : none;
+}
+.e-oskeyboard-wrap{
+	position : relative;
+}
+.e-oskeyboard > div{
+	width  : 469px;
+	margin : -10px 0 10px -10px;
+	height : 26px;
+	cursor : move;	
+}
+.e-oskeyboard > div p{
+	height      : 26px;
+	float       : left;
+	font-weight : bold;
+	line-height : 26px;
+	margin      : 0 0 0 10px;
+}
+.e-oskeyboard > div span{
+	width       : 25px;
+	height      : 26px;
+	float       : right;
+	cursor      : pointer;
+	text-align  : center;
+	font-weight : bold;
+	line-height : 26px;
+}
+.e-oskeyboard-icon{
+	width               : 27px;
+	height              : 15px;
+	background-repeat   : no-repeat;
+	background-position : center center;
+	cursor              : pointer;
+}
+.e-oskeyboard-input .e-oskeyboard-icon{
+	position : absolute;
+	top      : 50%;
+	right    : 10px;
+	margin   : -7.5px 0 0 0;
+}
+.e-oskeyboard-textarea .e-oskeyboard-icon{
+	float  : right;
+	height : 12px;
+	width  : 37px;
+	margin : 5px 0 0 5px;
+}
+.e-oskeyboard-icon-textarea{
+	width             : 27px;
+	height            : 15px;
+	position          : absolute;
+	top               : 50%;
+	right             : 10px;
+	margin            : -7.5px 0 0 0;
+	background-repeat : no-repeat;
+	cursor            : pointer;
+}
+.e-oskeyboard ul {
+	margin     : 0;
+	padding    : 0;
+	list-style :  none;
+}
+.e-oskeyboard li{
+	float       : left;
+	margin      : 0 3px 3px 0;
+	width       : 24px;
+	height      : 24px;
+	line-height : 24px;
+	text-align  : center;
+	cursor      : pointer;
+}
+.e-oskeyboard .capslock, 
+.e-oskeyboard .tab, 
+.e-oskeyboard .left-shift{
+	clear : left;
+}
+.e-oskeyboard .tab, 
+.e-oskeyboard .delete{
+	width : 70px;
+}
+.e-oskeyboard .capslock{
+	width : 60px;
+}
+.e-oskeyboard .enter{
+	width : 64px;
+}
+.e-oskeyboard .left-shift{
+	width : 70px;
+}
+.e-oskeyboard .right-shift{
+	width : 82px;
+}
+.e-oskeyboard .uppercase{
+	text-transform : uppercase;
+}
+.e-oskeyboard .space{
+	clear : left;
+	width : 447px;
+}
+.e-oskeyboard .on {
+	display : none;
+}
+.e-oskeyboard,
+.e-oskeyboard li,
+.e-oskeyboard-textarea .e-oskeyboard-icon,
+.e-oskeyboard > div{
+	-webkit-border-radius   : 3px;
+	-moz-border-radius      : 3px;
+	border-radius           : 3px;	
+	-webkit-background-clip : padding-box; 
+	-moz-background-clip    : padding; 
+	background-clip         : padding-box;	
+}

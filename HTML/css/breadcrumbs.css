@@ -1,0 +1,229 @@
+/*
+ * ************************************************************* *
+ * Name        : Breadcrumbs                                     *
+ * Description : CSS for the breadcrumbs.                        *
+ * Version     : Version 1                                       *
+ * Author      : CreativeMilk                                    *
+ * Author URI  : www.creativemilk.net                            *
+ * Updated     : --/--/----                                      *
+ * Copyright   : (c) 2011 CreativeMilk                           *
+ * ************************************************************* *
+ */ 
+
+/* Main breadcrumbs. ----------- */ 
+ 
+#main-breadcrumbs{
+	height                : 28px;
+	float                 : left;
+	margin                : 0 5px 0 0;
+	-moz-border-radius    : 3px;
+	-webkit-border-radius : 3px;
+	-khtml-border-radius  : 3px;
+	border-radius         : 3px;
+}
+#main-breadcrumbs ul{
+	height          : 28px;
+	width           : 100%;
+	list-style-type : none;
+	margin          : 0 5px 0 10px;
+}
+#main-breadcrumbs ul li{
+	width       : auto;
+	height      : 28px;
+	float       : left;
+	display     : inline;
+	margin      : 0 10px 0 0;
+	padding     : 0 15px 0 0;
+	line-height : 28px;
+	position    : relative;
+}
+#main-breadcrumbs ul .bc-tab-first{
+	width : 10px;
+}
+#main-breadcrumbs ul .bc-tab-first a{
+	width               : 10px;
+	height              : 10px;
+	float               : left;
+	background-position : center;
+	text-indent         : -99999px;
+	position            : absolute;
+	left                : 0;
+	top                 : 50%;
+	margin              : -5px 0 0 0;
+}
+#main-breadcrumbs ul .bc-tab-first a:hover{
+	background-position : 0 0;
+}
+#main-breadcrumbs ul li a{
+	width     : auto;
+	float     : left;
+	font-size : 12px;
+}
+#main-breadcrumbs ul .bc-tab-last{
+	padding    : 0;
+	background : none;
+}
+
+/* Basic breadcrumbs ----------- */ 
+
+.basic-breadcrumbs{
+	height : 30px;
+	float  : left;
+	margin : 0;
+}
+.basic-breadcrumbs ul{
+	height          : 28px;
+	width           : 100%;
+	list-style-type : none;
+	margin          : 0;
+}
+.basic-breadcrumbs ul li{
+	width    : auto;
+	height   : 30px;
+	float    : left;
+	display  : inline;
+	margin   : 0 2px 0 0;
+	position : relative;
+}
+.basic-breadcrumbs .bc-tab-first a,
+.basic-breadcrumbs .bc-tab a,
+.basic-breadcrumbs .bc-tab-last a,
+.basic-breadcrumbs .bc-nolink{
+	height      : 30px;
+	min-width   : 28px;
+	float       : left;
+	position    : relative;
+	padding     : 0 10px 0 20px;
+	line-height : 30px;
+}
+.basic-breadcrumbs .bc-tab-first a,
+.basic-breadcrumbs .bc-nolink:first-child{
+	padding   : 0 10px;
+	min-width : 20px;	
+}
+.basic-breadcrumbs .bc-arrow-left{
+	line-height   : 0%; 
+	width         : 0;
+	border-top    : 15px solid transparent;
+	border-bottom : 15px solid transparent;
+	border-right  : none;
+	position      : absolute;
+	left          : 0;
+	top           : 50%;
+	margin-top    : -15px;
+	z-index       : 0;
+}
+.basic-breadcrumbs .bc-arrow-right{
+	line-height   : 0%; 
+	width         : 0;
+	border-top    : 15px solid transparent;
+	border-bottom : 15px solid transparent;
+	border-right  : none;
+	position      : absolute;
+	right         : -10px;
+	top           : 50%;
+	margin-top    : -15px;
+	z-index       : 10;
+}
+.basic-breadcrumbs .plix-16{
+	position : absolute;
+	left     : 50%;
+	top      : 50%;
+	margin   : -8px 0 0 -2px;
+}
+.basic-breadcrumbs .bc-tab-first a .plix-16,
+.basic-breadcrumbs .bc-nolink:first-child .plix-16{
+	margin : -8px 0 0 -6px;
+}
+
+/* big breadcrumbs ----------- */ 
+
+.big-breadcrumbs{
+	height : 50px;
+	float  : left;
+	margin : 0;
+}
+.big-breadcrumbs ul{
+	height          : 50px;
+	width           : 100%;
+	list-style-type : none;
+	margin          : 0;
+}
+.big-breadcrumbs ul li{
+	width    : auto;
+	height   : 50px;
+	float    : left;
+	display  : inline;
+	margin   : 0 2px 0 0;
+	position : relative;
+}
+.big-breadcrumbs .bc-tab-first a,
+.big-breadcrumbs .bc-tab a,
+.big-breadcrumbs .bc-tab-last a,
+.big-breadcrumbs .bc-nolink{
+	height      : 50px;
+	width       : auto;
+	float       : left;
+	position    : relative;
+	padding     : 0 15px 0 65px;
+	line-height : 30px;
+}
+.big-breadcrumbs .bc-tab-first a,
+.big-breadcrumbs .bc-nolink:first-child{
+	padding : 0 15px 0 51px;	
+}
+.big-breadcrumbs .bc-title{
+	width       : auto;
+	float       : left;
+	font-weight : normal;
+	font-size   : 16px;
+	clear       : both;
+	line-height : 16px;
+	margin      : 7px 0 1px 0;
+}
+.big-breadcrumbs .bc-decs{
+	width       : auto;
+	float       : left;
+	font-size   : 11px;
+	clear       : both;
+	line-height : 24px;
+}
+.big-breadcrumbs .bc-arrow-left{
+	line-height   : 0%; 
+	width         : 0;
+	border-top    : 26px solid transparent;
+	border-bottom : 26px solid transparent;
+	border-right  : none;
+	position      : absolute;
+	left          : 0;
+	top           : 50%;
+	margin-top    : -26px;
+	z-index       : 0;
+}
+.big-breadcrumbs .bc-arrow-right{
+	line-height   : 0%; 
+	width         : 0;
+	border-top    : 26px solid transparent;
+	border-bottom : 26px solid transparent;
+	border-right  : none;
+	position      : absolute;
+	right         : -13px;
+	top           : 50%;
+	margin-top    : -26px;
+	z-index       : 10;
+}
+.big-breadcrumbs .bc-number{
+	height      : 36px;
+	width       : 36px;
+	position    : absolute;
+	left        : 24px;
+	top         : 50%;
+	text-align  : center;
+	margin      : -18px 0 0 0;
+	line-height : 36px;
+	font-size   : 11px;
+}
+.big-breadcrumbs .bc-tab-first a .bc-number,
+.big-breadcrumbs .bc-nolink:first-child .bc-number{
+	left : 10px;
+}

@@ -1,0 +1,196 @@
+/*
+ * ************************************************************* *
+ * Name        : Power Widgets                                   *
+ * Description : CSS for the widgets.                            *
+ * Version     : Version 1                                       *
+ * Author      : CreativeMilk                                    *
+ * Author URI  : www.creativemilk.net                            *
+ * Updated     : --/--/----                                      *
+ * Copyright   : (c) 2011 CreativeMilk                           *
+ * ************************************************************* *
+ 
+ Notice that this isn't the same css as the one from the 
+ power widgets pack.
+ 
+ */
+ 
+/* Management panel. ----------- */
+
+.powerwidgetspanel{
+	overflow              : auto;
+	margin                : 15px 0 30px 0;
+	padding               : 10px 10px 0 10px;
+	display               : none;
+	-webkit-border-radius : 3px;
+	-khtml-border-radius  : 3px;
+	-moz-border-radius    : 3px;
+	border-radius         : 3px;		
+}
+.powerwidgetspanel header > h2{
+	font-size : 13px;
+	padding   : 0 0 10px 0;
+	margin    : 0 0 10px 0;
+}
+.powerwidgetspanel > div{
+	width                 : 210px;
+	float                 : left;
+	margin                : 0 10px 10px 0;
+	position              : relative;
+	-webkit-border-radius : 3px;
+	-khtml-border-radius  : 3px;
+	-moz-border-radius    : 3px;
+	border-radius         : 3px;
+}
+.powerwidgetspanel .e-checkbox{
+	width                 : 200px;
+	-webkit-border-radius : 0;
+	-khtml-border-radius  : 0;
+	-moz-border-radius    : 0;
+	border-radius         : 0;		
+}
+.powerwidgetspanel .e-checkbox-normal,
+.powerwidgetspanel .e-checkbox-active{
+	padding : 0 0 0 10px;
+}
+.powerwidgetspanel .e-checkbox-normal .e-checkbox-img,
+.powerwidgetspanel .e-checkbox-active .e-checkbox-img{
+	left : 10px;
+}
+#powerwidget-panel-switch{
+	margin : 0 0 5px 5px;
+}
+
+/* Widgets. ----------- */
+
+.powerwidget{
+	margin                : 0 0 15px 0;
+	position              : relative;
+	border-bottom         : none!important;
+	-webkit-border-radius : 3px;
+	-khtml-border-radius  : 3px;
+	-moz-border-radius    : 3px;
+	border-radius         : 3px;
+}
+.powerwidget > header{
+	height                          : 50px;
+	padding                         : 0 0 0 10px;	
+	line-height                     : 50px;
+	-webkit-border-top-right-radius : 3px;
+	-webkit-border-top-left-radius  : 3px;		
+	-moz-border-radius-topright     : 3px;
+	-moz-border-radius-topleft      : 3px;
+	border-top-right-radius         : 3px;
+	border-top-left-radius          : 3px;		
+}
+.ui-sortable .sortablpowerwidget > header{
+	cursor : move;
+}
+.powerwidget > header h2{
+	height    : 100%;
+	width     : auto;
+	float     : left;
+	font-size : 13px;
+	position  : relative;
+}
+.powerwidget > header .powerwidget-icon{
+	padding : 0 0 0 24px;
+}
+.powerwidget > header h2 span{
+	width    : 16px;
+	height   : 16px;
+	position : absolute;
+	left     : 0;
+	top      : 50%;
+	margin   : -8px 0 0 0;
+	display  : block;
+	zoom     : 1;
+	z-index  : 4000
+}
+.powerwidget > header .powerwidget-loader{
+	width               : 16px;
+	height              : 50px;
+	margin              : 0 10px 0 0;
+	float               : right;
+	background-repeat   : no-repeat;
+	background-position : center center;
+	display             : none;
+}
+.powerwidget > header .powerwidget-ctrls{
+	height  : 30px;
+	width   : auto;
+	float   : right;
+	margin  : 0;
+	padding : 10px 10px 10px 5px;
+	margin  : 0;
+}
+.powerwidget > header:hover .powerwidget-ctrls{
+	display : block;
+}
+.powerwidget > header a{
+	margin : 0 0 0 5px;
+}
+.ui-sortable .powerwidget-sortable > header{
+	cursor : move;
+} 
+.powerwidget > div{
+	min-height            : 20px;
+	border-top            : none;
+	margin                : 0;
+	display               : block;
+	position              : relative;
+	-webkit-border-radius : 3px;
+	-khtml-border-radius  : 3px;
+	-moz-border-radius    : 3px;
+	border-radius         : 3px;	
+} 
+.inner-spacer{
+	padding : 10px;
+}
+.powerwidget-placeholder{
+	-moz-border-radius    : 3px;
+	-khtml-border-radius  : 3px;
+	-webkit-border-radius : 3px;
+	border-radius         : 3px;
+	margin-bottom         : 16px;
+	padding               : 0;
+	-webkit-box-sizing    : border-box;
+	-khtml-box-sizing     : border-box;   
+	-moz-box-sizing       : border-box;
+	-ms-box-sizing        : border-box;	 
+	box-sizing            : border-box;
+}
+
+/* Elements/parts ----------- */
+
+.powerwidget .row{
+	float   : left;
+	width   : 100%;
+	padding : 10px 0;
+}
+.powerwidget .row:first-child{
+	padding : 0 0 10px 0;
+}
+.powerwidget .row:last-child{
+	padding       : 10px 0 0 0;
+	border-bottom : none;
+}
+.powerwidget .row > label{
+	height      : 30px;
+	line-height : 30px;
+	width       : 180px;
+	float       : left;
+	font-weight : bold;
+}
+.powerwidget .row-element{
+	padding : 0 0 0 200px;
+}
+.row-element .dialog{
+	margin-bottom : 0;
+}
+.demo-bg{
+	display : block;
+	padding : 10px 5px;
+}
+.inner-spacer .line{
+	margin : 10px 0;
+}

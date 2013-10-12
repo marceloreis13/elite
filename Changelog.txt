@@ -1,0 +1,97 @@
+
+Changelog
+
+
++-----------------------------------------------------------------------------------------------------+
+
+VERSION 1.3
+
++-----------------------------------------------------------------------------------------------------+
+
++----------+
++ 01-04-13 +
++----------+
+
+- Updated the ewizard plugin, as the onSwitch and onSubmit hooks didn't work.
+
++----------+
++ 05-03-13 +
++----------+
+
+- Added a new hook/callback function to the eTabs plugin, you now can use onStart which runs at the 
+  start of the plugin.
+- Changed the wrong hook/callback name in the plugins.js file at line 199(eTabs plugin), this should
+  not be 'callback' but 'onSwitch'
+
++-----------------------------------------------------------------------------------------------------+
+
+VERSION 1.2
+
++-----------------------------------------------------------------------------------------------------+
+
++----------+
++ 01-01-13 +
++----------+
+
+- Updated the premium plugins 'power widgets' and 'power tour'. Notice that they have not been added
+  to the files but are placed in the folder called 'EXTRA'.
+
++----------+
++ 10-12-12 +
++----------+
+
+- Updated the select styling plugin to version 2.0. The multiple select forms now have a update methode 
+  $().eSelect('update'); which you can use if you add new options to a multiple select form.
+
++----------+
++ 29-10-12 +
++----------+
+
+- Updated the contact form plugin to 1.1, you now can log the data of the ajax output (after callback)
+
++-----------------------------------------------------------------------------------------------------+
+
+VERSION 1.1
+
++-----------------------------------------------------------------------------------------------------+
+
+
++----------+
++ 29-10-12 +
++----------+
+
+- Added a wizard, all files are only included in the wizard.html(also included doc-wizard.html)
+
++----------+
++ 22-10-12 +
++----------+
+
+- Fixed issue with touch devices and the emenu plugin, the dropdown menu didn't go back
+- Updated the econtactform.css file, as teh error labels can have issues with the position if it has
+  an label next to it
+
++----------+
++ 19-10-12 +
++----------+
+
+- Added to the form.html a new select (size attribute)
+- Update the eselect plugin to 1.1, added a size option, set size with the size attr, and fixed the 
+  selected bug(double selected)
+- Update the styleswitcher plugin to 1.1, added a better localStorage check
+- Update the main script to 1.1, added a better localStorage check
+- Update the tabs plugin to 1.2, added a better localStorage check
+- Update the powerwidgets + powerwidgetpanel plugin to 1.1, added a better localStorage check
+- Update all html file (see above)
+- Added a premium plugin called 'power tour'(re-build)
+- Removed doc-extra.html from the files, as this point to the tour plugin (see above)
+
++----------+
++ 17-10-12 +
++----------+
+
+- Removed old the old ie.css code form the <head> as this isn't used (documentation.html, index.html)
+
+
+* All styling css files has been updated
+
++-----------------------------------------------------------------------------------------------------+

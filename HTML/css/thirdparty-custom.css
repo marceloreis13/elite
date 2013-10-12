@@ -1,0 +1,3274 @@
+/*
+ * ===============================================================
+ * Name:         Third Party Custom
+ * Description:  CSS for third party plugins. This will override
+ 			     there own css files. This is done to match our
+				 custom themes.		
+ * Version:      Version 1
+ * Author:       CreativeMilk
+ * Author URI:   www.creativemilk.net
+ * Updated:      --/--/----
+ * Copyright:    (c) 2011 CreativeMilk
+ * ===============================================================
+ */
+
+/*
+ * ===============================================================
+ * FULL CALENDAR
+ * Notice that the callendar has his own css file.
+ * ===============================================================
+ */
+ 
+#calendar{
+	margin:0 0 0.833em 0;
+}
+.fc-today{
+	border:none!important;
+	background:none!important;
+}
+.fc-event-vert .fc-event-bg {
+	opacity    : 0.8!important;
+	-ms-filter : "progid:DXImageTransform.Microsoft.Alpha(opacity=80)";
+}
+.fc-header-title h2{
+	font-size:1.167em;
+}
+.external-events-box{
+	padding:0 0.833em;
+	text-align: left;
+	margin:0 0 1.25em 0;
+}
+.external-events-box h4 {
+	font-size: 1em;
+	margin-top: 0;
+	padding-top: 1em;
+	display:none
+}
+.external-event {
+	margin:0.833em 0;
+	padding:0.167em 0.333em;
+	font-size: 1em;
+	cursor: move;
+	-moz-border-radius:0.25em;
+	-webkit-border-radius:0.25em;
+	border-radius:0.25em;
+}
+.external-events-box p {
+	margin: 1.5em 0;
+	font-size: 1em;
+}	
+.external-events-box p input {
+	margin: 0 0.417em 0 0;
+	vertical-align: middle;
+}
+.external-events-box .e-checkbox{
+	margin:0 0 0.833em 0;
+}
+
+/*
+ * ===============================================================
+ * JQUERY UI CUSTOM
+ * The custom made UI theme has limits, this will replace them.
+ * ===============================================================
+ */
+ 
+/* selectToUISlider ----------- */
+
+#select-to-ui-slider fieldset{
+	border:none;
+}
+.ui-slider  {
+	text-decoration: none !important;
+}
+.ui-slider .ui-slider-handle  {
+	overflow: visible !important;
+}
+body .ui-slider .ui-widget-header{
+	background : none;
+}
+.ui-slider .ui-slider-tooltip {
+	display: none;
+}
+body .ui-slider.ui-widget-content{
+	background:none;
+}
+.ui-slider .screenReaderContext {
+	position: absolute;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	left: -999999999px;
+}
+body .ui-slider .ui-slider-handle{
+	width:1.283em
+}
+.ui-slider .ui-state-active .ui-slider-tooltip, 
+.ui-slider .ui-state-focus .ui-slider-tooltip, 
+.ui-slider .ui-state-hover .ui-slider-tooltip {
+	display: block;
+	position: absolute;
+	bottom: 2.5em;
+	text-align: center;
+	padding: .3em .2em .4em;
+	font-size:1em;
+	width: 8em;
+	margin-left: -3.7em;
+}
+.ui-slider .ui-slider-tooltip .ui-tooltip-pointer-down, 
+.ui-slider .ui-slider-tooltip .ui-tooltip-pointer-down-inner {
+	position: absolute; 
+	display: block;
+	width:0; 
+	height:0; 
+	border-bottom-width: 0;
+	background: none;
+}
+.ui-slider .ui-slider-tooltip .ui-tooltip-pointer-down {	
+	border-left: 7px dashed transparent; 
+	border-right: 7px dashed transparent;
+	border-top-width: 8px;
+	bottom:	-8px;
+	right: auto;
+	left: 50%;
+	margin-left: -7px;
+}
+.ui-slider .ui-slider-tooltip .ui-tooltip-pointer-down-inner {
+	border-left: 6px dashed transparent; 
+	border-right: 6px dashed transparent;
+	bottom:	auto;
+	top: -9px;
+	left: -6px;
+}
+.ui-slider a {
+	text-decoration: none;
+}
+.ui-slider ol, .ui-slider li, 
+.ui-slider dl, 
+.ui-slider dd, .ui-slider dt {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.ui-slider ol, .ui-slider dl {
+	position: relative;
+	top: 1.3em;
+	width: 100%;
+	float:left;
+}
+.ui-slider dt {
+	top: 1.5em;
+	position: absolute;
+	padding-top: .2em;
+	text-align: center;
+	height: .7em;
+}
+.ui-slider dt span {
+	padding: 0 .5em;
+}
+.ui-slider li, .ui-slider dd {
+	position: absolute;
+	overflow: visible;
+}
+.ui-slider span.ui-slider-label {
+	position: absolute;
+}
+.ui-slider li span.ui-slider-label, .ui-slider dd span.ui-slider-label {
+	display: none;
+}
+.ui-slider li span.ui-slider-label-show, .ui-slider dd span.ui-slider-label-show {
+	display: block;
+}
+.ui-slider span.ui-slider-tic {
+	position: absolute;
+	left: 0;
+	height: .8em;
+	top: -1.3em;
+}
+.ui-slider li span.ui-widget-content, .ui-slider dd span.ui-widget-content {
+	border-right: 0;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-top: 0;
+	border-bottom: 0;
+}
+.ui-slider .first .ui-slider-tic, .ui-slider .last .ui-slider-tic {
+	display: none;
+}
+#select-to-ui-slider .ui-slider{
+	margin:1.25em 0 1.25em 0;
+}
+#select-to-ui-slider label,
+#select-to-ui-slider select{
+	float:none;
+}
+
+/* AutoComplete ----------- */
+
+.ui-autocomplete li a:hover{
+	cursor:pointer;
+}
+
+/* Spinner ----------- */
+
+body span.ui-spinner{
+    height:30px;
+	width: 70px;
+	float:right;
+	margin-top:-30px;
+	margin-right:-5px;
+}
+body input.ui-spinner-input{
+	margin:0;
+	border:none;
+	height:30px;
+	line-height:30px;
+}
+body div.ui-spinner a:hover{
+	border-top:none;
+	border-right:none;
+	border-bottom:none;
+}
+body div.ui-spinner .ui-icon-triangle-1-n{
+	margin-left:1px;
+}
+.ui-spinner-buttons{
+	width: 64px;
+	height:30px;
+	float:right;
+	border:none!important;
+}
+.ui-spinner-down.ui-state-default,
+.ui-spinner-up.ui-state-default{
+	background:none!important;
+}
+div.ui-spinner-up {
+	width:28px;
+	height:28px;
+	float:left;
+	position:relative;
+	-webkit-border-radius   : 0;
+	-khtml-border-radius    : 0;
+	-moz-border-radius      : 0;
+	border-radius           : 0;
+	border-right:none!important;
+}
+div.ui-spinner-down {
+	width:28px;
+	height:28px;
+	float:left;
+	position:relative;
+	-webkit-border-radius   : 0;
+	-khtml-border-radius    : 0;
+	-moz-border-radius      : 0;
+	border-radius           : 0;
+	-webkit-border-top-right-radius: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+	-moz-border-radius-topright: 3px;
+	-moz-border-radius-bottomright: 3px;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;			
+}
+.ui-spinner-buttons .ui-state-default .ui-icon{
+    height: 1.5em;
+    width: 1.5em;
+	border:none!important;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin:-8px 0 0 -8px;
+}
+
+/* Dialogs ----------- */
+
+body .ui-dialog .ui-dialog-title, 
+body .ui-dialog .ui-dialog-content{
+	font-size:100%!important;
+}
+body div.ui-dialog{
+	padding:0 0 0.833em 0!important;
+}
+body div.ui-dialog .ui-dialog-titlebar{
+	height:3em;
+	line-height:3em;
+	padding: 0.4em 0.833em;
+	border:none;
+	font-family:Arial, Helvetica, sans-serif;
+	-webkit-border-bottom-right-radius:0;	
+	-webkit-border-bottom-left-radius:0;
+	-moz-border-radius-bottomright:0;
+	-moz-border-radius-bottomleft:0;
+	border-bottom-right-radius:0;
+	border-bottom-left-radius:0;		
+}
+body .ui-dialog span.ui-dialog-title{
+	margin: 0 1.333em 0 0;
+}
+body .ui-dialog a.ui-dialog-titlebar-close{
+	right:0.417em!important;
+}
+body .ui-dialog .ui-dialog-buttonset .ui-button{
+	-webkit-border-radius:0.25em;
+	-moz-border-radius:0.25em;
+	border-radius:0.25em;
+	-webkit-background-clip: padding-box; 
+	-moz-background-clip: padding; 
+	background-clip: padding-box;
+}
+body .ui-widget-overlay{
+	background:none;
+	opacity    : 0.5;
+	-ms-filter : "progid:DXImageTransform.Microsoft.Alpha(opacity=50)";
+}
+body .ui-dialog .ui-dialog-buttonpane{
+	padding:0.417em 0 0 0.4em;
+	margin:0.833em 0 0 0;
+}
+body .ui-dialog-buttonset{
+	margin:0 0.417em -0.417em   0;
+}
+body .ui-dialog .ui-dialog-content {
+    padding : 0.833em 0.833em 0 0.833em;
+	overflow:hidden!important;
+}
+
+/* UI slider ----------- */
+
+.ui-slider-range{
+	-webkit-border-radius : 3px;
+	-khtml-border-radius  : 3px;
+	-moz-border-radius    : 3px;
+	border-radius         : 3px;
+}
+
+/*
+ * ===============================================================
+ * CHARTS
+ * Notice that the charts plugin uses it own styling, these are
+ * extra added parts.
+ * ===============================================================
+ */
+ 
+.chart-wraper{
+	padding  : 20px;
+	overflow : hidden;
+}
+.legend table{
+	padding : 10px 10px 5px 10px;
+}
+.legendLabel{
+	height      : 15px;
+	line-height : 15px;
+	float       : left;
+	margin      : 0 0 5px 5px;
+}
+#chart-checkbox{
+	overflow : auto;
+	padding  : 10px;
+}
+#chart-checkbox h3{
+	margin    : 0 0 10px 0;
+	padding   : 0 0 10px 0;
+	font-size : 14px;
+}
+#chart-checkbox > div{
+	height : 16px;
+	width  : 100%;
+	float  : left;
+	margin : 0 0 10px 0;
+}
+#chart-checkbox input{
+	float  : left;
+	margin : 0 5px 0 0;	
+}
+
+/* Flot tooltip. ----------- */
+
+#flot-tooltip{
+	height                : 40px;
+	width                 : 10em;
+	position              : absolute;
+	padding               : 10px 10px 5px 10px;
+	opacity               : 0.9;
+	-ms-filter            : "progid:DXImageTransform.Microsoft.Alpha(opacity=90)";
+	padding               : 5px;
+	display               : none;
+	-webkit-border-radius : 3px;
+	-moz-border-radius    : 3px;
+	border-radius         : 3px;		
+}
+#flot-tooltip h3{
+	width      : 100%;
+	text-align : center;
+	font-size  : 12px;
+}
+#flot-tooltip p{
+	font-size  : 11px;
+	text-align : center;
+}
+#flot-tooltip > span{
+	line-height   : 0%; 
+	width         : 0;
+	border-right  : 8px solid transparent;
+	border-left   : 8px solid transparent;
+	border-bottom : none;
+	position      : absolute;
+	right         : 4.75em;
+	bottom        : -8px;
+}
+#flot-tooltip > span span{
+	line-height   : 0%; 
+	width         : 0;
+	border-right  : 6px solid transparent;
+	border-left   : 6px solid transparent;
+	border-bottom : none;
+	position      : absolute;
+	right         : -6px;
+	bottom        : 1px;
+}
+
+/*
+ * ===============================================================
+ * GMAPS
+ * Notice that the google maps uses it own styling, these are
+ * extra added parts.
+ * ===============================================================
+ */
+ 
+.gmap{
+	height : 340px;
+    width  : 100%;
+}
+.map-search{
+	height   : 40px;
+	padding  : 10px 10px 0 10px;
+	position : relative;
+}
+div.map-search .button-text{
+	width                              : 80px;
+	position                           : absolute;
+	right                              : 9px;
+	top                                : 10px;
+	margin                             : 0;
+	-moz-border-radius                 : 0;
+	-webkit-border-radius              : 0;
+	border-radius                      : 0;		
+	-webkit-border-top-right-radius    : 3px;
+	-webkit-border-bottom-right-radius : 3px;		
+	-moz-border-radius-topright        : 3px;
+	-moz-border-radius-bottomright     : 3px;
+	border-top-right-radius            : 3px;
+	border-bottom-right-radius         : 3px;		
+}
+
+/*
+ * ===============================================================
+ * ELFINDER
+ * Notice that the file manager uses it own styling, this will
+ * override it, to match our theme(s).
+ * ===============================================================
+ */
+
+.elfinder.ui-widget-content{
+	border:none;
+}
+.elfinder .elfinder-toolbar{
+	border-top    :none;
+	border-left   :none;
+	border-right  :none;
+	padding:0.833em 0 0.833em 0.417em;
+}
+.elfinder .elfinder-navbar{
+	border-left  :none!important;
+	border-top   :none!important;
+	border-bottom:none!important;
+	padding-right:5px!important;
+}
+.elfinder .elfinder-tree{
+	margin-top:5px
+}
+.elfinder .elfinder-statusbar{
+	border-left :none;
+	border-right:none;	
+	margin      :0 0 -2px;
+	font-weight:normal
+}
+.elfinder .elfinder-buttonset.ui-widget-content .elfinder-button{
+	border  :none!important;
+	height  :1.667em;
+	width   :1.667em;
+	position:relative;
+}
+.elfinder-button-icon{
+	position:absolute;
+	left    :50%;
+	top     :50%;
+	margin  :-8px 0 0 -8px;
+}
+.elfinder .elfinder-button-search{
+	width:180px;
+}
+.elfinder .elfinder-button-search .ui-icon-search{
+	left:22px!important;
+}
+.elfinder .elfinder-button-search input{
+	width                :180px;
+	height               :2.5em;
+	font-size            :100%;
+	float                :right;
+    -webkit-border-radius:0.25em;
+	-moz-border-radius   :0.25em;
+	border-radius        :0.25em;		
+}
+.elfinder-button-search .ui-icon{
+	margin:-8px 4px 0;
+}
+.elfinder-toolbar-button-separator{
+	width :0px;
+	height:2.333em;
+	border:none!important;
+}
+.elfinder-dialog .ui-dialog-content .elfinder-dialog-icon{
+	float   :left;
+	margin  :0 0.833em 0 0;
+	position:static;
+}
+.elfinder-statusbar{
+	height:2.5em;
+	line-height:2.5em
+}
+.elfinder-cwd-filename input{
+	height:20px!important
+}
+div.elfinder-contextmenu-item{
+	padding:0 35px;
+	height:2.5em;
+	line-height:2.5em;
+}
+div.elfinder-contextmenu-item .elfinder-button-icon{
+	margin-left:0px
+}
+.elfinder-toolbar-button-separator{
+	height:2.250em!important;
+}
+.elfinder-resize-type.ui-buttonset{
+	height:34px;
+	margin-bottom:20px;
+}
+.elfinder-resize-row{
+	width:100%;
+	height:2.5em;
+	float:left;
+	line-height:2.5em;
+	margin-top:10px;
+}
+.elfinder-resize-row input{
+	width:160px;
+	float:left;
+}
+.elfinder-resize-label{
+	width:160px;
+	float:left;
+	height:2.5em;
+	line-height:2.5em;
+}
+.elfinder-resize-reset{
+	width:2.167em;
+	height:2.167em;
+	float:left;
+	margin:0 0 0 0.417em;
+	cursor:pointer;
+}
+.elfinder-resize-reset span{
+	width:10px;
+	height:10px;
+	float:left;
+	margin:8px 0 0 8px;
+}
+elfinder-resize-row{
+	margin:25px 0 0 0;
+}
+.elfinder-resize-rotate-slider{
+	float:right;
+	width:100px;
+	margin:-25px 0 0 0;
+}
+.elfinder-button-menu-item:hover{
+	border:none!important;
+}
+
+/*
+ * ===============================================================
+ * ELRTE CUSTOM
+ * Notice that the editor uses it own styling, this will
+ * override it, to match our theme(s).
+ * ===============================================================
+ */
+ 
+body .el-rte .toolbar{
+    border:none;	
+	border-bottom:none;
+}
+body .el-rte .toolbar ul{
+	background-position:-952px -2px
+}
+.el-rte .ui-resizable-handle{
+	 display:none!important;
+}
+body .el-rte .workzone {
+	border:none;
+}
+body .el-rte .tabsbar{
+	margin:0 0 0.833em 0.833em;
+}
+body .el-rte textarea{
+	padding : 0.417em;
+}
+body .elrte-image-preview{
+	width   : auto;
+	padding : 0.833em;
+}
+body .el-dialogform fieldset{
+	margin-top : 1.25em;
+}
+
+/*
+ * ===============================================================
+ * DATATABLE CUSTOM
+ * Notice that the datatable uses it own styling, this will
+ * override it, to match our theme(s).
+ * ===============================================================
+ */
+ 
+.dataTables_wrapper .fg-toolbar{
+	width                 : 100%;
+	height                : 3.333em;
+	padding               : 0.417em 0; 
+	float                 : left;
+	border                : none;
+	-webkit-border-radius : 0;
+	-moz-border-radius    : 0;
+	border-radius         : 0;	
+}
+.dataTables_length{
+	float  : left;
+	width  : auto;
+	margin : 0.417em 0 0.417em 0.833em;
+}
+.dataTables_length label select{
+	width  : 5em;
+	float  : none;
+	margin : 0 0.417em;
+}
+.dataTables_filter{
+	float  : right;
+	width  : 17.2em;
+	margin : 0.417em 0.833em 0.417em 0;
+}
+.dataTables_filter label{
+	float : right;
+	width : 17.2em;
+}
+.dataTables_filter label input[type="text"]{
+	float  : right;
+	width  : 11.667em;
+	margin : 0 0 0 0.417em;
+}
+.dataTables_info{
+	height      : 3.333em;
+	width       : auto;
+	float       : left;
+	line-height : 3.333em;
+	margin      : 0 0 0 0.833em;
+}
+body .dataTables_paginate{
+	float  : right;
+	width  : auto;
+	margin : 0.417em 10px 0 0;
+}
+body .dataTables_paginate .fg-button{
+	height       : 2.333em;
+	width        : auto;
+	float        : left;
+	line-height  : 2.333em;
+	padding      : 0 0.833em;
+	margin-right : -0.083em;
+}
+body .dataTables_paginate a.fg-button{
+	height   : 2.333em;
+	width    : 0.667em;
+	float    : left;
+	position : relative;
+}
+.dataTables_paginate a span{
+	position : absolute;
+	left     : 50%;
+	top      : 50%;
+	margin   : -8px 0 0 -8px
+}
+.dataTables_wrapper table{
+	width  : 100%;
+	float  : left;
+	border : none;
+}
+body .dataTables_wrapper th{
+	height      : 2.5em;
+	border      : none;
+	line-height : 2.5em;
+	padding     : 0 0.833em;
+	font-weight : bold;
+}
+.dataTables_wrapper th:last-child{
+	border-right : none;
+}
+.dataTables_wrapper th div{
+	position : relative;	
+}
+.dataTables_wrapper th div span{
+	position : absolute;
+	right    : 0;
+	top      : 50%;
+	margin   : -8px 0 0 0;
+}
+.dataTables_wrapper td{
+	height      : 4.167em;
+	line-height : 4.167em;
+	padding     : 0 0 0 0.833em;
+}
+.dataTables_wrapper td:last-child{
+	border-right : none;
+}
+
+/*
+ * ===============================================================
+ * TIPSY TOOLTIP CORE
+ * ===============================================================
+ */
+ 
+.tipsy { font-size: 10px; position: absolute; padding:5px; z-index: 9000; line-height:15px;}
+.tipsy-inner { background-color: #ccc; color: #333; max-width: 200px; padding: 5px 8px 6px 8px; text-align: center; }
+
+/* Rounded corners */
+.tipsy-inner { border-radius: 0.25em; -moz-border-radius:  0.25em;  -webkit-border-radius:  0.25em;  }
+
+/* Uncomment for shadow */
+/*.tipsy-inner { box-shadow: 0 0 5px #000000; -webkit-box-shadow: 0 0 5px #000000; -moz-box-shadow: 0 0 5px #000000; }*/
+
+.tipsy-arrow { position: absolute; width: 0; height: 0; line-height: 0; border: 5px dashed #000; }
+
+/* Rules to colour arrows */
+.tipsy-arrow-n { border-bottom-color: #000; }
+.tipsy-arrow-s { border-top-color: #000; }
+.tipsy-arrow-e { border-left-color: #000; }
+.tipsy-arrow-w { border-right-color: #000; }
+
+.tipsy-n .tipsy-arrow { top: 0px; left: 50%; margin-left: -5px; border-bottom-style: solid; border-top: none; border-left-color: transparent; border-right-color: transparent; }
+.tipsy-nw .tipsy-arrow { top: 0; left: 10px; border-bottom-style: solid; border-top: none; border-left-color: transparent; border-right-color: transparent;}
+.tipsy-ne .tipsy-arrow { top: 0; right: 10px; border-bottom-style: solid; border-top: none;  border-left-color: transparent; border-right-color: transparent;}
+.tipsy-s .tipsy-arrow { bottom: 0; left: 50%; margin-left: -5px; border-top-style: solid; border-bottom: none;  border-left-color: transparent; border-right-color: transparent; }
+.tipsy-sw .tipsy-arrow { bottom: 0; left: 10px; border-top-style: solid; border-bottom: none;  border-left-color: transparent; border-right-color: transparent; }
+.tipsy-se .tipsy-arrow { bottom: 0; right: 10px; border-top-style: solid; border-bottom: none; border-left-color: transparent; border-right-color: transparent; }
+.tipsy-e .tipsy-arrow { right: 0; top: 50%; margin-top: -5px; border-left-style: solid; border-right: none; border-top-color: transparent; border-bottom-color: transparent; }
+.tipsy-w .tipsy-arrow { left: 0; top: 50%; margin-top: -5px; border-right-style: solid; border-left: none; border-top-color: transparent; border-bottom-color: transparent; }
+
+/*
+ * ===============================================================
+ * TREEVIEW CORE
+ * ===============================================================
+ */
+ 
+.treeview, .treeview ul { 
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.treeview ul {
+	margin-top: 4px;
+}
+.treeview .hitarea {
+	background: url("../images/treeview/treeview-default.gif") -64px -25px no-repeat;
+	height: 16px;
+	width: 16px;
+	margin-left: -16px;
+	float: left;
+	cursor: pointer;
+	margin-top:5px!important;;
+}
+/* fix for IE6 */
+* html .hitarea {
+	display: inline;
+	float:none;
+}
+.treeview li { 
+	margin: 0;
+	padding: 3px 0pt 3px 16px!important;
+}
+.treeview a.selected {}
+#treecontrol { margin: 1em 0; display: none; }
+.treeview .hover { cursor: pointer; }
+.treeview li { background: url("../images/treeview/treeview-default-line.gif") 0 0 no-repeat; }
+.treeview li.collapsable, .treeview li.expandable { background-position: 0 -176px; }
+.treeview .expandable-hitarea { background-position: -80px -3px; }
+.treeview li.last { background-position: 0 -1766px }
+.treeview li.lastCollapsable, .treeview li.lastExpandable { background-image: url("../images/treeview/treeview-default.gif"); }  
+.treeview li.lastCollapsable { background-position: 0 -111px }
+.treeview li.lastExpandable { background-position: -32px -67px }
+.treeview div.lastCollapsable-hitarea, .treeview div.lastExpandable-hitarea { background-position: 0; }
+.treeview-red li { background-image: url("../images/treeview/treeview-red-line.gif"); }
+.treeview-red .hitarea, .treeview-red li.lastCollapsable, .treeview-red li.lastExpandable { background-image: url("../images/treeview/treeview-red.gif"); } 
+.treeview-black li { background-image: url("../images/treeview/treeview-black-line.gif"); }
+.treeview-black .hitarea, .treeview-black li.lastCollapsable, .treeview-black li.lastExpandable { background-image: url("../images/treeview/treeview-black.gif"); }  
+.treeview-gray li { background-image: url("../images/treeview/treeview-gray-line.gif"); }
+.treeview-gray .hitarea, .treeview-gray li.lastCollapsable, .treeview-gray li.lastExpandable { background-image: url("../images/treeview/treeview-gray.gif"); } 
+.treeview-famfamfam li { background-image: url("../images/treeview/treeview-famfamfam-line.gif"); }
+.treeview-famfamfam .hitarea, .treeview-famfamfam li.lastCollapsable, .treeview-famfamfam li.lastExpandable { background-image: url("../images/treeview/treeview-famfamfam.gif"); } 
+.treeview .placeholder {
+	background: url("../images/treeview/ajax-loader.gif") 0 0 no-repeat;
+	height: 16px;
+	width: 16px;
+	display: block;
+}
+.filetree li { padding: 0px 0 2px 20px; }
+.filetree span.folder, .filetree span.file { padding: 1px 0 1px 20px; display: block; }
+.filetree span.folder { background: url("../images/treeview/folder.png") 0 50% no-repeat; }
+.filetree li.expandable span.folder { background: url("../images/treeview/folder-closed.png") 0 50%  no-repeat; }
+.filetree span.file { background: url("../images/treeview/file.png") 0 50%  no-repeat; }
+
+
+/*
+ * ===============================================================
+ * AUDIOJS - CUSTOM STYLYNG
+ * ===============================================================
+ */
+ 
+.audiojsZ audio { 
+	position: absolute; 
+	left: -1px;
+}
+.audiojsZ { 
+	width: 100%; 
+	height: 36px; 
+	overflow: hidden; 
+	font-family: monospace; 
+	font-size: 12px;
+	-webkit-border-radius   : 0.25em;
+	-khtml-border-radius    : 0.25em;
+	-moz-border-radius      : 0.25em;
+	border-radius           : 0.25em;	
+}
+.audiojsZ .play-pauseZ { 
+	width: 25px; 
+	height: 40px; 
+	padding: 4px 6px; 
+	margin: 0px; 
+	float: left; 
+	overflow: hidden; 
+}
+.audiojsZ p { 
+	display: none;
+	width: 25px; 
+	height: 40px; 
+	margin: 0px; 
+	cursor: pointer; 
+}
+.audiojsZ .playZ { 
+	display: block; 
+}
+.audiojsZ .scrubberZ {
+	 position: relative;
+	 float: left; 
+	 width: 280px; 
+	 height: 14px; 
+	 margin: 10px; 
+	 border-left: 0px;
+	 border-bottom: 0px; 
+	 overflow: hidden; 
+}
+.audiojsZ .progressZ { 
+	position: absolute; 
+	top: 0px; left: 0px; 
+	height: 14px; 
+	width: 0px; 
+	z-index: 1; 
+}
+.audiojsZ .loadedZ { 
+	position: absolute;
+	top: 0px; 
+	left: 0px; 
+	height: 14px; 
+	width: 0px; 
+}
+.audiojsZ .timeZ { 
+	float: left; 
+	height: 36px; 
+	line-height: 36px;
+	margin: 0px 0px 0px 6px; 
+	padding: 0px 6px 0px 12px; 
+}
+.audiojsZ .timeZ em { 
+	padding: 0px 2px 0px 0px; 
+	font-style: normal;
+}
+.audiojsZ .timeZ strong { 
+	padding: 0px 0px 0px 2px; 
+	font-weight: normal; 
+}
+.audiojsZ .error-messageZ { 
+	float: left; 
+	display: none; 
+	margin: 0px 10px; 
+	height: 36px; 
+	width: 400px; 
+	overflow: hidden; 
+	line-height: 36px; 
+	white-space: nowrap; 
+	text-overflow: ellipsis; 
+	-o-text-overflow: ellipsis; 
+	-icab-text-overflow: ellipsis; 
+	-khtml-text-overflow: ellipsis;
+	-moz-text-overflow: ellipsis; 
+	-webkit-text-overflow: ellipsis; 
+}
+.audiojsZ .error-messageZ a {  
+	text-decoration: none; 
+	padding-bottom: 
+	white-space: wrap;
+}
+.audiojsZ .playZ { 
+	background: url('../audiojs/audiojs/player-graphics.gif') -2px -1px no-repeat; 
+}
+.audiojsZ .loadingZ { 
+	background: url('../audiojs/audiojs/player-graphics.gif') -2px -31px no-repeat; 
+}
+.audiojsZ .errorZ {
+	background: url('../audiojs/audiojs/player-graphics.gif') -2px -61px no-repeat; 
+}
+.audiojsZ .pauseZ { 
+	background: url('../audiojs/audiojs/player-graphics.gif') -2px -91px no-repeat; 
+}
+.playingZ .playZ, .playingZ .loadingZ, .playingZ .errorZ { display: none; }
+.playingZ .pauseZ { display: block; }
+.loadingZ .playZ, .loadingZ .pauseZ, .loadingZ .errorZ { display: none; }
+.loadingZ .loadingZ { display: block; }
+.errorZ .timeZ, .errorZ .playZ, .errorZ .pauseZ, .errorZ .scrubberZ, .errorZ .loadingZ { display: none; }
+.errorZ .errorZ { display: block; }
+.errorZ .play-pauseZ p { cursor: auto; }
+.errorZ .error-messageZ { display: block; }
+
+/*
+ * ===============================================================
+ * FULL CALENDAR CORE
+ * ===============================================================
+ */
+ 
+/*
+ * FullCalendar v1.5.3 Stylesheet
+ *
+ * Copyright (c) 2011 Adam Shaw
+ * Dual licensed under the MIT and GPL licenses, located in
+ * MIT-LICENSE.txt and GPL-LICENSE.txt respectively.
+ *
+ * Date: Mon Feb 6 22:40:40 2012 -0800
+ *
+ */
+
+.fc {
+	direction: ltr;
+	text-align: left;
+	}
+	
+.fc table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	}
+	
+html .fc,
+.fc table {
+	font-size: 1em;
+	}
+	
+.fc td,
+.fc th {
+	padding: 0;
+	vertical-align: top;
+	}
+
+
+
+/* Header
+------------------------------------------------------------------------*/
+
+.fc-header td {
+	white-space: nowrap;
+	}
+
+.fc-header-left {
+	width: 25%;
+	text-align: left;
+	}
+	
+.fc-header-center {
+	text-align: center;
+	}
+	
+.fc-header-right {
+	width: 25%;
+	text-align: right;
+	}
+	
+.fc-header-title {
+	display: inline-block;
+	vertical-align: top;
+	}
+	
+.fc-header-title h2 {
+	margin-top: 0;
+	white-space: nowrap;
+	}
+	
+.fc .fc-header-space {
+	padding-left: 10px;
+	}
+	
+.fc-header .fc-button {
+	margin-bottom: 1em;
+	vertical-align: top;
+	}
+	
+/* buttons edges butting together */
+
+.fc-header .fc-button {
+	margin-right: -1px;
+	}
+	
+.fc-header .fc-corner-right {
+	margin-right: 1px; /* back to normal */
+	}
+	
+.fc-header .ui-corner-right {
+	margin-right: 0; /* back to normal */
+	}
+	
+/* button layering (for border precedence) */
+	
+.fc-header .fc-state-hover,
+.fc-header .ui-state-hover {
+	z-index: 2;
+	}
+	
+.fc-header .fc-state-down {
+	z-index: 3;
+	}
+
+.fc-header .fc-state-active,
+.fc-header .ui-state-active {
+	z-index: 4;
+	}
+	
+/* Content
+------------------------------------------------------------------------*/
+	
+.fc-content {
+	clear: both;
+	}
+	
+.fc-view {
+	width: 100%; /* needed for view switching (when view is absolute) */
+	overflow: hidden;
+	}
+	
+	
+
+/* Cell Styles
+------------------------------------------------------------------------*/
+
+.fc-widget-header,    /* <th>, usually */
+.fc-widget-content {  /* <td>, usually */
+	border: 1px solid #ccc;
+	}
+	
+.fc-state-highlight { /* <td> today cell */ /* TODO: add .fc-today to <th> */
+	background: #ffc;
+	}
+	
+.fc-cell-overlay { /* semi-transparent rectangle while dragging */
+	background: #9cf;
+	opacity: .2;
+	filter: alpha(opacity=20); /* for IE */
+	-ms-filter : "progid:DXImageTransform.Microsoft.Alpha(opacity=20)";
+	}
+	
+/* Buttons
+------------------------------------------------------------------------*/
+
+.fc-button {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	}
+	
+.fc-state-default { /* non-theme */
+	border-style: solid;
+	border-width: 1px 0;
+	}
+	
+.fc-button-inner {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	}
+	
+.fc-state-default .fc-button-inner { /* non-theme */
+	border-style: solid;
+	border-width: 0 1px;
+	}
+	
+.fc-button-content {
+	position: relative;
+	float: left;
+	height: 1.9em;
+	line-height: 1.9em;
+	padding: 0 .6em;
+	white-space: nowrap;
+	}
+	
+/* icon (for jquery ui) */
+	
+.fc-button-content .fc-icon-wrap {
+	position: relative;
+	float: left;
+	top: 50%;
+	}
+	
+.fc-button-content .ui-icon {
+	position: relative;
+	float: left;
+	margin-top: -50%;
+	*margin-top: 0;
+	*top: -50%;
+	}
+	
+/* gloss effect */
+	
+.fc-state-default .fc-button-effect {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	}
+	
+.fc-state-default .fc-button-effect span {
+	position: absolute;
+	top: -100px;
+	left: 0;
+	width: 500px;
+	height: 100px;
+	border-width: 100px 0 0 1px;
+	border-style: solid;
+	border-color: #fff;
+	background: #444;
+	opacity: .09;
+	filter: alpha(opacity=9);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=90)";
+	}
+	
+/* button states (determines colors)  */
+	
+.fc-state-default,
+.fc-state-default .fc-button-inner {
+	border-style: solid;
+	border-color: #ccc #bbb #aaa;
+	background: #F3F3F3;
+	color: #000;
+	}
+	
+.fc-state-hover,
+.fc-state-hover .fc-button-inner {
+	border-color: #999;
+	}
+	
+.fc-state-down,
+.fc-state-down .fc-button-inner {
+	border-color: #555;
+	background: #777;
+	}
+	
+.fc-state-active,
+.fc-state-active .fc-button-inner {
+	border-color: #555;
+	background: #777;
+	color: #fff;
+	}
+	
+.fc-state-disabled,
+.fc-state-disabled .fc-button-inner {
+	color: #999;
+	border-color: #ddd;
+	}
+	
+.fc-state-disabled {
+	cursor: default;
+	}
+	
+.fc-state-disabled .fc-button-effect {
+	display: none;
+	}
+	
+	
+
+/* Global Event Styles
+------------------------------------------------------------------------*/
+	 
+.fc-event {
+	border-style: solid;
+	border-width: 0;
+	font-size: .85em;
+	cursor: default;
+	}
+	
+a.fc-event,
+.fc-event-draggable {
+	cursor: pointer;
+	}
+	
+a.fc-event {
+	text-decoration: none;
+	}
+	
+.fc-rtl .fc-event {
+	text-align: right;
+	}
+	
+.fc-event-skin {
+	border-color: #36c;     /* default BORDER color */
+	background-color: #36c; /* default BACKGROUND color */
+	color: #fff;            /* default TEXT color */
+	}
+	
+.fc-event-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border-style: solid;
+	border-width: 0;
+	overflow: hidden;
+	}
+	
+.fc-event-time,
+.fc-event-title {
+	padding: 0 1px;
+	}
+	
+.fc .ui-resizable-handle { /*** TODO: don't use ui-resizable anymore, change class ***/
+	display: block;
+	position: absolute;
+	z-index: 99999;
+	overflow: hidden; /* hacky spaces (IE6/7) */
+	font-size: 300%;  /* */
+	line-height: 50%; /* */
+	}
+	
+	
+	
+/* Horizontal Events
+------------------------------------------------------------------------*/
+
+.fc-event-hori {
+	border-width: 1px 0;
+	margin-bottom: 1px;
+	}
+	
+/* resizable */
+	
+.fc-event-hori .ui-resizable-e {
+	top: 0           !important; /* importants override pre jquery ui 1.7 styles */
+	right: -3px      !important;
+	width: 7px       !important;
+	height: 100%     !important;
+	cursor: e-resize;
+	}
+	
+.fc-event-hori .ui-resizable-w {
+	top: 0           !important;
+	left: -3px       !important;
+	width: 7px       !important;
+	height: 100%     !important;
+	cursor: w-resize;
+	}
+	
+.fc-event-hori .ui-resizable-handle {
+	_padding-bottom: 14px; /* IE6 had 0 height */
+	}
+	
+	
+	
+/* Fake Rounded Corners (for buttons and events)
+------------------------------------------------------------*/
+	
+.fc-corner-left {
+	margin-left: 1px;
+	}
+	
+.fc-corner-left .fc-button-inner,
+.fc-corner-left .fc-event-inner {
+	margin-left: -1px;
+	}
+	
+.fc-corner-right {
+	margin-right: 1px;
+	}
+	
+.fc-corner-right .fc-button-inner,
+.fc-corner-right .fc-event-inner {
+	margin-right: -1px;
+	}
+	
+.fc-corner-top {
+	margin-top: 1px;
+	}
+	
+.fc-corner-top .fc-event-inner {
+	margin-top: -1px;
+	}
+	
+.fc-corner-bottom {
+	margin-bottom: 1px;
+	}
+	
+.fc-corner-bottom .fc-event-inner {
+	margin-bottom: -1px;
+	}
+	
+	
+/* Fake Rounded Corners SPECIFICALLY FOR EVENTS
+-----------------------------------------------------------------*/
+	
+.fc-corner-left .fc-event-inner {
+	border-left-width: 1px;
+	}
+	
+.fc-corner-right .fc-event-inner {
+	border-right-width: 1px;
+	}
+	
+.fc-corner-top .fc-event-inner {
+	border-top-width: 1px;
+	}
+	
+.fc-corner-bottom .fc-event-inner {
+	border-bottom-width: 1px;
+	}
+	
+	
+	
+/* Reusable Separate-border Table
+------------------------------------------------------------*/
+
+table.fc-border-separate {
+	border-collapse: separate;
+	}
+	
+.fc-border-separate th,
+.fc-border-separate td {
+	border-width: 1px 0 0 1px;
+	}
+	
+.fc-border-separate th.fc-last,
+.fc-border-separate td.fc-last {
+	border-right-width: 1px;
+	}
+	
+.fc-border-separate tr.fc-last th,
+.fc-border-separate tr.fc-last td {
+	border-bottom-width: 1px;
+	}
+	
+.fc-border-separate tbody tr.fc-first td,
+.fc-border-separate tbody tr.fc-first th {
+	border-top-width: 0;
+	}
+	
+	
+
+/* Month View, Basic Week View, Basic Day View
+------------------------------------------------------------------------*/
+
+.fc-grid th {
+	text-align: center;
+	}
+	
+.fc-grid .fc-day-number {
+	float: right;
+	padding: 0 2px;
+	}
+	
+.fc-grid .fc-other-month .fc-day-number {
+	opacity: 0.3;
+	filter: alpha(opacity=30); /* for IE */
+	-ms-filter : "progid:DXImageTransform.Microsoft.Alpha(opacity=30)";
+	/* opacity with small font can sometimes look too faded
+	   might want to set the 'color' property instead
+	   making day-numbers bold also fixes the problem */
+	}
+	
+.fc-grid .fc-day-content {
+	clear: both;
+	padding: 2px 2px 1px; /* distance between events and day edges */
+	}
+	
+/* event styles */
+	
+.fc-grid .fc-event-time {
+	font-weight: bold;
+	}
+	
+/* right-to-left */
+	
+.fc-rtl .fc-grid .fc-day-number {
+	float: left;
+	}
+	
+.fc-rtl .fc-grid .fc-event-time {
+	float: right;
+	}
+	
+/* Agenda Week View, Agenda Day View
+------------------------------------------------------------------------*/
+
+.fc-agenda table {
+	border-collapse: separate;
+	}
+	
+.fc-agenda-days th {
+	text-align: center;
+	}
+	
+.fc-agenda .fc-agenda-axis {
+	width: 50px;
+	padding: 0 4px;
+	vertical-align: middle;
+	text-align: right;
+	white-space: nowrap;
+	font-weight: normal;
+	}
+	
+.fc-agenda .fc-day-content {
+	padding: 2px 2px 1px;
+	}
+	
+/* make axis border take precedence */
+	
+.fc-agenda-days .fc-agenda-axis {
+	border-right-width: 1px;
+	}
+	
+.fc-agenda-days .fc-col0 {
+	border-left-width: 0;
+	}
+	
+/* all-day area */
+	
+.fc-agenda-allday th {
+	border-width: 0 1px;
+	}
+	
+.fc-agenda-allday .fc-day-content {
+	min-height: 34px; /* TODO: doesnt work well in quirksmode */
+	_height: 34px;
+	}
+	
+/* divider (between all-day and slots) */
+	
+.fc-agenda-divider-inner {
+	height: 2px;
+	overflow: hidden;
+	}
+	
+.fc-widget-header .fc-agenda-divider-inner {
+	background: #eee;
+	}
+	
+/* slot rows */
+	
+.fc-agenda-slots th {
+	border-width: 1px 1px 0;
+	}
+	
+.fc-agenda-slots td {
+	border-width: 1px 0 0;
+	background: none;
+	}
+	
+.fc-agenda-slots td div {
+	height: 20px;
+	}
+	
+.fc-agenda-slots tr.fc-slot0 th,
+.fc-agenda-slots tr.fc-slot0 td {
+	border-top-width: 0;
+	}
+
+.fc-agenda-slots tr.fc-minor th,
+.fc-agenda-slots tr.fc-minor td {
+	border-top-style: dotted;
+	}
+	
+.fc-agenda-slots tr.fc-minor th.ui-widget-header {
+	*border-top-style: solid; /* doesn't work with background in IE6/7 */
+	}
+	
+/* Vertical Events
+------------------------------------------------------------------------*/
+
+.fc-event-vert {
+	border-width: 0 1px;
+	}
+	
+.fc-event-vert .fc-event-head,
+.fc-event-vert .fc-event-content {
+	position: relative;
+	z-index: 2;
+	width: 100%;
+	overflow: hidden;
+	}
+	
+.fc-event-vert .fc-event-time {
+	white-space: nowrap;
+	font-size: 10px;
+	}
+	
+.fc-event-vert .fc-event-bg { /* makes the event lighter w/ a semi-transparent overlay  */
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	opacity: .3;
+	filter: alpha(opacity=30);
+	-ms-filter : "progid:DXImageTransform.Microsoft.Alpha(opacity=30)";
+	}
+	
+.fc .ui-draggable-dragging .fc-event-bg, /* TODO: something nicer like .fc-opacity */
+.fc-select-helper .fc-event-bg {
+	display: none\9; /* for IE6/7/8. nested opacity filters while dragging don't work */
+	}
+	
+/* resizable */
+	
+.fc-event-vert .ui-resizable-s {
+	bottom: 0        !important; /* importants override pre jquery ui 1.7 styles */
+	width: 100%      !important;
+	height: 8px      !important;
+	overflow: hidden !important;
+	line-height: 8px !important;
+	font-size: 11px  !important;
+	font-family: monospace;
+	text-align: center;
+	cursor: s-resize;
+	}
+	
+.fc-agenda .ui-resizable-resizing { /* TODO: better selector */
+	_overflow: hidden;
+	}
+		
+/*
+ * ===============================================================
+ * CONTEXT MENU CORE
+ * ===============================================================
+ */
+ 
+ /*!
+* jQuery contextMenu - Plugin for simple contextMenu handling
+*
+* Version: 1.5.22
+*
+* Authors: Rodney Rehm, Addy Osmani (patches for FF)
+* Web: http://medialize.github.com/jQuery-contextMenu/
+*
+* Licensed under
+* MIT License http://www.opensource.org/licenses/mit-license
+* GPL v3 http://opensource.org/licenses/GPL-3.0
+*
+*/
+
+.context-menu-list {
+    margin:0;
+    padding:0;
+    color:#222;
+    min-width: 120px;
+    max-width: 250px;
+    display: inline-block;
+    position: absolute;
+    list-style-type: none;
+    
+    border: 1px solid #DDD;
+    background: #EEE;
+    
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+       -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        -ms-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+         -o-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+
+.context-menu-item {
+    padding: 2px 2px 2px 24px;
+    background-color: #EEE;
+    position: relative;
+    -webkit-user-select: none;
+       -moz-user-select: -moz-none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.context-menu-separator {
+    padding-bottom:0;
+    border-bottom: 1px solid #DDD;
+}
+
+.context-menu-item > label > input,
+.context-menu-item > label > textarea {
+    -webkit-user-select: text;
+       -moz-user-select: text;
+        -ms-user-select: text;
+            user-select: text;
+}
+
+.context-menu-item.hover {
+    cursor: pointer;
+    background-color: #39F;
+}
+
+.context-menu-item.disabled {
+    color: #666;
+}
+
+.context-menu-input.hover,
+.context-menu-item.disabled.hover {
+    cursor: default;
+    background-color: #EEE;
+}
+
+.context-menu-submenu:after {
+    content: ">";
+    color: #666;
+    position: absolute;
+    top: 0;
+    right: 3px;
+    z-index: 1;
+}
+
+/* icons
+    #protip:
+    In case you want to use sprites for icons (which I would suggest you do) have a look at
+    http://css-tricks.com/13224-pseudo-spriting/ to get an idea of how to implement 
+    .context-menu-item.icon:before {}
+ */
+.context-menu-item.icon { height: 24px; background-repeat: no-repeat; background-position: 4px 4px; }
+.context-menu-item.icon-edit { background-image: url("../images/icons/16/famfamfam/page_white_edit.png"); }
+.context-menu-item.icon-cut { background-image: url("../images/icons/16/famfamfam/cut.png"); }
+.context-menu-item.icon-copy { background-image: url("../images/icons/16/famfamfam/page_white_copy.png"); }
+.context-menu-item.icon-paste { background-image: url("../images/icons/16/famfamfam/page_white_paste.png"); }
+.context-menu-item.icon-delete { background-image: url("../images/icons/16/famfamfam/page_white_delete.png"); }
+.context-menu-item.icon-quit { background-image: url("../images/icons/16/famfamfam/door.png"); }
+
+/* vertically align inside labels */
+.context-menu-input > label > * { vertical-align: top; }
+
+/* position checkboxes and radios as icons */
+.context-menu-input > label > input[type="checkbox"],
+.context-menu-input > label > input[type="radio"] {
+    margin-left: -17px;
+}
+.context-menu-input > label > span {
+    margin-left: 5px;
+}
+
+.context-menu-input > label,
+.context-menu-input > label > input[type="text"],
+.context-menu-input > label > textarea,
+.context-menu-input > label > select {
+    display: block;
+    width: 100%;
+    
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+         -o-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.context-menu-input > label > textarea {
+    height: 100px;
+}
+.context-menu-item > .context-menu-list {
+    display: none;
+    /* re-positioned by js */
+    right: -5px;
+    top: 5px;
+}
+.context-menu-item.hover > .context-menu-list {
+    display: block;
+}
+.context-menu-accesskey {
+    text-decoration: underline;
+}
+
+/*
+ * ===============================================================
+ * ELRTE EDITOR CORE
+ * ===============================================================
+ */
+ 
+/*!
+ * elRTE WYSIWYG HTML-editor
+ * Version 1.3 (2011-06-23)
+ * http://elrte.org
+ *
+ * Copyright 2009-2011, Studio 42 Ltd.
+ * Licensed under a 3 clauses BSD license
+ */ 
+ 
+ a{outline:0}
+.clearfix:after{content:".";display:block;font-size:0;height:0;clear:both;visibility:hidden}
+.clearfix{display:block}
+.rounded-2{-moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px}
+.rounded-3{-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px}
+.rounded-4{-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px}
+.rounded-5{-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px}
+.rounded-6{-moz-border-radius:6px;-webkit-border-radius:5px;border-radius:6px}
+.rounded-7{-moz-border-radius:7px;-webkit-border-radius:7px;border-radius:7px}
+.rounded-left-3{-moz-border-radius-topleft:3px;-webkit-border-top-left-radius:3px;-moz-border-radius-bottomleft:3px;-webkit-border-bottom-left-radius:3px}
+.rounded-bottom-7{-moz-border-radius-bottomleft:7px;-moz-border-radius-bottomright:7px;-webkit-border-bottom-left-radius:7px;-webkit-border-bottom-right-radius:7px;border-bottom-left-radius:7px;border-bottom-right-radius:7px}
+.ui-widget{font-size:1em}
+/*.ui-dialog .ui-dialog-buttonpane button{padding:.1em .6em .2em .6em}*/
+.el-colorpicker{width:16px;height:16px;border:1px solid #ccc;position:relative;cursor:default}
+.el-palette{width:182px;border:1px solid #ccc;background:#fff;padding:3px 2px 3px 3px;z-index:99000;position:absolute;top:16px;left:0}
+.el-palette .color{float:left;width:14px;height:14px;line-height:1px;border-top:1px solid #eee;border-left:1px solid #eee}
+.el-palette .panel{border-top:1px solid #ccc;margin-top:7px;padding:5px 3px 5px 3px}
+.el-palette .panel .preview{float:right;width:18px;height:18px;border:1px solid #ccc}
+.el-palette .panel input{border:1px solid #ccc}
+.ui-widget .el-dialogform{padding:5px 3px}
+.ui-widget .el-dialogform-rtl{direction:rtl}
+.ui-widget .el-dialogform-rtl .ui-tabs-nav li{float:right}
+.el-dialogform div.tab:hover{background:transparent}
+.ui-dialog .ui-dialog-title,.ui-dialog .ui-dialog-content{font-size:1em}
+.ui-tabs .ui-tabs-nav li a{padding:.2em .7em}
+.el-dialogform .tab{padding:5px 0 12px 0;border:0}
+.el-dialogform .separator{border-top:1px solid #ccc;margin:5px 2px}
+.el-dialogform table{width:100%;border:0}
+.el-dialogform table td{padding:2px}
+.el-dialogform input,.el-dialogform textarea{border:1px solid #ccc}
+.el-dialogform select{padding:0}
+.el-dialogform .spinner{background:url(../images/loading.gif) 50% 50% no-repeat;text-align:center;width:150px;height:50px;margin:10px auto;padding-top:33px;font-weight:bold}
+.el-dialogform-error{background:#fee;color:#f00;border:2px #844 solid;padding:10px;margin-bottom:1em 0}
+.el-dialogform-message{background:#efe;color:#040;border:2px #484 solid;padding:10px;margin-bottom:1em 0}
+.el-dialogform table td .el-borderselect table{width:auto}
+.el-dialogform table td .el-borderselect table td{padding-left:0;padding-right:2px}
+.el-paddinginput{display:block;white-space:nowrap}
+.el-paddinginput input{margin:0 1px 0 0;border:1px solid #ccc}
+.el-paddinginput select{padding:0}
+.el-select{height:17px;width:110px;border:1px solid #ccc;cursor:default;position:relative}
+.el-select.hover{background-color:#eee}
+.el-select label{height:17px;line-height:17px;padding:0 5px;margin:0 12px 0 0;display:block;white-space:nowrap;overflow:hidden;background:#fff;border-right:1px solid #ccc}
+.el-select .list{border:1px solid #ccc;display:block;position:absolute;overflow:auto;background:#fff;z-index:1000}
+.el-select .list div{position:relative;padding:3px 25px 3px 7px;border-bottom:1px solid #eee}
+.el-select .list .hover{background:#efefef}
+.el-select .list .active{background-color:#c3dbef}
+.el-select .list div *{padding:0;margin:0;border:0;white-space:nowrap;display:block}
+.el-rte{font-family:Trebuchet MS,Verdana,Geneva,sans-serif;overflow:hidden}
+.el-rte.el-fullscreen{position:absolute;width:99%;top:0;left:0;margin:0;z-index:10}
+.elrte-swf-placeholder{width:1px;background:url('../images/swf.png') 0 0 no-repeat}
+.elrtetesturl{color:red;background-image:url(../images/pixel.gif)}
+.el-rte .toolbar{background-color:#eee;padding:3px 7px 2px 7px;border:1px solid #ccc;white-space:normal}
+.el-rte-rtl .toolbar{direction:rtl}
+.el-rte .toolbar ul{position:relative;display:inline-block;display:-moz-inline-stack;display:inline-block;vertical-align:top;zoom:1;*display:inline;margin:0;list-style:none;padding:0 2px 0 5px;background:url('../images/elrte-toolbar.png') -934px -2px no-repeat}
+.el-rte .toolbar ul.first{background:transparent;padding-left:0}
+.el-rte .toolbar ul li{display:inline-block;display:-moz-inline-stack;display:inline-block;height:22px;width:22px;vertical-align:top;zoom:1;*display:inline;margin:1px 1px;padding:0;background:url('../images/elrte-toolbar.png') no-repeat;border:1px solid #ccc;z-index:100}
+.el-rte .toolbar ul li.hover{border:1px solid #54b9bf}
+.el-rte .toolbar ul li.active{background-color:#c3dbef;border:1px solid #fff}
+.el-rte .toolbar ul li.disabled{opacity:alpha(0.3);opacity:.3;filter:Alpha(Opacity=30)}
+.el-rte .toolbar ul li.about{background-position:-829px -5px}
+.el-rte .toolbar ul li.save{background-position:-30px -2px}
+.el-rte .toolbar ul li.new{background-position:-55px -2px}
+.el-rte .toolbar ul li.copy{background-position:-78px -2px}
+.el-rte .toolbar ul li.css{background-position:-801px -5px}
+.el-rte .toolbar ul li.cut{background-position:-104px -2px}
+.el-rte .toolbar ul li.paste{background-position:-128px -2px}
+.el-rte .toolbar ul li.pastetext{background-position:-534px -2px}
+.el-rte .toolbar ul li.pasteformattext{background-position:-154px -2px}
+.el-rte .toolbar ul li.removeformat{background-position:-180px -2px}
+.el-rte .toolbar ul li.docstructure{background-position:-712px -4px}
+.el-rte .toolbar ul li.undo{background-position:-205px -2px}
+.el-rte .toolbar ul li.redo{background-position:-230px -2px}
+.el-rte .toolbar ul li.bold{background-position:-252px -2px}
+.el-rte .toolbar ul li.italic{background-position:-270px -2px}
+.el-rte .toolbar ul li.underline{background-position:-290px -2px}
+.el-rte .toolbar ul li.strikethrough{background-position:-149px -29px}
+.el-rte .toolbar ul li.subscript{background-position:-54px -29px}
+.el-rte .toolbar ul li.superscript{background-position:-76px -29px}
+.el-rte .toolbar ul li.justifyleft{background-position:-311px -2px}
+.el-rte .toolbar ul li.justifycenter{background-position:-335px -2px}
+.el-rte .toolbar ul li.justifyright{background-position:-360px -2px}
+.el-rte .toolbar ul li.justifyfull{background-position:-174px -29px}
+.el-rte .toolbar ul li.insertunorderedlist{background-position:-100px -29px}
+.el-rte .toolbar ul li.insertorderedlist{background-position:-124px -29px}
+.el-rte .toolbar ul li.outdent{background-position:-6px -29px}
+.el-rte .toolbar ul li.indent{background-position:-32px -29px}
+.el-rte .toolbar ul li.blockquote{background-position:-220px -30px}
+.el-rte .toolbar ul li.div{background-position:-655px -29px}
+.el-rte .toolbar ul li.stopfloat{background-position:-771px -5px}
+.el-rte .toolbar ul li.nbsp{background-position:-580px -2px}
+.el-rte .toolbar ul li.forecolor{background-position:-372px -30px}
+.el-rte .toolbar ul li.hilitecolor{background-position:-395px -30px}
+.el-rte .toolbar ul li.link{background-position:-244px -29px}
+.el-rte .toolbar ul li.unlink{background-position:-270px -29px}
+.el-rte .toolbar ul li.anchor{background-position:-296px -30px}
+.el-rte .toolbar ul li.image{background-position:-384px -2px}
+.el-rte .toolbar ul li.flash{background-position:-410px -2px}
+.el-rte .toolbar ul li.file{background-position:-436px -3px}
+.el-rte .toolbar ul li.table{background-position:-421px -30px}
+.el-rte .toolbar ul li.tableprops{background-position:-602px -29px}
+.el-rte .toolbar ul li.tbcellprops{background-position:-806px -27px}
+.el-rte .toolbar ul li.tablerm{background-position:-461px -2px}
+.el-rte .toolbar ul li.tbrowbefore{background-position:-683px -4px}
+.el-rte .toolbar ul li.tbrowafter{background-position:-654px -4px}
+.el-rte .toolbar ul li.tbrowrm{background-position:-500px -30px}
+.el-rte .toolbar ul li.tbcolbefore{background-position:-741px -27px}
+.el-rte .toolbar ul li.tbcolafter{background-position:-772px -27px}
+.el-rte .toolbar ul li.tbcolrm{background-position:-526px -30px}
+.el-rte .toolbar ul li.tbcellsmerge{background-position:-552px -30px}
+.el-rte .toolbar ul li.tbcellsplit{background-position:-629px -29px}
+.el-rte .toolbar ul li.smiley{background-position:-322px -29px}
+.el-rte .toolbar ul li.spec-text{background-position:-487px -2px}
+.el-rte .toolbar ul li.print{background-position:-509px -2px}
+.el-rte .toolbar ul li.horizontalrule{background-position:-199px -29px}
+.el-rte .toolbar ul li.fullscreen{background-position:-348px -30px}
+.el-rte .toolbar ul li.elfinder{background-position:-436px -2px}
+.el-rte .toolbar ul li.ltr{background-position:-855px -27px}
+.el-rte .toolbar ul li.rtl{background-position:-855px -3px}
+.el-rte .toolbar ul li.pagebreak{background-position:-711px -28px}
+.el-rte .workzone{border:1px solid #eee;border-top:0;height:400px;overflow:hidden}
+.el-rte.small .workzone{min-height:250px}
+.el-rte textarea{width:100%;height:100%;border:0;zoom:1;padding:0;outline:0}
+.el-rte.small textarea{min-height:250px}
+.el-rte iframe{width:100%;height:400px;display:block;outline:0;border:0 solid;padding:0;margin:0;background:#fff}
+.el-rte.small iframe{min-height:250px}
+.el-rte .statusbar{height:21px;padding:0 9px;font:11px/21px 'monaco','andale mono','lucida console',monospace;background-color:#eee;border-top:1px solid #ccc;border-top:0}
+.el-rte-rtl .statusbar{direction:rtl}
+.el-rte .tabsbar{display:block}
+.el-rte .tabsbar .tab{float:left;margin-right:2px;padding:6px 17px;font-size:.82em;font-weight:bold;color:#777;text-align:center;border:1px solid #eee;border-top:0;background:#fff;cursor:default}
+.el-rte .tabsbar div.active{background:#eee;color:#444}
+.el-rte-rtl .tabsbar .tab{float:right}
+.el-rte .toolbar ul li.el-select{height:22px;width:120px;border:1px solid #ccc;font-size:.82em;cursor:default;background-position:-475px -30px}
+.el-rte .toolbar ul li.el-select.hover{background-color:#fefefe}
+.el-rte .toolbar ul li.el-select label{height:19px;padding:3px 5px 0 5px;float:none;width:96px}
+.el-rte-paste-input{width:99%;height:250px;border:1px solid #ccc;padding:0;margin:0;outline:0}
+.el-rte .toolbar ul li div.color-indicator{width:18px;height:4px;margin:16px 0 2px 2px;background-color:#000}
+.el-rte-rtl .toolbar ul li div.color-indicator{margin:16px 2px 2px 0}
+.el-rte .toolbar .panel-format{z-index:10}
+.el-palette{top:20px}
+.el-dialogform,.el-dialogform td{font-size:1em}
+.el-dialogform select{font-size:1em}
+.ui-dialog .ui-dialog-buttonpane{padding:.4em,1em}
+.ui-dialog .ui-dialog-buttonpane button{margin:.3em .4em .1em 0;font-size:1em}
+.ui-dialog .ui-dialog-titlebar{padding:.3em 1em .3em}
+.el-dialogform label{display:block}
+.el-dialogform label input{margin-right:2px}
+.el-dialogform iframe.el-rte-preview{width:100%;height:235px;margin:0;padding:0;outline:0;border:0}
+.el-dialogform fieldset{border:1px solid #ccc;padding:0}
+.el-dialogform fieldset legend{font-size:1em;padding:.1em .5em;margin:0 0 5px 1em;border:1px solid #ccc;background-color:#eee}
+.el-dialogform p{padding:.2em .3em}
+.el-dialogform h3{color:#555;padding:1.2em 0 0 0;margin:0;font-size:1.2em}
+.el-dialogform h4{color:#555;font-size:1em;padding:0;margin:3px 9px}
+.elrte-logo{width:48px;height:46px;float:left;margin:.5em 1em;background:url('../images/elrte-toolbar.png') -880px -7px no-repeat}
+.elrte-ver{font-size:1em;padding-left:.7em}
+.elrte-copy{font-size:1em;padding-left:.3em}
+table.elrte-authors{margin-bottom:1em}
+table.elrte-authors td{border-bottom:1px solid #eee}
+.el-borderselect table{margin:0}
+.el-borderselect table td{padding:0 2px 0 0;vertical-align:middle}
+.el-borderselect input{margin:0;border:1px solid #ccc}
+.el-paddinginput{display:block;white-space:nowrap}
+.el-paddinginput input{margin:0 1px 0 0;border:1px solid #ccc}
+.el-paddinginput select{padding:0}
+.el-rte-smiley{margin:5px}
+.elrte-image-src-fm .ui-state-default{float:right}
+.el-dialogform-rtl .elrte-image-src-fm .ui-state-default{float:left}
+.elrte-image-preview{font-size:.7em;overflow:auto;height:240px;width:480px}
+
+/*
+ * ===============================================================
+ * ELFINDER CORE
+ * ===============================================================
+ */
+ 
+ /*!
+ * elFinder - file manager for web
+ * Version 2.0 beta (2011-07-10)
+ * http://elfinder.org
+ * 
+ * Copyright 2009-2011, Studio 42
+ * Licensed under a 3 clauses BSD license
+ */
+
+/* File: /home/troex/Sites/git/elfinder-2.x/css/commands.css */
+/******************************************************************/
+/*                          COMMANDS STYLES                       */
+/******************************************************************/
+
+/********************** COMMAND "HELP" ****************************/
+
+/* edit text file textarea */
+.elfinder-file-edit {
+	width:99%;
+	height:99%;
+	margin:0;
+	padding:2px;
+	border:1px solid #ccc;
+}
+
+
+/* help dialog */
+.elfinder-help { margin-bottom:.5em; }
+
+/* fix tabs */
+.elfinder-help .ui-tabs-panel { padding:.5em; }
+.elfinder-dialog .ui-tabs .ui-tabs-nav li a { padding:.2em 1em;}
+
+.elfinder-help-shortcuts {
+	height:300px;
+	padding:1em;
+	margin:.5em 0;
+	overflow:auto;
+}
+.elfinder-help-shortcut { white-space:nowrap; clear:both;}
+
+.elfinder-help-shortcut-pattern { float:left; width:160px;}
+
+.elfinder-help-logo {
+	width:100px;
+	height:96px;
+	float:left;
+	margin-right:1em;
+	background:url('../images/elfinder/logo.png') center center no-repeat;
+}
+
+.elfinder-help h3 { font-size:1.5em; margin:.2em 0 .3em 0; }
+
+.elfinder-help-separator { clear:both; padding:.5em;  }
+
+.elfinder-help-link { padding:2px; }
+
+.elfinder-help .ui-priority-secondary { font-size:1em;}
+
+.elfinder-help .ui-priority-primary { margin-bottom:7px;}
+
+.elfinder-help-team { 
+	clear: both; 
+	text-align:right; 
+	border-bottom:1px solid #ccc;
+	margin:.5em 0;
+	font-size:1em;
+}
+
+.elfinder-help-team div { float:left; }
+.elfinder-help-license { font-size:1em;}
+
+.elfinder-help-disabled {
+	font-weight:bold;
+	text-align:center;
+	margin:90px 0;
+}
+
+.elfinder-help .elfinder-dont-panic {
+	display:block;
+	border:1px solid transparent;
+	width:200px;
+	height:200px;
+	margin:30px auto;
+	text-decoration:none;
+	text-align:center;
+	position:relative;
+	background:#d90004;
+	-moz-box-shadow: 5px 5px 9px #111;
+	-webkit-box-shadow:  5px 5px 9px #111;
+	box-shadow:  5px 5px 9px #111;
+	background: -moz-radial-gradient(80px 80px, circle farthest-corner,  #d90004 35%, #960004 100%);
+	background: -webkit-gradient(radial, 80 80, 60, 80 80, 120, from(#d90004), to(#960004));
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	border-radius: 100px;
+	outline:none;
+}
+
+.elfinder-help .elfinder-dont-panic span {
+	font-size:3em;
+	font-weight:bold;
+	text-align:center;
+	color:#fff;
+	position:absolute;
+	left:0;
+	top:45px;
+}
+
+
+
+
+/* File: /home/troex/Sites/git/elfinder-2.x/css/common.css */
+/*********************************************/
+/*            COMMON ELFINDER STUFFS         */
+/*********************************************/
+
+/* common container */
+.elfinder { padding:0; position:relative; display:block; }
+
+/* right to left enviroment */
+.elfinder-rtl { text-align:right; direction:rtl; }
+
+/* nav and cwd container */
+.elfinder-workzone {
+	padding: 0;
+	position:relative;
+	overflow:hidden;
+}
+
+/* dir/file permissions and symlink markers */
+.elfinder-perms,
+.elfinder-symlink {
+	position:absolute;
+	width:16px;
+	height:16px;
+	background-image:url(../images/elfinder/toolbar.png);
+	background-repeat:no-repeat;
+	background-position:0 -528px;
+}
+
+.elfinder-symlink { }
+
+/* noaccess */
+.elfinder-na .elfinder-perms { background-position:0 -96px; }
+
+/* read only */
+.elfinder-ro .elfinder-perms { background-position:0 -64px;}
+
+/* write only */
+.elfinder-wo .elfinder-perms { background-position:0 -80px;}
+
+/* drag helper */
+.elfinder-drag-helper {
+	width:60px;
+	height:50px;
+	padding:0 0 0 25px;
+	z-index:100000;
+}
+
+/* drag helper "plus" icon */
+.elfinder-drag-helper-icon-plus {
+	position:absolute;
+	width:16px;
+	height:16px;
+	left:43px;
+	top:55px;
+	background:url('../images/elfinder/toolbar.png') 0 -544px no-repeat;
+	display:none;
+}
+
+/* show "plus" icon when ctrl/shift pressed */
+.elfinder-drag-helper-plus .elfinder-drag-helper-icon-plus { display:block; }
+
+/* files num in drag helper */
+.elfinder-drag-num {
+	position:absolute;
+	top:0;
+	left:0;
+	width:16px;
+	height:14px;
+	text-align:center;
+	padding-top:2px;
+	font-size:12px;
+	font-weight:bold;
+	color:#fff;
+	background-color:red;
+	-moz-border-radius: 8px; 
+	-webkit-border-radius: 8px; 
+	border-radius: 8px;
+}
+
+/* icon in drag helper */
+.elfinder-drag-helper .elfinder-cwd-icon { margin:0 0 0 -24px; float:left; }
+
+/* transparent overlay >_< */
+.elfinder-overlay { opacity: 0; filter:Alpha(Opacity=0); }
+
+/* panels under/below cwd (for search field etc) */
+.elfinder .elfinder-panel {
+	position:relative;
+	background-image:none;
+	padding:7px 12px;
+}
+
+
+
+
+
+
+/* File: /home/troex/Sites/git/elfinder-2.x/css/contexmenu.css */
+/* menu and submenu */
+.elfinder-contextmenu,
+.elfinder-contextmenu-sub {
+	display:none;
+	position:absolute;
+	border:1px solid #aaa;
+	background:#fff;
+	color:#555;
+	padding:4px 0;
+}
+
+/* submenu */
+.elfinder-contextmenu-sub { top:5px; }
+/* submenu in rtl/ltr enviroment */
+.elfinder-contextmenu-ltr .elfinder-contextmenu-sub { margin-left:-5px; }
+.elfinder-contextmenu-rtl .elfinder-contextmenu-sub { margin-right:-5px; }
+
+/* menu item */
+.elfinder-contextmenu-item {
+	position:relative;
+	display:block;
+	padding:4px 30px;
+	text-decoration:none;
+	white-space:nowrap;
+	cursor:default;
+}
+/* text in item */
+.elfinder-contextmenu .elfinder-contextmenu-item span { font-size:1em; display:block; }
+
+
+
+/* submenu item in rtl/ltr enviroment */
+.elfinder-contextmenu-ltr .elfinder-contextmenu-item { text-align:left; }
+.elfinder-contextmenu-rtl .elfinder-contextmenu-item { text-align:right; }
+.elfinder-contextmenu-ltr .elfinder-contextmenu-sub .elfinder-contextmenu-item { padding-left:12px;  }
+.elfinder-contextmenu-rtl .elfinder-contextmenu-sub .elfinder-contextmenu-item { padding-right:12px; }
+
+/* command/submenu icon */
+.elfinder-contextmenu-arrow,
+.elfinder-contextmenu-icon {
+	position:absolute;
+	top:50%;
+	margin-top:-8px;
+}
+
+/* command icon in rtl/ltr enviroment */
+.elfinder-contextmenu-ltr .elfinder-contextmenu-icon { left:8px; }
+.elfinder-contextmenu-rtl .elfinder-contextmenu-icon { right:8px; }
+
+/* arrow icon */
+.elfinder-contextmenu-arrow {
+	width:16px;
+	height:16px;
+	background:url('../images/elfinder/arrows-normal.png') 5px 4px no-repeat;
+}
+
+/* arrow icon in rtl/ltr enviroment */
+.elfinder-contextmenu-ltr .elfinder-contextmenu-arrow { right:5px; }
+.elfinder-contextmenu-rtl .elfinder-contextmenu-arrow { left:5px; background-position: 0 -10px; }
+
+/* disable ui border/bg image on hover */
+.elfinder-contextmenu .ui-state-hover { border:0 solid; background-image:none;}
+
+/* separator */
+.elfinder-contextmenu-separator {
+	height:0px;
+	border-top:1px solid #ccc;
+	margin:0 1px;
+}
+
+/* File: /home/troex/Sites/git/elfinder-2.x/css/cwd.css */
+/******************************************************************/
+/*                     CURRENT DIRECTORY STYLES                   */
+/******************************************************************/
+
+/* container */
+.elfinder-cwd { 
+	overflow: auto;
+	position:relative;
+	font-size:1em;
+	cursor:default;
+/*	border:2px solid transparent;*/
+	padding:2px;
+	margin:0;
+/*	border:2px solid red;*/
+/*	margin-right:0 ;*/
+}
+
+/* container active on dropenter */
+
+.elfinder .elfinder-cwd.elfinder-droppable-active {
+	padding:0;
+	border:2px solid #8cafed;
+}
+
+/************************** ICONS VIEW ********************************/
+
+/* file container */
+
+.elfinder-cwd-view-icons .elfinder-cwd-file {
+	width:80px;
+	height:80px;
+	padding-bottom:2px;
+	cursor:default;
+	overflow:hidden;
+/*	font-family:verdana, trebuchet ms, arial,sans-serif;*/
+}
+
+/* ltr/rtl enviroment */
+.elfinder-ltr .elfinder-cwd-view-icons .elfinder-cwd-file { float:left;  margin:0 3px 3px 0; }
+.elfinder-rtl .elfinder-cwd-view-icons .elfinder-cwd-file { float:right; margin:0 0 3px 3px; }
+
+/* remove ui hover class border */
+.elfinder-cwd-view-icons .elfinder-cwd-file .ui-state-hover { border:0 solid; }
+
+/* icon wrapper to create selected highlight around icon */
+.elfinder-cwd-view-icons .elfinder-cwd-file-wrapper {
+	width:52px;
+	height:52px;
+	margin:1px auto 1px auto;
+	padding:2px;
+	position:relative;
+}
+
+/* file name place */
+.elfinder-cwd-view-icons .elfinder-cwd-filename {
+	text-align:center;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+    -o-text-overflow:ellipsis;
+	margin:3px 1px 0 1px;
+	padding:1px;
+	-moz-border-radius: 8px; 
+	-webkit-border-radius: 8px; 
+	border-radius: 8px;
+}
+
+/* permissions/symlink markers */
+.elfinder-cwd-view-icons .elfinder-perms { bottom:4px; right:2px; }
+.elfinder-cwd-view-icons .elfinder-symlink { bottom:6px; left:0px; }
+
+/* icon/thumbnail */
+.elfinder-cwd-icon {
+	display:block;
+	width:48px;
+	height:48px;
+	margin:0 auto;
+	background: url('../images/elfinder/icons-big.png') 0 0 no-repeat;
+	-moz-background-clip: padding; 
+	-webkit-background-clip: padding-box; 
+	background-clip: padding-box;
+}
+
+/* "opened folder" icon on dragover */
+.elfinder-cwd .elfinder-droppable-active .elfinder-cwd-icon { background-position: 0 -100px; }
+
+/* mimetypes icons */
+.elfinder-cwd-icon-directory         { background-position:0 -50px; }
+.elfinder-cwd-icon-application       { background-position:0 -150px; }
+.elfinder-cwd-icon-x-empty, 
+.elfinder-cwd-icon-text              { background-position:0  -200px; }
+.elfinder-cwd-icon-image, 
+.elfinder-cwd-icon-vnd-adobe-photoshop, 
+.elfinder-cwd-icon-postscript        { background-position:0 -250px;  }
+.elfinder-cwd-icon-audio             { background-position:0 -300px; }
+.elfinder-cwd-icon-video,
+.elfinder-cwd-icon-flash-video       { background-position:0 -350px; }
+.elfinder-cwd-icon-rtf, 
+.elfinder-cwd-icon-rtfd              { background-position: 0 -401px; }
+.elfinder-cwd-icon-pdf               { background-position: 0 -450px; }
+.elfinder-cwd-icon-vnd-ms-office,
+.elfinder-cwd-icon-msword,
+.elfinder-cwd-icon-vnd-ms-word,
+.elfinder-cwd-icon-vnd-oasis-opendocument-text,
+.elfinder-cwd-icon-ms-excel,
+.elfinder-cwd-icon-vnd-ms-excel,
+.elfinder-cwd-icon-vnd-oasis-opendocument-spreadsheet,
+.elfinder-cwd-icon-vnd-ms-powerpoint,
+.elfinder-cwd-icon-vnd-oasis-opendocument-presentation { background-position: 0 -500px; }
+.elfinder-cwd-icon-html              { background-position: 0 -550px; }
+.elfinder-cwd-icon-css               { background-position: 0 -600px; }
+.elfinder-cwd-icon-javascript, 
+.elfinder-cwd-icon-x-javascript      { background-position: 0 -650px; }
+.elfinder-cwd-icon-x-perl            { background-position: 0 -700px; }
+.elfinder-cwd-icon-x-python          { background-position: 0 -750px; }
+.elfinder-cwd-icon-x-ruby            { background-position: 0 -800px; }
+.elfinder-cwd-icon-x-sh, 
+.elfinder-cwd-icon-x-shellscript     { background-position: 0 -850px; }
+.elfinder-cwd-icon-x-c,
+.elfinder-cwd-icon-x-csrc,
+.elfinder-cwd-icon-x-chdr,
+.elfinder-cwd-icon-x-c--, 
+.elfinder-cwd-icon-x-c--src,
+.elfinder-cwd-icon-x-c--hdr, 
+.elfinder-cwd-icon-x-java, 
+.elfinder-cwd-icon-x-java-source     { background-position: 0 -900px; }
+.elfinder-cwd-icon-x-php             { background-position: 0 -950px; }
+.elfinder-cwd-icon-xml               { background-position: 0 -1000px; }
+.elfinder-cwd-icon-zip, 
+.elfinder-cwd-icon-x-7z-compressed   { background-position: 0 -1050px; }
+.elfinder-cwd-icon-x-gzip,  
+.elfinder-cwd-icon-x-tar             { background-position: 0 -1100px; }
+.elfinder-cwd-icon-x-bzip, 
+.elfinder-cwd-icon-x-bzip2           { background-position: 0 -1150px; }
+.elfinder-cwd-icon-x-rar, 
+.elfinder-cwd-icon-x-rar-compressed  { background-position: 0 -1200px; }
+.elfinder-cwd-icon-x-shockwave-flash { background-position: 0 -1250px; }
+.elfinder-cwd-icon-group             { background-position:0 -1300px;}
+
+/* textfield inside icon */
+.elfinder-cwd input { width:100%; border:0px solid; margin:0; padding:0; }
+.elfinder-cwd-view-icons input {text-align:center; }
+.elfinder-cwd-view-icons { text-align:center; }
+
+
+/************************************  LIST VIEW ************************************/
+
+.elfinder-cwd-view-list { padding:0 0 4px 0; }
+
+.elfinder-cwd table { width:100%; border-collapse:collapse; border:0 solid; margin:0; }
+.elfinder .elfinder-cwd table thead tr { border-left:0 solid; border-top:0 solid; border-right:0 solid; }
+.elfinder .elfinder-cwd table thead td { font-size:1em;}
+.elfinder .elfinder-cwd table td { 
+	padding:3px 12px;
+	white-space:nowrap;
+	overflow:hidden;
+	text-align:right;
+	cursor:default;
+	border:0 solid;
+	
+}
+
+.elfinder-ltr .elfinder-cwd table td { text-align:right; }
+.elfinder-ltr .elfinder-cwd table td:first-child { text-align:left; }
+.elfinder-rtl .elfinder-cwd table td { text-align:left; }
+.elfinder-rtl .elfinder-cwd table td:first-child { text-align:right; }
+
+.elfinder-odd-row { background:#eee; }
+
+/* filename container */
+.elfinder-cwd-view-list .elfinder-cwd-file-wrapper { width:97%; position:relative; }
+/* filename container in ltr/rtl enviroment */
+.elfinder-ltr .elfinder-cwd-view-list .elfinder-cwd-file-wrapper { padding-left:23px;  }
+.elfinder-rtl .elfinder-cwd-view-list .elfinder-cwd-file-wrapper { padding-right:23px; }
+
+/* premissions/symlink marker */
+.elfinder-cwd-view-list .elfinder-perms, 
+.elfinder-cwd-view-list .elfinder-symlink { top:50%; margin-top:-6px; }
+/* markers in ltr/rtl enviroment */
+.elfinder-ltr .elfinder-cwd-view-list .elfinder-perms   { left:7px;  }
+.elfinder-ltr .elfinder-cwd-view-list .elfinder-symlink { left:-7px; }
+
+/* file icon */
+.elfinder-cwd-view-list td .elfinder-cwd-icon {
+	width:16px;
+	height:16px;
+	position:absolute;
+	top:50%;
+	margin-top:-8px;
+	background-image:url(../images/elfinder/icons-small.png);
+}
+/* icon in ltr/rtl enviroment */
+.elfinder-ltr .elfinder-cwd-view-list .elfinder-cwd-icon { left:0;  }
+.elfinder-rtl .elfinder-cwd-view-list .elfinder-cwd-icon { right:0; }
+
+
+
+/* File: /home/troex/Sites/git/elfinder-2.x/css/dialog.css */
+/*********************************************/
+/*                DIALOGS STYLES             */
+/*********************************************/
+
+/* common dialogs class */
+.std42-dialog {	padding:0; }
+
+/* titlebar */
+.std42-dialog .ui-dialog-titlebar {
+	border-left:0 solid;
+	border-top:0 solid;
+	border-right:0 solid;
+	-moz-border-radius-bottomleft: 0; 
+	-webkit-border-bottom-left-radius: 0; 
+	border-bottom-left-radius: 0; 
+	-moz-border-radius-bottomright: 0; 
+	-webkit-border-bottom-right-radius: 0; 
+	border-bottom-right-radius: 0; 
+	font-size:1em;
+	padding:.2em 1em;
+}
+
+.std42-dialog .ui-dialog-titlebar-close,
+.std42-dialog .ui-dialog-titlebar-close:hover { padding:1px; }
+
+.elfinder-rtl .elfinder-dialog .ui-dialog-titlebar { text-align:right; }
+.elfinder-rtl .elfinder-dialog .ui-dialog-titlebar .ui-dialog-titlebar-close { right:auto; left:.3em; }
+
+/* content */
+.std42-dialog .ui-dialog-content {
+	padding:.3em .5em;
+	font-size:1em;
+}
+
+/* buttons */
+.std42-dialog .ui-dialog-buttonpane {
+	border:0 solid;
+	margin:0;
+	padding:.5em .7em;
+	font-size:1em;
+}
+
+.std42-dialog .ui-dialog-buttonpane button { margin:0 0 0 .4em;	padding:0; outline:0 solid; }
+.std42-dialog .ui-dialog-buttonpane button span { padding:2px 9px; }
+
+.elfinder-dialog .ui-resizable-e, 
+.elfinder-dialog .ui-resizable-s { width:0; height:0;}
+
+.std42-dialog .ui-button input { cursor: pointer;}
+
+/* error/notify/confirm dialogs icon */
+.elfinder-dialog-icon {
+	position:absolute;
+	width:32px;
+	height:32px;
+	left:12px;
+	top:50%;
+	margin-top:-15px;
+	background:url("../images/elfinder/dialogs.png") 0 0 no-repeat;
+}
+
+.elfinder-rtl .elfinder-dialog-icon { left:auto; right:12px;}
+
+
+
+/*********************** ERROR DIALOG **************************/
+
+.elfinder-error .ui-dialog-content,
+.elfinder-dialog-confirm .ui-dialog-content { padding-left: 56px; min-height:35px; }
+
+.elfinder-rtl .elfinder-error .ui-dialog-content,
+.elfinder-rtl .elfinder-dialog-confirm .ui-dialog-content { padding-left:0; padding-right: 56px; }
+
+/*********************** NOTIFY DIALOG **************************/
+
+.elfinder-dialog-notify .ui-dialog-titlebar-close { display:none; }
+.elfinder-dialog-notify .ui-dialog-content { padding:0; }
+
+/* one notification container */
+.elfinder-notify {
+	border-bottom:1px solid #ccc;
+	position:relative;
+	padding:.5em;
+	
+	text-align:center;
+	overflow:hidden;
+}
+
+.elfinder-ltr .elfinder-notify { padding-left:30px; }
+.elfinder-rtl .elfinder-notify { padding-right:30px; }
+
+.elfinder-notify:last-child { border:0 solid; }
+
+/* progressbar */
+.elfinder-notify-progressbar {
+	width:180px;
+	height:8px;
+	border:1px solid #aaa;
+	background:#f5f5f5;
+	margin:5px auto;
+	overflow:hidden;
+}
+
+.elfinder-notify-progress {
+	width:100%;
+	height:8px;
+	background:url(../images/elfinder/progress.gif) center center repeat-x;
+}
+
+.elfinder-notify-progressbar, .elfinder-notify-progress {
+	-moz-border-radius: 2px; 
+	-webkit-border-radius: 2px; 
+	border-radius: 2px;
+}
+
+/* icons */
+.elfinder-dialog-icon-open, 
+.elfinder-dialog-icon-file        { background-position: 0 -225px; }
+.elfinder-dialog-icon-reload      { background-position: 0 -225px; }
+.elfinder-dialog-icon-mkdir       { background-position: 0 -64px; }
+.elfinder-dialog-icon-mkfile      { background-position: 0 -96px; }
+.elfinder-dialog-icon-copy,
+.elfinder-dialog-icon-prepare,
+.elfinder-dialog-icon-move        { background-position: 0 -128px;}
+.elfinder-dialog-icon-upload      { background-position: 0 -160px; }
+.elfinder-dialog-icon-rm          { background-position: 0 -192px; }
+.elfinder-dialog-icon-download    { background-position: 0 -260px; }
+.elfinder-dialog-icon-save        { background-position: 0 -295px; }
+.elfinder-dialog-icon-rename      { background-position: 0 -330px; }
+.elfinder-dialog-icon-archive,
+.elfinder-dialog-icon-extract     { background-position: 0 -365px; }
+.elfinder-dialog-icon-search      { background-position: 0 -402px; }
+
+/*********************** CONFIRM DIALOG **************************/
+
+.elfinder-dialog-confirm-applyall {	padding-top:3px; }
+
+.elfinder-dialog-confirm .elfinder-dialog-icon { background-position:0 -32px; }
+
+
+
+/*********************** FILE INFO DIALOG **************************/
+
+
+.elfinder-info-title .elfinder-cwd-icon {
+	float:left;
+	width:48px;
+	height:48px;
+	margin-right:1em;
+}
+
+.elfinder-info-title strong { display:block; padding:.3em 0 .5em 0; }
+
+.elfinder-info-tb {
+	min-width:200px;
+	border:0 solid;
+	margin:1em .2em 1em .2em;
+	font-size:1em;
+}
+
+.elfinder-info-tb td { white-space:nowrap; padding:2px; }
+
+.elfinder-info-tb tr td:first-child { text-align:right;  }
+
+.elfinder-info-tb span { float:left;}
+.elfinder-info-tb a { outline: none; text-decoration:underline; }
+.elfinder-info-tb a:hover { text-decoration:none; }
+.elfinder-info-spinner { 
+	width:14px;
+	height:14px;
+	float:left;
+	background: url("../images/elfinder/spinner-mini.gif") center center no-repeat;
+	margin:0 5px; 
+}
+
+/*********************** UPLOAD DIALOG **************************/
+
+.elfinder-upload-dropbox {
+	font-size:1.2em;
+	text-align:center;
+	padding:2em 0;
+	border:3px dashed #aaa;
+}
+
+.elfinder-upload-dropbox.ui-state-hover {
+	background:#dfdfdf;
+	border:3px dashed #555;
+}
+
+.elfinder-upload-dialog-or {
+	font-size:1.2em;
+	margin:.3em 0;
+	text-align:center;
+}
+
+.elfinder-upload-dialog-wrapper { text-align:center; }
+
+.elfinder-upload-dialog-wrapper .ui-button { position:relative;	overflow:hidden; }
+
+.elfinder-upload-dialog-wrapper .ui-button form {
+	position:absolute;
+	right:0;
+	top:0;
+	opacity: 0; filter:Alpha(Opacity=0);
+}
+
+.elfinder-upload-dialog-wrapper .ui-button form input {
+	padding:0 20px;
+	font-size:3em;
+
+}
+
+
+/* dialog for elFinder itself */
+.dialogelfinder .dialogelfinder-drag {
+	border-left:0 solid;
+	border-top:0 solid;
+	border-right:0 solid;
+	font-weight:normal;
+	font-size:1em;
+	padding:2px 12px;
+	cursor:move;
+	position:relative;
+	text-align:left;
+}
+
+.elfinder-rtl .dialogelfinder-drag { text-align:right;}
+
+.dialogelfinder-drag-close {
+	position: absolute;
+	top:50%;
+	margin-top:-8px;
+}
+
+.elfinder-ltr .dialogelfinder-drag-close { right:12px; }
+.elfinder-rtl .dialogelfinder-drag-close { left:12px; }
+
+
+
+/* File: /home/troex/Sites/git/elfinder-2.x/css/navbar.css */
+/*********************************************/
+/*              NAVIGATION PANEL             */
+/*********************************************/
+
+/* container */
+.elfinder .elfinder-navbar {
+	width:230px;
+	padding:3px 5px;
+	font-size:1em;
+	background-image:none;
+	border-top:0 solid;
+	border-bottom:0 solid;
+	overflow:auto;
+	display:none;
+/*	border:1px solid #111;*/
+}
+
+
+/* ltr/rtl enviroment */
+.elfinder-ltr .elfinder-navbar { float:left;  border-left:0 solid; padding-right:10px; }
+.elfinder-rtl .elfinder-navbar { float:right; border-right:0 solid; padding-left:10px; }
+
+/* folders tree container */
+.elfinder-tree { display:table; width:100%; margin: 0 0 .5em 0; }
+
+/* one folder wrapper */
+.elfinder-navbar-wrapper, .elfinder-place-wrapper { }
+
+/* folder */
+.elfinder-navbar-dir { 
+	position:relative; 
+	display:block; 
+	white-space:nowrap;
+	padding:3px 12px;
+	margin: 0;
+	outline:0 solid;
+	border:1px solid transparent;
+	cursor:default;
+	
+}
+
+/* ltr/rtl enviroment */
+.elfinder-ltr .elfinder-navbar-dir { padding-left:35px; }
+.elfinder-rtl .elfinder-navbar-dir { padding-right:35px; }
+
+/* arrow before icon */
+.elfinder-navbar-arrow {
+	width:12px;
+	height:14px;
+	position:absolute;
+	display:none;
+	top:50%;
+	margin-top:-8px;
+	background-image:url("../images/elfinder/arrows-normal.png");
+	background-repeat:no-repeat;
+/*	border:1px solid #111;*/
+}
+
+.ui-state-active .elfinder-navbar-arrow { background-image:url("../images/elfinder/arrows-active.png"); }
+
+/* collapsed/expanded arrow view */
+.elfinder-navbar-collapsed .elfinder-navbar-arrow { display:block; }
+
+/* arrow ltr/rtl enviroment */
+.elfinder-ltr .elfinder-navbar-collapsed .elfinder-navbar-arrow { background-position: 0 4px; left:0; }
+.elfinder-rtl .elfinder-navbar-collapsed .elfinder-navbar-arrow { background-position: 0 -10px; right:0;  }
+.elfinder-ltr .elfinder-navbar-expanded  .elfinder-navbar-arrow,
+.elfinder-rtl .elfinder-navbar-expanded  .elfinder-navbar-arrow { background-position:0 -21px; }
+
+
+/* folder icon */
+.elfinder-navbar-icon {
+	width:16px;
+	height:16px;
+	position:absolute;
+	top:50%;
+	margin-top:-8px;
+	background-image:url("../images/elfinder/toolbar.png");
+	background-repeat:no-repeat;
+	background-position:0 -16px;
+}
+
+/* ltr/rtl enviroment */
+.elfinder-ltr .elfinder-navbar-icon { left:14px; }
+.elfinder-rtl .elfinder-navbar-icon { right:14px; }
+
+/* root folder */
+.elfinder-tree   .elfinder-navbar-root .elfinder-navbar-icon { background-position:0 0; }
+.elfinder-places .elfinder-navbar-root .elfinder-navbar-icon { background-position:0 -48px; }
+
+/* icon in active/hove/dropactive state */
+.ui-state-active           .elfinder-navbar-icon, 
+.elfinder-droppable-active .elfinder-navbar-icon, 
+.ui-state-hover            .elfinder-navbar-icon { background-position:0 -32px; }
+
+/* subdirs tree */
+.elfinder-navbar-subtree { display:none; }
+
+/* ltr/rtl enviroment */
+.elfinder-ltr .elfinder-navbar-subtree { margin-left:12px; }
+.elfinder-rtl .elfinder-navbar-subtree { margin-right:12px; }
+
+
+/* spinner */
+.elfinder-navbar-spinner { 
+	width:14px;
+	height:14px;
+	position:absolute;
+	display:block;
+	top:50%;
+	margin-top:-7px;
+	background: url("../images/elfinder/spinner-mini.gif") center center no-repeat;
+}
+/* spinner ltr/rtl enviroment */
+.elfinder-ltr .elfinder-navbar-spinner { left:0;  margin-left:-2px; }
+.elfinder-rtl .elfinder-navbar-spinner { right:0; margin-right:-2px; }
+
+/* permissions marker */
+.elfinder-navbar .elfinder-perms { top:50%; margin-top:-8px; }
+
+/* permissions/symlink markers ltr/rtl enviroment */
+.elfinder-ltr .elfinder-navbar .elfinder-perms   { left:  18px; }
+.elfinder-rtl .elfinder-navbar .elfinder-perms   { right: 18px; }
+.elfinder-ltr .elfinder-navbar .elfinder-symlink { left:  8px; }
+.elfinder-rtl .elfinder-navbar .elfinder-symlink { right: 8px; }
+
+/* resizable */
+.elfinder-navbar .ui-resizable-handle { width:12px; background:transparent url('../images/elfinder/resize.png') center center no-repeat; }
+.elfinder-ltr .elfinder-navbar .ui-resizable-handle { right:0; }
+.elfinder-rtl .elfinder-navbar .ui-resizable-handle { left:0;  }
+.elfinder-nav-handle-icon {
+	position:absolute;
+	top:50%;
+	margin:-8px 2px 0 2px;
+	opacity: .5; filter:Alpha(Opacity=50);
+}
+
+.elfinder-places { border:1px solid transparent;}
+.elfinder-places.elfinder-droppable-active {
+	border:1px solid #8cafed;
+}
+
+.elfinder-place-drag .elfinder-navbar-dir { font-size:1em;}
+
+
+
+
+/* File: /home/troex/Sites/git/elfinder-2.x/css/places.css */
+
+/* File: /home/troex/Sites/git/elfinder-2.x/css/quicklook.css */
+/* quicklook window */
+.elfinder-quicklook {
+	position:absolute;
+	background:url("../images/elfinder/quicklook-bg.png");
+	display:none;
+	overflow:hidden;
+	border-radius:7px;
+	-moz-border-radius:7px;
+	-webkit-border-radius:7px;
+	padding:20px 0 40px 0;
+}
+
+.elfinder-quicklook .ui-resizable-se { 
+	width:14px;
+	height:14px;
+	right:5px;
+	bottom:3px;
+	background:url("../images/elfinder/toolbar.png") 0 -496px no-repeat;}
+
+/* quicklook fullscreen window */
+.elfinder-quicklook-fullscreen {
+	border-radius:0;
+	-moz-border-radius:0;
+	-webkit-border-radius:0;
+	-webkit-background-clip: padding-box;
+/*	background-clip:padding-box;*/
+	padding:0;
+	background:#000;
+	z-index:90000;
+	display:block;
+}
+/* hide titlebar in fullscreen mode */
+.elfinder-quicklook-fullscreen .elfinder-quicklook-titlebar { display:none; }
+
+/* hide preview border in fullscreen mode */
+.elfinder-quicklook-fullscreen .elfinder-quicklook-preview { border:0 solid ;}
+
+/* quicklook titlebar */
+.elfinder-quicklook-titlebar {
+	text-align:center;
+	background:#777;
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:20px;
+	-moz-border-radius-topleft: 7px; 
+	-webkit-border-top-left-radius: 7px; 
+	border-top-left-radius: 7px;
+	-moz-border-radius-topright: 7px; 
+	-webkit-border-top-right-radius: 7px; 
+	border-top-right-radius: 7px;
+	cursor:move;
+}
+
+/* window title */
+.elfinder-quicklook-title { 
+	font-size:1em;
+	color:#fff; 
+	white-space:nowrap; 
+	overflow:hidden;
+	padding:2px 0;
+}
+
+/* icon "close" in titlebar */
+.elfinder-quicklook-titlebar .ui-icon { 
+	position:absolute;
+	left : 4px;
+	top:50%;
+	margin-top:-8px;
+	width:16px;
+	height:16px;
+	cursor:default;
+}
+
+/* main part of quicklook window */
+.elfinder-quicklook-preview {
+	overflow:hidden;
+	position:relative;
+	border:0 solid;
+	border-left:1px solid transparent;
+	border-right:1px solid transparent;
+	height:100%;
+}
+
+/* wrapper for file info/icon */
+.elfinder-quicklook-info-wrapper {
+	position:absolute;
+	width:100%;
+	left:0;
+	top:50%;
+	margin-top:-50px;
+}
+
+/* file info */
+.elfinder-quicklook-info {
+	padding: 0 12px 0 112px;
+}
+
+/* file name in info */
+.elfinder-quicklook-info .elfinder-quicklook-info-data:first-child { 
+	color:#fff; 
+	font-weight:bold; 
+	padding-bottom:.5em; 
+}
+
+/* other data in info */
+.elfinder-quicklook-info-data {
+	font-size:1em;
+	padding-bottom:.2em;
+	color:#fff;
+}
+
+
+/* file icon */
+.elfinder-quicklook .elfinder-cwd-icon {
+	position:absolute;
+	left:32px;
+	top:50%;
+	margin-top:-20px;
+}
+
+/* image in preview */
+.elfinder-quicklook-preview img {
+	display:block;
+	margin:0 auto;
+}
+
+/* navigation bar on quicklook window bottom */
+.elfinder-quicklook-navbar {
+	position:absolute;
+	left:50%;
+	bottom:4px;
+	width:140px;
+	height:32px;
+	padding:0px;
+	margin-left:-70px;
+	border:1px solid transparent;
+	border-radius:19px;
+	-moz-border-radius:19px;
+	-webkit-border-radius:19px;
+}
+
+/* navigation bar in fullscreen mode */
+.elfinder-quicklook-fullscreen .elfinder-quicklook-navbar {
+	width:188px;
+	margin-left:-94px;
+	padding:5px;
+	border:1px solid #eee;
+	background:#000;
+}
+
+/* show close icon in fullscreen mode */
+.elfinder-quicklook-fullscreen .elfinder-quicklook-navbar-icon-close,
+.elfinder-quicklook-fullscreen .elfinder-quicklook-navbar-separator {
+	display:inline;
+}
+
+/* icons in navbar */
+.elfinder-quicklook-navbar-icon {
+	width:32px;
+	height:32px;
+	margin:0 7px;
+	float:left;
+	background:url("../images/elfinder/quicklook-icons.png") 0 0 no-repeat;
+	
+}
+
+/* fullscreen icon */
+.elfinder-quicklook-navbar-icon-fullscreen {
+	background-position:0 -64px;
+}
+
+/* exit fullscreen icon */
+.elfinder-quicklook-navbar-icon-fullscreen-off {
+	background-position:0 -96px;
+}
+
+/* prev file icon */
+.elfinder-quicklook-navbar-icon-prev {
+	background-position:0 0;
+}
+
+/* next file icon */
+.elfinder-quicklook-navbar-icon-next {
+	background-position:0 -32px;
+}
+
+/* close icon */
+.elfinder-quicklook-navbar-icon-close {
+	background-position:0 -128px;
+	display:none;
+}
+
+/* icons separator */
+.elfinder-quicklook-navbar-separator {
+	width:1px;
+	height:32px;
+	float:left;
+	border-left:1px solid #fff;
+	display:none;
+}
+
+/* text files preview wrapper */
+.elfinder-quicklook-preview-text-wrapper {
+	width: 100%;
+	height:100%;
+	background:#fff;
+	color:#222;
+	font-size:1em;
+	overflow:auto;
+}
+
+/* text preview */
+pre.elfinder-quicklook-preview-text {
+	margin:0;
+	padding:3px 9px;
+}
+
+/* html/pdf preview */
+.elfinder-quicklook-preview-html,
+.elfinder-quicklook-preview-pdf {
+	width:100%;
+	height:100%;
+	background:#fff;
+	border:0 solid;
+	margin:0;
+}
+
+/* swf preview container */
+.elfinder-quicklook-preview-flash {
+	width:100%;
+	height:100%;
+}
+
+/* audio preview container */
+.elfinder-quicklook-preview-audio {
+	width:100%;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+
+/* audio preview using embed */
+embed.elfinder-quicklook-preview-audio {
+	height:30px;
+	background:transparent;
+}
+
+/* video preview container */
+.elfinder-quicklook-preview-video {
+	width:100%;
+	height:100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* File: /home/troex/Sites/git/elfinder-2.x/css/statusbar.css */
+/******************************************************************/
+/*                           STATUSBAR STYLES                     */
+/******************************************************************/
+
+
+/* statusbar container */
+.elfinder-statusbar { 
+	text-align:center; 
+	font-weight:normal;
+	padding:.2em .5em;
+	
+	border-right:0 solid;
+	border-bottom:0 solid;
+	border-left:0 solid;
+}
+
+.elfinder-statusbar a { text-decoration:none; }
+
+.elfinder-statusbar div { font-size:1em; }
+
+/* path in statusbar */
+.elfinder-ltr .elfinder-path { float:left;  }
+.elfinder-rtl .elfinder-path { float:right; }
+
+/* total/selected size in statusbar */
+.elfinder-ltr .elfinder-stat-size { float:right; }
+.elfinder-rtl .elfinder-stat-size { float:left; }
+
+/* File: /home/troex/Sites/git/elfinder-2.x/css/toolbar.css */
+/*********************************************/
+/*               TOOLBAR STYLES              */
+/*********************************************/
+/* toolbar container */
+.elfinder-toolbar { 
+	padding:4px 0 3px 0; 
+	border-left:0 solid; 
+	border-top:0 solid; 
+	border-right:0 solid; 
+}
+
+/* container for button's group */
+.elfinder-buttonset {
+	margin: 1px 4px;
+	float:left;
+	background:transparent;
+	padding:0;
+	-moz-border-radius: 4px; 
+	-webkit-border-radius: 4px; 
+	border-radius: 4px;
+}
+
+/*.elfinder-buttonset:first-child { margin:0; }*/
+
+/* button */
+.elfinder .elfinder-button {
+	width:16px;
+	height:16px;
+	margin:0;
+	padding:4px;
+	float:left;
+	overflow:hidden;
+	position:relative;
+	border:0 solid;
+}
+
+.elfinder .ui-icon-search { cursor:pointer;}
+
+.elfinder-button:first-child {
+	-moz-border-radius-topleft: 4px; 
+	-webkit-border-top-left-radius: 4px; 
+	border-top-left-radius: 4px;
+	-moz-border-radius-bottomleft: 4px; 
+	-webkit-border-bottom-left-radius: 4px; 
+	border-bottom-left-radius: 4px;
+}
+
+.elfinder-button:last-child {
+	-moz-border-radius-topright: 4px; 
+	-webkit-border-top-right-radius: 4px; 
+	border-top-right-radius: 4px;
+	-moz-border-radius-bottomright: 4px; 
+	-webkit-border-bottom-right-radius: 4px; 
+	border-bottom-right-radius: 4px;
+}
+
+/* separator between buttons, required for berder between button with ui color */
+.elfinder-toolbar-button-separator {
+	float:left;
+	padding:0;
+	height:24px;
+	border-top:0 solid;
+	border-right:0 solid;
+	border-bottom:0 solid;
+	width:0;
+}
+
+/* change icon opacity^ not button */
+.elfinder .elfinder-button.ui-state-disabled { opacity:1; filter:Alpha(Opacity=100);}
+.elfinder .elfinder-button.ui-state-disabled .elfinder-button-icon { opacity:.4; filter:Alpha(Opacity=40);}
+
+/* rtl enviroment */
+.elfinder-rtl .elfinder-buttonset { float:right; }
+
+/* icon inside button */
+.elfinder-button-icon {
+	width:16px;
+	height:16px;
+	display:block;
+	background:url('../images/elfinder/toolbar.png')  no-repeat;
+}
+
+/* buttons icons */
+.elfinder-button-icon-home      { background-position: 0 0;  }
+.elfinder-button-icon-back      { background-position: 0 -112px; }
+.elfinder-button-icon-forward   { background-position: 0 -128px; }
+.elfinder-button-icon-up        { background-position: 0 -144px; }
+.elfinder-button-icon-reload    { background-position: 0 -160px; }
+.elfinder-button-icon-open      { background-position: 0 -176px; } 
+.elfinder-button-icon-mkdir     { background-position: 0 -192px; }
+.elfinder-button-icon-mkfile    { background-position: 0 -208px; }
+.elfinder-button-icon-rm        { background-position: 0 -224px; }
+.elfinder-button-icon-copy      { background-position: 0 -240px; }
+.elfinder-button-icon-cut       { background-position: 0 -256px; }
+.elfinder-button-icon-paste     { background-position: 0 -272px; }
+.elfinder-button-icon-getfile   { background-position: 0 -288px; }
+.elfinder-button-icon-duplicate { background-position: 0 -304px; }
+.elfinder-button-icon-rename    { background-position: 0 -320px; }
+.elfinder-button-icon-edit      { background-position: 0 -336px; }
+.elfinder-button-icon-quicklook { background-position: 0 -352px; }
+.elfinder-button-icon-upload    { background-position: 0 -368px; }
+.elfinder-button-icon-download  { background-position: 0 -384px; }
+.elfinder-button-icon-info      { background-position: 0 -400px; }
+.elfinder-button-icon-extract   { background-position: 0 -416px; }
+.elfinder-button-icon-archive   { background-position: 0 -432px; }
+.elfinder-button-icon-view      { background-position: 0 -448px; }
+.elfinder-button-icon-view-list { background-position: 0 -464px; }
+.elfinder-button-icon-help      { background-position: 0 -480px; }
+.elfinder-button-icon-resize    { background-position: 0 -512px; }
+
+
+/* button with dropdown menu*/
+.elfinder .elfinder-menubutton { overflow:visible; }
+
+
+
+/* menu */
+.elfinder-button-menu {
+	position:absolute;
+	left:0;
+	top:26px;
+	padding:3px 0;
+}
+
+/* menu item */
+.elfinder-button-menu-item {
+	white-space:nowrap;
+	font-size:1em;
+	cursor:default;
+	padding:5px 19px;
+}
+
+/* fix hover ui class */
+.elfinder-button-menu .ui-state-hover { border:0 solid; }
+
+/* hack for upload button */
+.elfinder-button form {
+	position:absolute;
+	top:0;
+	right:0;
+	opacity: 0; filter:Alpha(Opacity=0);
+	cursor: pointer;
+}
+
+.elfinder .elfinder-button form input { background:transparent; cursor: default;}
+
+/* search "button" */
+.elfinder .elfinder-button-search {
+	border:0 solid;
+	background:transparent;
+	padding:0;
+	margin: 1px 4px;
+	height:auto;
+	float:right;
+	width:202px;
+}
+
+/* ltr/rte enviroment */
+.elfinder-ltr .elfinder-button-search { float:right; margin-right:10px; }
+.elfinder-rtl .elfinder-button-search { float:left; margin-left:10px; }
+
+/* search text field */
+.elfinder-button-search input {
+	width:160px;
+	height:22px;
+	padding:0 20px;
+	font-size:1em;
+	line-height: 22px;
+	border:0 solid;
+	border:1px solid #aaa;
+	-moz-border-radius: 12px;
+	-webkit-border-radius: 12px;
+	border-radius: 12px;
+	outline:0 solid;
+}
+
+.elfinder-rtl .elfinder-button-search input { direction:rtl; }
+
+/* icons */
+.elfinder-button-search .ui-icon {
+	position:absolute;
+	height:18px;
+	top: 50%;
+	margin:-7px 4px 0 4px;
+	opacity: .6; 
+	filter:Alpha(Opacity=60);
+}
+
+/* search/close icons */
+.elfinder-ltr .elfinder-button-search .ui-icon-search { left:0;}
+.elfinder-rtl .elfinder-button-search .ui-icon-search { right:0;}
+.elfinder-ltr .elfinder-button-search .ui-icon-close { right:0;}
+.elfinder-rtl .elfinder-button-search .ui-icon-close { left:0;}
+
+
+
+
+
+

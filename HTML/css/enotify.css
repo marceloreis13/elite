@@ -1,0 +1,193 @@
+/*
+ * ************************************************************* *
+ * Name        : eNotify                                         *
+ * Description : CSS for the notification plugin.                *
+ * Version     : Version 1                                       *
+ * Author      : CreativeMilk                                    *
+ * Author URI  : www.creativemilk.net                            *
+ * Updated     : --/--/----                                      *
+ * Copyright   : (c) 2011 CreativeMilk                           *
+ * ************************************************************* *
+ */
+
+/*
+ * ===============================================================
+ * GROWL
+ * ===============================================================
+ */ 
+ 
+.e-growl-left-top,
+.e-growl-left-bottom,
+.e-growl-right-top,
+.e-growl-right-bottom{
+	position : fixed;	
+}
+.e-growl-left-top{
+	left : 20px;
+	top  : 20px;
+}
+.e-growl-left-bottom{
+	left   : 20px;
+	bottom : 10px;
+}
+.e-growl-right-top{
+	right : 20px;
+	top   : 20px;
+}
+.e-growl-right-bottom{
+	right  : 20px;
+	bottom : 10px;
+}
+.e-growl-wrapper{
+	width      : 260px;
+	list-style : none;
+}
+.e-growl-wrapper li{
+	margin : 0 0 10px 0;
+}
+.e-growl-left-top .e-growl,
+.e-growl-left-bottom .e-growl{
+	left : -320px;
+}
+.e-growl-right-top .e-growl,
+.e-growl-right-bottom .e-growl{
+	right : -320px;
+}
+.e-growl{
+	width                   : 240px;
+	float                   : left;
+	list-style              : none;
+	padding                 : 10px 10px 5px 10px;
+	position                : relative;
+	-webkit-background-clip : padding-box; 
+	-moz-background-clip    : padding; 
+	background-clip         : padding-box;	
+	-webkit-border-radius   : 3px;
+	-moz-border-radius      : 3px;
+	border-radius           : 3px;
+	display                 : none;
+	z-index                 : 9100;		
+}
+.e-growl > span{
+	width       : 16px;
+	height      : 16px;
+	position    : absolute;
+	top         : 0;
+	text-align  : center;
+	font-size   : 10px;
+	line-height : 14px;
+	font-weight : bold;
+	cursor      : pointer;
+	right       : 0;
+}
+.e-growl-img{
+	width  : 40px;
+	height : 40px;
+	float  : left;	
+}
+.e-growl-img img{
+	width  : 100%;
+	height : 100%;
+	float  : left;
+}
+.e-growl-content{
+	width : 190px;
+	float : right;
+}
+.e-growl-content h5{
+	font-size   : 13px;
+	line-height : 13px;
+	margin      : 0 10px 5px 0;
+}
+.e-growl-content p{
+	font-size   : 11px;
+	line-height : 16px;
+	margin      : 0 0 5px 0
+}
+
+/*
+ * ===============================================================
+ * NOTIFICATION
+ * ===============================================================
+ */ 
+
+.e-notification-top{
+	width    : 100%;
+	left     : 0;
+	top      : 0;
+	position : fixed;
+}
+.e-notification-bottom{
+	width    : 100%;
+	left     : 0;
+	bottom   : 0;
+	position : fixed;
+}
+.e-notification{
+	height      : 30px;
+	display     : none;
+	position    : relative;
+	z-index     : 9000;
+	line-height : 30px;
+	text-align  : center;	
+	padding     : 0 10px;
+	text-align  : left;
+}
+.e-notification-top .e-notification,
+.e-notification-bottom .e-notification{
+	margin      : 0;
+	padding     : 0;
+	text-align  : center;
+	line-height : 28px;
+}
+.e-notification-top .e-notification{
+	border-top : none;
+}
+.e-notification-bottom .e-notification{
+	border-bottom : none;
+}
+.e-notification img{
+	height : 16px;
+	width  : 16px;
+	margin : 0 5px 2px 0;
+}
+.e-notification > span{
+	height      : 30px;
+	width       : 30px;
+	font-size   : 10px;
+	text-align  : center;
+	position    : absolute;
+	right       : 5px;
+	top         : 5px;
+	line-height : 18px;
+	cursor      : pointer;
+	font-family : Verdana,Geneva,sans-serif;
+}
+
+/*
+ * ===============================================================
+ * ELOADER
+ * ===============================================================
+ */ 
+
+#e-loader{
+	display : none;
+}
+#e-loader-overlay{
+	width    : 100%;
+	height   : 100%;
+	position : fixed;
+	top      : 0;
+	left     : 0;
+}
+#e-loader-img{
+	position              : fixed;
+	-webkit-border-radius : 5px;
+	-moz-border-radius    : 5px;
+	border-radius         : 5px;		
+}
+#e-loader-img img{
+	float   : left;
+	margin  : 10px;
+	padding : 0;
+}

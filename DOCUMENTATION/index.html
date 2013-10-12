@@ -1,0 +1,190 @@
+<!DOCTYPE html> 
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+     
+    <title>Documentation</title>
+
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <link rel="stylesheet" href="css/style.css"/>
+    
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>!window.jQuery && document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+    <script>!window.jQuery && document.write('<script src="js/jquery-ui-1.8.18.min"><\/script>')</script>
+
+    <script>
+    $(document).ready(function(){
+		
+		// doc version number and copyright
+		$('.doc-version').html('Document version 1.0.0 <br/> Copyright by <a href="http://www.creativemilk.net">CreativeMilk</a>');
+
+		// remove dialog
+		$(".dialog").click(function() {
+			$(this).fadeTo(200, 0.0,function(){
+				$(this).slideUp(400)
+			});	
+			return false;		
+		});
+		$.ajax({
+			cache: false
+		});
+		// load content files
+		if($('#content > section').length <1 ){				
+			$('#content').load('content/welcome.html', function(response, status, xhr){
+				if(status == "error"){
+					alert('You are using google chrome locally, please use a different browser or move the documents to a sever(same origin policy issue).')
+				}else{
+					// some stupid fake preloader...
+					setTimeout(function(){
+						$('#ajax-intro').find('span').text('Ready...');	
+					},1600);
+					
+					setTimeout(function(){
+						$('#ajax-intro').fadeOut(100);	
+					},2000);					
+				}
+			});			
+		}
+		$("aside [data-document]").click(function(e){
+			var goto = $(this).data('document');
+			var getDoc = 'content/'+goto+'.html';
+			$('#content').load(getDoc, function(response, status, xhr){
+				if(status == "error"){
+					alert('You are using google chrome locally, please use a different browser or move the documents to a sever(same origin policy issue).')
+				}
+			});
+			
+			e.preventDefault();
+		});
+	    // sidebar menu
+		$('aside nav > ul > li > a').click(function(e){
+			if($(this).next('span').hasClass('min')){
+				$(this).next('span').addClass('plus').removeClass('min');	
+			}else{
+				$(this).next('span').addClass('min').removeClass('plus');	
+			}
+			$(this).parents('li').children('ul').stop(true,true).slideToggle(200);
+			
+			e.preventDefault();
+		});
+				
+    });
+	</script>
+    
+</head>
+<body>
+<div id="container">
+    <div id="ajax-intro"> 
+        <div>
+            <img src="images/35.gif" alt=""/>  
+            <span>Loading, please wait...</span>
+        </div>
+    </div>
+     
+    <aside>    
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="#" data-document="welcome">Welcome</a></li>          
+                    <li><a href="javascript:void(0)">About</a> <span class="plus"></span>
+                        <ul>
+                            <li><a href="#" data-document="about">About</a></li>
+                            <li><a href="#" data-document="features">Features</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)">Structure</a> <span class="plus"></span>
+                        <ul>
+                            <li><a href="#" data-document="basicpage">Basic page template</a></li>
+                            <li><a href="#" data-document="directory">Directory</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)">HTML</a> <span class="plus"></span>
+                        <ul>
+                        	<li><a href="#" data-document="breadcrumbs">Breadcrumbs</a></li>
+                            <li><a href="#" data-document="buttons">Buttons</a></li>
+                            <li><a href="#" data-document="dialogs">Dialogs</a></li>
+                            <li><a href="#" data-document="listsblocks">List &amp; Blocks</a></li>
+                            <li><a href="#" data-document="media">Media</a></li>
+                            <li><a href="#" data-document="menus">Menus</a></li>
+                            <li><a href="#" data-document="icons">Icons</a></li>
+                            <li><a href="#" data-document="toolbars">Toolbars</a></li>
+                        </ul> 
+                    </li> 
+                    <li><a href="javascript:void(0)">Premium jQuery plugins</a> <span class="plus"></span>
+                        <ul>
+                            <li><a href="#" data-document="powerwidgets">Power Widgets</a></li>
+                        </ul> 
+                    </li>                    
+                    <li><a href="javascript:void(0)">Custom jQuery plugins</a> <span class="plus"></span>
+                        <ul>
+                            <li><a href="#" data-document="customjqueryplugins">Custom jQuery plugins</a></li>
+                            <li><a href="#" data-document="echainedinputs">eChainedInputs</a></li>
+                            <li><a href="#" data-document="echeckbox">eCheckbox</a></li>
+                            <li><a href="#" data-document="eclone">eClone</a></li>
+                            <li><a href="#" data-document="econtactform">eContactForm</a></li>
+                            <li><a href="#" data-document="ecountdown">eCountdown</a></li>
+                            <li><a href="#" data-document="efile">eFile</a></li>
+                            <li><a href="#" data-document="egallery">eGallery</a></li>
+                            <li><a href="#" data-document="elivesearch">eLiveSearch</a></li>
+                            <li><a href="#" data-document="emainmenu">eMainMenu</a></li>
+                            <li><a href="#" data-document="emenu">eMenu</a></li>
+                            <li><a href="#" data-document="enotify">eNotify</a></li>
+                            <li><a href="#" data-document="eoskeyboard">eOsKeyboard</a></li>
+                            <li><a href="#" data-document="eprogressbar">eProgressbar</a></li>
+                            <li><a href="#" data-document="eradio">eRadio</a></li>
+                            <li><a href="#" data-document="eresponsivetable">eResponsiveTable</a></li>
+                            <li><a href="#" data-document="escrollbar">eScrollbar</a></li>
+                            <li><a href="#" data-document="eselect">eSelect</a></li>
+                            <li><a href="#" data-document="eshowpassword">eShowPassword</a></li>
+                            <li><a href="#" data-document="etabs">eTabs</a></li>
+                            <li><a href="#" data-document="etextarealimiter">eTextareaLimiter</a></li>
+                            <li><a href="#" data-document="etour">eTour</a></li>
+                            <li><a href="#" data-document="ewizard">eWizard</a></li>
+                        </ul> 
+                    </li>                                              
+                    <li><a href="javascript:void(0)">Plix icon set</a><span class="plus"></span>
+                        <ul>
+                            <li><a href="#" data-document="plixiconset">Plix icon set</a></li>
+                            <li><a href="#" data-document="plix10">Plix 10</a></li>
+                            <li><a href="#" data-document="plix16">Plix 16</a></li>
+                            <li><a href="#" data-document="plix32">Plix 32</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" data-document="fonts">Fonts</a></li>
+                    <li><a href="#" data-document="changelog">Changelog</a></li>
+                    </li>        
+                    <li><a href="#" data-document="sourcescredits">Sources &amp; Credits</a></li>
+                    <li><a href="#" data-document="otherfilesbyus">Other files by us</a></li>
+                </ul>                                  
+            </nav>
+            
+            <div class="doc-version"></div>
+        </div>
+        
+    </aside>
+    
+    <div id="content">            
+	</div><!-- End "#content" -->  
+</div><!-- End "#container" -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34681075-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

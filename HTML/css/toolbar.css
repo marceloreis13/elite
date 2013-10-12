@@ -1,0 +1,171 @@
+/*
+ * ************************************************************* *
+ * Name        : Toolbar                                         *
+ * Description : CSS for the toolbar styles.                     *
+ * Version     : Version 1                                       *
+ * Author      : CreativeMilk                                    *
+ * Author URI  : www.creativemilk.net                            *
+ * Updated     : --/--/----                                      *
+ * Copyright   : (c) 2011 CreativeMilk                           *
+ * ************************************************************* *
+ */
+
+/* Basic/music toolbar. ----------- */
+
+.toolbar{
+	padding  : 10px 10px 5px 10px;
+	position : relative;	
+}
+div.toolbar-bottom{
+	border-bottom : none;
+}
+.toolbar-window{
+	height                : 28px;
+	width                 : auto;
+	float                 : left;
+	padding               : 0 10px;
+	-moz-border-radius    : 3px;
+	-webkit-border-radius : 3px;
+	border-radius         : 3px;	
+	line-height           : 28px;
+}
+.toolbar-window span{
+	opacity    : 0.5;
+	-ms-filter : "progid:DXImageTransform.Microsoft.Alpha(opacity=50)";
+}
+.toolbar .right .button,
+.toolbar .right .button-icon,
+.toolbar .right .button-text-icon{
+	margin : 0 0 0 5px;
+}
+.toolbar .separator{
+	height : 30px;
+	width  : 1px;
+	float  : left;
+	margin : 0 10px 0 5px;
+}
+.toolbar .right .separator{
+	margin : 0 5px 0 10px;
+}
+.toolbar .preloader{
+	width    : 26px;
+	height   : 28px;
+	float    : left;
+	position : relative;
+}
+.toolbar .preloader span{
+	width             : 16px;
+	height            : 16px;
+	position          : absolute;
+	left              : 50%;
+	top               : 50%;
+	margin            : -8px 0 0 -8px;
+	background-repeat : no-repeat;
+}
+.toolbar input[type="text"]{
+	width  : 120px;
+	float  : left;
+	margin : 0 0 0 5px;
+}
+.toolbar input{
+	margin : 0 0 5px 5px;
+}
+.toolbar .right .icon-group{
+	margin : 0 0 0 5px;
+}
+.toolbar .label{
+	height      : 28px;
+	float       : left;
+	line-height : 28px;
+	margin      : 0  5px 5px 0;
+}
+.toolbar .e-menu .e-menu-active,
+.toolbar .e-splitmenu .e-menu-active,
+.toolbar .e-menu > li:hover,
+.toolbar .e-splitmenu > li > a:hover{
+	border-top    : none!important;
+	border-right  : none!important;
+	border-bottom : none!important;
+}
+.toolbar .e-splitmenu .e-menu-profile a{
+	border-left : none!important;	
+}
+.toolbar .e-select{
+	float:left;
+	margin:0 0 0 5px;
+}
+
+/* Small size toolbar. ----------- */
+
+.toolbar-size-small .button-icon{
+	height : 20px;
+	width  : 20px;
+}
+.toolbar-size-small .separator{
+	height : 20px;
+}
+
+/* Navigation & actions. ----------- */
+
+.widget-navigation{
+	width           : auto;
+	float           : left;
+	list-style-type : none;
+}
+.widget-navigation li{
+	width   : auto;
+	float   : left;
+	padding : 0;
+	margin  : 0 5px 5px 0;
+}
+.widget-navigation li a,
+.widget-navigation li a:active 
+.widget-navigation li a:visited{
+	float                 : left;
+	height                : 28px;
+	margin                : 0;
+	padding               : 0 10px;
+	line-height           : 28px;
+	text-decoration       : none;
+	-moz-border-radius    : 3px;
+	-webkit-border-radius : 3px;
+	border-radius         : 3px;
+}
+.toolbar select{
+	height : 28px;
+	float  : left;
+	cursor : pointer;
+	margin : 0 5px 5px 0;
+}
+.toolbar .right select{
+	margin : 0 0 5px 5px;
+}
+.toolbar .bulk-actions{
+	width : 9em;
+}
+.toolbar .per-page{
+	width : 4.5em;
+}
+.bulk-actions input[type="reset"],
+.bulk-actions input[type="submit"]{
+	float                 : left;
+	height                : 30px;
+	margin                : 0;
+	padding               : 0 10px 3px 10px;
+	text-decoration       : none;
+	margin                : 0 0 0 5px;
+	cursor                : pointer;
+	-moz-border-radius    : 3px;
+	-webkit-border-radius : 3px;
+	border-radius         : 3px;
+}
+.bulk-actions  input:hover{
+	background-position : 0 -34px;
+}
+.toolbar .css-menu{
+	margin : 0 0 5px 0;	
+}
+
+.toolbar .right .css-menu a {
+    margin : 0;
+}

@@ -1,0 +1,2759 @@
+/*
+ * ************************************************************* *
+ * Name        : Strange blue theme                              *
+ * Theme URI   :                                                 *
+ * Description : Theme stylesheet.                               *
+ * Version     : Version 1                                       *
+ * Author      : CreativeMilk                                    *
+ * Author URI  : www.creativemilk.net                            *
+ * Updated     : 25/10/2012                                      *
+ * Copyright   : (c) 2011 CreativeMilk                           *
+ * ************************************************************* *
+ */
+
+/*
+	This theme uses the unit type em, but we have done
+	some values in px, this because that google chrome
+	browser doesn't handle the border value correct.
+*/
+
+/*
+ * ===============================================================
+ * IMPORT CSS FILES 
+ * ===============================================================
+ */
+ 
+@import url("../ui/themes/strangeblue/jquery.ui.theme.css");/* custom jqueryui theme */ 
+@import url("../../lightbox/style4/colorbox.css");/* lightbox */ 
+
+/*
+ * ===============================================================
+ * BASIC CSS SELECTORS
+ * ===============================================================
+ */
+
+body{	
+	background-color : #576475;
+	/*background-image : url("../../images/theme/strangeblue/stripped-bg.png");*/
+	color            : #fff;
+}
+input,
+button,
+a{
+	color : #fff;
+}
+hr{ 
+	background-color : #2e3642;
+}
+	
+/*
+ * ===============================================================
+ * MAIN COLORS
+ * ===============================================================
+ */
+
+#header-border,
+#content-header,
+#main-menu > ul > li,
+.powerwidget > header,
+.e-block > header,
+#login-outher header,
+#login-outher footer,
+#login-outher input[type="submit"],
+#profile-tabs li,
+.button-icon,
+.button-icon-text,
+.button-text-icon,
+.button-text,
+.button-icon-text,
+.button-text-icon,
+.button-split,
+.button-split-rev,
+.demo-bg,
+.etabs,
+.etabs > li,
+.icon-group a,
+#sidebar-profile,
+#content-footer,
+#login-outher #tab-menu li,
+.dataTables_wrapper .fg-toolbar,
+.ui-dialog .ui-dialog-titlebar,
+.ui-dialog .ui-dialog-buttonset .ui-button,
+.ui-dialog .button-icon,
+.ui-dialog .button-icon-text,
+.ui-dialog .button-text-icon,
+.ui-dialog .button-text,
+.ui-dialog .button-icon-text,
+.ui-dialog .button-text-icon,
+.ui-dialog .button-split,
+.ui-dialog .button-split-rev,
+.ui-dialog .icon-group a,
+.css-menu > li > a,
+.css-menu > ul > li > a,
+#helper-bar ul li,
+.powerwidget > header .powerwidget-ctrls a,
+.e-gallery-filter li a,
+.widget-navigation li a,
+.toolbar .e-menu > li,
+.toolbar .e-splitmenu > li,
+.map-search button,
+.e-gallery header .button-icon,
+.e-gallery h3,
+.e-gallery .button-icon,
+body button.ui-button,
+table .e-splitmenu > li,
+.doc-wrap .etabs,
+.doc-wrap .etabs > li,
+.entypo-button,
+.error-box hgroup,
+#e-inputexpand footer a,
+.e-select-trigger,
+.e-file-button,
+#search-results input[type="submit"],
+#sidebar-meta,
+.etabs-arrow-left,
+.etabs-arrow-right,
+.appointment-planner .day-block-header,
+.button-social-big,
+.button-social{
+	background-color : #2e3642;/* fallback color */
+    background-image : -webkit-gradient(linear, left top, left bottom, from(#424c5e), to(#2e3642));/* Safari 4+, Chrome 1+ */
+	background-image : -webkit-linear-gradient(top, #424c5e, #2e3642);/* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image :    -moz-linear-gradient(top, #424c5e, #2e3642);/* Firefox 3.6+ */
+    background-image :     -ms-linear-gradient(top, #424c5e, #2e3642); /* IE10 */
+	background-image :      -o-linear-gradient(top, #424c5e, #2e3642); /* Opera 11.10+ */
+	background-image :         linear-gradient(to bottom, #424c5e, #2e3642);
+    -ms-filter       : "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#424c5e, endColorstr=#2e3642)";/* IE8 */
+}
+.e-gallery h3,
+.e-gallery-filter li a,
+.button-icon,
+.button-icon-text,
+.button-text-icon,
+.button-text,
+.button-icon-text,
+.button-text-icon,
+.button-split,
+.button-split-rev,
+.icon-group,
+.demo-bg,
+.etabs,
+.widget-navigation li a,
+table .e-splitmenu > li,
+.entypo-button,
+.error-box hgroup,
+#e-inputexpand footer a,
+#search-results input[type="submit"]{
+	border : 1px solid #1f232e;
+}
+#main-breadcrumbs,
+#e-menu-profile,
+.e-menu > li,
+.e-splitmenu > li,
+.powerwidget > header a,
+#content-header .button-icon,
+#content-header .button-icon-text,
+#content-header .basic-layout-ctrls,
+#content-header .button-text,
+#content-header .button-icon-text,
+#content-header .button-text-icon,
+#content-header .button-icon,
+#content-header .button-icon-text,
+#content-header .button-text-icon,
+.css-menu > li > a:hover,
+.css-menu > ul > li > a:hover,
+.css-menu li ul:hover + a,
+.button-icon:hover,
+.button-icon-text:hover,
+.button-text-icon:hover,
+.button-text:hover,
+.button-icon-text:hover,
+.button-split a:hover,
+.button-split-rev a:hover,
+#login-outher input[type="submit"]:hover,
+.widget-navigation li a:hover,
+.advanced-media-header .button-icon,
+.advanced-media > ul div span a,
+#widgets-controls .icon-group a,
+.icon-group a:hover,
+.icon-group .selected,
+#main-menu .button-icon,
+#main-menu > ul > li > a .indicator,
+.icon-group a:hover,
+.icon-group .selected,
+#content-footer > .left a,
+.powerwidget header .icon-group a,
+div.dataTables_paginate span.fg-button,
+div.dataTables_paginate a.fg-button,
+.e-gallery-filter li a:hover,
+.e-gallery-filter li .active,
+.e-gallery header .button-icon:hover,
+.e-gallery .button-icon:hover,
+.ui-dialog .ui-dialog-buttonset .ui-button:hover,
+.ui-dialog .button-icon:hover,
+.ui-dialog .button-icon-text:hover,
+.ui-dialog .button-text-icon:hover,
+.ui-dialog .button-text:hover,
+.ui-dialog .button-icon-text:hover,
+.ui-dialog .button-text-icon:hover,
+.ui-dialog .button-split:hover,
+.ui-dialog .button-split-rev:hover,
+.ui-dialog .icon-group a:hover,
+#flot-tooltip,
+.powerwidget > header .powerwidget-ctrls a:hover,
+.map-search button:hover,
+body button.ui-button:hover,
+#e-inputexpand footer a:hover,
+.e-select:hover .e-select-trigger,
+.e-file:hover .e-file-button,
+#search-results input[type="submit"]:hover,
+.appointment-planner header .button-icon,
+.button-social-big:hover,
+.button-social:hover{
+	background-color : #424c5e;/* fallback color */
+    background-image : -webkit-gradient(linear, left top, left bottom, from(#818c9e), to(#576475));/* Safari 4+, Chrome 1+ */
+	background-image : -webkit-linear-gradient(top, #818c9e, #424c5e);/* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image :    -moz-linear-gradient(top, #818c9e, #424c5e);/* Firefox 3.6+ */
+    background-image :     -ms-linear-gradient(top, #818c9e, #424c5e); /* IE10 */
+	background-image :      -o-linear-gradient(top, #818c9e, #424c5e); /* Opera 11.10+ */
+	background-image :         linear-gradient(to bottom, #818c9e, #424c5e);
+    -ms-filter       : "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#818c9e, endColorstr=#424c5e)";/* IE8 */	
+	border           : 1px solid #1f232e;/* chrome cant see the unit(span element), therefor px */
+}
+#content-header .button-text:hover,
+#content-header .button-icon:hover,
+#content-header .button-icon-text:hover,
+#content-header .button-text-icon:hover,
+#content-header .button-icon-text:hover,
+#content-header .button-text-icon:hover,
+#content-header .selected .button-icon,
+.bulk-actions input[type="reset"]:hover,
+.bulk-actions input[type="submit"]:hover,
+.advanced-media-header .button-icon:hover,
+.advanced-media-header .active-layout,
+.advanced-media > ul div span a:hover,
+#widgets-controls .icon-group a:hover,
+#widgets-controls .icon-group .selected,
+#content-footer > .left a:hover,
+div.dataTables_paginate span.fg-button:hover,
+div.dataTables_paginate a.fg-button:hover,
+.e-menu .e-menu-active,
+.e-splitmenu .e-menu-active,
+.e-menu > li:hover,
+.e-splitmenu > li > a:hover,
+.appointment-planner header .button-icon:hover{
+	background-color : #818c9e;/* fallback color */
+    background-image : -webkit-gradient(linear, left top, left bottom, from(#8b9ab3), to(#818c9e));/* Safari 4+, Chrome 1+ */
+	background-image : -webkit-linear-gradient(top, #8b9ab3, #818c9e);/* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image :    -moz-linear-gradient(top, #8b9ab3, #818c9e);/* Firefox 3.6+ */
+    background-image :     -ms-linear-gradient(top, #8b9ab3, #818c9e); /* IE10 */
+	background-image :      -o-linear-gradient(top, #8b9ab3, #818c9e); /* Opera 11.10+ */
+	background-image :         linear-gradient(to bottom, #94a2ba, #818c9e);
+    -ms-filter       : "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#8b9ab3, endColorstr=#818c9e)";/* IE8 */
+	border           : 1px solid #1f232e;
+}
+
+/*
+ * ===============================================================
+ * HEADER
+ * ===============================================================
+ */
+
+#header{
+	background-color   : #818c9e;
+	-webkit-box-shadow : 0 0 4px #1f232c;
+	-moz-box-shadow    : 0 0 4px #1f232c;
+	box-shadow         : 0 0 4px #1f232c;	
+}
+#header-border{
+	border : 1px solid #1f232e;
+}
+#logo{
+	color       : #fff;
+	text-shadow : 1px 1px 1px #1f232e;
+}
+
+/*
+ * ===============================================================
+ * CONTENT
+ * ===============================================================
+ */
+
+#content{
+	background-color   : #818c9e;
+	-webkit-box-shadow : 0 0 4px #1f232c;
+	-moz-box-shadow    : 0 0 4px #1f232c;
+	box-shadow         : 0 0 4px #1f232c;
+}
+#content-border{
+	background-color : #2e3642;
+	border           : 1px solid #1f232e;
+}
+#content-inner{
+	background-color : #576475;
+	border-left      : 1px solid #1f232e;
+}
+#content-header{
+	border-bottom : 1px solid #1f232e;
+	border-top    : 1px solid #818c9e;
+}
+#content-header .left{
+	border-right : 1px solid #1f232e;
+}
+
+/* Page/section header. ----------- */
+
+.page-header,
+.section-header{
+	color : #fff;
+}
+.page-header > a:hover{
+	background-color : #bc004b;
+	color            : #fff;
+}
+.page-helper{
+	background-color : #fff;
+	color            : #1F232E;
+}
+
+/* Content footer. ----------- */
+
+#content-footer{
+	border-top : 1px solid #1f232e;
+}
+#content-footer > .left{
+	border-right : 1px solid #1f232e;
+}
+
+/*
+ * ===============================================================
+ * SEARCH
+ * ===============================================================
+ */
+
+/* Main search. ----------- */
+
+#mainsearch-results{
+	background-color : #2e3642;
+}
+#mainsearch-results > span{
+	border-bottom : 10px solid #7a8696;
+}
+#mainsearch-results > h3{
+	background-color : #7a8696;
+	border-bottom    : 1px solid #1f232e;
+}
+#mainsearch input[type=text]{
+	color              : #fff;
+	background-color   : #7a8696;
+	border             : 1px solid #1f232e;
+	-webkit-box-shadow : inset 0 0 0.417em #576475;
+	-moz-box-shadow    : inset 0 0 0.417em #576475;
+	box-shadow         : inset 0 0 0.417em #576475;
+}
+#mainsearch input[type=text]:focus{
+	background-color : #818c9e;
+}
+#mainsearch input[type=submit],
+.floating-search input[type=submit]{
+	border           : 1px solid #1f232e;
+	background-color : #2e3642;
+	background-image : url("../../images/theme/strangeblue/search.png");
+}
+#content-header .right > .preloader,
+#widgets-controls .preloader{
+	background-image : url("../../images/loaders/type3/dark/20.gif");	
+}
+#mainsearch-results > h3 span{
+	background-image : url("../../images/icons/plix-10/white/delete-10.png");
+}
+#mainsearch-ajax > div{
+	border-bottom : 1px dashed #576475;
+}
+#mainsearch-results > a,
+#mainsearch-ajax > div a{
+	background : #7a8696;
+	color      : #fff;	
+	border     : 1px solid #1F232E;
+}
+#mainsearch-ajax > div a:hover,
+#mainsearch-results > a:hover{
+	background : #576475;
+}
+
+/* Search. ----------- */
+
+#advanced-search-results h2{
+	border-top : 1px solid #2e3642;
+}
+.results-thumbs li{
+	border : 1px solid #1f232e;
+}
+
+/*
+ * ===============================================================
+ * BREADCRUMBS
+ * ===============================================================
+ */
+ 
+/* Main breadcrumbs. ----------- */ 
+
+#main-breadcrumbs ul li{
+	background-image    : url("../../images/theme/strangeblue/bc-arrow.png");
+	background-repeat   : no-repeat;
+	background-position : center right;
+}
+#main-breadcrumbs ul .bc-tab-first a{
+	background-image  : url("../../images/icons/plix-10/white/home-10.png");
+	background-repeat : no-repeat;
+}
+#main-breadcrumbs ul .bc-tab-first a:hover,
+#main-breadcrumbs ul li a,
+#main-breadcrumbs ul li a:hover{
+	color : #fff;
+}
+#main-breadcrumbs ul .bc-tab-last{
+	color : #fff;
+}
+
+/* basic breadcrumbs ----------- */
+
+.basic-breadcrumbs li{
+	background-color : #2e3642;
+}
+.basic-breadcrumbs a:hover{
+	background-color : #1f232c;
+}
+.basic-breadcrumbs li,
+.basic-breadcrumbs a,
+.big-breadcrumbs li,
+.big-breadcrumbs a{
+	color : #fff;
+}
+.basic-breadcrumbs .bc-arrow-left{
+	border-left : 10px solid #818c9e;
+}
+.basic-breadcrumbs .bc-arrow-right{
+	border-left : 10px solid #2e3642;
+}
+.basic-breadcrumbs a:hover .bc-arrow-right{
+	border-left : 10px solid #1f232c;
+}
+.basic-breadcrumbs .bc-tab-last{
+	color : #fff;
+}
+.basic-breadcrumbs .bc-active .bc-arrow-right{
+	border-left : 10px solid #1f232c;
+}
+.basic-breadcrumbs .bc-active{
+	background-color : #1f232c;
+	color            : #fff;
+}
+.big-breadcrumbs .bc-arrow-left{
+	border-left : 13px solid #818c9e;
+}
+.big-breadcrumbs .bc-arrow-right{
+	border-left : 13px solid #2e3642;
+}
+.big-breadcrumbs a:hover{
+	background-color : #1f232c;
+}
+.big-breadcrumbs a:hover .bc-arrow-right{
+	border-left : 13px solid #1f232c;
+}
+.big-breadcrumbs li{
+	color            : #fff;
+	background-color : #2e3642;
+}
+.big-breadcrumbs .bc-tab-last{
+	color            : #fff;
+	background-color : #576475;
+}
+.big-breadcrumbs .bc-active{
+	background-color : #1f232c;
+}
+.big-breadcrumbs .bc-active .bc-arrow-right{
+	border-left : 13px solid #1f232c;
+}
+.big-breadcrumbs .bc-number,
+.big-breadcrumbs .bc-active .bc-number{
+	background-color : #7a8696;
+}
+
+/*
+ * ===============================================================
+ * POWERWIDGETS
+ * ===============================================================
+ */
+ 
+/* Management panel. ----------- */
+
+.powerwidgetspanel{
+	background-color : #7a8696;
+	border           : 1px solid #1f232e;
+}
+.powerwidgetspanel header > h2{
+	border-bottom : 1px solid #1f232e;
+}
+.powerwidgetspanel > div{
+	background-color : #2e3642;
+	border           : 1px solid #1f232e;
+}
+.powerwidgetspanel .powerwidgets-panel-active{
+	background-color : #576475;	
+}
+
+/* Widgets. ----------- */
+
+.powerwidget{
+	border           : 1px solid #1f232e;
+	background-color : #7a8696;
+	color            : #fff;
+}
+.powerwidget > header{
+	color         : #fff;
+	border-top    : 1px solid #818c9e;
+	border-bottom : 1px solid #1f232e;
+} 
+.powerwidget > header .powerwidget-loader{
+	background-image : url("../../images/loaders/type3/dark/20.gif");
+}
+.powerwidget > header .powerwidget-ctrls{
+	background-color : #576475;
+	border-left      : 1px solid #1f232c;
+}
+.powerwidget > div{
+	border-bottom : 1px solid #1f232e;
+}
+.powerwidget-placeholder{
+	background-color : #2e3642;
+	border           : 1px solid #1f232c;
+}
+
+/* Ajax ----------- */
+
+.ajax-meta-bar{
+	background-color : #576475;
+	border-bottom    : 1px solid #1f232e;
+}
+
+/* Misc. ----------- */
+
+.line{
+	background-color : #1f232e;
+}
+
+/*
+ * ===============================================================
+ * E_BLOCK
+ * ===============================================================
+ */
+ 
+.e-block{
+	border           : 1px solid #1f232e;
+	background-color : #7a8696;
+	color            : #fff;
+}
+.e-block > header{
+	color         : #fff;
+	border-bottom : 1px solid #1f232e;
+	border-top    : 1px solid #818c9e;
+} 
+.e-block > header .indicator{
+	background-color : #576475;
+	border-left      : 1px solid #1f232e;
+}
+
+/*
+ * ===============================================================
+ * SIDEBAR
+ * ===============================================================
+ */ 
+
+/* Sidebar profile. ----------- */
+
+#sidebar-profile{
+	border-top    : 1px solid #818c9e;
+	border-bottom : 1px solid #1f232e;
+}
+#profile-info a{
+	color : #fff;
+}
+#profile-info a b{
+	color : #fff;
+}
+#main-avatar{
+	border           : 1px solid #1f232e;
+	background-color : #818c9e;
+}
+#main-avatar .indicator{
+	background-color : #EF1919;
+	color            : #fff;
+	border           : 1px solid #1f232e;
+}
+
+/* Sidebar meta. ----------- */
+
+#sidebar-meta{
+	border-top : 1px solid #1f232e;
+}
+#sidebar-meta .pbar{
+	background-color : #2e3642;
+	border           : 1px solid #1f232e;
+}
+#sidebar-meta .pbar span{
+	background-color : #fff;
+}
+
+/*
+ * ===============================================================
+ * MAIN MENU
+ * ===============================================================
+ */
+
+#main-menu > ul > li{
+	color         : #fff;
+	border-top    : 1px solid #818c9e;
+	border-bottom : 1px solid #1f232e;
+	border-right  : 1px solid #1f232e;
+}
+#main-menu > ul > .sub-page-active,
+#main-menu > ul > li:hover,
+#main-menu > ul > .page-active{
+	background : #576475;
+}
+.ie #main-menu > ul > .sub-page-active,
+.ie #main-menu > ul > li:hover,
+.ie #main-menu > ul > .page-active{
+    -ms-filter : "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#576475, endColorstr=#576475)";/* IE8 */
+}
+#main-menu > ul > .sub-page-active,
+#main-menu > ul > li:hover,
+#main-menu > ul > .page-active{
+	border-right : 1px solid #576475;
+}
+#main-menu > ul > li > a > .color-indicator{
+	background-color : #EF1919;
+	border           : 1px solid #1f232e;
+	color            : #fff;
+}
+#main-menu > ul > li:last-child a{
+	border-bottom : 1px solid #818c9e;
+}
+
+/* Drop down part ----------- */
+
+#main-menu > ul > li > ul{
+	background-color : #2e3642;
+	border-top       : 1px solid #1f232e;
+	border-right     : 1px solid #1f232e;
+}
+#main-menu > ul > li > ul > li a{
+	background-image : url("../../images/theme/strangeblue/subline.png");
+	border           : 1px solid #1f232e;
+	border-bottom    : none;
+	background-color : #576475;
+}
+#main-menu > ul > li > ul > li:last-child a{
+	background-image : url("../../images/theme/strangeblue/subline-end.png");
+	border-bottom    : 1px solid #1f232e;
+}
+#main-menu > ul > li > ul > li > a{
+	color : #fff;
+}
+#main-menu > ul > li > ul > li a:hover,
+#main-menu > ul > li > ul > .page-active a{
+	background-color : #7a8696;
+}
+
+/*
+ * ===============================================================
+ * WYSIWYGHTML5
+ * ===============================================================
+ */
+
+[data-wysihtml5-dialog] {
+    border           : 1px solid #1f232e;
+	background-color : #2e3642;
+}
+a[data-wysihtml5-command-value="red"] {
+    color : red;
+}
+a[data-wysihtml5-command-value="green"] {
+    color : green;
+}
+a[data-wysihtml5-command-value="blue"] {
+	color : blue;
+}
+
+/*
+ * ===============================================================
+ * EMENU (DROPDOWNMENU)
+ * ===============================================================
+ */
+
+.e-splitmenu > li > a{
+	border-left : 1px solid #1f232e!important
+}
+.e-splitmenu .e-menu-profile > a{
+	border-right : 1px solid #1f232e!important
+}
+
+/* Dropdown part ----------- */
+
+.e-menu li > div ul,
+.e-splitmenu li > div ul{
+	background-color : #818c9e;
+	border           : 1px solid #1f232e;
+}
+.e-menu li > div li,
+.e-splitmenu li > div li{
+	border-top       : 1px solid #818c9e;
+	background-color : #2e3642;
+}
+.e-menu li > div a,
+.e-splitmenu li > div a{
+	color : #fff;
+}
+.e-menu li > div a:hover,
+.e-splitmenu li > div a:hover{
+	background-color : #576475;
+}
+.e-splitmenu li > div .e-menu-brigde,
+.e-menu li > div .e-menu-brigde{
+	background   : #818c9e;
+	border-left  : 1px solid #1f232e;
+	border-right : 1px solid #1f232e;	
+}
+
+/*
+ * ===============================================================
+ * CSS MENU
+ * ===============================================================
+ */
+ 
+.css-menu{
+	background : #2e3642;
+	border     : 1px solid #1f232e;
+}
+.css-menu > li,
+.css-menu > ul > li{
+	border-right : 1px solid #1f232e;
+}
+
+/* Dropdown part. ----------- */
+
+.css-menu li ul{
+	background-color : #2e3642;
+	border           : 1px solid #1f232e;
+}
+.css-menu li ul li a{
+	border-bottom : 1px solid #1f232e;
+}
+.css-menu li ul li a:hover{
+	background-color : #576475;
+}
+
+/*
+ * ===============================================================
+ * LISTS & BLOCKS
+ * ===============================================================
+ */
+
+/* Basic list ----------- */
+
+.basic-list li{
+	border           : 1px solid #1f232e;
+	background-color : #2e3642;
+}
+.basic-list li .handle{
+	background : url("../../images/theme/strangeblue/handle.png");
+}
+
+/* Split icon block. ----------- */
+
+.icon-text-block{
+	background-color : #2e3642;
+	color            : #fff;
+	border           : 1px solid #1f232e;
+}
+.icon-text-block div:first-child{
+	background-color : #2e3642;
+}
+.icon-text-block:hover{
+	background-color : #576475;
+}
+.icon-text-block div:first-child{
+	border-right : 1px solid #576475;
+}
+.icon-text-block:hover div:first-child{
+	border-right : 1px solid #1f232e;
+}
+
+/* Info block ----------- */
+
+.info-block{	
+	background-color : #2e3642;
+	border           : 1px solid #1f232e;
+}
+.info-block:hover{
+	background-color : #576475;
+}
+.info-block span:first-child{
+	border-bottom : 1px solid #576475;
+}
+.info-block:hover span:first-child{
+	border-bottom : 1px solid #2e3642;
+}
+.info-bar .info-block span:first-child{
+	border-bottom : 1px solid #2e3642;
+}
+.info-bar .info-block:hover span:first-child{
+	border-bottom : 1px solid #2e3642;
+}
+
+/* Sortable list ----------- */
+
+.sortable-list li{
+	border           : 1px solid #1f232e;
+	background-color : #2e3642;
+}
+.sortable-list li .handle{
+	background : url("../../images/theme/strangeblue/handle.png");
+}
+body .list-highlight{
+	background-color : #576475;
+	border           : 1px solid #2e3642;
+}
+
+/* Stats list ----------- */
+
+.stats-list li{
+	border           : 1px solid #1f232e;
+	background-color : #2e3642;
+}
+.stats-list li:hover{
+	background-color : #576475;
+	border           : 1px solid #1f232e;	
+}
+.stats-list a > span{
+	border-left : 1px solid #1f232c;
+}
+.stats-list .stats-eq div{
+	border-right : 1px solid #9D6008;
+}
+.stats-list .stats-eq{
+	background-color : #e0991f;
+	border           : 1px solid #583606;
+}
+.stats-list .stats-eq:hover{
+	background-color : #d18400;
+	border           : 1px solid #583606;
+}
+.stats-list .stats-eq div span{
+	background-color : #fff;
+}
+.stats-list .stats-eq a > span{
+	border-left : 1px solid #9D6008;
+}
+.stats-list .stats-up div{
+	border-right : 1px solid #4F6A05;
+}
+.stats-list .stats-up{
+	background-color : #6f9f05;
+	border           : 1px solid #2d3d03;
+}
+.stats-list .stats-up:hover{
+	background-color : #638a0a;
+	border           : 1px solid #2d3d03;
+}
+.stats-list .stats-up a > span{
+	border-left : 1px solid #4F6A05;
+}
+.stats-list .stats-down div{
+	border-right : 1px solid #7a1f232c1;
+}
+.stats-list .stats-down{
+	background-color : #cb2828;
+	border           : 1px solid #7a1f232c1;
+}
+.stats-list .stats-down:hover{
+	background-color : #c02121;
+	border           : 1px solid #7a1f232c1;
+}
+.stats-list .stats-down a > span{
+	border-left : 1px solid #7a1f232c1;
+}
+.stats-list .stats-up a,
+.stats-list .stats-down a,
+.stats-list .stats-eq a{
+	color : #fff;
+}
+
+/* Icon blocks ----------- */
+  
+.icon-block{
+	background-color : #2e3642;
+	border           : 1px solid #1f232e;	
+}
+.icon-block:hover{
+	background-color : #576475;
+}
+.icon-block .indicator{
+	background-color : #C00;
+	color            : #fff;	
+}
+
+/* Block wrapper ----------- */ 
+
+.info-bar{
+	background-color : #2e3642;
+	border           : 1px solid #1f232e;
+}
+.info-bar .info-block,
+.info-bar .icon-block{	
+	background-color : #576475;
+	border           : 1px solid #1f232e;
+}
+.info-bar .info-block:hover,
+.info-bar .icon-block:hover{
+	background-color : #7a8696;
+}
+
+/* Split tags ----------- */
+
+.split-tag{
+	background-color : #576475;
+	border           : 1px solid #1f232e;
+}
+.split-tag a{
+	background-color : #2e3642;
+	border-right     : 1px solid #1f232e;
+}
+.split-tag a:hover{
+	background-color : #576475;
+}
+.tag{
+	background-color : #2E3642;
+	border           : 1px solid #1F232E;
+}
+.tag:hover{
+	background-color : #1F232E;
+	border           : 1px solid #1f232e;
+}
+
+/* Info list ----------- */
+
+.info-list li{
+	border-top : 1px solid #1f232e;
+}
+
+/* User list. ----------- */
+
+.user-list > li{
+	border-top : 0.0833em solid #1f232e;
+}
+.user-list > li .thumb{
+	border : 0.0833em solid #1f232e;
+}
+
+
+/* Info list ----------- */
+
+.info-list li:first-child{
+	background-color : #576475;
+}
+.info-list .total{
+	border-right : 1px solid #1f232e;
+}
+.info-list .sum{
+	border-left : 1px solid #1f232e;
+}
+
+/* Contacts. ----------- */
+
+.contact-box{
+	border           : 1px solid #1f232e;
+	background-color : #576475;
+}
+.contact-box header img{
+	border : 1px solid #1f232e;
+}
+.contact-box footer{
+	background-color : #2e3642;
+	border-top       : 1px solid #1f232e;
+}
+.contact-box footer a{
+	border-right : 1px solid #1f232e;
+}
+.contact-box footer a:last-child{
+	border-left : 1px solid #1f232e;
+}
+.contact-box footer a:hover{
+	background-color : #576475;
+}
+
+/*
+ * ===============================================================
+ * MAPS
+ * ===============================================================
+ */
+ 
+.map-search{
+	background : #576475;
+	border-bottom : 1px solid #1f232e;
+}
+.map-search input[type="text"]{
+	background-color : #7a8696;
+}
+.map-search button{
+	border : 1px solid #1f232e;		
+}
+  
+/*
+ * ===============================================================
+ * CHARTS
+ * ===============================================================
+ */ 
+ 
+.chart-wraper{
+	background-color : #7A8696;
+}
+.chart-wraper *{
+	color : #ffffff;
+}
+.legend table{
+	background-color : #2e3642;
+}
+.legend table td{
+	color : #ffffff;
+}
+#chart-checkbox{
+	background-color : #576475;
+	border           : 1px solid #1f232e;
+}
+#chart-checkbox h3{
+	border-bottom : 1px dotted #1f232e;
+}
+
+/* Flot tooltip. ----------- */
+
+#flot-tooltip > span{
+	border-top : 8px solid #1f232e;
+}
+#flot-tooltip > span span{
+	border-top : 7px solid #576475;
+}
+ 
+ /*
+ * ===============================================================
+ * FORMS
+ * ===============================================================
+ */ 
+
+input, 
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="file"],
+input[type="image"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="range"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+textarea,
+select{
+	-moz-box-shadow    : inset 0 0 0.417em #2e3642;
+	-webkit-box-shadow : inset 0 0 0.417em #2e3642;
+	box-shadow         : inset 0 0 0.417em #2e3642;
+	border             : 1px solid #1f232e;
+	background-color   : #576475;
+	color              : #fff;
+}
+::-webkit-input-placeholder{
+	color : #ffffff;
+}
+fieldset{
+	border : 1px solid #1f232e;
+}
+fieldset > legend{
+	border           : 1px solid #1f232e;
+	background-color : #576475;
+}
+.floating-search input[type="text"]{
+	background-color : #7a8696;
+}
+.grippie {
+	background-color : #2e3642;
+	background-image : url("../../images/theme/strangeblue/grippie.png");
+	border-color     : #1f232e;
+}
+.e-textarealimiter-maximum{
+	border           : 1px solid #1f232e;
+	background-color : #576475;
+}
+
+/* eCheckbox & eRadio. ----------- */
+
+.e-checkbox-img{
+	background-image : url("../../images/theme/strangeblue/e-checkbox.png");
+}
+.e-radio-img{
+	background-image : url("../../images/theme/strangeblue/e-radio.png");
+}
+
+/* eOsKeyboard. ----------- */
+
+.e-oskeyboard{
+	background-color : #eee;
+	border           : 1px solid #1f232e;
+}
+.e-oskeyboard > div{		
+	background-color : #eeeeee;/* fallback color */
+    background-image : -webkit-gradient(linear, left top, left bottom, from(#eee), to(#d8d8d8));/* Safari 4+, Chrome 1+ */
+	background-image : -webkit-linear-gradient(top, #eeeeee, #d8d8d8);/* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image :    -moz-linear-gradient(top, #eeeeee, #d8d8d8);/* Firefox 3.6+ */
+    background-image :     -ms-linear-gradient(top, #eeeeee, #d8d8d8); /* IE10 */
+	background-image :      -o-linear-gradient(top, #eeeeee, #d8d8d8); /* Opera 11.10+ */
+	background-image :         linear-gradient(to bottom, #eeeeee, #d8d8d8);
+    -ms-filter       : "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#eeeeee, endColorstr=#d8d8d8)";/* IE8 */	
+	text-shadow      : 0 1px 1px #fff;
+	color            : #777;	
+	border-bottom    : 1px solid #999;
+}
+.e-oskeyboard > div span{
+	border-left : 1px solid #bbb;
+}
+.e-oskeyboard-icon{
+	background-image : url("../../images/theme/strangeblue/e-oskeyboard.png");
+}
+.e-oskeyboard-textarea .e-oskeyboard-icon{
+	background-color : #576475;
+	border           : 1px solid #1f232e;
+}
+.e-oskeyboard-icon-textarea{
+	background-image : url("../../images/theme/strangeblue/e-oskeyboard.png");
+}
+.e-oskeyboard li{
+	background-color : #fff;
+	color            : #576475;
+	border           : 1px solid #999;
+}
+.e-oskeyboard li:hover {
+	border           : 1px solid #888;
+	background-color : #eee;
+}
+
+/* eContactForm. ----------- */
+
+.e-contactform-errorlabel > span{
+	background-color : #c81d07;
+	color            : #fff;
+}
+.e-contactform-errorlabel > span span{
+	border-top : 6px solid #c81d07;
+}
+.e-contactform-success-color{
+	border           : 1px solid #1b3d08;
+	background-color : #a0f372;
+	color            : #1b3d08;
+}
+.e-contactform-fail-color{
+	border           : 1px solid #531f232e0;
+	background-color : #ff8e8e;
+	color            : #531f232e0;
+}
+
+/* Multibar. ----------- */
+
+.multibar > div{
+	border           : 1px solid #1f232e;
+	background-color : #2e3642;
+}
+.multibar > div > a{
+	border-right : 1px solid #1f232e;
+}
+.multibar > div > a:hover{
+	background-color:#576475;
+}
+
+/* Inputexpand. ----------- */
+
+#e-inputexpand{
+	background-color : #7A8696;
+	border           : 1px solid #1F232E;
+}
+#e-inputexpand-overlay{
+	background-color : #1F232E;
+}
+
+/*
+ * ===============================================================
+ * ESELECT
+ * ===============================================================
+ */
+ 
+/* Regular select. ----------- */
+
+.e-select{
+	position : relative
+}
+.e-select-inner{
+	color              : #fff;
+	background-color   : #576475;
+	border             : 1px solid #1f232e;
+	-webkit-box-shadow : inset 0 0 0.417em #2e3642;
+	-moz-box-shadow    : inset 0 0 0.417em #2e3642;
+	box-shadow         : inset 0 0 0.417em #2e3642;
+}
+.e-select-trigger{
+	border-left : 1px solid #1f232e;	
+}
+.e-select:hover div.e-select-trigger{
+	border-left : 1px solid #1f232e;
+}
+.e-select-trigger span{
+	background-image : url('../../images/icons/plix-10/white/arrow-down-10.png');
+}
+.e-select-options ul{
+	background-color : #576475;
+	border           : 1px solid #1f232e;
+}
+.e-select-options ul .seperator{
+	border-bottom : 1px solid #1f232e;
+}
+.e-select-options ul li:hover{
+	background-color : #2e3642;
+}
+
+/* Multiple select. ----------- */
+
+.e-select-multiple{
+	-moz-box-shadow    : inset 0 0 0.417em #2e3642;
+	-webkit-box-shadow : inset 0 0 0.417em #2e3642;
+	box-shadow         : inset 0 0 0.417em #2e3642;
+	border             : 1px solid #1f232e;
+	background-color   : #576475;
+	color              : #fff;
+}
+.e-select-multiple-inner ul li:hover{
+	background-color : #2e3642;
+}
+.e-select-multiple-handle{
+	border-left      : 1px solid #1f232e;
+	background-color : #576475;
+}
+.e-select-multiple-handle span{
+	background-color : #2e3642;
+	background-image : url('../../images/theme/strangeblue/scrollbarhandle.png');
+}
+.e-select-multiple-highlite{
+	background-color : #818c9e;
+}
+
+/*
+ * ===============================================================
+ * ESCROLLBAR
+ * ===============================================================
+ */
+ 
+.e-scrollbar{
+	background-color : #576475;
+	border           : 1px solid #1f232e;
+}
+.e-scrollbar-handle{
+	border-left      : 1px solid #1f232e;
+	background-color : #576475;
+}
+.e-scrollbar-handle span{
+	background-color : #2e3642;
+	background-image : url('../../images/theme/strangeblue/scrollbarhandle.png');
+	border-top       : 1px solid #1f232e;
+	border-bottom    : 1px solid #1f232e;
+}
+.e-file-button,
+.e-file:hover .e-file-button{
+	border-left : 1px solid #1f232e!important;
+}
+
+/*
+ * ===============================================================
+ * TABLES
+ * ===============================================================
+ */
+ 
+/* Basic table. ----------- */
+
+.basic-table{
+	background-color : #7a8696;
+}
+.basic-table thead,
+.basic-table tfoot{
+	background-color : #576475;
+}
+.basic-table th,
+.basic-table td{
+	border : 1px solid #1f232e;
+}
+.basic-table tbody tr:hover{
+	background-color : #576475;
+}
+.basic-table tfoot tr td{
+	border-top : 1px solid #1f232e;
+}
+
+/* Clean table. ----------- */
+
+.clean-table{
+	background-color : #7a8696;
+}
+.clean-table thead,
+.clean-table tfoot{
+	background-color : #576475;
+}
+.clean-table th,
+.clean-table td{
+	border-bottom : 1px solid #1f232e;
+}
+.clean-table tbody tr:hover{
+	background-color : #576475
+}
+.clean-table tfoot tr td{
+	border-top : 1px solid #1f232e;
+}
+
+/* Datatable. ----------- */
+
+.dataTables_wrapper{
+	background-color : #7a8696;
+}
+.dataTables_length label select{
+	background-color : #7a8696;
+}
+.dataTables_filter label input[type="text"]{
+	background-color : #7a8696;
+}
+.dataTables_wrapper table{
+	border-bottom : 1px solid #1f232e;
+	border-top    : 1px solid #1f232e;
+}
+body .dataTables_wrapper th{
+	background-color : #576475;
+	border-right     : 1px solid #1f232e;
+}
+.dataTables_wrapper td{
+	border-right : 1px solid #1f232e;
+	border-top   : 1px solid #1f232e;
+}
+.dataTables_wrapper .sorting_1{
+	background-color : #576475;
+}
+.dataTables_wrapper .odd .sorting_1{
+	background-color : #818c9e;
+}
+.dataTables_wrapper tr:hover td{
+	background-color : #576475
+}
+.dataTables_wrapper tr:hover .sorting_1,
+.dataTables_wrapper .odd:hover .sorting_1{
+	background-color : #576475	
+}
+
+/* Table examples. ----------- */
+
+tbody .tb-checkbox{
+	background-color : #576475;
+}
+tbody tr:hover .tb-checkbox{
+	background-color : #777;
+}
+.basic-table .indicator{
+	border           : 1px solid #1f232e;
+	background-color : #2e3642;
+}
+.basic-table .indicator span{
+	background-color : #FFF;
+}
+.basic-table .thumb{
+	border : 1px solid #1f232e;
+}
+.odd{
+    background-color : #919db0;	
+}
+
+/*
+ * ===============================================================
+ * GOOGLE MAPS
+ * ===============================================================
+ */
+ 
+.gmap{
+	color : #1f232e;
+}
+
+/*
+ * ===============================================================
+ * MISC(page)
+ * ===============================================================
+ */
+
+#scrolltotop{
+	background-color : #161616;
+}
+#scrolltotop span{
+	border-bottom : 6px solid #999;
+}
+#scrolltotop:hover span{
+	border-bottom : 6px solid #fff;
+}
+.tooltip-demobox > div > div{
+	background-color : #2e3642;
+	color            : #fff;
+	border           : 1px solid #1f232e;
+}
+.tooltip-demobox > div a{
+	color : #fff;
+}
+.preloader-demobox > div > div{
+	background-color : #fff;
+	border           : 1px solid #1f232c;
+	color            : #1f232e;
+}
+.preloader-demobox > .type-dark-bg > div{
+	background-color : #000000;
+	border           : 1px solid #000;
+	color            : #fff
+}
+
+/*
+ * ===============================================================
+ * ETABS
+ * ===============================================================
+ */
+
+.etabs li{
+	border-right: 1px solid #1f232e;
+}
+ul.etabs .etabs-active,
+ul.etabs li:hover{
+	background-color : #7a8696!important;
+	border-bottom    : 1px solid #7a8696;
+	background-image : none!important;
+}
+.ie ul.etabs .etabs-active,
+.ie ul.etabs li:hover{
+    -ms-filter : "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#7a8696, endColorstr=#7a8696)";
+}
+.etabs-content{
+	border           : 1px solid #1f232e;
+	background-color : #7a8696;
+}
+
+/* Vertical tabs. ----------- */
+
+.etabs-vertical{
+	border           : 1px solid #1f232e;
+	background-color : #2e3642;
+}
+.etabs-vertical .etabs li{
+	border-bottom : 1px solid #1f232e;
+	border-right  : 1px solid #1f232e;
+}
+.etabs-vertical .etabs .etabs-active,
+.etabs-vertical .etabs li:hover{
+	border-right  : 1px solid #7a8696;
+	border-bottom : 1px solid #1f232e;
+}
+.etabs-vertical .etabs-content{
+	border-left : 1px solid #1f232e!important;
+}
+
+/* Fixed tabs. ----------- */
+
+.powerwidget > div > div > ul.etabs{
+	background-color : #576475;
+	border-bottom    : 1px solid #1f232e;	
+}
+.ie .powerwidget > div > div > ul.etabs{
+    -ms-filter : "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#424c5e, endColorstr=#424c5e)";	
+}
+.powerwidget > div > div > ul.etabs li{
+	background-color : #576475;
+}
+.powerwidget > div > div > ul.etabs li{
+	background-color : #576475;
+}
+.ie .powerwidget > div > div > ul.etabs li{
+    -ms-filter : "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#424c5e, endColorstr=#424c5e)";	
+}
+.ie .powerwidget > div > div > ul.etabs li.etabs-active,
+.ie .powerwidget > div > div > ul.etabs li:hover{
+    -ms-filter : "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#7a8696, endColorstr=#7a8696)";	
+}
+.powerwidget > div > div > .etabs-content{
+	border-top : 1px solid #1f232e;
+}
+
+/* Fixed eTabs in a e-block. ----------- */
+
+.e-block .etabs li{
+	border-bottom : 1px solid #1f232e!important;
+}
+.e-block .etabs li{
+	border-right : 1px solid #1f232e;
+}
+.e-block .right .etabs li{
+	border-left : 1px solid #1f232e;
+}
+.e-block .etabs .right .etabs-active,
+.e-block .etabs .etabs-active,
+.e-block .etabs li:hover{
+	background    : #7a8696;
+	border-bottom : 1px solid #7a8696!important;
+}
+.ie .e-block .etabs .right .etabs-active,
+.ie .e-block .etabs .etabs-active,
+.ie .e-block .etabs li:hover{
+    -ms-filter : "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#7a8696, endColorstr=#7a8696)";	
+}
+
+/* Tabs to select. ----------- */
+
+.etabs-arrow-left,
+.etabs-arrow-right{
+	border : 1px solid #1f232e;
+}
+.etabs-arrow-left span{
+	background-image : url("../../images/icons/plix-10/white/arrow-left-10.png");
+}
+.etabs-arrow-right span{
+	background-image : url("../../images/icons/plix-10/white/arrow-right-10.png");
+}
+
+/*
+ * ===============================================================
+ * PLANNING
+ * ===============================================================
+ */
+
+/* Appointment planner. ----------- */
+ 
+.appointment-planner > header{
+	background-color : #2e3642;
+	border           : 1px solid #1f232e;
+}
+.appointment-planner .day-block-header-empty > div{
+	border-right  : 1px solid #1f232e;
+	border-bottom : 1px solid #1f232e;
+	border-top    : 1px solid #7a8696;
+}
+.appointment-planner .day-block-header > div{
+	border-right  : 1px solid #1f232e;
+	border-bottom : 1px solid #1f232e;
+	border-top    : 1px solid #1f232e;
+}
+.appointment-planner .time-block > div,
+.appointment-planner .day-block > div{
+	border-right  : 1px solid #1f232e;
+	border-bottom : 1px solid #1f232e;
+}
+.appointment-planner .time-block > div{
+	border-left : 1px solid #1f232e;
+}
+.appointment-planner .time-block > div{
+	background-color : #576475;
+}
+.disabled-block > div{
+	background-color : #97a7c0;
+}
+.appointment-planner .ap-time-row:hover > div,
+.appointment-planner .ap-time-row:hover > .time-block > div{
+	background-color : #2e3642;
+}
+.appointment-planner .ap-active-time{
+	background-color : #bc004b;
+}
+#appointment-info-box{
+	background-color : #576475;
+	border           : 1px solid #1f232e;
+}
+
+/*
+ * ===============================================================
+ * LOGIN FORM
+ * ===============================================================
+ */
+ 
+#login-outher header{
+	border-bottom : 1px solid #1f232e;
+}
+#login-outher{
+	background-color   : #818c9e;
+	-moz-box-shadow    : 0 0 4px #1f232c;
+	-webkit-box-shadow : 0 0 4px #1f232c;
+	box-shadow         : 0 0 4px #1f232c;
+	color              : #fff;
+}
+#login-outher header{
+	border-top : 1px solid #818c9e;
+}
+#login-sn #login-inner{
+	border           : 1px solid #1f232e;
+	background-color : #2e3642;
+}
+#login #login-inner,
+#login-combi #login-inner{
+	border           : 1px solid #1f232e;
+	background-color : #7a8696;
+}
+.ie #login-clean #login-outher header{
+	 -ms-filter : "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#818c9e, endColorstr=#818c9e)";
+}
+#login-outher #tab-menu{
+	background-color : #2e3642;
+	border-bottom    : 1px solid #818c9e;
+}
+#login-outher #tab-menu li:hover,
+#login-outher #tab-menu .etabs-active{
+	border-right : 1px solid #7a8696;
+}
+#login-outher #tab-menu a:hover,
+#login-outher #tab-menu .etabs-active a{
+	background-color : #7a8696;
+	border-right     : 1px solid #7a8696;
+	border-bottom    : 1px solid #1f232c1f232c;
+}
+#login-outher #tab-menu li a{
+	color         : #fff;
+	border-bottom : 1px solid #1f232c;
+	border-top    : 1px solid #818c9e;
+}
+#login-outher #tab-menu li a:hover,
+#login-outher #tab-menu .etabs-active a{
+	color : #fff;
+}
+#login-outher #login-content-inner{
+	border-left      : 1px solid #1f232e;
+	background-color : #7a8696;
+}
+#login-outher .etabs-content{
+	background-color : #7a8696;
+}
+#login-combi header .etabs li{
+	border-left   : 1px solid #1f232e;
+	border-bottom : 1px solid #1f232e;
+}
+#login-combi header .etabs-active a,
+#login-combi header .etabs a:hover{
+	background    : #7a8696;
+	border-bottom : 1px solid #7a8696;
+}
+#footer{
+	color : #fff;
+}
+
+/*
+ * ===============================================================
+ * TOOLBAR
+ * ===============================================================
+ */
+
+/* Basic/music toolbar. ----------- */
+
+.toolbar{
+	background-color : #576475;
+	border-bottom    : 1px solid #1f232e;
+}
+div.toolbar-bottom{
+	border-top : 1px solid #1f232e;
+}
+div.toolbar-bottom{
+	border-bottom : none;
+}
+.toolbar-window{
+	border             : 1px solid #1f232e;
+	background-color   : #7a8696;
+	-moz-box-shadow    : inset 0 0 0.417em #2e3642;
+	-webkit-box-shadow : inset 0 0 0.417em #2e3642;
+	box-shadow         : inset 0 0 0.417em #2e3642;
+	border             : 1px solid #1f232e;	
+}
+.toolbar .separator{
+	background-color : #1f232e;
+}
+div.toolbar input,
+div.toolbar select,
+div.toolbar .e-select-inner{
+	-moz-box-shadow    : inset 0 0 0.417em #576475;
+	-webkit-box-shadow : inset 0 0 0.417em #576475;
+	box-shadow         : inset 0 0 0.417em #576475;
+	border             : 1px solid #1f232e;
+	background-color   : #7A8696;
+	color              : #fff;
+}
+.toolbar .preloader span{
+	background-image : url("../../images/loaders/type3/dark/16.gif");
+}
+.toolbar .e-splitmenu > li > a{
+	border-left : 1px solid #1f232e!important;
+}
+.toolbar .e-splitmenu > .e-menu-profile > a,
+.toolbar .e-splitmenu > .e-menu-profile > a:hover{
+	border-right : 1px solid #1f232e!important;
+}
+
+/* Navigation & actions. ----------- */
+
+.bulk-actions  input:hover{
+	color  :  #fff;
+}
+
+/*
+ * ===============================================================
+ * AUDIOJS
+ * ===============================================================
+ */
+ 
+.audiojsZ{
+	background-color : #2E3642;
+}
+.audiojsZ .play-pauseZ { 
+	 border-right : 1px solid #1f232e; 
+}
+.audiojsZ .scrubberZ {
+	 background : #1f232e; 
+}
+.audiojsZ .progressZ { 
+	background : #ffffff; 
+}
+.audiojsZ .loadedZ {
+	background : #7A8696;
+}
+.audiojsZ .timeZ { 
+	border-left : 1px solid #1f232e; 
+	color       : #bbbbbb; 
+}
+.audiojsZ .timeZ em { 
+	color : #ffffff; 
+}
+.audiojsZ .error-messageZ { 
+	color : #ffffff;
+}
+.audiojsZ .error-messageZ a { 
+	color         : #eeeeee; 
+	border-bottom : 1px solid #1f232e;
+}
+
+/*
+ * ===============================================================
+ * EPROGRESSBAR
+ * ===============================================================
+ */
+
+.e-progressbar{
+	background-color : #2e3642;
+	border           : 1px solid #1f232e;
+}
+
+/*
+ * ===============================================================
+ * MEDIA
+ * ===============================================================
+ */
+
+/* Basic media. ----------- */
+
+.media-basic li{
+	border           : 1px solid #1f232e;
+	background-color : #576475;
+}
+.media-basic li:hover{
+	background-color : #2e3642;
+}
+.media-basic li > div > div{
+	background-color : rgb(34,34,34);/* fallback */
+	background-color : rgba(0,0,0,0.3);
+}
+
+/* Minimal media. ----------- */
+
+.media-minimal > a{
+	border           : 1px solid #1f232e;
+	background-color : #576475;
+}
+.media-minimal > a:hover{
+	background-color : #2e3642;
+}
+
+/*
+ * ===============================================================
+ * EGALLERY
+ * ===============================================================
+ */
+ 
+.e-gallery > header{
+	border-bottom    : 1px solid #1f232e;
+	background-color : #576475;
+}
+.e-gallery > ul li{
+	border           : 1px solid #1f232e;
+	background-color : #576475;
+}
+
+/* Trash. ----------- */
+
+.e-gallery-trashbin > div{
+	border-bottom    : 1px solid #1f232e;
+	background-color : #7a8696;
+}
+.e-gallery-trashbin > div > div{
+	border-top : 1px dashed #1f232e;
+}
+.e-gallery-trashbin .emptybin{
+	background-color : #2e3642;
+	border           : 1px solid #1f232e;
+}
+.e-gallery-trashbin .emptybin:hover{
+	background-color : #7a8696;
+}
+.e-gallery-trashbin > div ul li{
+	border           : 1px solid #1f232e;
+	background-color : #2e3642;
+}
+.e-gallery > ul div{
+	border : 1px solid #1f232e;
+}
+.e-gallery .ui-state-highlight{
+	background    : #2e3642!important;
+	border-bottom : 1px solid #1f232e;
+}
+.e-gallery .ui-state-highlight ul li{
+	background-color : #7a8696!important;
+}
+.e-gallery .ui-state-highlight .emptybin{
+	background-color : #7a8696;
+	border           : 1px solid #1f232e;
+}
+ 
+/* ===============================================================
+ * ETOUR
+ * ===============================================================
+ */
+ 
+.e-tour{
+	background-color   : #2798e7;	
+	color              : #2e3642;	
+	-webkit-box-shadow : 0 0 4px 0 #2e3642;
+	-moz-box-shadow    : 0 0 4px 0 #2e3642;
+	box-shadow         : 0 0 4px 0 #2e3642;
+}
+.e-tour-arrow-tl > span{
+	border-top : 10px solid #2798e7;
+}
+.e-tour-arrow-tm > span{
+	border-top : 10px solid #2798e7;
+}
+.e-tour-arrow-tr > span{
+	border-top : 10px solid #2798e7;
+}
+.e-tour-arrow-rt > span{
+	border-right : 10px solid #2798e7;
+}
+.e-tour-arrow-rm > span{
+	border-right : 10px solid #2798e7;
+}
+.e-tour-arrow-rb > span{
+	border-right : 10px solid #2798e7;
+}
+.e-tour-arrow-bl > span{
+	border-bottom : 10px solid #2798e7;
+}
+.e-tour-arrow-bm > span{
+	border-bottom : 10px solid #2798e7;
+}
+.e-tour-arrow-br > span{
+	border-bottom : 10px solid #2798e7;
+}
+.e-tour-arrow-lt > span{
+	border-left : 10px solid #2798e7;
+}
+.e-tour-arrow-lm > span{
+	border-left : 10px solid #2798e7;
+}
+.e-tour-arrow-lb > span{
+	border-left : 10px solid #2798e7;
+}
+.e-tour-inner{
+	background-color : #fff;	
+}
+.e-tour-footer{
+	border-top : 1px dashed #2798e7;
+}
+.e-tour-timer,
+.e-tour-footer a{
+	background-color : #2798e7;
+	color            : #fff;
+}
+
+/* ===============================================================
+ * DEMO CODE/HELPERS
+ * ===============================================================
+ */
+
+/* Menu ----------- */ 
+ 
+#context-menu{
+	background-color : #2e3642;
+	border           : 1px solid #1f232c;
+	padding          : 0.833em 0.417em;
+}
+
+/* Documentation ----------- */ 
+
+.doc-wrap{
+	color : #fff;
+}
+.doc-wrap a{
+	color : #fff;
+}
+.doc-intro{
+	background-color : #2e3642;
+	border           : 1px solid #1f232e; 
+	color            : #fff;
+}
+.doc-intro h3{
+	border-bottom : 1px solid #1f232e; 
+}
+.tp-wrapper{
+	border           : 1px solid #1f232e;
+	background-color : #2e3642;
+	padding          : 0.417em;
+	color            : #fff;
+}
+.doc-intro a,
+.tp-wrapper a{
+	color : #fff;
+}
+.doc-info-blocks-wrapper{
+	background-color : #2e3642;
+	border           : 1px solid #1f232e;
+}
+
+/* Pre box ----------- */
+
+.demo-code{
+	border           : 1px solid #1f232e;
+	background-color : #576475;
+	color            : #fff;
+}
+.toggle-min{
+	background-image : url("../../images/icons/plix-10/white/min-10.png");
+}
+.toggle-plus{
+	background-image : url("../../images/icons/plix-10/white/plus-10.png");
+}
+.demo-code pre{
+	background-color : #2e3642;
+	border-top       : 1px solid #1f232e;
+}
+.demo-code pre::-moz-selection {
+     background-color : #C60;
+     color            : #fff;
+}
+.demo-code pre::selection {
+     background-color : #C60;
+     color            : #fff;
+}
+.demo-code pre::-webkit-selection {
+     background-color : #C60;
+     color            : #fff;
+}
+
+/*	demo table ----------- */
+
+.doc-table{
+	border           : 1px solid #1f232e;
+	background-color : #2e3642;
+}
+.doc-table tbody a{
+	color : #ff6600;
+}
+.doc-table thead,
+.doc-table tfoot{
+	background-color : #576475;
+	color            : #fff;
+}
+.doc-table thead th,
+.doc-table tbody td{
+	border : 1px solid #1f232e;		
+}
+.doc-table tbody{
+	color : #fff;	
+}
+.doc-table tbody tr:hover{
+	background-color : #7a8696;
+}
+.doc-table tfoot td{
+	border-top : 1px solid #1f232e;
+}
+.doc-table tfoot a{
+	color : #ff5d31;
+}
+.doc-table tfoot th{
+	border-left : 1px solid #1f232e;
+	border-top  : 1px solid #1f232e;
+}
+
+/* CSS used for the grid page ----------- */
+
+.demo-grid-box{
+	border           : 1px solid #1f232e;
+	background-color : #2e3642;
+	color            : #fff;
+}
+
+/* Misc ----------- */
+
+.actionbar{
+	background-color : #2e3642;
+}
+
+/*
+ * ===============================================================
+ * ELFINDER
+ * Notice that the file manager uses it own styling, this will
+ * override it, to match our theme(s).
+ * ===============================================================
+ */
+
+.elfinder-toolbar-button-separator{
+	border-left : 1px solid #1f232e!important;
+}
+.elfinder-dialog  .ui-dialog-buttonpane{
+	border-color : #7A8696;
+}
+.elfinder-contextmenu,
+.elfinder-navbar {
+	background : #576475!important;
+}
+.elfinder-quicklook{
+	background : #1f232e!important;
+}
+.elfinder-quicklook-titlebar{
+	background : #1f232e!important;
+}
+.elfinder-cwd-file.ui-selected,
+.elfinder-cwd-file.ui-selected .ui-state-hover{
+	background : #576475;
+}
+div.elfinder-contextmenu{
+	border : 1px solid #1a1b1f!important;
+}
+div.elfinder-contextmenu-item:hover{
+	background : #7A8696!important;
+}
+div.elfinder-contextmenu-separator{
+	border-top : 1px solid #1a1b1f!important;
+}	
+.elfinder-tree-dir.ui-state-active{
+	background : #7A8696!important;
+	border     : 1px solid #7A8696!important;
+}
+.elfinder-tree-dir:hover{
+	background : #576475!important;
+	border     : 1px solid #576475!important;
+	color      : #cccccc!important;
+}
+.ui-widget-content.elfinder-buttonset{
+	background:#576475;
+}
+
+/*
+ * ===============================================================
+ * FULL CALENDAR
+ * Notice that the callendar uses the UI theme for the colors.
+ * ===============================================================
+ */
+ 
+.fc-event-skin,
+.external-event{
+    background-color : #fff670;
+    border-color     : #fff670;
+    color            : #576475;
+}
+.fc .fc-today{
+	color            : #ffffff;
+	background-color : #1f232c!important;
+	border-top       : 1px solid #1f232e!important;
+	border-left      : 1px solid #1f232ec	
+}
+.fc-header .ui-state-active{
+	background-color : #7a8696;
+}
+.external-events-box{
+	border           : 1px solid #1f232e;
+	background-color : #2e3642;
+}	
+.external-events-box p{
+	color : #ffffff;
+}	
+body .fc .ui-state-highlight{
+	background-color : #1f232c;
+}
+.fc-day-content,
+.fc-agenda-slots td{
+	background : #2e3642!important;
+	
+}
+
+/*
+ * ===============================================================
+ * TIPSY
+ * Notice that the tooltip uses it own styling, this will
+ * override it, to match our theme(s).
+ * ===============================================================
+ */
+ 
+body .tipsy-inner{ 
+	background-color : #fff; 
+	color            : #1f232e; 
+} 
+body .tipsy-arrow-n{ 
+	border-bottom-color : #fff; 
+}
+body .tipsy-arrow-s{ 
+	border-top-color : #fff; 
+}
+body .tipsy-arrow-e{ 
+	border-left-color : #fff; 
+}
+body .tipsy-arrow-w{ 
+	border-right-color : #fff; 
+} 
+
+/*
+ * ===============================================================
+ * JQUERY UI CUSTOM
+ * The custom made UI theme has limits, this will replace them.
+ * ===============================================================
+ */
+ 
+/* UI Slider ----------- */
+
+body .ui-slider-horizontal .ui-slider-handle{
+    background-image  : url("../../images/theme/strangeblue/ui-slider-handle-horizontal.png");
+}
+body .ui-slider-vertical .ui-slider-handle{
+    background-image  : url("../../images/theme/strangeblue/ui-slider-handle-vertical.png");
+}
+body .ui-slider .ui-widget-header{
+	background-color : #2e3642!important;
+}
+body .ui-slider.ui-widget-content{
+	background-color : #576475!important;
+}
+.ui-slider-horizontal .ui-widget-header{
+	border-bottom : 1px solid #1f232e;
+}
+
+/* UI Tabs ----------- */
+
+body .ui-tabs .ui-state-default{
+	background-color : #7a8696;	
+}
+body .ui-tabs .ui-state-active{
+	background-color : #2e3642;	
+}
+body .ui-tabs .ui-state-hover{
+	background-color : #2e3642;	
+}
+
+/* selectToUISlider ----------- */
+
+.ui-slider .ui-slider-tooltip .ui-tooltip-pointer-down-inner{
+	border-top : 7px solid #fff;
+}
+.ui-slider dt{
+	border-bottom : 1px dotted #ddd;
+	color         : #999;
+}
+.ui-slider dt span{
+	background-color : #fff;
+}
+.ui-slider li, .ui-slider dd{
+	color : #aaa;
+}
+
+/* Datepicker ----------- */
+
+body .ui-state-default, 
+body .ui-widget-content .ui-state-default, 
+body .ui-widget-header .ui-state-default{
+	background-color : #576475;
+}
+body .ui-state-hover, 
+body .ui-widget-content .ui-state-hover, 
+body .ui-widget-header .ui-state-hover, 
+body .ui-state-focus, 
+body .ui-widget-content .ui-state-focus, 
+body .ui-widget-header .ui-state-focus,
+body .ui-widget-header .ui-state-active,
+body .ui-state-highlight, 
+body .ui-widget-content .ui-state-highlight, 
+body .ui-widget-header .ui-state-highlight {
+    background-color : #2e3642;
+    border           : 1px solid #1f232e;
+}
+
+/* AutoComplete ----------- */
+
+.ui-autocomplete li a:hover{
+	background-color : #1f232c;
+}
+
+/* Dialogs ----------- */
+
+div.ui-dialog,
+div.ui-dialog .ui-widget-content {
+	background-color : #7a8696!important;
+	background       : #7a8696!important;
+}
+body div.ui-dialog .ui-dialog-titlebar{
+	border-top    : 1px solid #818c9e;
+	border-bottom : 1px solid #1f232e;		
+}
+body .ui-widget-overlay{
+	background-color : #1f232e;
+}
+body .ui-dialog .ui-dialog-buttonpane{
+	background-color : #7a8696;
+}
+body .ui-dialog .ui-button{
+	border : 1px solid #1f232e;
+}
+
+/* Spinner ----------- */
+
+.ui-spinner-down.ui-state-default,
+.ui-spinner-up.ui-state-default{
+	background-color : #2E3642!important;
+}
+
+/*
+ * ===============================================================
+ * ELRTE CUSTOM
+ * Notice that the editor uses it own styling, this will
+ * override it, to match our theme(s).
+ * ===============================================================
+ */
+
+body .el-rte .toolbar{
+	background-color : #576475;
+}
+body .el-rte .toolbar li,
+body .el-rte .toolbar ul li.el-select,
+body .el-select .list {
+	border           : 1px solid #1f232e;
+	background-color : #2e3642;
+}
+body .el-rte .toolbar ul .active{
+	background-color : #2e3642;
+	border           : 1px solid #818c9e;
+}
+body .el-rte .toolbar ul li:hover{
+	border : 1px solid #818c9e;
+}
+body .el-select label{
+	background-color : #2e3642;
+	border-right     : 1px solid #1f232e;
+}
+body .el-select .list .hover{
+	background-color : #576475;
+}
+body .el-select .list div{
+	border-bottom : 1px solid #1f232e;
+}
+body .el-rte .workzone{
+	background-color : #818c9e;
+	border-bottom    : 1px solid #1f232e;
+	border-top       : 1px solid #1f232e;
+}
+body .el-rte .statusbar{
+	background-color : #2e3642;
+	border-top       : none;
+	border-bottom    : 1px solid #1f232e;	
+}
+body .el-rte .tabsbar .tab{
+	background-color : #576475;
+	border           : 1px solid #1f232e;
+	color            : #ffffff;
+	border-top       : none;
+}
+body .el-rte .tabsbar .active{
+	background-color : #2e3642;
+	border           : 1px solid #1f232e;
+	border-top       : none;
+}
+body .el-dialogform fieldset{
+	border : 1px solid #1f232e;
+}
+.el-rte iframe {
+	background-color : #818c9e;
+}
+body .el-dialogform fieldset legend{
+	background-color : #2e3642;
+	border           : 1px solid #1f232e;
+}
+body .el-palette{
+	background-color : #2e3642;
+	border           : 1px solid #1f232e;
+}
+body .el-palette .panel{
+	border-top : 1px solid #1f232e;
+}
+body .el-palette .panel input{
+      border : 1px solid #1f232e;
+}
+body .el-rte textarea{
+	-moz-box-shadow    : inset 0 0 0;
+	-webkit-box-shadow : inset 0 0 0;
+	box-shadow         : inset 0 0 0;
+	background-color   : #818c9e;
+}
+
+
+/*
+ * ===============================================================
+ * ERROR PAGES
+ * ===============================================================
+ */
+ 
+.error-box{
+	background-color : #7a8696;
+	border           : 1px solid #1f232e;
+	color            : #fff;	
+}
+.error-box .ctrls a:hover{
+	background-color : #818c9e;
+}
+.error-box .line{
+	background-color : #1f232e;
+}
+
+/*
+ * ===============================================================
+ * ICONS/BUTTONS
+ * ===============================================================
+ */
+
+/* Split buttons. ----------- */
+
+.button-split a:first-child,
+.button-split a:first-child:hover,
+div.button-split-rev a:first-child,
+div.button-split-rev a:first-child:hover{
+	border-right :  1px solid #1f232e!important;
+}
+
+/* Chained buttons. ----------- */
+
+.icon-group > span{
+	background : #1f232e;
+}
+
+/* Big social butons. ----------- */
+
+.button-social-big{
+	border : 1px solid #1f232e;
+}
+.button-social-big span{
+	border-right : 1px solid #1f232e;
+}
+
+/* Social butons. ----------- */
+
+.button-social{
+	border : 1px solid #1f232e;
+}
+.button-social span{
+	border-right : 1px solid #1f232e;
+}
+
+/* 10px icons ----------- */
+
+span.plix-10{          
+	background-image : url("../../images/theme/strangeblue/plix-10.png"); 
+}
+
+/* 16px icons ----------- */
+
+span.plix-16{
+	background-image : url("../../images/theme/strangeblue/plix-16.png"); 
+}
+
+/* 32px icons ----------- */
+
+span.plix-32{
+	background-image : url("../../images/theme/strangeblue/plix-32.png"); 
+}
+
+/* Button with indicator ----------- */
+
+.button-text > p{
+    background-color : #EF1919;
+    border           : 1px solid #1f232e;
+    color            : #fff;
+}
+
+/* Custom colors. ----------- */
+
+body .custom-blue{
+	background-color : #097299;/* fallback color */
+	background-image : -webkit-gradient(linear, left top, left bottom, from(#10b5f2), to(#097299));/* Safari 4+, Chrome 1+ */
+	background-image : -webkit-linear-gradient(top, #10b5f2, #097299);/* Chrome 10+, Saf5.1+, iOS 5+ */
+	background-image :    -moz-linear-gradient(top, #10b5f2, #097299);/* Firefox 3.6+ */
+	background-image :     -ms-linear-gradient(top, #10b5f2, #097299); /* IE10 */
+	background-image :      -o-linear-gradient(top, #10b5f2, #097299); /* Opera 11.10+ */
+	background-image :         linear-gradient(to bottom, #10b5f2, #097299);
+	-ms-filter       : "progid : DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#10b5f2, endColorstr=#097299)";/* IE8 */
+	color            : #fff;
+	border           : 1px solid #003548;	
+}
+body .custom-blue:hover{
+	background-color : #075d7d;/* fallback color */
+	background-image : -webkit-gradient(linear, left top, left bottom, from(#0d9fd5), to(#075d7d));/* Safari 4+, Chrome 1+ */
+	background-image : -webkit-linear-gradient(top, #0d9fd5, #075d7d);/* Chrome 10+, Saf5.1+, iOS 5+ */
+	background-image :    -moz-linear-gradient(top, #0d9fd5, #075d7d);/* Firefox 3.6+ */
+	background-image :     -ms-linear-gradient(top, #0d9fd5, #075d7d); /* IE10 */
+	background-image :      -o-linear-gradient(top, #0d9fd5, #075d7d); /* Opera 11.10+ */
+	background-image :         linear-gradient(to bottom, #0d9fd5, #075d7d);
+	-ms-filter       : "progid : DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#0d9fd5, endColorstr=#075d7d)";/* IE8 */
+	color            : #fff;
+	border           : 1px solid #022430;	
+}
+body .custom-green{
+	background-color : #10750e;/* fallback color */
+	background-image : -webkit-gradient(linear, left top, left bottom, from(#0ead0a), to(#10750e));/* Safari 4+, Chrome 1+ */
+	background-image : -webkit-linear-gradient(top, #0ead0a, #10750e);/* Chrome 10+, Saf5.1+, iOS 5+ */
+	background-image :    -moz-linear-gradient(top, #0ead0a, #10750e);/* Firefox 3.6+ */
+	background-image :     -ms-linear-gradient(top, #0ead0a, #10750e); /* IE10 */
+	background-image :      -o-linear-gradient(top, #0ead0a, #10750e); /* Opera 11.10+ */
+	background-image :         linear-gradient(to bottom, #0ead0a, #10750e);
+	-ms-filter       : "progid : DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#0ead0a, endColorstr=#10750e)";/* IE8 */
+	color            : #fff;
+	border           : 1px solid #074506;	
+}
+body .custom-green:hover{
+	background-color : #0a5d08;/* fallback color */
+	background-image : -webkit-gradient(linear, left top, left bottom, from(#0b8e07), to(#0a5d08));/* Safari 4+, Chrome 1+ */
+	background-image : -webkit-linear-gradient(top, #0b8e07, #0a5d08);/* Chrome 10+, Saf5.1+, iOS 5+ */
+	background-image :    -moz-linear-gradient(top, #0b8e07, #0a5d08);/* Firefox 3.6+ */
+	background-image :     -ms-linear-gradient(top, #0b8e07, #0a5d08); /* IE10 */
+	background-image :      -o-linear-gradient(top, #0b8e07, #0a5d08); /* Opera 11.10+ */
+	background-image :         linear-gradient(to bottom, #0b8e07, #0a5d08);
+	-ms-filter       : "progid : DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#0b8e07, endColorstr=#0a5d08)";/* IE8 */
+	color            : #fff;
+	border           : 1px solid #053705;	
+}
+body .custom-red{
+	background-color : #9c1313;/* fallback color */
+	background-image : -webkit-gradient(linear, left top, left bottom, from(#d71b1b), to(#9c1313));/* Safari 4+, Chrome 1+ */
+	background-image : -webkit-linear-gradient(top, #d71b1b, #9c1313);/* Chrome 10+, Saf5.1+, iOS 5+ */
+	background-image :    -moz-linear-gradient(top, #d71b1b, #9c1313);/* Firefox 3.6+ */
+	background-image :     -ms-linear-gradient(top, #d71b1b, #9c1313); /* IE10 */
+	background-image :      -o-linear-gradient(top, #d71b1b, #9c1313); /* Opera 11.10+ */
+	background-image :         linear-gradient(to bottom, #d71b1b, #9c1313);
+	-ms-filter       : "progid : DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#d71b1b, endColorstr=#9c1313)";/* IE8 */
+	color            : #fff;
+	border           : 1px solid #4a0606;		
+}
+body .custom-red:hover{
+	background-color : #840d0d;/* fallback color */
+	background-image : -webkit-gradient(linear, left top, left bottom, from(#ae1212), to(#840d0d));/* Safari 4+, Chrome 1+ */
+	background-image : -webkit-linear-gradient(top, #ae1212, #840d0d);/* Chrome 10+, Saf5.1+, iOS 5+ */
+	background-image :    -moz-linear-gradient(top, #ae1212, #840d0d);/* Firefox 3.6+ */
+	background-image :     -ms-linear-gradient(top, #ae1212, #840d0d); /* IE10 */
+	background-image :      -o-linear-gradient(top, #ae1212, #840d0d); /* Opera 11.10+ */
+	background-image :         linear-gradient(to bottom, #ae1212, #840d0d);
+	-ms-filter       : "progid : DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#ae1212, endColorstr=#840d0d)";/* IE8 */
+	color            : #fff;
+	border           : 1px solid #310303;		
+}
+body .custom-purple{
+	background-color : #7c1b7b;/* fallback color */
+	background-image : -webkit-gradient(linear, left top, left bottom, from(#d931d7), to(#7c1b7b));/* Safari 4+, Chrome 1+ */
+	background-image : -webkit-linear-gradient(top, #d931d7, #7c1b7b);/* Chrome 10+, Saf5.1+, iOS 5+ */
+	background-image :    -moz-linear-gradient(top, #d931d7, #7c1b7b);/* Firefox 3.6+ */
+	background-image :     -ms-linear-gradient(top, #d931d7, #7c1b7b); /* IE10 */
+	background-image :      -o-linear-gradient(top, #d931d7, #7c1b7b); /* Opera 11.10+ */
+	background-image :         linear-gradient(to bottom, #d931d7, #7c1b7b);
+	-ms-filter       : "progid : DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#d931d7, endColorstr=#7c1b7b)";/* IE8 */
+	color            : #fff;
+	border           : 1px solid #370636;
+}
+body .custom-purple:hover{
+	background-color : #611260;/* fallback color */
+	background-image : -webkit-gradient(linear, left top, left bottom, from(#a91ca7), to(#611260));/* Safari 4+, Chrome 1+ */
+	background-image : -webkit-linear-gradient(top, #a91ca7, #611260);/* Chrome 10+, Saf5.1+, iOS 5+ */
+	background-image :    -moz-linear-gradient(top, #a91ca7, #611260);/* Firefox 3.6+ */
+	background-image :     -ms-linear-gradient(top, #a91ca7, #611260); /* IE10 */
+	background-image :      -o-linear-gradient(top, #a91ca7, #611260); /* Opera 11.10+ */
+	background-image :         linear-gradient(to bottom, #a91ca7, #611260);
+	-ms-filter       : "progid : DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#a91ca7, endColorstr=#611260)";/* IE8 */
+	color            : #fff;
+	border           : 1px solid #280427;
+}
+body .custom-orange{
+	background-color : #c33712;/* fallback color */
+	background-image : -webkit-gradient(linear, left top, left bottom, from(#ff4d1d), to(#c33712));/* Safari 4+, Chrome 1+ */
+	background-image : -webkit-linear-gradient(top, #ff4d1d, #c33712);/* Chrome 10+, Saf5.1+, iOS 5+ */
+	background-image :    -moz-linear-gradient(top, #ff4d1d, #c33712);/* Firefox 3.6+ */
+	background-image :     -ms-linear-gradient(top, #ff4d1d, #c33712); /* IE10 */
+	background-image :      -o-linear-gradient(top, #ff4d1d, #c33712); /* Opera 11.10+ */
+	background-image :         linear-gradient(to bottom, #ff4d1d, #c33712);
+	-ms-filter       : "progid : DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#ff4d1d, endColorstr=#c33712)";/* IE8 */
+	color            : #fff;
+	border           : 1px solid #4c1304;	
+}
+body .custom-orange:hover{
+	background-color : #9c290a;/* fallback color */
+	background-image : -webkit-gradient(linear, left top, left bottom, from(#dc390d), to(#9c290a));/* Safari 4+, Chrome 1+ */
+	background-image : -webkit-linear-gradient(top, #dc390d, #9c290a);/* Chrome 10+, Saf5.1+, iOS 5+ */
+	background-image :    -moz-linear-gradient(top, #dc390d, #9c290a);/* Firefox 3.6+ */
+	background-image :     -ms-linear-gradient(top, #dc390d, #9c290a); /* IE10 */
+	background-image :      -o-linear-gradient(top, #dc390d, #9c290a); /* Opera 11.10+ */
+	background-image :         linear-gradient(to bottom, #dc390d, #9c290a);
+	-ms-filter       : "progid : DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#dc390d, endColorstr=#9c290a)";/* IE8 */
+	color            : #fff;
+	border           : 1px solid #2d0b02;	
+}
+body .custom-black{
+	background-color : #111111;/* fallback color */
+	background-image : -webkit-gradient(linear, left top, left bottom, from(#333333), to(#111111));/* Safari 4+, Chrome 1+ */
+	background-image : -webkit-linear-gradient(top, #333333, #111111);/* Chrome 10+, Saf5.1+, iOS 5+ */
+	background-image :    -moz-linear-gradient(top, #333333, #111111);/* Firefox 3.6+ */
+	background-image :     -ms-linear-gradient(top, #333333, #111111); /* IE10 */
+	background-image :      -o-linear-gradient(top, #333333, #111111); /* Opera 11.10+ */
+	background-image :         linear-gradient(to bottom, #333333, #111111);
+	-ms-filter       : "progid : DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#333333, endColorstr=#111111)";/* IE8 */
+	color            : #fff;
+	border           : 1px solid #000000;
+}
+body .custom-black:hover{
+	background-color : #000000;/* fallback color */
+	background-image : -webkit-gradient(linear, left top, left bottom, from(#222222), to(#000000));/* Safari 4+, Chrome 1+ */
+	background-image : -webkit-linear-gradient(top, #222222, #000000);/* Chrome 10+, Saf5.1+, iOS 5+ */
+	background-image :    -moz-linear-gradient(top, #222222, #000000);/* Firefox 3.6+ */
+	background-image :     -ms-linear-gradient(top, #222222, #000000); /* IE10 */
+	background-image :      -o-linear-gradient(top, #222222, #000000); /* Opera 11.10+ */
+	background-image :         linear-gradient(to bottom, #222222, #000000);
+	-ms-filter       : "progid : DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#222222, endColorstr=#000000)";/* IE8 */
+	color            : #fff;
+	border           : 1px solid #000000;
+}
+body .custom-grey{
+	background-color : #666666;/* fallback color */
+	background-image : -webkit-gradient(linear, left top, left bottom, from(#999999), to(#666666));/* Safari 4+, Chrome 1+ */
+	background-image : -webkit-linear-gradient(top, #999999, #666666);/* Chrome 10+, Saf5.1+, iOS 5+ */
+	background-image :    -moz-linear-gradient(top, #999999, #666666);/* Firefox 3.6+ */
+	background-image :     -ms-linear-gradient(top, #999999, #666666); /* IE10 */
+	background-image :      -o-linear-gradient(top, #999999, #666666); /* Opera 11.10+ */
+	background-image :         linear-gradient(to bottom, #999999, #666666);
+	-ms-filter       : "progid : DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#999999, endColorstr=#666666)";/* IE8 */
+	color            : #fff;
+	border           : 1px solid #222222;	
+}
+body .custom-grey:hover{
+	background-color : #555555;/* fallback color */
+	background-image : -webkit-gradient(linear, left top, left bottom, from(#777777), to(#555555));/* Safari 4+, Chrome 1+ */
+	background-image : -webkit-linear-gradient(top, #777777, #555555);/* Chrome 10+, Saf5.1+, iOS 5+ */
+	background-image :    -moz-linear-gradient(top, #777777, #555555);/* Firefox 3.6+ */
+	background-image :     -ms-linear-gradient(top, #777777, #555555); /* IE10 */
+	background-image :      -o-linear-gradient(top, #777777, #555555); /* Opera 11.10+ */
+	background-image :         linear-gradient(to bottom, #777777, #555555);
+	-ms-filter       : "progid : DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#777777, endColorstr=#555555)";/* IE8 */
+	color            : #fff;
+	border           : 1px solid #111111;	
+}
+
+/*
+ * ===============================================================
+ * GROWL
+ * ===============================================================
+ */ 
+
+.growl-default{
+	background-color : rgb(0,0,0);/* fallback */
+	background-color : rgba(0,0,0,0.9);
+	color            : #fff;
+}
+.growl-white{
+	background-color : rgb(255,255,255);/* fallback */
+	background-color : rgba(255,255,255,0.9);
+	color            : #000;
+}
+
+/*
+ * ===============================================================
+ * Notification
+ * ===============================================================
+ */ 
+
+.notification-default{
+	background-color : #222;
+	border-top       : 1px solid #000;
+	border-bottom    : 1px solid #000;
+	color            : #fff;	
+}
+.notification-success{
+	background-color : #A0F372;
+	border-top       : 1px solid #1B3D08;
+	border-bottom    : 1px solid #1B3D08;
+	color            : #1B3D08;	
+}
+.notification-warning{
+	background-color : #FFF880;
+	border-top       : 1px solid #787202;
+	border-bottom    : 1px solid #787202;
+	color            : #383500;	
+}
+.notification-info{
+	background-color : #78CBFF;
+	border-top       : 1px solid #003659;
+	border-bottom    : 1px solid #003659;
+	color            : #003659;	
+}
+.notification-error{
+	background-color : #FF8E8E;
+	border-top       : 1px solid #530000;
+	border-bottom    : 1px solid #530000;
+	color            : #530000;
+}
+.notification-msg{
+	background-color : #fff;
+	border-top       : 1px solid #555;
+	border-bottom    : 1px solid #555;
+	color            : #222;
+}
+.notification-default-widget{
+	background-color : #222;
+	border-bottom    : 1px solid #000;
+	color            : #fff;	
+}
+.notification-success-widget{
+	background-color : #A0F372;
+	border-bottom    : 1px solid #1B3D08;
+	color            : #1B3D08;	
+}
+.notification-warning-widget{
+	background-color : #FFF880;
+	border-bottom    : 1px solid #787202;
+	color            : #383500;	
+}
+.notification-info-widget{
+	background-color : #78CBFF;
+	border-bottom    : 1px solid #003659;
+	color            : #003659;	
+}
+.notification-error-widget{
+	background-color : #FF8E8E;
+	border-bottom    : 1px solid #530000;
+	color            : #530000;
+}
+.notification-msg-widget{
+	background-color : #fff;
+	border-bottom    : 1px solid #555;
+	color            : #222;
+}
+
+/*
+ * ===============================================================
+ * ELOADER
+ * ===============================================================
+ */
+
+#e-loader-overlay{
+	background-color : #000;
+}
+#e-loader-img{
+	background-color : #fff;
+}
+
+/*
+ * ===============================================================
+ * NEW IN V1.1
+ * ===============================================================
+ */
+
+.e-wizard{
+	border : 1px solid #1f232e;	
+}
+.e-wizard > header{
+	background-color : #2e3642;/* fallback color */
+    background-image : -webkit-gradient(linear, left top, left bottom, from(#424c5e), to(#2e3642));/* Safari 4+, Chrome 1+ */
+	background-image : -webkit-linear-gradient(top, #424c5e, #2e3642);/* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image :    -moz-linear-gradient(top, #424c5e, #2e3642);/* Firefox 3.6+ */
+    background-image :     -ms-linear-gradient(top, #424c5e, #2e3642); /* IE10 */
+	background-image :      -o-linear-gradient(top, #424c5e, #2e3642); /* Opera 11.10+ */
+	background-image :         linear-gradient(to bottom, #424c5e, #2e3642);
+    -ms-filter       : "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#424c5e, endColorstr=#2e3642)";/* IE8 */
+	border-bottom    : 1px solid #1f232e;
+}
+.e-wizard-steps{
+    background-color : #576475;
+    border-bottom    : 1px solid #1F232E;
+}
+.e-wizard-step{
+	border-right : 1px solid #1f232e;
+}
+.e-wizard-numbers .e-wizard-step span{
+	background-color : #2e3642;
+	border           : 1px solid #1f232e;
+}
+.e-wizard-progress > div{
+	border           : 1px solid #1f232e;
+	background-color : #576475;
+}
+.e-wizard-progress div span{
+	background-color : #fff;
+	color            : #000;
+}
+.e-wizard-active{
+	background-color : #424c5e;
+}
+.e-wizard-numbers .e-wizard-active.e-wizard-step span{
+	background-color : #7A8696;
+	border           : 1px solid #1f232e;
+}
+.e-wizard-placeholder fieldset legend{
+	border-bottom : 1px solid #1f232e!important;
+}
+.e-wizard > footer{
+	border-top : 1px solid #1f232e;
+}
+.e-wizard-disabled:hover{
+	background-color : #2e3642;/* fallback color */
+    background-image : -webkit-gradient(linear, left top, left bottom, from(#424c5e), to(#2e3642));/* Safari 4+, Chrome 1+ */
+	background-image : -webkit-linear-gradient(top, #424c5e, #2e3642);/* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image :    -moz-linear-gradient(top, #424c5e, #2e3642);/* Firefox 3.6+ */
+    background-image :     -ms-linear-gradient(top, #424c5e, #2e3642); /* IE10 */
+	background-image :      -o-linear-gradient(top, #424c5e, #2e3642); /* Opera 11.10+ */
+	background-image :         linear-gradient(to bottom, #424c5e, #2e3642);
+    -ms-filter       : "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#424c5e, endColorstr=#2e3642)";/* IE8 */
+	border           : 1px solid #1f232e;
+}
+.e-wizard-errorlabel > span{
+	background-color : #c81d07;
+	color            : #fff;
+}
+.e-wizard-errorlabel > span span{
+	border-top : 6px solid #c81d07;
+}

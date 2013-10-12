@@ -1,0 +1,522 @@
+/*
+ * ************************************************************* *
+ * Name        : Menu                                            *
+ * Description : CSS for the menu's.                             *
+ * Version     : Version 1                                       *
+ * Author      : CreativeMilk                                    *
+ * Author URI  : www.creativemilk.net                            *
+ * Updated     : --/--/----                                      *
+ * Copyright   : (c) 2011 CreativeMilk                           *
+ * ************************************************************* *
+ */
+ 
+/*
+ * ===============================================================
+ * MAIN MENU
+ * ===============================================================
+ */
+
+#main-menu{
+	float   : left;
+	padding : 0;
+	width   : 100%;
+}
+#main-menu > ul{
+	width      : 100%;
+	float      : left;
+	list-style : none;
+}
+#main-menu > ul > li{
+	float      : left;
+	min-height : 50px;
+	width      : 100%;
+	position   : relative;
+}
+#main-menu > ul > li > a{
+	height      : 100%;
+	display     : block;
+	padding     : 0 0 0 40px;
+	position    : relative;
+	line-height : 50px;
+	font-weight : bold;
+}
+#main-menu > ul > li .plix-16{
+	position : absolute;
+	left     : 15px;
+	top      : 50%;
+	margin   : -8px 0 0 0;
+}
+#main-menu > ul > li > a .indicator{
+	height      : 20px;
+	padding     : 0 5px 0 5px;
+	line-height : 18px;
+	font-size   : 10px;
+	position    : absolute;
+	top         : 50%;
+	right       : 15px;
+	margin      : -10px 0 0 0;
+}
+#main-menu > ul > li > a .color-indicator{
+	height      : 20px;
+	width       : 20px;
+	line-height : 20px;
+	text-align  : center;
+	font-size   : 10px;
+	padding     : 0;
+	position    : absolute;
+	top         : 50%;
+	right       : 15px;
+	margin      : -10px 0 0 0;
+	font-size   : 10px;
+}
+#main-menu .button-icon{
+	width    : 20px;
+	height   : 20px;
+	margin   : -10px 0 0 0;
+	position : absolute;
+	right    : 15px;
+	top      : 50%;
+}
+#main-menu .button-icon span{
+	width    : 10px;
+	height   : 10px;
+	margin   : -5px 0 0 -5px;
+	position : absolute;
+	left     : 50%;
+	top      : 50%;
+}
+#main-menu > ul > li > a .indicator,
+#main-menu > ul > li > a .color-indicator,
+#main-menu .button-icon{
+	-webkit-border-radius : 3px;
+	-moz-border-radius    : 3px;
+	border-radius         : 3px;	
+}
+
+/* Drop down part. ----------- */
+
+#main-menu > ul > li > ul{
+	margin   : 0 -1px  0 0;
+	display  : none;
+	overflow : auto;
+	padding  : 5px;
+}
+#main-menu > ul > .menu-open > ul{
+	display : block;
+}
+#main-menu > ul > li > ul > li{
+	float : left;
+	width : 100%;
+}
+#main-menu > ul > li > ul > li:hover{
+	border-left  : none!important;
+	border-right : none!important;
+}
+#main-menu > ul > li > ul > li:last-child{
+	float : left;
+	width : 100%;
+}
+#main-menu > ul > li > ul > li > a{
+	height              : 32px;
+	padding             : 0 0 0 35px;
+	display             : block;
+	line-height         : 32px;
+	background-repeat   : no-repeat;
+	background-position : 15px center;
+}
+
+/* Switch to icons. ----------- */
+
+.mainmenu-to-icon aside{
+	float    : left;
+	margin   : 0 0 -1px -101px;
+	padding  : 0;
+	position : relative;
+	width    : 100px;
+}
+.mainmenu-to-icon .mainmenu-sub-hide{
+	display : none;
+}
+.mainmenu-to-icon #profile-info,
+.mainmenu-to-icon #main-menu ul li a span{
+	display : none;
+}
+.mainmenu-to-icon #main-menu ul li a span.plix-16{
+	display : block;
+	top     : 15px;
+	left    : 50%;
+	margin  : 0 0 0 -8px;
+}
+.mainmenu-to-icon #main-menu > ul > li > a{
+	width       : 100%;
+	padding     : 40px 0 10px 0!important;
+	text-align  : center;
+	line-height : 24px!important;
+}
+.mainmenu-to-icon #main-menu > ul > li > a{
+	width       : 100%;
+	padding     : 35px 0 10px 0;
+	text-align  : center;
+	font-size   : 11px;
+	line-height : 28px;
+}
+.mainmenu-to-icon #main-menu > ul > li > a .color-indicator{
+	display : block;
+	top     : 5px;
+	right   : 5px;
+	margin  : 0;
+}
+.mainmenu-to-icon #main-menu > ul > li > ul > li a{
+	padding       : 0;
+	text-align    : center;
+	border-bottom : none;
+}
+.mainmenu-to-icon #main-menu > ul > li > ul > li a,
+.mainmenu-to-icon #main-menu > ul > li > ul > li:last-child a{
+	background-image : none;
+}
+
+/*
+ * ===============================================================
+ * EMENU
+ * ===============================================================
+ */
+ 
+.e-menu{
+	width      : auto;
+	list-style : none;
+	float      : left;
+	z-index    : 100;
+}
+.e-menu > li{
+	height      : 28px;
+	width       : auto;
+	float       : left;
+	margin      : 0 5px 5px 0;
+	position    : relative;
+	line-height : 26px;
+}
+.e-menu > li > a{
+	height          : 28px;
+	width           : auto;
+	float           : left;
+	line-height     : 28px;
+	padding         : 0 27px 0 10px;
+	text-decoration : none; 
+}
+.e-menu > li > a .plix-10{
+	right    : 9px;
+	left     : auto;
+	margin   : -5px 0 0 -5px;
+}
+
+/* Split version. ----------- */
+
+.e-splitmenu{
+	width      : auto;
+	list-style : none;
+	float      : left;
+	z-index    : 100;
+}
+.e-splitmenu > li{
+	height      : 28px;
+	width       : auto;
+	float       : left;
+	margin      : 0 5px 5px 0;
+	position    : relative;
+	padding     : 0 0 0 10px;
+	line-height : 26px;
+}
+.e-splitmenu > li > span:first-child{
+	height      : 100%;
+	float       : left;
+	line-height : 28px;
+}
+.e-splitmenu > li > a{
+	height          : 100%;
+	width           : 28px;
+	float           : right;
+	margin          : 0 0 0 10px;
+	position        : relative;
+	text-decoration : none; 
+}
+.e-splitmenu > li > a .plix-10{
+	margin : -5px 0 0 -5px;
+}
+.e-splitmenu .e-menu-active,
+.e-splitmenu > li > a:hover{
+	-webkit-border-top-right-radius : 3px;	
+	-moz-border-radius-topright     : 3px;	
+	border-top-right-radius         : 3px;	
+}
+.e-menu .e-menu-active,
+.e-menu > li > a:hover{
+	-webkit-border-top-left-radius  : 3px;
+	-moz-border-radius-topleft      : 3px;
+	border-top-left-radius          : 3px;
+	-webkit-border-top-right-radius : 3px;	
+	-moz-border-radius-topright     : 3px;
+	border-top-right-radius         : 3px;	
+}
+
+/* Dropdown part. ----------- */
+
+.e-menu li > div{
+	width    : 140px;
+	position : absolute;
+	top      : 28px;
+	left     : -1px;
+	z-index  : 1000;
+	display  : none;
+}
+.e-menu li > div.e-menu-reverze{
+	right : -1px;
+	left  : auto;
+}
+.e-splitmenu li > div{
+	width    : 140px;
+	position : absolute;
+	top      : 28px;
+	right    : -111px;
+	z-index  : 1000;
+	display  : none;
+}
+.e-splitmenu li > div.e-menu-reverze{
+	right : -1px;
+}
+.e-splitmenu li > div .e-menu-brigde{
+	height : 1px;
+	float  : left;
+	margin : 0 0 -1px 0;
+}
+.e-menu li > div .e-menu-brigde{
+	height : 1px;
+	float  : left;
+	margin : 0 0 -1px 0;
+}
+.e-menu li > div.e-menu-reverze .e-menu-brigde{
+	float : right;
+}
+.e-splitmenu .e-menu-profile > div{
+	left : -1px;
+}
+.e-splitmenu .e-menu-profile > div.e-menu-reverze{
+	left : -111px;
+}
+.e-splitmenu .e-menu-profile > div.e-menu-reverze .e-menu-brigde{
+	float : right;
+}
+.e-splitmenu li.e-menu-profile a{
+	-webkit-border-bottom-left-radius : 0;	
+	-moz-border-radius-bottomleft     : 0;
+	border-bottom-left-radius         : 0;	
+}
+.e-splitmenu li > .e-menu-reverze .e-menu-brigde{
+	float : right;
+}
+.e-menu li > div ul,
+.e-splitmenu li > div ul{
+	width                              : 132px;
+	display                            : block;
+	list-style                         : none;
+	overflow                           : auto;
+	padding                            : 3px;
+	-webkit-border-bottom-left-radius  : 3px;
+	-moz-border-radius-bottomleft      : 3px;
+	border-bottom-left-radius          : 3px;
+	-webkit-border-bottom-right-radius : 3px;	
+	-moz-border-radius-bottomright     : 3px;
+	border-bottom-right-radius         : 3px;
+}
+.e-menu li > div ul li,
+.e-splitmenu li > div ul li{
+	float : left;
+	width : 100%;
+}
+.e-menu li > div li:first-child,
+.e-splitmenu li > div li:first-child{
+	border-top : none;
+}
+.e-menu li > div a,
+.e-splitmenu li > div a{
+	padding             : 0 10px;
+	height              : 32px;
+	display             : block;
+	line-height         : 32px;
+	background-position : 10px center;
+	background-repeat   : no-repeat;
+	text-decoration     : none; 
+}
+.e-menu li > div a:hover,
+.e-splitmenu li > div a:hover{
+	text-decoration : none; 
+}
+.e-menu li > div a .plix-10,
+.e-splitmenu li > div a .plix-10{
+	float    : left;
+	margin   : 11px 10px 0 0;
+	position : static;
+}
+.e-menu li > .e-menu-reverze .plix-10,
+.e-splitmenu li > .e-menu-reverze .plix-10{
+	float    : right;
+	margin   : 11px 0 0 10px;
+	position : static;
+}
+
+/* Profile. ----------- */
+
+.e-menu .e-menu-profile{
+	width    : 51px;
+	height   : 28px;
+	position : relative;
+	cursor   : pointer;
+	padding  : 0;
+	margin   : 0 0 5px 0;
+}
+.e-splitmenu .e-menu-profile{
+	width    : 57px;
+	height   : 28px;
+	position : relative;
+	padding  : 0;
+	margin   : 0 0 5px 0;
+}
+.e-splitmenu li.e-menu-profile > a{
+	float                              : left;
+	position                           : relative;
+	margin                             : 0;
+	border-left                        : none!important;
+	-webkit-border-radius              : 3px;
+	-moz-border-radius                 : 3px;
+	border-radius                      : 3px;	
+	-webkit-border-bottom-right-radius : 0;
+	-webkit-border-top-right-radius    : 0;	
+	-moz-border-radius-bottomright     : 0;
+	-moz-border-radius-topright        : 0;
+	border-bottom-right-radius         : 0;
+	border-top-right-radius            : 0;
+}
+.e-splitmenu .e-menu-profile .e-menu-active{
+	border-left : none!important;
+}
+.e-menu .e-menu-profile > a{
+	padding : 0;
+	width   : 100%
+}
+body .e-splitmenu > .e-menu-profile > a:hover{
+	border : none;
+}
+.e-menu .e-menu-profile > a img{
+	width  : 18px;
+	height : 18px;
+	float  : right;
+	margin : 5px;
+}
+.e-splitmenu .e-menu-profile img{
+	width   : 18px;
+	height  : 18px;
+	float   : right;
+	margin  : 5px 5px 5px 0;
+	display : block;
+}
+.e-menu .e-menu-profile > a > span:first-child{
+	width    : 10px;
+	height   : 10px;
+	position : absolute;
+	left     : 14px;
+	margin   : -6px 0 0 -5px;
+	float    : none;
+}
+.e-splitmenu .e-menu-profile > div.e-menu-sub{
+	width    : 120px;
+	position : absolute;
+	top      : 32px;
+	z-index  : 100;
+	display  : none;
+}
+.e-menu-active{
+	border : none!important;	
+}
+.e-splitmenu > li,
+.e-menu > li{
+	-webkit-border-radius : 3px;
+	-moz-border-radius    : 3px;
+	border-radius         : 3px;	
+}
+.e-menu-active .e-menu-brigde{
+	display : block;
+}
+
+/*
+ * ===============================================================
+ * CSS MENU
+ * ===============================================================
+ */
+ 
+.css-menu{
+	height       : 30px;
+	width        : auto;
+	float        : left;
+	list-style   : none;
+	border-right : none!important;
+}
+.css-menu > li{
+	height   : 30px;
+	float    : left;
+	position : relative;
+}
+.css-menu > li > a{
+	height      : 30px;
+	width       : auto;
+	float       : left;
+	line-height : 30px;
+	padding     : 0 10px;
+} 
+.css-menu a .plix-10{
+	float             : left;
+	margin            : 10px 10px 0 0;
+	background-repeat : no-repeat;
+	position          : static;
+}
+.css-menu > li > a:hover{
+	border : none!important;
+}
+.css-menu li ul:hover + a{
+	border:none!important;
+}
+
+/* Dropdown part. ----------- */
+
+.css-menu li ul{
+	width         : 140px;
+	float         : left;
+	position      : absolute;
+	top           : 30px;
+	left          : -1px;
+	display       : none;
+	border-bottom : none!important;
+}
+/* reverse the last one */
+.css-menu li:last-child ul{
+	right : -1px;
+	left  : auto;
+}
+/* savety */
+.css-menu li:first-child ul{
+	left  : -1px;
+	right : auto;
+}
+.css-menu li ul li{
+	width      : 100%;
+	float      : left;
+	list-style : none;	
+}
+.css-menu li ul li a{
+	height      : 30px;
+	display     : block;
+	line-height : 30px;
+	padding     : 0 10px;
+}
+.css-menu li:hover ul{
+	display : inline-block
+}

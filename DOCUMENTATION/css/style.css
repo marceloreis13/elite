@@ -1,0 +1,421 @@
+/*
+ * ************************************************************* *
+ * Name        : Documentation                                   *
+ * Theme URI   :                                                 *
+ * Description : Doc stylesheet.                                 *
+ * Version     : Version 1                                       *
+ * Author      : CreativeMilk                                    *
+ * Author URI  : www.creativemilk.net                            *
+ * Updated     : --/--/----                                      *
+ * Copyright   : (c) 2011 CreativeMilk                           *
+ * ************************************************************* *
+ */
+ 
+/*
+ * ===============================================================
+ * IMPORT CSS FILES 
+ * ===============================================================
+ */
+
+@import url('framework.css');
+
+/*
+ * ===============================================================
+ * BASIC CSS SELECTORS
+ * ===============================================================
+ */
+ 
+html{
+	font-family : Arial, Helvetica, sans-serif;
+	font-size   : 12px;
+	line-height : 20px;        
+	height      : 100%;
+	min-width   : 100%;
+}
+body{	
+	width            : 100%;
+	min-height       : 100%;
+	height           : 100%;
+	background-color : #fff;
+	color            : #333;
+}
+a{
+	color : #333;
+}
+
+/*
+ * ===============================================================
+ * MAIN COLORS
+ * ===============================================================
+ */
+ 
+aside nav ul li a{
+	color:#fff;
+	background-color : #2a2a2a;/* fallback color */
+    background-image : -webkit-gradient(linear, left top, left bottom, from(#303030), to(#2a2a2a));/* Safari 4+, Chrome 1+ */
+	background-image : -webkit-linear-gradient(top, #303030, #2a2a2a);/* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image :    -moz-linear-gradient(top, #303030, #2a2a2a);/* Firefox 3.6+ */
+    background-image :     -ms-linear-gradient(top, #303030, #2a2a2a); /* IE10 */
+	background-image :      -o-linear-gradient(top, #303030, #2a2a2a); /* Opera 11.10+ */
+	background-image :         linear-gradient(to bottom, #303030, #2a2a2a);
+}
+.doc-highlite,
+.feature-box,
+.plix-10-wrap,
+.plix-16-wrap,
+.plix-32-wrap,
+.table,
+pre{
+	background-color:#fff;
+	color:#333;
+	border:1px solid #ccc;
+	-webkit-box-shadow : 0 0 5px 0 #ccc;
+	-moz-box-shadow    : 0 0 5px 0 #ccc;
+	box-shadow         : 0 0 5px 0 #ccc;
+}
+td, th{
+	border:1px solid #bbb;
+}
+
+/*
+ * ===============================================================
+ * CONTAINERS
+ * ===============================================================
+ */
+ 
+div#container{
+	height   : 100%;
+	width    : 100%;
+	position : relative;
+	overflow : hidden;
+	background-color:#eee;/
+}
+
+/*
+ * ===============================================================
+ * SIDEBAR
+ * ===============================================================
+ */
+ 
+aside{
+	width:229px;
+	padding:0;
+	height:100%;
+	position:fixed;
+	background-color:#2a2a2a;
+	color:#fff;
+	border-right:0.083em solid #000;
+	-moz-box-shadow:0.25em 0 0.28em rgba(0,0,0,0.3);
+    -webkit-box-shadow:0.25em 0 0.28em rgba(0,0,0,0.3);
+    box-shadow:0.25em 0 0.28em rgba(0,0,0,0.3);
+	z-index:100;
+}
+aside > div{
+	float:left;
+	width:229px;
+	height:100%;
+	margin:0;
+	padding-right:18px;
+	overflow:auto;
+}
+aside nav{
+	margin: 0 0 10px 0;
+	float:left;
+}
+aside .min,
+aside .plus{
+	width:10px;
+	height:10px;
+	position:absolute;
+	right:10px;
+	top:16px;
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+aside .min{
+	background-image:url("../images/min.png");
+}
+aside .plus{
+	background-image:url("../images/plus.png");
+}
+aside nav > ul{
+	width:100%;
+	float:left;
+	margin:0;
+	border-top:1px solid #000;
+	border-bottom:1px solid #444;	
+}
+aside nav > ul > li{
+	width:100%;
+	float:left;
+	position:relative;
+	margin:0;
+}
+aside nav ul li a{
+	width:209px;
+	float:left;
+	margin:0 0 0.083em 0;
+	padding:10px;
+	text-shadow : 1px 1px 3px #000;	
+	border-top:1px solid #444;	
+	border-bottom:1px solid #000;		
+}
+aside nav > ul > li > a:hover{
+	border-top:1px solid #444;	
+	border-bottom:1px solid #000;
+	background-color : #222;
+	background-image:none;	
+}
+aside nav ul li li a:hover{
+	border-top:1px solid #444;	
+	border-bottom:1px solid #000;
+	background-color : #222;	
+}
+aside nav ul li{
+	width:100%;
+	float:left;
+	margin:0;
+}
+aside nav ul li{
+	margin-bottom:-1px;
+}
+aside nav ul ul{
+	float:left;
+	width:100%;
+	padding: 0 0 1px 0;
+	margin-top:-1px;
+	display:none;
+}
+aside nav ul li li a{
+	width:189px;
+	padding-left:30px;
+}
+aside nav ul li li a{
+	float:left;
+	background-image:url("../images/bullit.png");
+	background-repeat:no-repeat;
+	color:#fff;
+}
+aside nav ul li li:last-child a{
+	background-image:url("../images/bullit-end.png");
+}
+aside nav ul li li a,
+aside nav ul li li a:visited{
+	background-position:10px center;	
+}
+.doc-version{
+	width:100%;
+	float:left;
+	font-size:10px;
+	margin:0 0 0 10px;
+}
+.doc-version a{
+	color:#fff;
+}
+.doc-version a:hover{
+	text-decoration:underline
+}
+
+/*
+ * ===============================================================
+ * CONTENT
+ * ===============================================================
+ */
+ 
+#content{
+	height:100%;
+	padding:0 40px 0 270px;
+	overflow-y:scroll;
+	font-size:13px;
+	position:relative;
+}
+#content section{
+	float:left;
+	width:100%;
+	height:100%;
+	padding:40px 0 0 0;
+	clear:both;
+}
+#content section > h2{
+	margin:0 0 5px 0;
+	font-size: 24px;
+	font-weight:normal;
+}
+#content section a{
+	text-decoration:underline;
+	font-weight:bold;
+	color:#f18a01;
+}
+#content section ul{
+	margin:0 0 10px 0;
+}
+#content section li{
+	margin:0 0 10px 0;
+}
+#content section .list{
+	list-style:disc;
+	margin:0 0 0 14px;
+}
+#content section .list ul{
+	list-style:circle;
+	margin:0 0 0 14px;
+}
+#content section .list ul li{
+	margin:0 0 0 0;
+}
+#logo{
+	position:absolute;
+	left:50%;
+	top:50px;
+	margin:0 0 0 -40px;
+}
+#ajax-intro{
+	width:100%;
+	height:100%;
+    position:fixed;
+	left:231px;
+	top:0;
+	z-index:9000;
+}
+#ajax-intro div{
+	width:200px;
+	height:140px;
+	position:absolute;
+	right:280px;
+	bottom:40px;
+	padding:20px;
+	background-color:#fff;
+	color:#333;
+	border:1px solid #ccc;
+	-webkit-box-shadow : 0 0 5px 0 #ccc;
+	-moz-box-shadow    : 0 0 5px 0 #ccc;
+	box-shadow         : 0 0 5px 0 #ccc;
+	-webkit-border-radius   : 5px;
+	-khtml-border-radius    : 5px;
+	-moz-border-radius      : 5px;
+	border-radius           : 5px;	
+}
+#ajax-intro div img{
+	width:72px;
+	height:72px;
+	float:left;
+	clear:both;
+	margin: 10px 0 30px 64px;	
+}
+#ajax-intro div span{
+	width:100%;
+	height:24px;
+	float:left;
+	text-align:center;
+	font-size:16px;
+	font-weight:bold;
+}
+.log-box{
+	margin:0 0 20px 0;
+}
+.log-box ul{
+	list-style:disc;
+	padding:0 0 0 14px;
+}
+.log-version{
+	font-size:14px;
+	font-weight:bold;
+	margin:0 0 5px 0;
+}
+.log-version span{
+	font-weight:normal;
+}
+.doc-highlite{
+	padding:20px;
+}
+.feature-box{
+	width:300px;
+	height:200px;
+	float:left;
+	margin:0 20px 20px 0;
+	padding:20px;
+}
+div.feature-box h3{
+	margin:0 0 10px 0;
+}
+pre{
+	padding:20px;
+	font-size:12px;
+	font-family:Arial, Helvetica, sans-serif;
+	margin:0
+}
+.table{
+	width:100%;
+}
+.table thead th{
+	font-weight:bold;
+}
+.table thead th:first-child{
+	min-width:90px;
+}
+.table th,
+.table td{
+	padding:5px;
+}
+.w35{
+	width:35px;
+}
+.thumbs-box a{
+	float:left;
+	margin:0 10px 10px 0;
+}
+
+
+.plix-10-wrap,
+.plix-16-wrap,
+.plix-32-wrap{
+	padding:20px;
+}
+.plix-10-wrap .icon-wrap{
+	height:2em;
+	width:33%;
+	line-height:2em;
+	float:left;
+}
+.plix-10-wrap .icon-wrap img{
+	float:left;
+	margin:7px 0 0 0;
+}
+.plix-10-wrap .icon-wrap span{
+	float:left;
+	margin:0 0 0 1.333em;
+	font-size:11px;
+}
+.plix-16-wrap .icon-wrap{
+	height:2em;
+	width:33%;
+	line-height:2em;
+	float:left;
+}
+.plix-16-wrap .icon-wrap img{
+	float:left;
+	margin:4px 0 0 0;
+}
+.plix-16-wrap .icon-wrap span{
+	float:left;
+	margin:0 0 0 10px;
+	font-size:11px;
+}
+.plix-32-wrap .icon-wrap{
+	height:4.333em;
+	width:33%;
+	line-height:4.333em;
+	float:left;
+}
+.plix-32-wrap .icon-wrap img{
+	float:left;
+	margin:10px 0 0 0;
+}
+.plix-32-wrap .icon-wrap span{
+	float:left;
+	margin:0 0 0 10px;
+	font-size:11px;
+}
+
+
+

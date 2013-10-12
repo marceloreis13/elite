@@ -1,0 +1,53 @@
+/*
+ * ************************************************************* *
+ * Name        : eBlock                                          *
+ * Description : CSS for the non-widgets.                        *
+ * Version     : Version 1                                       *
+ * Author      : CreativeMilk                                    *
+ * Author URI  : www.creativemilk.net                            *
+ * Updated     : --/--/----                                      *
+ * Copyright   : (c) 2011 CreativeMilk                           *
+ * ************************************************************* *
+ */
+ 
+.e-block{
+	margin   : 0 0 15px 0;
+	padding  : 0;
+	position : relative;
+}
+.e-block > header{
+	height      : 50px;
+    line-height : 50px;					
+}
+.e-block > header > span:first-child{
+	width    : 16px;
+	height   : 16px;
+	float    : left;
+	margin   : -8px 0 0 10px;
+	position : relative;
+	left     : 0;
+}
+.e-block > header h2{
+	width     : auto;
+	height    : 100%;
+	float     : left;
+	font-size : 13px;
+	margin    : 0 0 0 10px;
+}
+.e-block > header .indicator{
+	width       : auto;
+	height      : 50px;
+	line-height : 50px;	
+	float       : right;
+	padding     : 0 10px;
+}
+.e-block > div{
+	padding    : 0;
+	border-top : none;
+	display    : block;
+	position   : relative;
+} 
+.e-block > div table:last-child{
+	margin        : 0 0 0 0!important;
+	margin-bottom : 0!important;
+}

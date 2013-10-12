@@ -1,0 +1,234 @@
+/*
+ * ************************************************************* *
+ * Name        : eLiveSearch                                     *
+ * Description : CSS for the livesearch plugin                   *
+ * Version     : Version 1                                       *
+ * Author      : CreativeMilk                                    *
+ * Author URI  : www.creativemilk.net                            *
+ * Updated     : --/--/----                                      *
+ * Copyright   : (c) 2011 CreativeMilk                           *
+ * ************************************************************* *
+ */
+
+
+/* Main search. ----------- */
+
+#mainsearch{
+	height   : 30px;
+	display  : block;
+	margin   : 10px 15px;
+	position : relative;
+}
+#mainsearch > form{
+  	height   : 100%;
+	position : relative;
+}
+#mainsearch input[type="text"]{
+	height      : 30px;
+	float       : left;
+	margin      : 0;
+	padding     : 0;
+	font-size   : 13px;
+	padding     : 0 30px 0 5px;
+}
+#mainsearch input[type="submit"]{
+	height              : 20px;
+	width               : 20px;
+	position            : absolute;
+	right               : 5px;
+    top                 : 50%;
+	padding             : 0;
+	border              : none;
+	background          : none;
+	background-repeat   : no-repeat;
+	background-position : center center;
+	margin              : -10px 0 0 0;	
+}
+#mainsearch input{
+	-webkit-border-radius : 3px;
+	-khtml-border-radius  : 3px;
+	-moz-border-radius    : 3px;
+	border-radius         : 3px;
+}
+.elivesearch{
+	display : none;
+}
+#mainsearch-results{ }
+#mainsearch-results > span{
+	line-height  : 0%; 
+	width        : 0;
+	border-right : 10px solid transparent;
+	border-left  : 10px solid transparent;
+	border-top   : none;
+	position     : absolute;
+	right        : 20px;
+	top          : -6px;
+}
+#mainsearch-results > h3{
+	height      : 30px;
+	line-height : 30px;
+	font-size   : 13px;
+	padding     : 0 15px;
+	position    : relative;
+}
+#mainsearch-results > h3 span{
+	width    : 10px;
+	height   : 10px;
+	position : absolute;
+	right    : 15px;
+	top      : 50%;
+	margin   : -5px 0 0 0;
+	cursor   : pointer;
+}
+#mainsearch-ajax{
+	padding : 15px 15px 5px 15px;
+}
+#mainsearch-ajax > div{
+	width         : 100%;
+	float         : left;
+	margin        : 0 0 10px 0;
+	padding       : 0 0 10px 0;
+}
+#mainsearch-ajax > div h4{
+	float     : left;
+	font-size : 12px;
+	margin    : 0 0 3px 0;	
+}
+#mainsearch-ajax > div p{
+	float : left;
+}
+#mainsearch-ajax > div a{
+	height                : 24px;
+	float                 : left;
+	font-size             : 11px;
+	margin                : 10px 0 5px 0;
+	padding               : 0 10px;
+	line-height           : 24px;
+	-webkit-border-radius : 3px;
+	-khtml-border-radius  : 3px;
+	-moz-border-radius    : 3px;
+	border-radius         : 3px;
+}
+#mainsearch-results > a{
+	height                : 24px;
+	font-size             : 11px;
+	margin                : 0 15px 15px  15px;
+	text-align            : center;
+	line-height           : 24px;	
+	-webkit-border-radius : 3px;
+	-khtml-border-radius  : 3px;
+	-moz-border-radius    : 3px;
+	border-radius         : 3px;
+	display               : block;
+}
+
+/* Search. ----------- */
+
+.search-checkbox-wrap{
+	width  : 130px;
+	float  : left;
+	margin : 0 0 10px 0;
+}
+.search-checkbox-wrap label{
+	font-weight : normal;
+}
+#advanced-search-results h2{
+	font-size : 16px;
+	margin    : 10px 0;
+	padding   : 10px 0 0 0;
+}
+.results-thumbs{
+	width : 100%;
+	float : left;	
+}
+.results-thumbs li{
+	width  : 150px;
+	height : 105px;
+	margin : 0 10px 10px 0;
+	float  : left;
+}
+.results-thumbs li a,
+.results-thumbs li a img{
+	width  : 150px;
+	height : 105px;	
+	float  : left;
+}
+.results-text{
+	width  : 100%;
+	float  : left;
+	margin : 10px 0 0 0;	
+}
+.results-text li{
+	width  : 100%;
+	float  : left;
+	margin : 0 0 20px 0;	
+}
+.results-text a{
+	text-decoration : underline;
+}
+.results-text li h3{
+	font-size : 14px;
+}
+.results-text li > div{
+	margin : 0 0 5px 0;	
+}
+.results-text li > span{
+	display   : block;
+	font-size : 11px;
+	margin    : 0 0 5px 0;
+}
+.results-text li > a{
+	float  : left;
+	margin : 5px 0 0 0;
+}
+.submit-cancel-button{
+	width       : 150px;
+	height      : 30px;
+	line-height : 30px;
+	margin      : 0 auto;
+}
+.submit-cancel-button a:hover{
+	text-decoration : underline;
+}
+.submit-cancel-button input[type="submit"]{
+	float  : left;
+	margin : 0 5px 0 0;
+}
+
+/* Floating search. ----------- */
+
+.floating-search{
+  	height   : 100%;
+	position : relative;
+}
+.floating-search input[type="text"]{
+	height      : 38px;
+	width       : 100%;
+	float       : left;
+	margin      : 0;
+	font-size   : 13px;
+	padding     : 0 30px 0 5px;
+}
+.ie8 .floating-search input[type="text"]{
+	line-height : 38px;
+}
+.floating-search input[type="submit"]{
+	height              : 28px;
+	width               : 28px;
+	position            : absolute;
+	right               : 6px;
+    top                 : 50%;
+	padding             : 0;
+	border              : none;
+	background          : none;
+	background-repeat   : no-repeat;
+	background-position : center center;
+	margin              : -14px 0 0 0;	
+}
+.floating-search input{
+	-webkit-border-radius : 3px;
+	-khtml-border-radius  : 3px;
+	-moz-border-radius    : 3px;
+	border-radius         : 3px;
+}
+

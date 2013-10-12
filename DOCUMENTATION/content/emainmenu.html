@@ -1,0 +1,162 @@
+<section>
+    <h2>eMainNenu</h2>
+    <p>This menu has a couple of options, every main link has its own icon(choose form our custom made icon set), you can add indicators (colored, text and 10px icons) to it and you can choose between a dynamic submenu or a static submenu(see: documentation). The main menu is responsive, this means that it will adjust to fit the right screen resolution. The main menu has also the option to be scaled down into a smaller menu by using the "toggle main menu" button at the top op the page.
+    </p>
+    
+    <div class="spacer-30"></div>
+                              
+    <h3>How to use</h3>
+    <p>How to use HTML elements.</p>
+                                                                                     
+    <div class="spacer-10"></div>
+    
+    <pre>&lt;nav id="main-menu"&gt;
+    &lt;li&gt;&lt;a href="javascript:void(0);"&gt;&lt;span class="home-16 plix-16"&gt;&lt;/span&gt; Menu name&lt;span class="button-icon">&lt;span class="plus-10 plix-10">&lt;/span>&lt;/span>&lt;/a&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Sub menu&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Sub menu&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Sub menu&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Sub menu&lt;/a&gt;&lt;/li&gt;                                       
+    &lt;/ul&gt;
+    &lt;/li&gt;
+&lt;/nav&gt;</pre>
+
+    <div class="spacer-30"></div>
+
+    <h3>Usage classes</h3>
+    <p>Defined classes related to a piece of code or plugin.</p>
+    
+    <div class="spacer-10"></div>
+                             
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Available class</th>
+                <th scope="col">Element</th>
+                <th scope="col">Desctription</th>
+                <th class="tbversion" scope="col">Since</th>
+            </tr>                                            
+        </thead> 
+        <tbody>                                        
+            <tr>
+                <td>home-16</td>
+                <td>span</td>
+                <td>Icon class, you can find a overview of all of the icons <a href="icons.html">here</a>.</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>menu-open</td>
+                <td>li</td>
+                <td>Set the menu on load open. This is used for active sub menus.</td>
+                <td>1.0</td>
+            </tr>                                          
+            <tr>
+                <td>page-active</td>
+                <td>li</td>
+                <td>Page active class.</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>pixel-icon-button</td>
+                <td>span</td>
+                <td>The open or close buttons. You can change between a couple of buttons.</td>
+                <td>1.0</td>
+            </tr>                                         
+            <tr>
+                <td>plus-10</td>
+                <td>span</td>
+                <td>Pixel button used for open button. See the <a href="icons.html">icon page</a> for more buttons. You can only use the pixel buttons!</td>
+                <td>1.0</td>
+            </tr>                                            
+            <tr>
+                <td>color-indicator</td>
+                <td>span</td>
+                <td>Used for a indicator as seen in the menu on the left(red circle).</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>indicator</td>
+                <td>span</td>
+                <td>Used for a indicator as seen in the menu on the left(the words new and beta).</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>plix-10, plix-16</td>
+                <td>span</td>
+                <td>Custom icon size class.</td>
+                <td>1.0</td>
+            </tr>                                                                                                                                  
+        </tbody>
+    </table> 
+    
+    <div class="spacer-30"></div>
+
+    <h3>Usage plugin</h3>
+    <p>How to use our custom made jQuery plugins.</p>
+    
+    <div class="spacer-10"></div>
+                                                                  
+    <pre>$('#main-menu').eMainMenu({
+    activeClass: 'sub-page-active',
+    closeClass: 'min-10',
+    openClass: 'plus-10',
+    speed: 400	
+});</pre>
+
+	<div class="spacer-30"></div>
+
+    <h3>Plugin options</h3>
+    <p>Most of our custom made jQuery plugins have options/settings.</p>
+    
+    <div class="spacer-10"></div>
+                            
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Plugin options</th>
+                <th scope="col">Type</th>
+                <th scope="col">Default</th>
+                <th scope="col">Desctription</th>
+                <th class="tbversion" scope="col">Since</th>
+            </tr>                                            
+        </thead> 
+        <tbody>
+            <tr>
+                <td>activeClass</td>
+                <td>string</td>
+                <td>sub-page-active</td>
+                <td>This is the active indicator class.</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>closeClass</td>
+                <td>string</td>
+                <td>min-10</td>
+                <td>This is the icon class used for the close icon. You can choose from the custom made icons <a href="icons.html">here</a>. Notice that it must be 10px icons.</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>openClass</td>
+                <td>string</td>
+                <td>plus-10</td>
+                <td>This is the icon class used for the open icon. You can choose from the custom made icons <a href="icons.html">here</a>. Notice that it must be 10px icons.</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>speed</td>
+                <td>number(integer)</td>
+                <td>200</td>
+                <td>The speed of the effect.</td>
+                <td>1.0</td>
+            </tr>                                                                                                                                                                                                                                           
+        </tbody>
+    </table> 
+    
+    <div class="spacer-30"></div>
+    
+    <h3>Globally And Per-Call Overridable Options</h3>
+    <p>This plugin has per-call(as the example above shows) and globally overridable options. Globally options can be used to override the default options, this is best used if you want to override the plugin options by default, this will prevent any issues with the plugin, as you dont have to change any thing in the plugin core it self. 
+    <br/><br/><b>How to use: </b><mark>$.fn.pluginName.key = 'value';</mark></p>  
+    
+    <div class="spacer-30"></div>                                                                                          
+</section>  

@@ -1,0 +1,92 @@
+<section>
+    <h2>eCountdown</h2>
+    <p>The countdown plugin with a couple of options, you can set the format, show it as live, show 1 or 2 digits and run a callback function after completion.</p>
+    
+    <div class="spacer-30"></div>
+    
+    <h3>How to use</h3>
+    <p>How to use HTML elements.</p>
+                                                                   
+    <div class="spacer-10"></div> 
+    
+    <pre>&lt;div class="countdownid"&gt;&lt;/div&gt;</pre>
+    
+    <div class="spacer-30"></div>
+     
+    <h3>Usage plugin</h3>
+    <p>How to use our custom made jQuery plugins.</p>
+    
+    <div class="spacer-10"></div> 
+                                                        
+    <pre>$('#countdownid').eCountdown({
+    targetDate: '12/31/2012 9:09 PM',
+    displayFormat: '%D% Days, %H% Hours, %M% Minutes, %S% Seconds.',
+    liveTime: true,
+    showZero: true,
+    callback:function(){}
+});</pre>
+
+	<div class="spacer-30"></div>
+      
+    <h3>Plugin options</h3>
+    <p>Most of our custom made jQuery plugins have options/settings.</p> 
+    
+    <div class="spacer-10"></div> 
+                                                           
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Plugin options</th>
+                <th scope="col">Type</th>
+                <th scope="col">Default</th>
+                <th scope="col">Desctription</th>
+                <th class="tbversion" scope="col">Since</th>
+            </tr>                                            
+        </thead>
+        <tbody>
+            <tr>
+                <td>targetDate</td>
+                <td>string</td>
+                <td>%D% Days, %H% Hours, %M% Minutes, %S% Seconds.</td>
+                <td>The time format.</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>displayFormat</td>
+                <td>string</td>
+                <td>swing</td>
+                <td>The animation effect. This works only if animation is set to true.</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>liveTime</td>
+                <td>boolean</td>
+                <td>true</td>
+                <td>Show the time realtime, or if you set it to false show the remaining time if the browsers gets refreshed.</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>showZero</td>
+                <td>boolean</td>
+                <td>true</td>
+                <td>Display values below 9 always as 2 digets, so 3 becomes 03.</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>callback</td>
+                <td>function</td>
+                <td>function(){}</td>
+                <td>Run a callback function once the countdown is done.</td>
+                <td>1.0</td>
+            </tr>                                                                                                                                           
+       </tbody>                                            
+	</table>
+    
+    <div class="spacer-30"></div>
+       
+    <h3>Globally And Per-Call Overridable Options</h3>
+    <p>This plugin has per-call(as the example above shows) and globally overridable options. Globally options can be used to override the default options, this is best used if you want to override the plugin options by default, this will prevent any issues with the plugin, as you dont have to change any thing in the plugin core it self. 
+    <br/><br/><b>How to use: </b><mark>$.fn.pluginName.key = 'value';</mark></p> 
+    
+    <div class="spacer-30"></div>                         
+</section>      

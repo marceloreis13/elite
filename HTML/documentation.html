@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>  <html class="ie ie6 lte9 lte8 lte7 no-js"> <![endif]-->
+<!--[if IE 7]>     <html class="ie ie7 lte9 lte8 lte7 no-js"> <![endif]-->
+<!--[if IE 8]>     <html class="ie ie8 lte9 lte8 no-js">      <![endif]-->
+<!--[if IE 9]>     <html class="ie ie9 lte9 no-js">           <![endif]-->
+<!--[if gt IE 9]>  <html class="no-js">                       <![endif]-->
+<!--[if !IE]><!--> <html class="no-js">                       <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>ELITE - A Powerfull Responsive Admin Theme</title>
+       
+    <!-- // Mobile meta/files // -->
+
+	<!-- For third-generation iPad with high-resolution Retina display: -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
+    <!-- For iPhone 4with high-resolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/mobile/apple-touch-icon-114x114.png" />
+    <!-- For first-generation iPad: -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/mobile/apple-touch-icon-72x72.png" />
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <link rel="apple-touch-icon-precomposed" href="images/mobile/apple-touch-icon.png" />
+    <!-- For nokia devices: -->
+    <link rel="shortcut icon" href="images/apple-touch-icon.png" />
+    <!-- 320x460 for iPhone 3GS -->
+    <link rel="apple-touch-startup-image" media="(max-device-width: 480px) and not (-webkit-min-device-pixel-ratio: 2)" href="images/mobile/splash-320x460.png" />
+    <!-- 640x920 for retina display -->
+    <link rel="apple-touch-startup-image" media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" href="images/mobile/splash-640x920-retina.png" />
+    <!-- iPad Portrait 768x1004 -->
+    <link rel="apple-touch-startup-image" media="(min-device-width: 768px) and (orientation: portrait)" href="images/mobile/splash-768x1004.png" />
+    <!-- iPad Landscape 1024x748 -->
+    <link rel="apple-touch-startup-image" media="(min-device-width: 768px) and (orientation: landscape)" href="images/mobile/splash-1024x748.png" />
+    <!-- iPad 3 Portrait 1536x2008 -->
+    <link rel="apple-touch-startup-image" media="(min-device-width: 1536px) and (orientation: portrait)" href="images/mobile/splash-1536x2008-retina.png" />
+    <!-- iPad 3 Landscape 2048x1536 -->
+    <link rel="apple-touch-startup-image" media="(min-device-width: 2048px) and (orientation: landscape)" href="images/mobile/splash-2048x1496-retina.png" />
+    <!-- Transform to webapp: -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Fullscreen mode: -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- Viewport for older phones - http://davidbcalhoun.com/tag/handheldfriendly -->
+    <meta name="HandheldFriendly" content="true"/>   
+    <!-- Viewport - http://davidbcalhoun.com/tag/handheldfriendly -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> 
+    <!-- This file contains some fixes, splash screen and web app code --> 
+    <script src="js/mobiledevices.js"></script>
+    
+    <!-- // Internet Explore // -->
+    
+    <!-- IE9 Pinned Sites: http://msdn.microsoft.com/en-us/library/gg131029.aspx -->
+    <meta name="application-name" content="Elite Admin Skin">
+    <meta name="msapplication-tooltip" content="Cross-platform admin skin.">
+    <meta name="msapplication-starturl" content="http://themes.creativemilk.net/elite/html/index.html">
+    <!-- These custom tasks are examples, you need to edit them to show actual pages -->
+    <meta name="msapplication-task" content="name=Home;action-uri=http://themes.creativemilk.net/elite/html/index.html;icon-uri=http://themes.creativemilk.net/elite/html/images/favicons/favicon.ico">
+    <meta http-equiv="cleartype" content="on" /> 
+    
+    <!--[if lt IE 8]>
+	<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+    <![endif]-->
+            
+    <!-- // Stylesheets // -->
+
+    <!-- Framework -->
+    <link rel="stylesheet" href="css/framework.css"/>
+    <!-- Main -->
+    <link rel="stylesheet" href="css/style.css"/>
+    <!-- jQuery UI --> 
+    <link rel="stylesheet" href="css/ui/jquery.ui.base.css"/>
+    <!-- Styling -->
+    <link rel="stylesheet" href="css/theme/darkblue.css" id="themesheet"/>
+	<!--[if IE 7]>
+	<link rel="stylesheet" href="css/destroy-ie6-ie7.css"/>
+    <![endif]-->  
+      
+    <!-- // Misc // -->
+    
+    <link rel="shortcut icon" href="images/favicons/favicon.ico" />
+    
+    <!-- // jQuery/UI core // -->
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>!window.jQuery && document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>
+    <script src="http://code.jquery.com/ui/1.8.22/jquery-ui.min.js"></script>
+    <script>!window.jQueryUI && document.write('<script src="js/jquery-ui-1.8.22.min.js"><\/script>')</script>
+    
+    <!-- // Thirdparty plugins // -->
+    
+    <!-- Touch helper -->  
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <!-- MouseWheel -->  
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <!-- UI Spinner -->
+	<script src="js/jquery.ui.spinner.js"></script>
+    <!-- Tooltip -->               
+    <script src="js/tipsy.js"></script>
+    <!-- Treeview -->                         
+    <script src="js/treeview.js"></script>
+    <!-- Calendar -->                         
+    <script src="js/fullcalendar.min.js"></script> 
+    <!-- selectToUISlider -->                
+    <script src="js/selectToUISlider.jQuery.js"></script> 
+    <!-- context Menu -->         
+    <script src="js/jquery.contextMenu.js"></script> 
+    <!-- File Explore -->              
+    <script src="js/elfinder.min.js"></script> 
+    <!-- AutoGrow Textarea -->                   
+    <script src="js/autogrow-textarea.js"></script> 
+    <!-- Resizable Textarea -->               
+    <script src="js/textarearesizer.min.js"></script>
+    <!-- HTML5 WYSIWYG -->  
+    <script src="wysiwyghtml5/parser_rules/advanced.js"></script>
+	<script src="wysiwyghtml5/dist/wysihtml5-0.3.0.js"></script>    
+    <!-- Lightbox -->                      
+    <script src="js/jquery.colorbox-min.js"></script>
+    <!-- DataTables -->
+    <script src="js/jquery.dataTables.min.js"></script>            
+    <!-- Masked inputs -->
+    <script src="js/jquery.maskedinput-1.3.min.js"></script> 
+    <!-- IE7 JSON FIX -->
+    <script src="js/json2.js"></script>
+    <!-- HTML5 audio player -->
+    <script src="audiojs/audiojs/audio.min.js"></script> 
+             
+    <!-- // Custom theme plugins // -->
+    
+    <!-- Stylesheet switcher --> 
+    <script src="js/e_styleswitcher.1.1.min.js"></script>                 
+    <!-- Widgets -->
+    <script src="js/powerwidgets.1.2.min.js"></script>
+    <!-- Widgets panel -->
+    <script src="js/powerwidgetspanel.1.2.min.js"></script>
+    <!-- Select styling -->
+    <script src="js/e_select.2.0.min.js"></script>    
+    <!-- Checkbox solution -->
+    <script src="js/e_checkbox.1.0.min.js"></script>
+    <!-- Radio button replacement -->
+    <script src="js/e_radio.1.0.min.js"></script>    
+    <!-- Tabs -->
+    <script src="js/e_tabs.1.1.min.js"></script>
+    <!-- File styling -->
+    <script src="js/e_file.1.0.min.js"></script>    
+    <!-- MainMenu -->
+    <script src="js/e_mainmenu.1.0.min.js"></script>
+    <!-- Menu -->
+    <script src="js/e_menu.1.1.min.js"></script>
+    <!-- Input popup box -->
+    <script src="js/e_inputexpand.1.0.min.js"></script>
+    <!-- Progressbar -->
+    <script src="js/e_progressbar.1.0.min.js"></script>
+    <!-- Scrollbar replacemt -->
+    <script src="js/e_scrollbar.1.0.min.js"></script> 
+    <!-- Onscreen keyboard -->
+    <script src="js/e_oskeyboard.1.0.min.js"></script>
+    <!-- Textarea limiter -->
+    <script src="js/e_textarealimiter.1.0.min.js"></script>
+    <!-- Contact form with validation -->
+    <script src="js/e_contactform.1.1.min.js"></script>
+    <!-- Responsive table helper -->
+    <script src="js/e_responsivetable.1.0.min.js"></script>
+    <!-- Gallery -->
+    <script src="js/e_gallery.1.0.min.js"></script>
+    <!-- Live search -->
+    <script src="js/e_livesearch.1.0.min.js"></script>
+    <!-- Notify -->
+    <script src="js/e_notify.1.0.min.js"></script>  
+    <!-- Countdown -->  
+    <script src="js/e_countdown.1.0.min.js"></script> 
+    <!-- Clone script -->
+    <script src="js/e_clone.1.0.min.js"></script> 
+    <!-- Chained inputs -->
+    <script src="js/e_chainedinputs.1.0.min.js"></script>
+    <!-- Show password -->     
+    <script src="js/e_showpassword.1.0.min.js"></script>        
+    <!-- All plugins are set here -->
+    <script src="js/plugins.js"></script>
+    <!-- Custom code -->
+    <script src="js/main.js"></script>
+    
+    <!-- // HTML5/CSS3 support // -->
+
+    <script src="js/modernizr.min.js"></script>
+                
+</head>
+<body class="layout_fluid layout_responsive"> 
+
+    <!-- this part can be removed, its just here 
+         to let you switch between styles and layout sizes -->
+    <div id="e-styleswitcher">
+        <div class="e-styleswitcher-inner">
+            <div class="e-styleswitcher-arrow"><img src="images/icons/plix-16/white/arrow-right-16.png" alt="" /></div>
+            <div class="box">
+            	<h4>Styles</h4>
+                <select id="choose-styling">
+                	<option value="strangeblue">Strange blue</option>
+                    <option value="black">Black</option>
+                    <option value="darkblue">Dark blue</option>
+                    <option value="lightgrey">Light grey</option>
+                </select>
+            </div>    
+            <div class="box">
+            	<h4>Layout sizes</h4>                
+                <select id="set-layout-size">
+                	<option value="layout_fluid">fluid</option>
+                    <option value="layout_768">768</option>
+                    <option value="layout_960">960</option>
+                    <option value="layout_1024">1024</option>
+                    <option value="layout_1200">1200</option>
+                    <option value="layout_1600">1600</option>
+                </select>
+            </div> 
+            <div class="box">
+            	<h4>Responsive</h4>                
+                <select id="set-layout-responsive">
+                	<option value="layout_responsive">yes</option>
+                    <option value="">no</option>
+                </select>
+            </div>
+            <div class="box">
+            	<h4>Get theme</h4>                
+                <select id="get-theme">
+                	<option value="">no</option>
+                    <option value="yes">yes</option>
+                </select>
+            </div>                         
+        </div>
+    </div>
+  
+	<div id="container">
+    
+        <!-- MAIN HEADER -->
+                
+        <header id="header">
+        	<div id="header-border">
+                <div id="header-inner">
+                
+                    <div class="left">
+                        <a href="index.html" id="logo">ELITE</a>
+                    </div><!-- End .left -->
+                    
+                    <div class="right">
+                        <!-- eMenu -->
+                        <nav>
+                            <ul class="e-splitmenu" id="header-menu">
+                                <li><span>Menu</span><a href="javascript:void(0);"><span class="arrow-down-10 plix-10"></span></a>
+                                
+                                     <div>
+                                        <ul>
+                                            <li><a href="index.html"><span class="stats2-10 plix-10"></span> Stats</a></li>
+                                            <li><a href="index.html"><span class="lock-10 plix-10"></span> Security</a></li>
+                                            <li><a href="index.html"><span class="download-10 plix-10"></span> Downloads</a></li>
+                                        </ul>                                      
+                                    </div>                               
+
+                                </li>
+                                <li><span>Settings</span><a href="javascript:void(0);"><span class="arrow-down-10 plix-10"></span></a>
+                                
+                                     <div>
+                                        <ul>
+                                            <li><a href="index.html"><span class="home-10 plix-10"></span> Basic Settings</a></li>
+                                            <li><a href="index.html"><span class="settings-10 plix-10"></span> Site Settings</a></li>
+                                            <li><a href="index.html"><span class="comment-10 plix-10"></span> User Settings</a></li>
+                                            <li><a href="index.html"><span class="bookmark-10 plix-10"></span> Server Settings</a></li>
+                                        </ul>                                      
+                                    </div>
+                                    
+                                </li>
+                        		<li class="e-menu-profile">
+                                    <a href="javascript:void(0);"><span class="arrow-down-10 plix-10"></span></a> 
+                                    <img src="images/avatar.jpg" alt=""/>
+                                    
+                                    <div>
+                                        <ul>
+                                            <li><a href="index.html"><span class="mail-10 plix-10"></span> Inbox</a></li>
+                                            <li><a href="index.html"><span class="upload-10 plix-10"></span> Settings</a></li>
+                                            <li><a href="index.html"><span class="info-10 plix-10"></span> Logout</a></li>
+                                        </ul>                                      
+                                    </div> 
+                                            
+                                </li>
+                            </ul>
+                        </nav>
+                    </div><!-- End .right --> 
+                    
+                </div><!-- End #header-border --> 
+            </div><!-- End #header-inner -->  
+                
+		</header><!-- End #header -->
+        
+        <!-- CONTENT -->
+                 
+        <div id="content">
+            <div id="content-border">
+            
+                <!-- CONTENT HEADER -->
+                
+                <header id="content-header">
+                    <div class="left">
+                    	<a href="javascript:void(0);" id="toggle-mainmenu" class="button-icon tip-s" title="Toggle Main Menu"><span class="arrow-up-10 plix-10"></span></a>
+                        
+                        <!-- main search form -->
+                        <form method="post" id="mainsearch">
+                            <input type="text" placeholder="Live search..." name="" autocomplete="off"/>
+                            <input type="submit" value="" />
+                        </form>
+                    </div><!-- End .left --> 
+                    <div class="right">
+                    	<!-- sidebar switch -->
+                    	<a href="javascript:void(0);" id="toggle-sidebar" class="button-icon tip-s" title="Switch Main Menu"><span class="arrow-left-10 plix-10"></span></a>
+                        
+                        <!-- breadcrumbs -->
+                        <nav id="main-breadcrumbs">
+                            <ul>
+                                <li class="bc-tab-first">
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li class="bc-tab-last">Documentation</li>
+                            </ul>          
+                        </nav>
+						<a href="javascript:void(0);" id="open-main-dialog" class="button-text-icon tip-w" title="Some tooltip pointing right"><span class="fullscreen-10 plix-10"></span> Dialog</a>
+                        
+                        <!-- the main page dialog -->
+                        <div id="main-page-dialog" title="Welcome to Elite" style="display:none">
+                        <img src="images/jquery-ui-logo.png" alt="" class="dummy-img-dialog"/>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet est et mauris ornare lobortis dignissim quis massa. Donec ullamcorper turpis ac lectus semper commodo. Mauris tincidunt, erat et tempor interdum, dolor metus consectetur dui, eu accumsan augue augue a erat. Fusce justo nibh, tristique vitae pretium ut, venenatis nec felis. Curabitur congue tempor ultricies. Proin quis libero dignissim neque posuere pharetra vel adipiscing massa. Sed sit amet erat ac arcu sodales aliquam. Nam tellus sapien, ornare in tincidunt vel, ultricies id quam.
+						</div>
+                        
+                        <!-- grid controls -->
+                        <nav>
+							<ul class="e-splitmenu" id="page-actions">
+                                <li><span>Actions</span><a href="javascript:void(0);"><span class="settings-10 plix-10"></span></a>
+                                
+                                     <div>
+                                        <ul>
+                                            <li><a href="index.html"><span class="pencil-10 plix-10"></span>Edit</a></li>
+                                            <li><a href="index.html"><span class="document-10 plix-10"></span>View</a></li>
+                                            <li><a href="index.html"><span class="trashcan-10 plix-10"></span> Delete</a></li>
+                                        </ul>                                      
+                                    </div>                               
+
+                                </li>
+                        	</ul>                        
+                        </nav>                    
+                    </div><!-- End .right -->                
+                
+				</header><!-- End #content-header --> 
+                                
+                <div id="content-inner">
+                    
+                    <!-- SIDEBAR -->
+                    
+                    <aside>
+                    
+                    	<!-- SIDEBAR PROFILE -->
+                        
+                    	<div id="sidebar-profile">
+                            <div id="main-avatar">
+                            	<span class="indicator">38</span>
+                                <img src="images/avatar.jpg" alt=""/>
+                            </div>
+                            <div id="profile-info">
+                                <div>
+                                    <a href="javascript:void(0);"><b>Administrator</b></a>
+                                    <a href="javascript:void(0);">Profile settings</a>
+                                    <a href="javascript:void(0);">Server settings</a>
+                                    <a href="javascript:void(0);">Logout</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- MAIN MENU -->
+                        
+                        <nav id="main-menu">
+                            <ul>
+                                <li><a href="index.html"><span class="home-16 plix-16"></span> Dashboard</a></li>
+                                <li class="page-active menu-open no-mobile"><a href="documentation.html"><span class="note-16 plix-16"></span> Documentation</a>
+                                
+                                    <ul>
+                                    	<li><a href="doc-accordion.html">Accordion</a></li> 
+                                    	<li><a href="doc-breadcrumbs.html">Breadcrumbs</a></li>
+                                        <li><a href="doc-buttons.html">Buttons</a></li>
+                                        <li><a href="doc-calendar.html">Calendar</a></li>
+                                        <li><a href="doc-charts.html">Charts</a></li>
+                                        <li><a href="doc-dialogs.html">Dialogs</a></li>
+                                        <li><a href="doc-editors.html">Editors</a></li>
+                                        <li><a href="doc-fileexplore.html">File Explore</a></li>
+                                        <li><a href="doc-forms.html">Forms</a></li>
+                                        <li><a href="doc-grid.html">Grid</a></li>
+                                        <li><a href="doc-icons.html">Icons</a></li>
+                                        <li><a href="doc-listsblocks.html">Lists &amp; Blocks</a></li>
+                                        <li><a href="doc-media.html">Media</a></li>
+                                        <li><a href="doc-menus.html">Menus</a></li>
+                                        <li><a href="doc-misc.html">Misc</a></li>
+                                        <li><a href="doc-search.html">Search</a></li>
+                                        <li><a href="doc-tables.html">Tables</a></li>
+                                        <li><a href="doc-tabs.html">Tabs</a></li>
+                                        <li><a href="doc-toolbars.html">Toolbars</a></li> 
+                                        <li><a href="doc-widgets.html">Widgets</a></li>
+                                        <li><a href="doc-wizard.html">Wizard</a></li>                                          
+                                    </ul> 
+                                                                   
+                                </li>
+                                <li><a href="calendar.html"><span class="calendar-16 plix-16"></span>Calendar<span class="color-indicator">28</span></a></li>
+                                <li><a href="javascript:void(0);"><span class="postcard-16 plix-16"></span> Form Elements <span class="button-icon"><span class="plus-10 plix-10"></span></span></a>
+
+                                    <ul>
+                                    	<li><a href="editors.html">Editors</a></li>
+                                    	<li><a href="forms.html">Forms</a></li>
+                                        <li><a href="login.html">Login form 1</a></li>
+                                        <li><a href="login-2.html">Login form 2</a></li>
+                                        <li><a href="login-3.html">Login form 3</a></li>
+                                        <li><a href="login-4.html">Login form 4</a></li>
+                                        <li><a href="search.html">Search</a></li>
+                                        <li><a href="wizard.html">Wizard</a></li>                                         
+                                    </ul>
+                                
+                                </li>
+                                <li><a href="media.html"><span class="image-16 plix-16"></span> Media</a></li>
+                                <li><a href="planning.html"><span class="pencil-16 plix-16"></span> Planning</a></li>
+                                <li><a href="maps.html"><span class="map-16 plix-16"></span> Google Maps <span class="indicator tip-w" title="Some tip goes here">tooltip</span></a></li>
+                                <li><a href="fileexplore.html"><span class="folder-16 plix-16"></span> File Explore</a></li> 
+                                <li><a href="javascript:void(0);"><span class="warning-16 plix-16"></span> Error pages<span class="button-icon"><span class="plus-10 plix-10"></span></span></a>
+
+                                    <ul>
+                                    	<li><a href="400.html">400</a></li>
+                                    	<li><a href="401.html">401</a></li>
+                                        <li><a href="403.html">403</a></li>
+                                        <li><a href="404.html">404</a></li>
+                                        <li><a href="500.html">500</a></li>
+                                        <li><a href="503.html">503</a></li>                                         
+                                    </ul>
+                                
+                                </li>                                                               
+                                <li><a href="widgets.html"><span class="rows4-16 plix-16"></span> Widgets</a></li>
+                                <li><a href="tables.html"><span class="cells-16 plix-16"></span> Tables</a></li>
+                                <li><a href="charts.html"><span class="stats2-16 plix-16"></span> Charts </a></li>
+                                <li><a href="javascript:void(0);"><span class="controls-16 plix-16"></span> Interface Elements <span class="button-icon"><span class="plus-10 plix-10"></span></span></a>
+                                
+                                    <ul>
+                                      	<li><a href="accordion.html">Accordion</a></li>                                        
+                                        <li><a href="breadcrumbs.html">Breadcrumbs</a></li>
+                                        <li><a href="buttons.html">Buttons</a></li>
+                                        <li><a href="dialogs.html">Dialogs</a></li>
+                                        <li><a href="icons.html">Icons</a></li>
+                                        <li><a href="listsblocks.html">Lists &amp; Blocks</a></li>
+                                        <li><a href="menus.html">Menus</a></li>
+                                        <li><a href="misc.html">Misc</a></li>
+                                        <li><a href="tabs.html">Tabs</a></li>
+                                        <li><a href="toolbars.html">Toolbars</a></li>
+                                    </ul>           
+                                                           
+                                </li>
+                                <li><a href="grid.html"><span class="layout3-16 plix-16"></span> Grid <span class="indicator">960</span></a></li>
+                            </ul>
+                        </nav>                      
+                    </aside>
+                    
+                    <!-- sidebar meta stats -->
+                    <div id="sidebar-meta">
+                    	<div id="sidebar-meta-inner">
+                        	<div>
+                                <p class="left">Space</p> 
+                                <p class="right">4,551 MB / 10 GB</p>
+                            </div>
+                            <div class="pbar">
+                               <span style="width:50%"></span>                            
+                            </div>
+                        	<div>
+                                <p class="left">Traffic</p> 
+                                <p class="right">8,001 MB / 10 GB</p>
+                            </div>
+                            <div class="pbar">
+                               <span style="width:81%"></span>                            
+                            </div>
+                        </div>  
+                    </div> 
+                     
+                    <!-- CONTENT -->
+                    
+					<div id="content-main">
+                        <div id="content-main-inner">
+
+                            <div class="page-header">
+                                <h2>Documentation</h2>
+                                <span class="page-helper">1.0</span>
+                                <p>Welcome to the documentation.</p>
+                            </div> 
+                                                     
+                            <!-- Start grid -->
+                            
+                            <section class="g_1">
+                                <div class="doc-info-blocks-wrapper clearfix">
+                                                                    		
+                                    <div class="doc-info-blocks">
+                                    	<div>
+                                    		<span class="code-32 plix-32"></span>
+                                    	</div>
+                                        <h3>Custom plugins</h3>
+                                        <p>The Elite theme has more then 20 custom build jQuery plugins, from widgets to form 
+                                        styling. These plugins have a variety of user settings and are easy to use. All plugins 
+                                        are well documented. Some of the plugin will be updated to add more options to it.
+                                        The plugins come in minifyed and full versions.
+               
+                              			</p>
+                                	</div>
+                                    
+                                    <div class="doc-info-blocks">
+                                    	<div>
+                                    		<span class="ipad-32 plix-32"></span>
+                                    	</div>
+                                        <h3>Responsive design</h3>
+                                        <p>
+                               			From desktop to tablet, from tablet to mobile device, the elite theme is ready. 
+                                        This theme has a smart layout, this means that it will try to set the best layout 
+                                        if you scale down the window or use a mobile device. You also can use the grid layout 
+                                        &amp; minimize menu buttons to set the right layout
+                              			 </p>
+                                	</div> 
+                                    
+                                    <div class="doc-info-blocks">
+                                    	<div>
+                                    		<span class="controls-32 plix-32"></span>
+                                    	</div>
+                                        <h3>Styling</h3>
+                                        <p>
+                                        You can choose between themes to style your admin panel, this way you can use the color 
+                                        that you like rather that you are force to choose between a dark or light theme(these are included). 
+                                        Styling files are seperated css files, this way you can change the theme faster.
+                              			 </p>
+                                	</div> 
+
+                                    <div class="doc-info-blocks">
+                                    	<div>
+                                    		<span class="graph3-32 plix-32"></span>
+                                    	</div>
+                                        <h3>jQuery powerd</h3>
+                                        <p>
+                               			The Elite theme is powerd by the world famous JavaScript library jQuery and the jQuery UI library. 
+                                        This will give the users of this theme a great user experince. We will try to update the jQuery cores as much as possible.	
+                              			 </p>
+                                	</div>
+
+                                    <div class="doc-info-blocks">
+                                    	<div>
+                                    		<span class="monitor-32 plix-32"></span>
+                                    	</div>
+                                        <h3>Great User Uxperince (UX)</h3>
+                                        <p>
+                                        We started this theme with a couple of main features, one of them was that users should have a great 
+                                        'User Uxperince' while using this theme. We think we have nailed it.
+                              			 </p>
+                                	</div>
+                                    		
+                                    <div class="doc-info-blocks">
+                                    	<div>
+                                    		<span class="comment-32 plix-32"></span>
+                                    	</div>
+                                        <h3>Clean Commented Code</h3>
+                                        <p>
+                               	        We have included as much commented code, this way you can see whats what and even learn a thing or two.
+                                        Our custom plugins have a lot of comments in it(minifyed versions not). We have tried to use not to many code, 
+                                        this way the code will be clean and easy to understand.
+                              			 </p>
+                                	</div>
+                                    
+                                    <div class="doc-info-blocks">
+                                    	<div>
+                                    		<span class="image-32 plix-32"></span>
+                                    	</div>
+                                        <h3>Custom icons</h3>
+                                        <p>
+                              	        We have designed our own custom made icon set, this way you dont have to worry about the license. 
+                                        The icon set (we call it plix) have a simple pixelish look and come in the matching colors of the themes. 
+                                        The sets come in 3 sizes, 10px, 16px and 32px all in sprite and png.
+                              			 </p>
+                                	</div> 
+                                    
+                                    <div class="doc-info-blocks">
+                                    	<div>
+                                    		<span class="imagelist-32 plix-32"></span>
+                                    	</div>
+                                        <h3>Custom CSS (mini) framework</h3>
+                                        <p>
+                                        We have build or own (mini) CSS framework for this theme, to create a faster workflow. 
+                                        Notice as this is a template so you dont have to worry that it's build on top of this framework. 
+                                        We have used it as a helper, this way if you want to change stuff, you can do it faster.
+                              			 </p>
+                                	</div> 
+
+                                    <div class="doc-info-blocks">
+                                    	<div>
+                                    		<span class="settings-32 plix-32"></span>
+                                    	</div>
+                                        <h3>Power widgets</h3>
+                                        <p>
+                                        One of the main features of this theme are the power widgets, they are an important part of the design, 
+                                        as almost all content is wrapped in a widget. The widgets are sortable, collapsable and can be set to hidden.
+                                        The widgets can also be managed by the widgets panel(option). 
+                              			 </p>
+                                	</div>
+
+                                    <div class="doc-info-blocks">
+                                    	<div>
+                                    		<span class="bookmark-32 plix-32"></span>
+                                    	</div>
+                                        <h3>HTML5 &amp; CSS3</h3>
+                                        <p>
+                                        The Elite theme is build with HTML5 &amp; CSS3, to give you a better user experince. 
+                                        Not all browsers fully support HTML5 &amp; CSS3(mostly Internet Explore), so we have used a couple of fallbacks,
+                                        to make sure that users that are using a non supported browser that they still can use the theme  
+                              			 </p>
+                                	</div> 
+                                    
+                                    <div class="doc-info-blocks">
+                                    	<div>
+                                    		<span class="postcard-32 plix-32"></span>
+                                    	</div>
+                                        <h3>Styled form elements</h3>
+                                        <p>
+                                        To match all elements in this theme we have styled the form elements by using some of our custom build plugins. 
+                                        Checkbox/radio inputs, select(included multiple) and even the type input are styled. The layerd PSD files are included
+                                        if you want to change the checkbox/radio inputs images.
+                              			</p>
+                                	</div>
+                                    
+                                    <div class="doc-info-blocks">
+                                    	<div>
+                                    		<span class="layout3-32 plix-32"></span>
+                                    	</div>
+                                        <h3>Build with Grid</h3>
+                                        <p>
+                                        This theme is mostly build on a grid(content, not the frame it self) to let you work in a more consistent manner, 
+                                        it also gives you change to build something very quick without creating new css rules. The grid is easy to use and is a 
+                                        part of our custom made mini css framework. The grid goes up to 9 colmuns.
+                              			</p>
+                                	</div>  
+
+                                    <div class="doc-info-blocks">
+                                    	<div>
+                                    		<span class="align-justify-32 plix-32"></span>
+                                    	</div>
+                                        <h3>Layerd PSD files</h3>
+                                        <p>
+                                        This theme doesn't have a lot of graphics, because it's allmoste all code, but for the couple of graphics that we have 
+                                        used(icons, form elements and menu) we included the layerd PSD file in the pack. If you want the layout PSD file, well sorry
+                                        but there is none, as it's a graphic free design.
+                              			</p>
+                                	</div> 
+
+                                    <div class="doc-info-blocks">
+                                    	<div>
+                                    		<span class="folder-32 plix-32"></span>
+                                    	</div>
+                                        <h3>File structure</h3>
+                                        <p>
+                                        As this is a big template we used a good file structure, as our experince leanred us, is that it's always hard to find things, 
+                                        so to make this easier we have seperated the file(categorized). A template should be fun to work with.
+                              			</p>
+                                	</div> 
+
+                                    <div class="doc-info-blocks">
+                                    	<div>
+                                    		<span class="notebook-32 plix-32"></span>
+                                    	</div>
+                                        <h3>Documentations</h3>
+                                        <p>
+                                        Where lost without good documentations, so we have included most of our documents in the theme it self, 
+                                        this way you can see what a plugin does, what i can and what it cant do. We have included more documentations in the theme it self.
+                              			</p>
+                                	</div> 
+
+                                    <div class="doc-info-blocks">
+                                    	<div>
+                                    		<span class="ruler-32 plix-32"></span>
+                                    	</div>
+                                        <h3>Pixel perfection</h3>
+                                        <p>
+                                        The design of this theme has a pixel perfection touch to it, so no strange gapes between elements or sections. 
+                                        A template should not only work good but it should look good to.
+                              			</p>
+                                	</div>
+                                    
+                                    <div class="doc-info-blocks">
+                                    	<div>
+                                    		<span class="save-32 plix-32"></span>
+                                    	</div>
+                                        <h3>HTML5 local storage</h3>
+                                        <p>
+                                        One of the cool feature of this theme is the new HTML5 local storage, this is a very powefull way to easily store data in your browser. 
+                                        So we dont have to store this in a cookie or write it to a database.                              			
+                                        </p>
+                                	</div> 
+
+                                    <div class="doc-info-blocks">
+                                    	<div>
+                                    		<span class="warning-32 plix-32"></span>
+                                    	</div>
+                                        <h3>Custom error pages</h3>
+                                        <p>
+                                        We have include the 400, 401, 403, 404, 500 and 503 error pages in this theme, and yes they come in the theme colors to.
+                              			</p>
+                                	</div>
+                                    
+                                    <div class="doc-info-blocks">
+                                    	<div>
+                                    		<span class="pencil-32 plix-32"></span>
+                                    	</div>
+                                        <h3>Powerfull WYSIWYG editors</h3>
+                                        <p>
+                                        We have include 2 powerfull WYSIWYG editors, one is a pretty big one with lots of options, and the other one is more a basic editor,
+                                        which is build with HTML5. The HTML5 editor is more a frame with no styling, not sure if we are going to style te editor at this moment.
+                              			 </p>
+                                	</div> 
+
+                                    <div class="doc-info-blocks">
+                                    	<div>
+                                    		<span class="lock-32 plix-32"></span>
+                                    	</div>
+                                        <h3>Multiple login forms</h3>
+                                        <p>
+                                        We have included multiple logins forms to let you chosse the one that you want to use. Not everybody needs just one basic login form, 
+                                        they might need a signup or a social login form, so we included these. We do have plans to include some more logins forms.
+                              			</p>
+                                	</div>
+                                    
+                                    <div class="doc-info-blocks">
+                                    	<div>
+                                    		<span class="magnifyglass-32 plix-32"></span>
+                                    	</div>
+                                        <h3>Live search</h3>
+                                        <p>
+                                        We have build a pretty cool jQuery plugin especially for this theme that allows you to live search a simple database(sql file included), 
+                                        this means that the results will be showen directly without refreshing the page, 
+                                        but the plugin alows you to change this if you want to use a submit button.
+                              			</p>
+                                	</div> 
+
+                                    <div class="doc-info-blocks">
+                                    	<div>
+                                    		<span class="rows-32 plix-32"></span>
+                                    	</div>
+                                        <h3>Different menus</h3>
+                                        <p>
+                                        We have build a couple of menus for this theme, the main menu, which you can use as a dynamic or static menu,
+                                        with submenus, a cool dropdown menu with some cool user settings, and a basic pure CSS menu.
+                              			</p>
+                                	</div> 
+
+                                    <div class="doc-info-blocks">
+                                    	<div>
+                                    		<span class="table-32 plix-32"></span>
+                                    	</div>
+                                        <h3>Tableless design</h3>
+                                        <p>
+                                        The Elite theme is a tableless design, this means that the main structure is table free. But if you need to display a 
+                                        lot of data you should use tables for this, so we included some table examples.
+                              			</p>
+                                	</div> 
+
+                                    <div class="doc-info-blocks">
+                                    	<div>
+                                    		<span class="info-32 plix-32"></span>
+                                    	</div>
+                                        <h3>Valid code</h3>
+                                        <p>
+                                        This theme is W3C valid both HTML &amp; CSS(excluded form 2 meta http-equiv tags and css browser prefixes).
+                              		    </p>
+                                	</div> 
+
+                                    <div class="doc-info-blocks">
+                                    	<div>
+                                    		<span class="map-32 plix-32"></span>
+                                    	</div>
+                                        <h3>Google maps</h3>
+                                        <p>
+                                        Want to look up an address, or use the geo location, or show where your business is located, well you can with the google maps plugin.
+                              			</p>
+                                	</div>
+
+                                    <div class="doc-info-blocks">
+                                    	<div>
+                                    		<span class="folder-32 plix-32"></span>
+                                    	</div>
+                                        <h3>Cool file explore</h3>
+                                        <p>
+                                        We have included a jQuery powerd file explore, which allows you to go true your files.
+                              			 </p>
+                                	</div>
+                                    
+                                    <div class="doc-info-blocks">
+                                    	<div>
+                                    		<span class="stats2-32 plix-32"></span>
+                                    	</div>
+                                        <h3>Attractive javascript charts</h3>
+                                        <p>
+                                        We have used the well knowen javascript charts library called 'flot' for our theme, this allows you to show statistics in a nice way. You can choose between a
+                                        couple of types of charts.
+                              			</p>
+                                	</div> 
+
+                                    <div class="doc-info-blocks">
+                                    	<div>
+                                    		<span class="fullscreen-32 plix-32"></span>
+                                    	</div>
+                                        <h3>Cross browser support</h3>
+                                        <p>
+                                        This theme works in all modern browsers, from windows to OSX. On tablets and phones.
+                              			</p>
+                                	</div>                                                                                                                                                                                                                                                                                                                           	                                  
+                            	</div>                                      
+                            </section>                           
+                            
+							<div class="clear"><!-- New row --></div>
+                            
+                            <!-- End grid -->
+                                                   
+                       </div><!-- End #content-main-inner --> 
+                    </div><!-- End #content-main --> 
+                </div><!-- End #content-inner --> 
+                
+                <!-- CONTENT FOOTER -->
+                
+                <footer id="content-footer">
+                    <div class="left">
+						<div class="left">
+                               <a href="javascript:void(0);" class="button-icon tip-s" title="Some action">
+                                  <span class="folder-10 plix-10"></span>
+                              </a>                                                        
+                              <a href="javascript:void(0);" class="button-icon tip-s" title="Some action">
+                                  <span class="pencil-10 plix-10"></span>
+                              </a>
+                          </div><!-- End .left -->
+                          <div class="right">
+                              <a href="javascript:void(0);" class="button-icon tip-s" title="Some action">
+                                  <span class="refresh-10 plix-10"></span>
+                              </a> 
+                          </div> <!-- End .right --> 
+                    </div><!-- End .left --> 
+                    <div class="right">
+                    	<div class="left">
+                    	Copyright © 2012 <a href="http://bit.ly/ldjfWQ">CreativeMilk</a>
+                        </div><!-- End .left -->
+                        <div class="right">
+                        	<div class="theme-version">Version 1.1</div>
+                        </div><!-- End .right -->
+                    </div><!-- End .right -->                
+                </footer><!-- End #content-footer -->                 
+            </div><!-- End #content-border --> 
+        </div><!-- End #content --> 
+            
+    </div><!-- End #container -->
+    
+    <!-- scroll to top link -->
+    <div id="scrolltotop"><span></span></div> 
+    
+</body>
+</html>

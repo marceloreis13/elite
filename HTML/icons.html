@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>  <html class="ie ie6 lte9 lte8 lte7 no-js"> <![endif]-->
+<!--[if IE 7]>     <html class="ie ie7 lte9 lte8 lte7 no-js"> <![endif]-->
+<!--[if IE 8]>     <html class="ie ie8 lte9 lte8 no-js">      <![endif]-->
+<!--[if IE 9]>     <html class="ie ie9 lte9 no-js">           <![endif]-->
+<!--[if gt IE 9]>  <html class="no-js">                       <![endif]-->
+<!--[if !IE]><!--> <html class="no-js">                       <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>ELITE - A Powerfull Responsive Admin Theme</title>
+       
+    <!-- // Mobile meta/files // -->
+
+	<!-- For third-generation iPad with high-resolution Retina display: -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
+    <!-- For iPhone 4with high-resolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/mobile/apple-touch-icon-114x114.png" />
+    <!-- For first-generation iPad: -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/mobile/apple-touch-icon-72x72.png" />
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <link rel="apple-touch-icon-precomposed" href="images/mobile/apple-touch-icon.png" />
+    <!-- For nokia devices: -->
+    <link rel="shortcut icon" href="images/apple-touch-icon.png" />
+    <!-- 320x460 for iPhone 3GS -->
+    <link rel="apple-touch-startup-image" media="(max-device-width: 480px) and not (-webkit-min-device-pixel-ratio: 2)" href="images/mobile/splash-320x460.png" />
+    <!-- 640x920 for retina display -->
+    <link rel="apple-touch-startup-image" media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" href="images/mobile/splash-640x920-retina.png" />
+    <!-- iPad Portrait 768x1004 -->
+    <link rel="apple-touch-startup-image" media="(min-device-width: 768px) and (orientation: portrait)" href="images/mobile/splash-768x1004.png" />
+    <!-- iPad Landscape 1024x748 -->
+    <link rel="apple-touch-startup-image" media="(min-device-width: 768px) and (orientation: landscape)" href="images/mobile/splash-1024x748.png" />
+    <!-- iPad 3 Portrait 1536x2008 -->
+    <link rel="apple-touch-startup-image" media="(min-device-width: 1536px) and (orientation: portrait)" href="images/mobile/splash-1536x2008-retina.png" />
+    <!-- iPad 3 Landscape 2048x1536 -->
+    <link rel="apple-touch-startup-image" media="(min-device-width: 2048px) and (orientation: landscape)" href="images/mobile/splash-2048x1496-retina.png" />
+    <!-- Transform to webapp: -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Fullscreen mode: -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- Viewport for older phones - http://davidbcalhoun.com/tag/handheldfriendly -->
+    <meta name="HandheldFriendly" content="true"/>   
+    <!-- Viewport - http://davidbcalhoun.com/tag/handheldfriendly -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> 
+    <!-- This file contains some fixes, splash screen and web app code --> 
+    <script src="js/mobiledevices.js"></script>
+    
+    <!-- // Internet Explore // -->
+    
+    <!-- IE9 Pinned Sites: http://msdn.microsoft.com/en-us/library/gg131029.aspx -->
+    <meta name="application-name" content="Elite Admin Skin">
+    <meta name="msapplication-tooltip" content="Cross-platform admin skin.">
+    <meta name="msapplication-starturl" content="http://themes.creativemilk.net/elite/html/index.html">
+    <!-- These custom tasks are examples, you need to edit them to show actual pages -->
+    <meta name="msapplication-task" content="name=Home;action-uri=http://themes.creativemilk.net/elite/html/index.html;icon-uri=http://themes.creativemilk.net/elite/html/images/favicons/favicon.ico">
+    <meta http-equiv="cleartype" content="on" /> 
+    
+    <!--[if lt IE 8]>
+	<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+    <![endif]-->
+            
+    <!-- // Stylesheets // -->
+
+    <!-- Framework -->
+    <link rel="stylesheet" href="css/framework.css"/>
+    <!-- Main -->
+    <link rel="stylesheet" href="css/style.css"/>
+    <!-- jQuery UI --> 
+    <link rel="stylesheet" href="css/ui/jquery.ui.base.css"/>
+    <!-- Styling -->
+    <link rel="stylesheet" href="css/theme/darkblue.css" id="themesheet"/>
+	<!--[if IE 7]>
+	<link rel="stylesheet" href="css/destroy-ie6-ie7.css"/>
+    <![endif]-->
+      
+    <!-- // Misc // -->
+    
+    <link rel="shortcut icon" href="images/favicons/favicon.ico" />
+    
+    <!-- // jQuery/UI core // -->
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>!window.jQuery && document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>
+    <script src="http://code.jquery.com/ui/1.8.22/jquery-ui.min.js"></script>
+    <script>!window.jQueryUI && document.write('<script src="js/jquery-ui-1.8.22.min.js"><\/script>')</script>
+    
+    <!-- // Thirdparty plugins // -->
+    
+    <!-- Touch helper -->  
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <!-- MouseWheel -->  
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <!-- UI Spinner -->
+	<script src="js/jquery.ui.spinner.js"></script>
+    <!-- Tooltip -->               
+    <script src="js/tipsy.js"></script>
+    <!-- Treeview -->                         
+    <script src="js/treeview.js"></script>
+    <!-- Calendar -->                         
+    <script src="js/fullcalendar.min.js"></script> 
+    <!-- selectToUISlider -->                
+    <script src="js/selectToUISlider.jQuery.js"></script> 
+    <!-- context Menu -->         
+    <script src="js/jquery.contextMenu.js"></script> 
+    <!-- File Explore -->              
+    <script src="js/elfinder.min.js"></script> 
+    <!-- AutoGrow Textarea -->                   
+    <script src="js/autogrow-textarea.js"></script> 
+    <!-- Resizable Textarea -->               
+    <script src="js/textarearesizer.min.js"></script>
+    <!-- HTML5 WYSIWYG -->  
+    <script src="wysiwyghtml5/parser_rules/advanced.js"></script>
+	<script src="wysiwyghtml5/dist/wysihtml5-0.3.0.js"></script>    
+    <!-- Lightbox -->                      
+    <script src="js/jquery.colorbox-min.js"></script>
+    <!-- DataTables -->
+    <script src="js/jquery.dataTables.min.js"></script>            
+    <!-- Masked inputs -->
+    <script src="js/jquery.maskedinput-1.3.min.js"></script> 
+    <!-- IE7 JSON FIX -->
+    <script src="js/json2.js"></script>
+    <!-- HTML5 audio player -->
+    <script src="audiojs/audiojs/audio.min.js"></script> 
+             
+    <!-- // Custom theme plugins // -->
+    
+    <!-- Stylesheet switcher --> 
+    <script src="js/e_styleswitcher.1.1.min.js"></script>                 
+    <!-- Widgets -->
+    <script src="js/powerwidgets.1.2.min.js"></script>
+    <!-- Widgets panel -->
+    <script src="js/powerwidgetspanel.1.2.min.js"></script>
+    <!-- Select styling -->
+    <script src="js/e_select.2.0.min.js"></script>    
+    <!-- Checkbox solution -->
+    <script src="js/e_checkbox.1.0.min.js"></script>
+    <!-- Radio button replacement -->
+    <script src="js/e_radio.1.0.min.js"></script>    
+    <!-- Tabs -->
+    <script src="js/e_tabs.1.1.min.js"></script>
+    <!-- File styling -->
+    <script src="js/e_file.1.0.min.js"></script>    
+    <!-- MainMenu -->
+    <script src="js/e_mainmenu.1.0.min.js"></script>
+    <!-- Menu -->
+    <script src="js/e_menu.1.1.min.js"></script>
+    <!-- Input popup box -->
+    <script src="js/e_inputexpand.1.0.min.js"></script>
+    <!-- Progressbar -->
+    <script src="js/e_progressbar.1.0.min.js"></script>
+    <!-- Scrollbar replacemt -->
+    <script src="js/e_scrollbar.1.0.min.js"></script> 
+    <!-- Onscreen keyboard -->
+    <script src="js/e_oskeyboard.1.0.min.js"></script>
+    <!-- Textarea limiter -->
+    <script src="js/e_textarealimiter.1.0.min.js"></script>
+    <!-- Contact form with validation -->
+    <script src="js/e_contactform.1.1.min.js"></script>
+    <!-- Responsive table helper -->
+    <script src="js/e_responsivetable.1.0.min.js"></script>
+    <!-- Gallery -->
+    <script src="js/e_gallery.1.0.min.js"></script>
+    <!-- Live search -->
+    <script src="js/e_livesearch.1.0.min.js"></script>
+    <!-- Notify -->
+    <script src="js/e_notify.1.0.min.js"></script>  
+    <!-- Countdown -->  
+    <script src="js/e_countdown.1.0.min.js"></script> 
+    <!-- Clone script -->
+    <script src="js/e_clone.1.0.min.js"></script> 
+    <!-- Chained inputs -->
+    <script src="js/e_chainedinputs.1.0.min.js"></script>
+    <!-- Show password -->     
+    <script src="js/e_showpassword.1.0.min.js"></script>        
+    <!-- All plugins are set here -->
+    <script src="js/plugins.js"></script>
+    <!-- Custom code -->
+    <script src="js/main.js"></script>  
+            
+    <!-- // HTML5/CSS3 support // -->
+
+    <script src="js/modernizr.min.js"></script>
+                
+</head>
+<body class="layout_fluid layout_responsive"> 
+
+    <!-- this part can be removed, its just here 
+         to let you switch between styles and layout sizes -->
+    <div id="e-styleswitcher">
+        <div class="e-styleswitcher-inner">
+            <div class="e-styleswitcher-arrow"><img src="images/icons/plix-16/white/arrow-right-16.png" alt="" /></div>
+            <div class="box">
+            	<h4>Styles</h4>
+                <select id="choose-styling">
+                	<option value="strangeblue">Strange blue</option>
+                    <option value="black">Black</option>
+                    <option value="darkblue">Dark blue</option>
+                    <option value="lightgrey">Light grey</option>
+                </select>
+            </div>    
+            <div class="box">
+            	<h4>Layout sizes</h4>                
+                <select id="set-layout-size">
+                	<option value="layout_fluid">fluid</option>
+                    <option value="layout_768">768</option>
+                    <option value="layout_960">960</option>
+                    <option value="layout_1024">1024</option>
+                    <option value="layout_1200">1200</option>
+                    <option value="layout_1600">1600</option>
+                </select>
+            </div> 
+            <div class="box">
+            	<h4>Responsive</h4>                
+                <select id="set-layout-responsive">
+                	<option value="layout_responsive">yes</option>
+                    <option value="">no</option>
+                </select>
+            </div>
+            <div class="box">
+            	<h4>Get theme</h4>                
+                <select id="get-theme">
+                	<option value="">no</option>
+                    <option value="yes">yes</option>
+                </select>
+            </div>                         
+        </div>
+    </div>
+  
+	<div id="container">
+    
+        <!-- MAIN HEADER -->
+                
+        <header id="header">
+        	<div id="header-border">
+                <div id="header-inner">
+                
+                    <div class="left">
+                        <a href="index.html" id="logo">ELITE</a>
+                    </div><!-- End .left -->
+                    
+                    <div class="right">
+                        <!-- eMenu -->
+                        <nav>
+                            <ul class="e-splitmenu" id="header-menu">
+                                <li><span>Menu</span><a href="javascript:void(0);"><span class="arrow-down-10 plix-10"></span></a>
+                                
+                                     <div>
+                                        <ul>
+                                            <li><a href="index.html"><span class="stats2-10 plix-10"></span> Stats</a></li>
+                                            <li><a href="index.html"><span class="lock-10 plix-10"></span> Security</a></li>
+                                            <li><a href="index.html"><span class="download-10 plix-10"></span> Downloads</a></li>
+                                        </ul>                                      
+                                    </div>                               
+
+                                </li>
+                                <li><span>Settings</span><a href="javascript:void(0);"><span class="arrow-down-10 plix-10"></span></a>
+                                
+                                     <div>
+                                        <ul>
+                                            <li><a href="index.html"><span class="home-10 plix-10"></span> Basic Settings</a></li>
+                                            <li><a href="index.html"><span class="settings-10 plix-10"></span> Site Settings</a></li>
+                                            <li><a href="index.html"><span class="comment-10 plix-10"></span> User Settings</a></li>
+                                            <li><a href="index.html"><span class="bookmark-10 plix-10"></span> Server Settings</a></li>
+                                        </ul>                                      
+                                    </div>
+                                    
+                                </li>
+                        		<li class="e-menu-profile">
+                                    <a href="javascript:void(0);"><span class="arrow-down-10 plix-10"></span></a> 
+                                    <img src="images/avatar.jpg" alt=""/>
+                                    
+                                    <div>
+                                        <ul>
+                                            <li><a href="index.html"><span class="mail-10 plix-10"></span> Inbox</a></li>
+                                            <li><a href="index.html"><span class="upload-10 plix-10"></span> Settings</a></li>
+                                            <li><a href="index.html"><span class="info-10 plix-10"></span> Logout</a></li>
+                                        </ul>                                      
+                                    </div> 
+                                            
+                                </li>
+                            </ul>
+                        </nav>
+                    </div><!-- End .right --> 
+                    
+                </div><!-- End #header-border --> 
+            </div><!-- End #header-inner -->  
+                
+		</header><!-- End #header -->
+        
+        <!-- CONTENT -->
+                 
+        <div id="content">
+            <div id="content-border">
+            
+                <!-- CONTENT HEADER -->
+                
+                <header id="content-header">
+                    <div class="left">
+                    	<a href="javascript:void(0);" id="toggle-mainmenu" class="button-icon tip-s" title="Toggle Main Menu"><span class="arrow-up-10 plix-10"></span></a>
+                        
+                        <!-- main search form -->
+                        <form method="post" id="mainsearch">
+                            <input type="text" placeholder="Live search..." name="" autocomplete="off"/>
+                            <input type="submit" value="" />
+                        </form>
+                    </div><!-- End .left --> 
+                    <div class="right">
+                    	<!-- sidebar switch -->
+                    	<a href="javascript:void(0);" id="toggle-sidebar" class="button-icon tip-s" title="Switch Main Menu"><span class="arrow-left-10 plix-10"></span></a>
+                        
+                        <!-- breadcrumbs -->
+                        <nav id="main-breadcrumbs">
+                            <ul>
+                                <li class="bc-tab-first">
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="index.html">Interface Elements</a>
+                                </li>
+                                <li class="bc-tab-last">Icons</li>
+                            </ul>          
+                        </nav>
+                        
+                        <!-- demo dialog button -->
+                        <a href="javascript:void(0);" id="open-main-dialog" class="button-text-icon tip-w" title="Some tooltip pointing right"><span class="fullscreen-10 plix-10"></span> Dialog</a>
+                        
+                        <!-- the main page dialog -->
+                        <div id="main-page-dialog" title="Welcome to Elite" style="display:none">
+                        <img src="images/jquery-ui-logo.png" alt="" class="dummy-img-dialog"/>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet est et mauris ornare lobortis dignissim quis massa. Donec ullamcorper turpis ac lectus semper commodo. Mauris tincidunt, erat et tempor interdum, dolor metus consectetur dui, eu accumsan augue augue a erat. Fusce justo nibh, tristique vitae pretium ut, venenatis nec felis. Curabitur congue tempor ultricies. Proin quis libero dignissim neque posuere pharetra vel adipiscing massa. Sed sit amet erat ac arcu sodales aliquam. Nam tellus sapien, ornare in tincidunt vel, ultricies id quam.
+						</div>
+                        
+                        <span class="preloader"></span>
+                        
+                        <!-- widgets controls -->
+                        <div id="widgets-controls">
+                            <span class="preloader"></span>                       
+                            <div class="icon-group"> 
+                                <a href="javascript:void(0);" class="changeto-grid selected tip-s" title="Show grid"><span class="grid-10 plix-10"></span></a>
+                                <span></span>
+                                <a href="javascript:void(0);" class="changeto-rows tip-s" title="Show rows"><span class="rows-10 plix-10"></span></a>
+                            </div>
+                            
+                            <!-- widgets management switch -->
+                            <a href="javascript:void(0);" class="button-icon tip-s" title="Manage widgets" id="powerwidget-panel-switch"><span class="settings-10 plix-10"></span></a>
+                        </div>
+                    </div><!-- End .right -->                
+                
+				</header><!-- End #content-header --> 
+                                
+                <div id="content-inner">
+                    
+                    <!-- SIDEBAR -->
+                    
+                    <aside>
+                    
+                    	<!-- SIDEBAR PROFILE -->
+                        
+                    	<div id="sidebar-profile">
+                            <div id="main-avatar">
+                            	<span class="indicator">38</span>
+                                <img src="images/avatar.jpg" alt=""/>
+                            </div>
+                            <div id="profile-info">
+                                <div>
+                                    <a href="javascript:void(0);"><b>Administrator</b></a>
+                                    <a href="javascript:void(0);">Profile settings</a>
+                                    <a href="javascript:void(0);">Server settings</a>
+                                    <a href="javascript:void(0);">Logout</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- MAIN MENU -->
+                        
+                        <nav id="main-menu">
+                            <ul>
+                                <li><a href="index.html"><span class="home-16 plix-16"></span> Dashboard</a></li>
+                                <li class="no-mobile"><a href="documentation.html"><span class="note-16 plix-16"></span> Documentation</a>
+                                
+                                    <ul>
+                                    	<li><a href="doc-accordion.html">Accordion</a></li> 
+                                    	<li><a href="doc-breadcrumbs.html">Breadcrumbs</a></li>
+                                        <li><a href="doc-buttons.html">Buttons</a></li>
+                                        <li><a href="doc-calendar.html">Calendar</a></li>
+                                        <li><a href="doc-charts.html">Charts</a></li>
+                                        <li><a href="doc-dialogs.html">Dialogs</a></li>
+                                        <li><a href="doc-editors.html">Editors</a></li>
+                                        <li><a href="doc-fileexplore.html">File Explore</a></li>
+                                        <li><a href="doc-forms.html">Forms</a></li>
+                                        <li><a href="doc-grid.html">Grid</a></li>
+                                        <li><a href="doc-icons.html">Icons</a></li>
+                                        <li><a href="doc-listsblocks.html">Lists &amp; Blocks</a></li>
+                                        <li><a href="doc-media.html">Media</a></li>
+                                        <li><a href="doc-menus.html">Menus</a></li>
+                                        <li><a href="doc-misc.html">Misc</a></li>
+                                        <li><a href="doc-search.html">Search</a></li>
+                                        <li><a href="doc-tables.html">Tables</a></li>
+                                        <li><a href="doc-tabs.html">Tabs</a></li>
+                                        <li><a href="doc-toolbars.html">Toolbars</a></li> 
+                                        <li><a href="doc-widgets.html">Widgets</a></li>
+                                        <li><a href="doc-wizard.html">Wizard</a></li>                                          
+                                    </ul> 
+                                                                   
+                                </li>
+                                <li><a href="calendar.html"><span class="calendar-16 plix-16"></span>Calendar<span class="color-indicator">28</span></a></li>
+                                <li><a href="javascript:void(0);"><span class="postcard-16 plix-16"></span> Form Elements <span class="button-icon"><span class="plus-10 plix-10"></span></span></a>
+
+                                    <ul>
+                                    	<li><a href="editors.html">Editors</a></li>
+                                    	<li><a href="forms.html">Forms</a></li>
+                                        <li><a href="login.html">Login form 1</a></li>
+                                        <li><a href="login-2.html">Login form 2</a></li>
+                                        <li><a href="login-3.html">Login form 3</a></li>
+                                        <li><a href="login-4.html">Login form 4</a></li>
+                                        <li><a href="search.html">Search</a></li>
+                                        <li><a href="wizard.html">Wizard</a></li>                                         
+                                    </ul>
+                                
+                                </li>
+                                <li><a href="media.html"><span class="image-16 plix-16"></span> Media</a></li>
+                                <li><a href="planning.html"><span class="pencil-16 plix-16"></span> Planning</a></li>
+                                <li><a href="maps.html"><span class="map-16 plix-16"></span> Google Maps <span class="indicator tip-w" title="Some tip goes here">tooltip</span></a></li>
+                                <li><a href="fileexplore.html"><span class="folder-16 plix-16"></span> File Explore</a></li> 
+                                <li><a href="javascript:void(0);"><span class="warning-16 plix-16"></span> Error pages<span class="button-icon"><span class="plus-10 plix-10"></span></span></a>
+
+                                    <ul>
+                                    	<li><a href="400.html">400</a></li>
+                                    	<li><a href="401.html">401</a></li>
+                                        <li><a href="403.html">403</a></li>
+                                        <li><a href="404.html">404</a></li>
+                                        <li><a href="500.html">500</a></li>
+                                        <li><a href="503.html">503</a></li>                                         
+                                    </ul>
+                                
+                                </li>                                                               
+                                <li><a href="widgets.html"><span class="rows4-16 plix-16"></span> Widgets</a></li>
+                                <li><a href="tables.html"><span class="cells-16 plix-16"></span> Tables</a></li>
+                                <li><a href="charts.html"><span class="stats2-16 plix-16"></span> Charts </a></li>
+                                <li class="menu-open page-active"><a href="javascript:void(0);"><span class="controls-16 plix-16"></span> Interface Elements <span class="button-icon"><span class="min-10 plix-10"></span></span></a>
+                                
+                                    <ul>
+                                    	<li><a href="accordion.html">Accordion</a></li>                                        
+                                        <li><a href="breadcrumbs.html">Breadcrumbs</a></li>
+                                        <li><a href="buttons.html">Buttons</a></li>
+                                        <li><a href="dialogs.html">Dialogs</a></li>
+                                        <li class="page-active"><a href="icons.html">Icons</a></li>
+                                        <li><a href="listsblocks.html">Lists &amp; Blocks</a></li>
+                                        <li><a href="menus.html">Menus</a></li>
+                                        <li><a href="misc.html">Misc</a></li>
+                                        <li><a href="tabs.html">Tabs</a></li>
+                                        <li><a href="toolbars.html">Toolbars</a></li>
+                                    </ul>          
+                                                           
+                                </li>
+                                <li><a href="grid.html"><span class="layout3-16 plix-16"></span> Grid <span class="indicator">960</span></a></li>
+                            </ul>
+                        </nav>                      
+                    </aside>
+                    
+                    <!-- sidebar meta stats -->
+                    <div id="sidebar-meta">
+                    	<div id="sidebar-meta-inner">
+                        	<div>
+                                <p class="left">Space</p> 
+                                <p class="right">4,551 MB / 10 GB</p>
+                            </div>
+                            <div class="pbar">
+                               <span style="width:50%"></span>                            
+                            </div>
+                        	<div>
+                                <p class="left">Traffic</p> 
+                                <p class="right">8,001 MB / 10 GB</p>
+                            </div>
+                            <div class="pbar">
+                               <span style="width:81%"></span>                            
+                            </div>
+                        </div>  
+                    </div> 
+                     
+                    <!-- CONTENT -->
+                    
+					<div id="content-main">
+                        <div id="content-main-inner">
+
+                            <!-- widgets management panel --> 
+                            <div id="powerwidgetspanel" class="powerwidgetspanel">
+                                <header>
+                                    <h2>Power widgets panel</h2>
+                                </header>
+                                <div class="powerwidgetspanel-widget" data-widget-id="widget1">
+                                    <input type="checkbox"/>
+                                    <label>10px Custom icons</label>
+                                </div>
+                                <div class="powerwidgetspanel-widget" data-widget-id="widget2">
+                                    <input type="checkbox"/>
+                                    <label>16px Custom icons</label>                         
+                                </div>
+                                <div class="powerwidgetspanel-widget" data-widget-id="widget3">
+                                    <input type="checkbox"/>
+                                    <label>32px Custom icons</label>
+                                </div>
+                                <div class="powerwidgetspanel-widget" data-widget-id="widget4">
+                                    <input type="checkbox"/>
+                                    <label>16 Entypo icons</label>
+                                </div>                             
+                                <div class="powerwidgetspanel-widget" data-widget-id="widget5">
+                                    <input type="checkbox"/>
+                                    <label>24 Entypo icons</label>                           
+                                </div>                      
+                            </div>
+                            
+                            <div class="page-header">
+                                <h2>Icons</h2>
+                                <span class="page-helper">1.0</span>
+                                <a href="doc-icons.html" class="page-helper">Documentation</a>
+                                 <a href="javascript:void(0);" class="page-helper empty-local-storage">Clear storage</a>
+                                <p>Icons in button form.</p>
+                            </div>
+                                                        
+                            <!-- Start grid -->
+
+                            <section class="g_1">
+                                                       
+                                <!-- New widget -->
+                                
+                                <div class="powerwidget" id="widget-1">
+                                    <header>
+                                    	<h2>10px Custom icons</h2>                                  
+                                    </header>
+                                    <div>
+                                    	<div class="inner-spacer"> 
+                                            <p>125 Custom made pixel like icons.</p>
+                                            
+                                            <div class="spacer-10"><!-- spacer 10px --></div> 
+                                           
+                                            <a href="javascript:void(0);" class="button-icon"><span class="plus-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="arrow-left-end-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="arrow-left-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="arrow-right-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="arrow-right-end-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="arrow-down-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="arrow-up-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="min-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="delete-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="bookmark-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="refresh-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="tags-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="grid-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="blocks-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="columns-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="rows-10 plix-10"></span></a>                                      
+                                            <a href="javascript:void(0);" class="button-icon"><span class="imagelist-10 plix-10"></span></a>  
+                                            <a href="javascript:void(0);" class="button-icon"><span class="imagelist2-10 plix-10"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="split-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="combine-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="expand-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="seperator-10 plix-10"></span></a>  
+                                            <a href="javascript:void(0);" class="button-icon"><span class="stop-10 plix-10"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="square-10 plix-10"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="table-10 plix-10"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="pencil-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="folder-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="warning-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="trashcan-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="document-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="download-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="home-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="upload-10 plix-10"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="pause-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="play-10 plix-10"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="print-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="stats-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="stats2-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="comment-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="mail-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="monitor-10 plix-10"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="mobile-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="info-10 plix-10"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="lock-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="settings-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="magnifyglass-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="magnifyglass2-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="frame-10 plix-10"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="layout-10 plix-10"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="layout2-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="layout3-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="calendar-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="marker-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="longarrow-up-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="longarrow-right-10 plix-10"></span></a>  
+                                            <a href="javascript:void(0);" class="button-icon"><span class="longarrow-down-10 plix-10"></span></a>  
+                                            <a href="javascript:void(0);" class="button-icon"><span class="longarrow-left-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="longarrow-upright-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="longarrow-downright-10 plix-10"></span></a>   
+                                            <a href="javascript:void(0);" class="button-icon"><span class="longarrow-downleft-10 plix-10"></span></a>   
+                                            <a href="javascript:void(0);" class="button-icon"><span class="longarrow-upleft-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="image-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="postcard-10 plix-10"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="note-10 plix-10"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="boxed-plus-10 plix-10"></span></a>   
+                                            <a href="javascript:void(0);" class="button-icon"><span class="boxed-min-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="clipboard-10 plix-10"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="phone-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="notebook-10 plix-10"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="inbox-10 plix-10"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="boxed-delete-10 plix-10"></span></a>  
+                                            <a href="javascript:void(0);" class="button-icon"><span class="boxed-arrow-up-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="boxed-arrow-right-10 plix-10"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="boxed-arrow-down-10 plix-10"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="boxed-arrow-left-10 plix-10"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="movie-10 plix-10"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="map-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="arrow-up-down-10 plix-10"></span></a>   
+                                            <a href="javascript:void(0);" class="button-icon"><span class="rows2-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="rows3-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="ruler-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="vcard-10 plix-10"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="add-up-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="add-right-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="add-down-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="add-left-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="document2-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="cells-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="graphics-10 plix-10"></span></a>                                            
+                                            <a href="javascript:void(0);" class="button-icon"><span class="graphics2-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="blocks2-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="controls-10 plix-10"></span></a>  
+                                            <a href="javascript:void(0);" class="button-icon"><span class="controls2-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="rows4-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="graph3-10 plix-10"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="graphics4-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="arrow-up2-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="arrow-right2-10 plix-10"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="arrow-down2-10 plix-10"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="arrow-left2-10 plix-10"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="terminal-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="terminal-run-10 plix-10"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="document-tranparent-10 plix-10"></span></a>                                           
+                                            <a href="javascript:void(0);" class="button-icon"><span class="document-tranparent2-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="align-center-10 plix-10"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="align-left-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="align-right-10 plix-10"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="align-justify-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="save-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="battery-full-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="battery-empty-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="ipad-10 plix-10"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="speaker-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="prev-10 plix-10"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="next-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="calendar2-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="fullscreen-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="normalscreen-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="more-10 plix-10"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="enter-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="caption-top-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="caption-right-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="caption-bottom-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="caption-left-10 plix-10"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="code-10 plix-10"></span></a>                                                      
+                                        </div>
+                                    </div>
+                                </div><!-- End .powerwidget -->                            
+
+                                <!-- New widget -->
+                                
+                                <div class="powerwidget" id="widget-2">
+                                    <header>
+                                    	<h2>16px Custom icons</h2>                                  
+                                    </header>
+                                    <div>
+                                    	<div class="inner-spacer"> 
+                                            <p>125 Custom made pixel like icons.</p>
+                                            
+                                            <div class="spacer-10"><!-- spacer 10px --></div> 
+                                           
+                                            <a href="javascript:void(0);" class="button-icon"><span class="plus-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="arrow-left-end-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="arrow-left-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="arrow-right-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="arrow-right-end-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="arrow-down-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="arrow-up-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="min-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="delete-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="bookmark-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="refresh-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="tags-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="grid-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="blocks-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="columns-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="rows-16 plix-16"></span></a>                                      
+                                            <a href="javascript:void(0);" class="button-icon"><span class="imagelist-16 plix-16"></span></a>  
+                                            <a href="javascript:void(0);" class="button-icon"><span class="imagelist2-16 plix-16"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="split-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="combine-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="expand-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="seperator-16 plix-16"></span></a>  
+                                            <a href="javascript:void(0);" class="button-icon"><span class="stop-16 plix-16"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="square-16 plix-16"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="table-16 plix-16"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="pencil-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="folder-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="warning-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="trashcan-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="document-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="download-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="home-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="upload-16 plix-16"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="pause-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="play-16 plix-16"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="print-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="stats-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="stats2-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="comment-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="mail-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="monitor-16 plix-16"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="mobile-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="info-16 plix-16"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="lock-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="settings-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="magnifyglass-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="magnifyglass2-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="frame-16 plix-16"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="layout-16 plix-16"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="layout2-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="layout3-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="calendar-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="marker-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="longarrow-up-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="longarrow-right-16 plix-16"></span></a>  
+                                            <a href="javascript:void(0);" class="button-icon"><span class="longarrow-down-16 plix-16"></span></a>  
+                                            <a href="javascript:void(0);" class="button-icon"><span class="longarrow-left-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="longarrow-upright-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="longarrow-downright-16 plix-16"></span></a>   
+                                            <a href="javascript:void(0);" class="button-icon"><span class="longarrow-downleft-16 plix-16"></span></a>   
+                                            <a href="javascript:void(0);" class="button-icon"><span class="longarrow-upleft-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="image-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="postcard-16 plix-16"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="note-16 plix-16"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="boxed-plus-16 plix-16"></span></a>   
+                                            <a href="javascript:void(0);" class="button-icon"><span class="boxed-min-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="clipboard-16 plix-16"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="phone-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="notebook-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="inbox-16 plix-16"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="boxed-delete-16 plix-16"></span></a>  
+                                            <a href="javascript:void(0);" class="button-icon"><span class="boxed-arrow-up-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="boxed-arrow-right-16 plix-16"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="boxed-arrow-down-16 plix-16"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="boxed-arrow-left-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="movie-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="map-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="arrow-up-down-16 plix-16"></span></a>   
+                                            <a href="javascript:void(0);" class="button-icon"><span class="rows2-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="rows3-16 plix-16"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="ruler-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="vcard-16 plix-16"></span></a>                                            
+                                            <a href="javascript:void(0);" class="button-icon"><span class="add-up-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="add-right-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="add-down-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="add-left-16 plix-16"></span></a>                                            
+                                            <a href="javascript:void(0);" class="button-icon"><span class="document2-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="cells-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="graphics-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="graphics2-16 plix-16"></span></a>                                            
+                                            <a href="javascript:void(0);" class="button-icon"><span class="blocks2-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="controls-16 plix-16"></span></a>  
+                                            <a href="javascript:void(0);" class="button-icon"><span class="controls2-16 plix-16"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="rows4-16 plix-16"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="graph3-16 plix-16"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="graphics4-16 plix-16"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="arrow-up2-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="arrow-right2-16 plix-16"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="arrow-down2-16 plix-16"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="arrow-left2-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="terminal-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="terminal-run-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="document-tranparent-16 plix-16"></span></a>                                            
+                                            <a href="javascript:void(0);" class="button-icon"><span class="document-tranparent2-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="align-center-16 plix-16"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="align-left-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="align-right-16 plix-16"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="align-justify-16 plix-16"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="save-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="battery-full-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="battery-empty-16 plix-16"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="ipad-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="speaker-16 plix-16"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="prev-16 plix-16"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon"><span class="next-16 plix-16"></span></a>  
+                                            <a href="javascript:void(0);" class="button-icon"><span class="calendar2-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="fullscreen-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="normalscreen-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="more-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="enter-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="caption-top-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="caption-right-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="caption-bottom-16 plix-16"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon"><span class="caption-left-16 plix-16"></span></a>                                            
+                                            <a href="javascript:void(0);" class="button-icon"><span class="code-16 plix-16"></span></a>                                     
+                                        </div>    
+                                    </div>
+                                </div><!-- End .powerwidget --> 
+
+                                <!-- New widget -->
+                                
+                                <div class="powerwidget" id="widget-3">
+                                    <header>
+                                    	<h2>32px Custom icons</h2>                                  
+                                    </header>
+                                    <div>
+                                    	<div class="inner-spacer"> 
+                                            <p>125 Custom made pixel like icons.</p>
+                                            
+                                            <div class="spacer-10"><!-- spacer 10px --></div> 
+                                           
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="plus-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="arrow-left-end-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="arrow-left-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="arrow-right-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="arrow-right-end-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="arrow-down-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="arrow-up-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="min-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="delete-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="bookmark-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="refresh-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="tags-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="grid-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="blocks-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="columns-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="rows-32 plix-32"></span></a>                                      
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="imagelist-32 plix-32"></span></a>  
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="imagelist2-32 plix-32"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="split-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="combine-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="expand-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="seperator-32 plix-32"></span></a>  
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="stop-32 plix-32"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="square-32 plix-32"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="table-32 plix-32"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="pencil-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="folder-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="warning-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="trashcan-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="document-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="download-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="home-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="upload-32 plix-32"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="pause-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="play-32 plix-32"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="print-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="stats-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="stats2-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="comment-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="mail-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="monitor-32 plix-32"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="mobile-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="info-32 plix-32"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="lock-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="settings-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="magnifyglass-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="magnifyglass2-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="frame-32 plix-32"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="layout-32 plix-32"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="layout2-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="layout3-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="calendar-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="marker-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="longarrow-up-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="longarrow-right-32 plix-32"></span></a>  
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="longarrow-down-32 plix-32"></span></a>  
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="longarrow-left-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="longarrow-upright-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="longarrow-downright-32 plix-32"></span></a>   
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="longarrow-downleft-32 plix-32"></span></a>   
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="longarrow-upleft-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="image-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="postcard-32 plix-32"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="note-32 plix-32"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="boxed-plus-32 plix-32"></span></a>   
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="boxed-min-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="clipboard-32 plix-32"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="phone-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="notebook-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="inbox-32 plix-32"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="boxed-delete-32 plix-32"></span></a>  
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="boxed-arrow-up-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="boxed-arrow-right-32 plix-32"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="boxed-arrow-down-32 plix-32"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="boxed-arrow-left-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="movie-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="map-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="arrow-up-down-32 plix-32"></span></a>   
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="rows2-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="rows3-32 plix-32"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="ruler-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="vcard-32 plix-32"></span></a>                                            
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="add-up-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="add-right-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="add-down-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="add-left-32 plix-32"></span></a>                                            
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="document2-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="cells-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="graphics-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="graphics2-32 plix-32"></span></a>                                            
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="blocks2-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="controls-32 plix-32"></span></a>  
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="controls2-32 plix-32"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="rows4-32 plix-32"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="graph3-32 plix-32"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="graphics4-32 plix-32"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="arrow-up2-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="arrow-right2-32 plix-32"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="arrow-down2-32 plix-32"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="arrow-left2-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="terminal-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="terminal-run-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="document-tranparent-32 plix-32"></span></a>                                            
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="document-tranparent2-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="align-center-32 plix-32"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="align-left-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="align-right-32 plix-32"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="align-justify-32 plix-32"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="save-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="battery-full-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="battery-empty-32 plix-32"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="ipad-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="speaker-32 plix-32"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="prev-32 plix-32"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="next-32 plix-32"></span></a>  
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="calendar2-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="fullscreen-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="normalscreen-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="more-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="enter-32 plix-32"></span></a> 
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="caption-top-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="caption-right-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="caption-bottom-32 plix-32"></span></a>
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="caption-left-32 plix-32"></span></a>                                           
+                                            <a href="javascript:void(0);" class="button-icon button-big"><span class="code-32 plix-32"></span></a>                                    
+                                        </div>    
+                                    </div>
+                                </div><!-- End .powerwidget --> 
+
+                                <!-- New widget -->
+
+                                <div class="powerwidget" id="widget-4">
+                                    <header>
+                                    	<h2>16px Entypo icons</h2>                                  
+                                    </header>
+                                    <div>
+                                    	<div class="inner-spacer"> 
+                                            
+                                            <div class="spacer-10"><!-- spacer 10px --></div> 
+                                           
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-gear"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-flashlight"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-cup"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-price-tag"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-camera"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-moon"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-palette"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-leaf"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-music-note"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-bag"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-plane"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-buoy"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-rain"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-eye"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-clock"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-mic"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-calendar"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-lightning"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-hourglass"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-rss"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-wifi"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-lock"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-unlock"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-tick"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-cross"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-minus-round"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-plus-round"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-question"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-question-round"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-warning"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-redo"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-undo"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-swap"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-revert"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-refresh"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-list"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-list-add"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-thumbs"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-page-list"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-page"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-pages"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-marker"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-pictures"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-movie"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-music"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-folder"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-drawer"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-trash"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-outbox"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-inbox"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-download"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-cloud"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-cloud-upload"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-phone"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-mobile"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-tag"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-directions"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-mail"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-pencil"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-paperclip"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-reply"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-replay-all"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-forward"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-user"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-users"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-add-user"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-card"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-extract"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-marker"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-map"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-compass"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-arrow"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-target"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-path"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-heart"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-star"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-like"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-chat"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-speech"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-quote"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-printer"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-bell"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-link"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-flag"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-cross-round"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-minus"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-plus"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-forbidden"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-info"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-info-round"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-play"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-pause"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-record"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-forward"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-backward"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-previous"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-next"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-expand"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-reduce"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-volume"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-loud"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-mute"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-left-fat"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-down-fat"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-up-fat"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-right-fat"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-left"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-down"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-up"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-right"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-left-round"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-down-round"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-up-round"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-right-round"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-home"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-ribbon"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-read"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-new-tab"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-search"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-ellipsis"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-bullet-list"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-16"><span class="entypo-creative-commons"></span></a>                             
+                                        </div>    
+                                    </div>
+                                </div><!-- End .powerwidget --> 
+
+                                <!-- New widget -->
+                                
+                                <div class="powerwidget" id="widget-5">
+                                    <header>
+                                    	<h2>24px Entypo icons</h2>                                  
+                                    </header>
+                                    <div>
+                                    	<div class="inner-spacer"> 
+                                            
+                                            <div class="spacer-10"><!-- spacer 10px --></div> 
+                                           
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-gear entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-flashlight entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-cup entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-price-tag entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-camera entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-moon entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-palette entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-leaf entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-music-note entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-bag entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-plane entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-buoy entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-rain entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-eye entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-clock entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-mic entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-calendar entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-lightning entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-hourglass entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-rss entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-wifi entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-lock entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-unlock entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-tick entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-cross entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-minus-round entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-plus-round entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-question entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-question-round entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-warning entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-redo entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-undo entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-swap entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-revert entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-refresh entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-list entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-list-add entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-thumbs entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-page-list entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-page entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-pages entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-marker entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-pictures entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-movie entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-music entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-folder entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-drawer entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-trash entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-outbox entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-inbox entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-download entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-cloud entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-cloud-upload entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-phone entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-mobile entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-tag entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-directions entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-mail entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-pencil entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-paperclip entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-reply entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-replay-all entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-forward entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-user entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-users entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-add-user entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-card entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-extract entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-marker entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-map entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-compass entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-arrow entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-target entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-path entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-heart entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-star entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-like entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-chat entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-speech entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-quote entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-printer entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-bell entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-link entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-flag entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-cross-round entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-minus entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-plus entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-forbidden entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-info entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-info-round entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-play entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-pause entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-record entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-forward entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-backward entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-previous entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-next entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-expand entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-reduce entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-volume entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-loud entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-mute entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-left-fat entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-down-fat entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-up-fat entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-right-fat entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-left entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-down entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-up entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-right entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-left-round entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-down-round entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-up-round entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-right-round entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-home entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-ribbon entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-read entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-new-tab entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-search entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-ellipsis entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-bullet-list entypo-24"></span></a>
+                                            <a href="javascript:void(0);" class="entypo-button entypo-24"><span class="entypo-creative-commons entypo-24"></span></a>                             
+                                        </div>    
+                                    </div>
+                                </div><!-- End .powerwidget -->
+                            </section>
+                            
+                            <div class="clear"><!-- New row --></div>                                      
+  
+                            <!-- End grid -->
+                                                   
+                       </div><!-- End #content-main-inner --> 
+                    </div><!-- End #content-main --> 
+                </div><!-- End #content-inner --> 
+                
+                <!-- CONTENT FOOTER -->
+                
+                <footer id="content-footer">
+                    <div class="left">
+						<div class="left">
+                               <a href="javascript:void(0);" class="button-icon tip-s" title="Some action">
+                                  <span class="folder-10 plix-10"></span>
+                              </a>                                                        
+                              <a href="javascript:void(0);" class="button-icon tip-s" title="Some action">
+                                  <span class="pencil-10 plix-10"></span>
+                              </a>
+                          </div><!-- End .left -->
+                          <div class="right">
+                              <a href="javascript:void(0);" class="button-icon tip-s" title="Some action">
+                                  <span class="refresh-10 plix-10"></span>
+                              </a> 
+                          </div> <!-- End .right --> 
+                    </div><!-- End .left --> 
+                    <div class="right">
+                    	<div class="left">
+                    	Copyright © 2012 <a href="http://bit.ly/ldjfWQ">CreativeMilk</a>
+                        </div><!-- End .left -->
+                        <div class="right">
+                        	<div class="theme-version">Version 1.1</div>
+                        </div><!-- End .right -->
+                    </div><!-- End .right -->                
+                </footer><!-- End #content-footer -->                 
+            </div><!-- End #content-border --> 
+        </div><!-- End #content --> 
+            
+    </div><!-- End #container -->
+    
+    <!-- scroll to top link -->
+    <div id="scrolltotop"><span></span></div> 
+    
+</body>
+</html>

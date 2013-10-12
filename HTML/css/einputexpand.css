@@ -1,0 +1,74 @@
+/*
+ * ************************************************************* *
+ * Name        : eInputExpande                                   *
+ * Description : CSS for the eInputExpand plugin                 *
+ * Version     : Version 1                                       *
+ * Author      : CreativeMilk                                    *
+ * Author URI  : www.creativemilk.net                            *
+ * Updated     : --/--/----                                      *
+ * Copyright   : (c) 2011 CreativeMilk                           *
+ * ************************************************************* *
+ */
+
+
+#e-inputexpand{
+	position              : fixed;
+	top                   : 50%;
+	left                  : 50%;
+	-webkit-border-radius : 3px;
+	-khtml-border-radius  : 3px;
+	-moz-border-radius    : 3px;
+	border-radius         : 3px;
+	z-index               : 99999;
+	display               : none;
+}
+#e-inputexpand-content{
+	padding : 10px 10px 0.750em 10px;
+}
+#e-inputexpand-textarea{
+	padding                 : 5px;		
+	overflow                : auto;
+	vertical-align          : top; 
+	font-size               : 12px;	
+	-webkit-box-sizing      : border-box;
+	-khtml-box-sizing       : border-box;   
+	-moz-box-sizing         : border-box;
+	-ms-box-sizing          : border-box;	 
+	box-sizing              : border-box;
+	-webkit-background-clip : padding-box;
+	-khtml-box-sizing       : padding-box;
+	-moz-background-clip    : padding;
+	background-clip         : padding-box;
+	-webkit-border-radius   : 3px;
+	-khtml-border-radius    : 3px;
+	-moz-border-radius      : 3px;
+	border-radius           : 3px;	
+}
+#e-inputexpand footer{
+	height  : 40px;
+	padding : 0 10px;
+}
+#e-inputexpand footer a{
+	height                : 28px;
+	width                 : auto;
+	float                 : right;
+	line-height           : 28px;
+	position              : relative;
+	margin                : 0 0 5px 5px;
+	padding               : 0 10px;
+	font-size             : 12px;
+	font-family           : Arial, Helvetica, sans-serif;
+	-moz-border-radius    : 3px;
+	-khtml-border-radius  : 3px;
+	-webkit-border-radius : 3px;
+	border-radius         : 3px;
+}
+#e-inputexpand-overlay{
+	height           : 100%;
+	width            : 100%;
+	position         : fixed;
+	left             : 0;
+	top              : 0;
+	z-index          : 99998;
+	display          : none;
+}

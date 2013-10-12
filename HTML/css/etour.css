@@ -1,0 +1,188 @@
+/*
+ * ************************************************************* *
+ * Name         :  eTour                                           *
+ * Description  :  CSS for the tour plugin.                        *
+ * Version      :  Version 1                                       *
+ * Author       :  CreativeMilk                                    *
+ * Author URI   :  www.creativemilk.net                            *
+ * Updated      :  --/--/----                                      *
+ * Copyright    :  (c) 2011 CreativeMilk                           *
+ * ************************************************************* *
+ */
+ 
+
+.e-tour{
+	padding               : 5px;
+	position              : absolute!important;
+	-webkit-border-radius : 3px;
+	-khtml-border-radius  : 3px;
+	-moz-border-radius    : 3px;
+	border-radius         : 3px;
+	z-index               : 9001;
+	display               : none;
+}
+.e-tour > span{
+	position    : absolute;
+	font-size   : 0; 
+	line-height : 0; 
+	width       : 0;
+}
+.e-tour-arrow-tl > span{
+	left          : 8px;
+	bottom        : -8px;
+	border-right  : 10px solid transparent;
+	border-bottom : none;
+	border-left   : 10px solid transparent;
+}
+.e-tour-arrow-tm > span{
+	left          : 50%;
+	bottom        : -8px;
+	border-right  : 10px solid transparent;
+	border-bottom : none;
+	border-left   : 10px solid transparent;
+	margin        : 0 0 0 -10px;
+}
+.e-tour-arrow-tr > span{
+	right         : 8px;
+	bottom        : -8px;
+	border-right  : 10px solid transparent;
+	border-bottom : none;
+	border-left   : 10px solid transparent;
+}
+.e-tour-arrow-rt > span{
+	left          : -8px;
+	top           : 8px;
+	border-top    : 10px solid transparent;
+	border-bottom : 10px solid transparent;
+	border-left   : none;
+}
+.e-tour-arrow-rm > span{
+	left          : -8px;
+	top           : 50%;
+	border-top    : 10px solid transparent;
+	border-bottom : 10px solid transparent;
+	border-left   : none;
+	margin        : -10px 0 0 0;
+}
+.e-tour-arrow-rb > span{
+	left          : -8px;
+	bottom        : 8px;
+	border-top    : 10px solid transparent;
+	border-bottom : 10px solid transparent;
+	border-left   : none;
+}
+.e-tour-arrow-bl > span{
+	left         : 8px;
+	top          : -8px;
+	border-right : 10px solid transparent;
+	border-top   : none;
+	border-left  : 10px solid transparent;
+}
+.e-tour-arrow-bm > span{
+	left         : 50%;
+	top          : -8px;
+	border-right : 10px solid transparent;
+	border-top   : none;
+	border-left  : 10px solid transparent;
+	margin       : 0 0 0 -10px;
+}
+.e-tour-arrow-br > span{
+	right        : 8px;
+	top          : -8px;
+	border-right : 10px solid transparent;
+	border-top   : none;
+	border-left  : 10px solid transparent;
+}
+.e-tour-arrow-lt > span{
+	right         : -8px;
+	top           : 8px;
+	border-top    : 10px solid transparent;
+	border-bottom : 10px solid transparent;
+	border-right  : none;
+}
+.e-tour-arrow-lm > span{
+	right         : -8px;
+	top           : 50%;
+	border-top    : 10px solid transparent;
+	border-bottom : 10px solid transparent;
+	border-right  : none;
+	margin        : -10px 0 0 0;
+}
+.e-tour-arrow-lb > span{
+	right         : -8px;
+	bottom        : 8px;
+	border-top    : 10px solid transparent;
+	border-bottom : 10px solid transparent;
+	border-right  : none;
+}
+.e-tour-inner{
+	-webkit-border-radius  : 3px;
+	-khtml-border-radius   : 3px;
+	-moz-border-radius     : 3px;
+	border-radius          : 3px;
+	padding                : 10px;
+}
+.e-tour header{
+	height                          : 30px;
+	line-height                     : 30px;
+	font-size                       : 14px;
+	font-weight                     : bold;
+	margin                          : 0 0 5px 0;
+	-webkit-border-top-left-radius  : 3px;
+	-webkit-border-top-right-radius : 3px;
+	-moz-border-radius-topleft      : 3px;
+	-moz-border-radius-topright     : 3px;
+	border-top-left-radius          : 3px;
+	border-top-right-radius         : 3px;
+}
+.e-tour-draggable .e-tour-head{
+	cursor : move;
+}
+.e-tour-content{
+	line-height : 18px;
+}
+.e-tour-steps{
+	display : none;
+}
+.e-tour-placeholder{
+	width    : auto;
+	float    : left;
+	position : relative;
+}
+.e-tour-footer{
+	height      : 24px;
+	line-height : 24px;
+	text-align  : right;
+	margin      : 20px 0 0 0;
+	padding     : 10px 0 0 0;
+}
+.e-tour-timer{
+	height                : 24px;
+	line-height           : 24px;
+	width                 : auto;
+	float                 : right;
+	padding               : 0 10px;
+	-webkit-border-radius : 3px;
+	-khtml-border-radius  : 3px;
+	-moz-border-radius    : 3px;
+	border-radius         : 3px;	
+}
+.e-tour-timer span{
+	font-weight : bold;
+}
+.e-tour-footer div{
+	width : auto;
+	float : right;
+}
+.e-tour-footer a{
+	height                : 24px;
+	line-height           : 24px;
+	width                 : auto;
+	float                 : left;
+	padding               : 0 10px;
+	margin                : 0 0 0 5px;
+	-webkit-border-radius : 3px;
+	-khtml-border-radius  : 3px;
+	-moz-border-radius    : 3px;
+	border-radius         : 3px;	
+}

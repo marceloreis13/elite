@@ -1,0 +1,100 @@
+<section>
+    <h2>eOsKeyboard</h2>
+    <p>Basic on screen keyboard plugin.</p>
+    
+    <div class="spacer-30"></div>
+
+    <h3>How to use</h3>
+    <p>How to use HTML elements.</p>
+    
+    <div class="spacer-10"></div>                                             
+
+    <pre>&lt;input type="text" id="eoskeyboard-id" /&gt;</pre>
+    
+    <div class="spacer-30"></div>
+
+    <h3>Usage plugin</h3>
+    <p>How to use our custom made jQuery plugins.</p>
+    
+    <div class="spacer-10"></div>
+
+    <pre>$('#eoskeyboard-id').eOsKeyboard({
+    title:'OS Keyboard',
+    trigger: 'focus',
+    draggable: true,
+    posY: 20,
+    posX: 0,
+    zIndex: 1000
+});</pre> 
+
+	<div class="spacer-30"></div>       
+
+    <h3>Plugin options</h3>
+    <p>Most of our custom made jQuery plugins have options/settings.</p>
+    
+    <div class="spacer-10"></div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Plugin options</th>
+                <th scope="col">Type</th>
+                <th scope="col">Default</th>
+                <th scope="col">Desctription</th>
+                <th class="tbversion" scope="col">Since</th>
+            </tr>                                            
+        </thead> 
+        <tbody>
+            <tr>
+                <td>title</td>
+                <td>string</td>
+                <td>OS Keyboard</td>
+                <td>The title of the OS keyboard.</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>trigger</td>
+                <td>string</td>
+                <td>icon | focus</td>
+                <td>How the OS keyboard is triggerd, by an icon or when you click on a input(focus).</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>draggable</td>
+                <td>boolean</td>
+                <td>true</td>
+                <td>Allow the Oskeyboard to be draggable.</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>posX</td>
+                <td>number(integer)</td>
+                <td>20</td>
+                <td>The position of the OS keyboard(vertical).</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>posY</td>
+                <td>number(integer)</td>
+                <td>0</td>
+                <td>The position of the OS keyboard(horizontal).</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>zIndex</td>
+                <td>number(integer)</td>
+                <td>1000</td>
+                <td>The z-index of the keyboard.</td>
+                <td>1.0</td>
+            </tr>                                                                                                                                               
+       </tbody>                                    
+    </table> 
+    
+    <div class="spacer-30"></div>
+    
+    <h3>Globally And Per-Call Overridable Options</h3>
+    <p>This plugin has per-call(as the example above shows) and globally overridable options. Globally options can be used to override the default options, this is best used if you want to override the plugin options by default, this will prevent any issues with the plugin, as you dont have to change any thing in the plugin core it self. 
+    <br/><br/><b>How to use: </b><mark>$.fn.pluginName.key = 'value';</mark></p> 
+    
+    <div class="spacer-30"></div>                                                
+</section>     

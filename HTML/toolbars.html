@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>  <html class="ie ie6 lte9 lte8 lte7 no-js"> <![endif]-->
+<!--[if IE 7]>     <html class="ie ie7 lte9 lte8 lte7 no-js"> <![endif]-->
+<!--[if IE 8]>     <html class="ie ie8 lte9 lte8 no-js">      <![endif]-->
+<!--[if IE 9]>     <html class="ie ie9 lte9 no-js">           <![endif]-->
+<!--[if gt IE 9]>  <html class="no-js">                       <![endif]-->
+<!--[if !IE]><!--> <html class="no-js">                       <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>ELITE - A Powerfull Responsive Admin Theme</title>
+       
+    <!-- // Mobile meta/files // -->
+
+	<!-- For third-generation iPad with high-resolution Retina display: -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
+    <!-- For iPhone 4with high-resolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/mobile/apple-touch-icon-114x114.png" />
+    <!-- For first-generation iPad: -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/mobile/apple-touch-icon-72x72.png" />
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <link rel="apple-touch-icon-precomposed" href="images/mobile/apple-touch-icon.png" />
+    <!-- For nokia devices: -->
+    <link rel="shortcut icon" href="images/apple-touch-icon.png" />
+    <!-- 320x460 for iPhone 3GS -->
+    <link rel="apple-touch-startup-image" media="(max-device-width: 480px) and not (-webkit-min-device-pixel-ratio: 2)" href="images/mobile/splash-320x460.png" />
+    <!-- 640x920 for retina display -->
+    <link rel="apple-touch-startup-image" media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" href="images/mobile/splash-640x920-retina.png" />
+    <!-- iPad Portrait 768x1004 -->
+    <link rel="apple-touch-startup-image" media="(min-device-width: 768px) and (orientation: portrait)" href="images/mobile/splash-768x1004.png" />
+    <!-- iPad Landscape 1024x748 -->
+    <link rel="apple-touch-startup-image" media="(min-device-width: 768px) and (orientation: landscape)" href="images/mobile/splash-1024x748.png" />
+    <!-- iPad 3 Portrait 1536x2008 -->
+    <link rel="apple-touch-startup-image" media="(min-device-width: 1536px) and (orientation: portrait)" href="images/mobile/splash-1536x2008-retina.png" />
+    <!-- iPad 3 Landscape 2048x1536 -->
+    <link rel="apple-touch-startup-image" media="(min-device-width: 2048px) and (orientation: landscape)" href="images/mobile/splash-2048x1496-retina.png" />
+    <!-- Transform to webapp: -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Fullscreen mode: -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- Viewport for older phones - http://davidbcalhoun.com/tag/handheldfriendly -->
+    <meta name="HandheldFriendly" content="true"/>   
+    <!-- Viewport - http://davidbcalhoun.com/tag/handheldfriendly -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> 
+    <!-- This file contains some fixes, splash screen and web app code --> 
+    <script src="js/mobiledevices.js"></script>
+    
+    <!-- // Internet Explore // -->
+    
+    <!-- IE9 Pinned Sites: http://msdn.microsoft.com/en-us/library/gg131029.aspx -->
+    <meta name="application-name" content="Elite Admin Skin">
+    <meta name="msapplication-tooltip" content="Cross-platform admin skin.">
+    <meta name="msapplication-starturl" content="http://themes.creativemilk.net/elite/html/index.html">
+    <!-- These custom tasks are examples, you need to edit them to show actual pages -->
+    <meta name="msapplication-task" content="name=Home;action-uri=http://themes.creativemilk.net/elite/html/index.html;icon-uri=http://themes.creativemilk.net/elite/html/images/favicons/favicon.ico">
+    <meta http-equiv="cleartype" content="on" /> 
+    
+    <!--[if lt IE 8]>
+	<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+    <![endif]-->
+            
+    <!-- // Stylesheets // -->
+
+    <!-- Framework -->
+    <link rel="stylesheet" href="css/framework.css"/>
+    <!-- Main -->
+    <link rel="stylesheet" href="css/style.css"/>
+    <!-- jQuery UI --> 
+    <link rel="stylesheet" href="css/ui/jquery.ui.base.css"/>
+    <!-- Styling -->
+    <link rel="stylesheet" href="css/theme/darkblue.css" id="themesheet"/>
+	<!--[if IE 7]>
+	<link rel="stylesheet" href="css/destroy-ie6-ie7.css"/>
+    <![endif]-->
+      
+    <!-- // Misc // -->
+    
+    <link rel="shortcut icon" href="images/favicons/favicon.ico" />
+    
+    <!-- // jQuery/UI core // -->
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>!window.jQuery && document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>
+    <script src="http://code.jquery.com/ui/1.8.22/jquery-ui.min.js"></script>
+    <script>!window.jQueryUI && document.write('<script src="js/jquery-ui-1.8.22.min.js"><\/script>')</script>
+    
+    <!-- // Thirdparty plugins // -->
+    
+    <!-- Touch helper -->  
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <!-- MouseWheel -->  
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <!-- UI Spinner -->
+	<script src="js/jquery.ui.spinner.js"></script>
+    <!-- Tooltip -->               
+    <script src="js/tipsy.js"></script>
+    <!-- Treeview -->                         
+    <script src="js/treeview.js"></script>
+    <!-- Calendar -->                         
+    <script src="js/fullcalendar.min.js"></script> 
+    <!-- selectToUISlider -->                
+    <script src="js/selectToUISlider.jQuery.js"></script> 
+    <!-- context Menu -->         
+    <script src="js/jquery.contextMenu.js"></script> 
+    <!-- File Explore -->              
+    <script src="js/elfinder.min.js"></script> 
+    <!-- AutoGrow Textarea -->                   
+    <script src="js/autogrow-textarea.js"></script> 
+    <!-- Resizable Textarea -->               
+    <script src="js/textarearesizer.min.js"></script>
+    <!-- HTML5 WYSIWYG -->  
+    <script src="wysiwyghtml5/parser_rules/advanced.js"></script>
+	<script src="wysiwyghtml5/dist/wysihtml5-0.3.0.js"></script>    
+    <!-- Lightbox -->                      
+    <script src="js/jquery.colorbox-min.js"></script>
+    <!-- DataTables -->
+    <script src="js/jquery.dataTables.min.js"></script>            
+    <!-- Masked inputs -->
+    <script src="js/jquery.maskedinput-1.3.min.js"></script> 
+    <!-- IE7 JSON FIX -->
+    <script src="js/json2.js"></script>
+    <!-- HTML5 audio player -->
+    <script src="audiojs/audiojs/audio.min.js"></script> 
+             
+    <!-- // Custom theme plugins // -->
+    
+    <!-- Stylesheet switcher --> 
+    <script src="js/e_styleswitcher.1.1.min.js"></script>                 
+    <!-- Widgets -->
+    <script src="js/powerwidgets.1.2.min.js"></script>
+    <!-- Widgets panel -->
+    <script src="js/powerwidgetspanel.1.2.min.js"></script>
+    <!-- Select styling -->
+    <script src="js/e_select.2.0.min.js"></script>    
+    <!-- Checkbox solution -->
+    <script src="js/e_checkbox.1.0.min.js"></script>
+    <!-- Radio button replacement -->
+    <script src="js/e_radio.1.0.min.js"></script>    
+    <!-- Tabs -->
+    <script src="js/e_tabs.1.1.min.js"></script>
+    <!-- File styling -->
+    <script src="js/e_file.1.0.min.js"></script>    
+    <!-- MainMenu -->
+    <script src="js/e_mainmenu.1.0.min.js"></script>
+    <!-- Menu -->
+    <script src="js/e_menu.1.1.min.js"></script>
+    <!-- Input popup box -->
+    <script src="js/e_inputexpand.1.0.min.js"></script>
+    <!-- Progressbar -->
+    <script src="js/e_progressbar.1.0.min.js"></script>
+    <!-- Scrollbar replacemt -->
+    <script src="js/e_scrollbar.1.0.min.js"></script> 
+    <!-- Onscreen keyboard -->
+    <script src="js/e_oskeyboard.1.0.min.js"></script>
+    <!-- Textarea limiter -->
+    <script src="js/e_textarealimiter.1.0.min.js"></script>
+    <!-- Contact form with validation -->
+    <script src="js/e_contactform.1.1.min.js"></script>
+    <!-- Responsive table helper -->
+    <script src="js/e_responsivetable.1.0.min.js"></script>
+    <!-- Gallery -->
+    <script src="js/e_gallery.1.0.min.js"></script>
+    <!-- Live search -->
+    <script src="js/e_livesearch.1.0.min.js"></script>
+    <!-- Notify -->
+    <script src="js/e_notify.1.0.min.js"></script>  
+    <!-- Countdown -->  
+    <script src="js/e_countdown.1.0.min.js"></script> 
+    <!-- Clone script -->
+    <script src="js/e_clone.1.0.min.js"></script> 
+    <!-- Chained inputs -->
+    <script src="js/e_chainedinputs.1.0.min.js"></script>
+    <!-- Show password -->     
+    <script src="js/e_showpassword.1.0.min.js"></script>        
+    <!-- All plugins are set here -->
+    <script src="js/plugins.js"></script>
+    <!-- Custom code -->
+    <script src="js/main.js"></script>  
+            
+    <!-- // HTML5/CSS3 support // -->
+
+    <script src="js/modernizr.min.js"></script>
+                
+</head>
+<body class="layout_fluid layout_responsive"> 
+
+    <!-- this part can be removed, its just here 
+         to let you switch between styles and layout sizes -->
+    <div id="e-styleswitcher">
+        <div class="e-styleswitcher-inner">
+            <div class="e-styleswitcher-arrow"><img src="images/icons/plix-16/white/arrow-right-16.png" alt="" /></div>
+            <div class="box">
+            	<h4>Styles</h4>
+                <select id="choose-styling">
+                	<option value="strangeblue">Strange blue</option>
+                    <option value="black">Black</option>
+                    <option value="darkblue">Dark blue</option>
+                    <option value="lightgrey">Light grey</option>
+                </select>
+            </div>    
+            <div class="box">
+            	<h4>Layout sizes</h4>                
+                <select id="set-layout-size">
+                	<option value="layout_fluid">fluid</option>
+                    <option value="layout_768">768</option>
+                    <option value="layout_960">960</option>
+                    <option value="layout_1024">1024</option>
+                    <option value="layout_1200">1200</option>
+                    <option value="layout_1600">1600</option>
+                </select>
+            </div> 
+            <div class="box">
+            	<h4>Responsive</h4>                
+                <select id="set-layout-responsive">
+                	<option value="layout_responsive">yes</option>
+                    <option value="">no</option>
+                </select>
+            </div>
+            <div class="box">
+            	<h4>Get theme</h4>                
+                <select id="get-theme">
+                	<option value="">no</option>
+                    <option value="yes">yes</option>
+                </select>
+            </div>                         
+        </div>
+    </div>
+  
+	<div id="container">
+    
+        <!-- MAIN HEADER -->
+                
+        <header id="header">
+        	<div id="header-border">
+                <div id="header-inner">
+                
+                    <div class="left">
+                        <a href="index.html" id="logo">ELITE</a>
+                    </div><!-- End .left -->
+                    
+                    <div class="right">
+                        <!-- eMenu -->
+                        <nav>
+                            <ul class="e-splitmenu" id="header-menu">
+                                <li><span>Menu</span><a href="javascript:void(0);"><span class="arrow-down-10 plix-10"></span></a>
+                                
+                                     <div>
+                                        <ul>
+                                            <li><a href="index.html"><span class="stats2-10 plix-10"></span> Stats</a></li>
+                                            <li><a href="index.html"><span class="lock-10 plix-10"></span> Security</a></li>
+                                            <li><a href="index.html"><span class="download-10 plix-10"></span> Downloads</a></li>
+                                        </ul>                                      
+                                    </div>                               
+
+                                </li>
+                                <li><span>Settings</span><a href="javascript:void(0);"><span class="arrow-down-10 plix-10"></span></a>
+                                
+                                     <div>
+                                        <ul>
+                                            <li><a href="index.html"><span class="home-10 plix-10"></span> Basic Settings</a></li>
+                                            <li><a href="index.html"><span class="settings-10 plix-10"></span> Site Settings</a></li>
+                                            <li><a href="index.html"><span class="comment-10 plix-10"></span> User Settings</a></li>
+                                            <li><a href="index.html"><span class="bookmark-10 plix-10"></span> Server Settings</a></li>
+                                        </ul>                                      
+                                    </div>
+                                    
+                                </li>
+                        		<li class="e-menu-profile">
+                                    <a href="javascript:void(0);"><span class="arrow-down-10 plix-10"></span></a> 
+                                    <img src="images/avatar.jpg" alt=""/>
+                                    
+                                    <div>
+                                        <ul>
+                                            <li><a href="index.html"><span class="mail-10 plix-10"></span> Inbox</a></li>
+                                            <li><a href="index.html"><span class="upload-10 plix-10"></span> Settings</a></li>
+                                            <li><a href="index.html"><span class="info-10 plix-10"></span> Logout</a></li>
+                                        </ul>                                      
+                                    </div> 
+                                            
+                                </li>
+                            </ul>
+                        </nav>
+                    </div><!-- End .right --> 
+                    
+                </div><!-- End #header-border --> 
+            </div><!-- End #header-inner -->  
+                
+		</header><!-- End #header -->
+        
+        <!-- CONTENT -->
+                 
+        <div id="content">
+            <div id="content-border">
+            
+                <!-- CONTENT HEADER -->
+                
+                <header id="content-header">
+                    <div class="left">
+                    	<a href="javascript:void(0);" id="toggle-mainmenu" class="button-icon tip-s" title="Toggle Main Menu"><span class="arrow-up-10 plix-10"></span></a>
+                        
+                        <!-- main search form -->
+                        <form method="post" id="mainsearch">
+                            <input type="text" placeholder="Live search..." name="" autocomplete="off"/>
+                            <input type="submit" value="" />
+                        </form>
+                    </div><!-- End .left --> 
+                    <div class="right">
+                    	<!-- sidebar switch -->
+                    	<a href="javascript:void(0);" id="toggle-sidebar" class="button-icon tip-s" title="Switch Main Menu"><span class="arrow-left-10 plix-10"></span></a>
+                        
+                        <!-- breadcrumbs -->
+                        <nav id="main-breadcrumbs">
+                            <ul>
+                                <li class="bc-tab-first">
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="index.html">Interface Elements</a>
+                                </li>
+                                <li class="bc-tab-last">Misc</li>
+                            </ul>          
+                        </nav>
+                        
+                        <!-- demo dialog button -->
+                        <a href="javascript:void(0);" id="open-main-dialog" class="button-text-icon tip-w" title="Some tooltip pointing right"><span class="fullscreen-10 plix-10"></span> Dialog</a>
+                        
+                        <!-- the main page dialog -->
+                        <div id="main-page-dialog" title="Welcome to Elite" style="display:none">
+                        <img src="images/jquery-ui-logo.png" alt="" class="dummy-img-dialog"/>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet est et mauris ornare lobortis dignissim quis massa. Donec ullamcorper turpis ac lectus semper commodo. Mauris tincidunt, erat et tempor interdum, dolor metus consectetur dui, eu accumsan augue augue a erat. Fusce justo nibh, tristique vitae pretium ut, venenatis nec felis. Curabitur congue tempor ultricies. Proin quis libero dignissim neque posuere pharetra vel adipiscing massa. Sed sit amet erat ac arcu sodales aliquam. Nam tellus sapien, ornare in tincidunt vel, ultricies id quam.
+						</div>
+                        
+                        <span class="preloader"></span>
+                        
+                        <!-- widgets controls -->
+                        <div id="widgets-controls">
+                            <span class="preloader"></span>                       
+                            <div class="icon-group"> 
+                                <a href="javascript:void(0);" class="changeto-grid selected tip-s" title="Show grid"><span class="grid-10 plix-10"></span></a>
+                                <span></span>
+                                <a href="javascript:void(0);" class="changeto-rows tip-s" title="Show rows"><span class="rows-10 plix-10"></span></a>
+                            </div>
+                            
+                            <!-- widgets management switch -->
+                            <a href="javascript:void(0);" class="button-icon tip-s" title="Manage widgets" id="powerwidget-panel-switch"><span class="settings-10 plix-10"></span></a>
+                        </div>
+                    </div><!-- End .right -->                
+                
+				</header><!-- End #content-header --> 
+                                
+                <div id="content-inner">
+                    
+                    <!-- SIDEBAR -->
+                    
+                    <aside>
+                    
+                    	<!-- SIDEBAR PROFILE -->
+                        
+                    	<div id="sidebar-profile">
+                            <div id="main-avatar">
+                            	<span class="indicator">38</span>
+                                <img src="images/avatar.jpg" alt=""/>
+                            </div>
+                            <div id="profile-info">
+                                <div>
+                                    <a href="javascript:void(0);"><b>Administrator</b></a>
+                                    <a href="javascript:void(0);">Profile settings</a>
+                                    <a href="javascript:void(0);">Server settings</a>
+                                    <a href="javascript:void(0);">Logout</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- MAIN MENU -->
+                        
+                        <nav id="main-menu">
+                            <ul>
+                                <li><a href="index.html"><span class="home-16 plix-16"></span> Dashboard</a></li>
+                                <li class="no-mobile"><a href="documentation.html"><span class="note-16 plix-16"></span> Documentation</a>
+                                
+                                    <ul>
+                                    	<li><a href="doc-accordion.html">Accordion</a></li> 
+                                    	<li><a href="doc-breadcrumbs.html">Breadcrumbs</a></li>
+                                        <li><a href="doc-buttons.html">Buttons</a></li>
+                                        <li><a href="doc-calendar.html">Calendar</a></li>
+                                        <li><a href="doc-charts.html">Charts</a></li>
+                                        <li><a href="doc-dialogs.html">Dialogs</a></li>
+                                        <li><a href="doc-editors.html">Editors</a></li>
+                                        <li><a href="doc-fileexplore.html">File Explore</a></li>
+                                        <li><a href="doc-forms.html">Forms</a></li>
+                                        <li><a href="doc-grid.html">Grid</a></li>
+                                        <li><a href="doc-icons.html">Icons</a></li>
+                                        <li><a href="doc-listsblocks.html">Lists &amp; Blocks</a></li>
+                                        <li><a href="doc-media.html">Media</a></li>
+                                        <li><a href="doc-listsblocks.html">Lists &amp; Blocks</a></li>
+                                        <li><a href="doc-media.html">Media</a></li>
+                                        <li><a href="doc-menus.html">Menus</a></li>
+                                        <li><a href="doc-misc.html">Misc</a></li>
+                                        <li><a href="doc-search.html">Search</a></li>
+                                        <li><a href="doc-tables.html">Tables</a></li>
+                                        <li><a href="doc-tabs.html">Tabs</a></li>
+                                        <li><a href="doc-toolbars.html">Toolbars</a></li> 
+                                        <li><a href="doc-widgets.html">Widgets</a></li>
+                                        <li><a href="doc-wizard.html">Wizard</a></li>                                          
+                                    </ul> 
+                                                                   
+                                </li>
+                                <li><a href="calendar.html"><span class="calendar-16 plix-16"></span>Calendar<span class="color-indicator">28</span></a></li>
+                                <li><a href="javascript:void(0);"><span class="postcard-16 plix-16"></span> Form Elements <span class="button-icon"><span class="plus-10 plix-10"></span></span></a>
+
+                                    <ul>
+                                    	<li><a href="editors.html">Editors</a></li>
+                                    	<li><a href="forms.html">Forms</a></li>
+                                        <li><a href="login.html">Login form 1</a></li>
+                                        <li><a href="login-2.html">Login form 2</a></li>
+                                        <li><a href="login-3.html">Login form 3</a></li>
+                                        <li><a href="login-4.html">Login form 4</a></li>
+                                        <li><a href="search.html">Search</a></li>
+                                        <li><a href="wizard.html">Wizard</a></li>                                         
+                                    </ul>
+                                
+                                </li>
+                                <li><a href="media.html"><span class="image-16 plix-16"></span> Media</a></li>
+                                <li><a href="planning.html"><span class="pencil-16 plix-16"></span> Planning</a></li>
+                                <li><a href="maps.html"><span class="map-16 plix-16"></span> Google Maps <span class="indicator tip-w" title="Some tip goes here">tooltip</span></a></li>
+                                <li><a href="fileexplore.html"><span class="folder-16 plix-16"></span> File Explore</a></li> 
+                                <li><a href="javascript:void(0);"><span class="warning-16 plix-16"></span> Error pages<span class="button-icon"><span class="plus-10 plix-10"></span></span></a>
+
+                                    <ul>
+                                    	<li><a href="400.html">400</a></li>
+                                    	<li><a href="401.html">401</a></li>
+                                        <li><a href="403.html">403</a></li>
+                                        <li><a href="404.html">404</a></li>
+                                        <li><a href="500.html">500</a></li>
+                                        <li><a href="503.html">503</a></li>                                         
+                                    </ul>
+                                
+                                </li>                                                               
+                                <li><a href="widgets.html"><span class="rows4-16 plix-16"></span> Widgets</a></li>
+                                <li><a href="tables.html"><span class="cells-16 plix-16"></span> Tables</a></li>
+                                <li><a href="charts.html"><span class="stats2-16 plix-16"></span> Charts </a></li>
+                                <li class="menu-open page-active"><a href="javascript:void(0);"><span class="controls-16 plix-16"></span> Interface Elements <span class="button-icon"><span class="min-10 plix-10"></span></span></a>
+                                
+                                    <ul>
+                                    	<li><a href="accordion.html">Accordion</a></li>                                        
+                                        <li><a href="breadcrumbs.html">Breadcrumbs</a></li>
+                                        <li><a href="buttons.html">Buttons</a></li>
+                                        <li><a href="dialogs.html">Dialogs</a></li>
+                                        <li><a href="icons.html">Icons</a></li>
+                                        <li><a href="listsblocks.html">Lists &amp; Blocks</a></li>
+                                        <li><a href="menus.html">Menus</a></li>
+                                        <li><a href="misc.html">Misc</a></li>
+                                        <li><a href="tabs.html">Tabs</a></li>
+                                        <li class="page-active"><a href="toolbars.html">Toolbars</a></li>
+                                    </ul>         
+                                                           
+                                </li>
+                                <li><a href="grid.html"><span class="layout3-16 plix-16"></span> Grid <span class="indicator">960</span></a></li>
+                            </ul>
+                        </nav>                      
+                    </aside>
+                    
+                    <!-- sidebar meta stats -->
+                    <div id="sidebar-meta">
+                    	<div id="sidebar-meta-inner">
+                        	<div>
+                                <p class="left">Space</p> 
+                                <p class="right">4,551 MB / 10 GB</p>
+                            </div>
+                            <div class="pbar">
+                               <span style="width:50%"></span>                            
+                            </div>
+                        	<div>
+                                <p class="left">Traffic</p> 
+                                <p class="right">8,001 MB / 10 GB</p>
+                            </div>
+                            <div class="pbar">
+                               <span style="width:81%"></span>                            
+                            </div>
+                        </div>  
+                    </div> 
+                     
+                    <!-- CONTENT -->
+                    
+					<div id="content-main">
+                        <div id="content-main-inner">
+                            
+                            <!-- widgets management panel --> 
+                            <div id="powerwidgetspanel" class="powerwidgetspanel">
+                                <header>
+                                    <h2>Power widgets panel</h2>
+                                </header>
+                                <div class="powerwidgetspanel-widget" data-widget-id="widget1">
+                                    <input type="checkbox"/>
+                                    <label>Basic Toolbar</label>
+                                </div>
+                                <div class="powerwidgetspanel-widget" data-widget-id="widget2">
+                                    <input type="checkbox"/>
+                                    <label>Music Toolbar</label>                        
+                                </div>
+                                <div class="powerwidgetspanel-widget" data-widget-id="widget3">
+                                    <input type="checkbox"/>
+                                    <label>Combi Toolbar</label>
+                                </div>
+                                <div class="powerwidgetspanel-widget" data-widget-id="widget4">
+                                    <input type="checkbox"/>
+                                    <label>Example 1</label>                            
+                                </div>                                                               
+                                <div class="powerwidgetspanel-widget" data-widget-id="widget5">
+                                    <input type="checkbox"/>
+                                    <label>Example 2</label>                            
+                                </div> 
+                                <div class="powerwidgetspanel-widget" data-widget-id="widget6">
+                                    <input type="checkbox"/>
+                                    <label>Changed position</label>                           
+                                </div>                                                                                        
+                            </div> 
+                  
+                            <div class="page-header">
+                                <h2>Toolbars</h2>
+                                <span class="page-helper">1.0</span>
+                                <a href="doc-toolbars.html" class="page-helper">Documentation</a>
+                                 <a href="javascript:void(0);" class="page-helper empty-local-storage">Clear storage</a>
+                                <p>Handy toolbars.</p>
+                            </div>
+                                                                                
+							<!-- Start grid -->
+                            <section class="g_1">
+                            
+                                <!-- New widget -->
+                                
+                                <div class="powerwidget" id="widget1">
+                                    <header>
+                                    	<h2>Basic Toolbar</h2>                                  
+                                    </header>
+                                    <div>
+                                        <div class="toolbar">
+                                            <div class="left">
+                                                <a href="javascript:void(0);" class="button-icon">
+                                                    <span class="min-10 plix-10"></span>
+                                                </a>
+                                                <a href="javascript:void(0);" class="button-icon">
+                                                    <span class="plus-10 plix-10"></span>
+                                                </a>
+                                                <span class="separator"><!-- seperator --></span>                                                 
+                                                <a href="javascript:void(0);" class="button-icon">
+                                                    <span class="home-10 plix-10"></span>
+                                                </a>
+                                                <a href="javascript:void(0);" class="button-icon">
+                                                    <span class="folder-10 plix-10"></span>
+                                                </a>
+                                                <a href="javascript:void(0);" class="button-icon">
+                                                    <span class="trashcan-10 plix-10"></span>
+                                                </a>
+                                                <span class="separator"><!-- seperator --></span> 
+                                                <a href="javascript:void(0);" class="button-icon">
+                                                    <span class="tags-10 plix-10"></span>
+                                                </a>                                                 
+                                            </div><!-- End .left -->
+                                            <div class="right">
+                                                <div class="preloader">
+                                                    <span></span>
+                                                </div>
+                                                <input type="text" placeholder="Search"/>
+                                            </div><!-- End .right -->
+                                        </div><!-- End .toolbar -->
+                                        
+                                        <div class="inner-spacer">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et nisl lacus, eget tempus justo. Proin mollis ipsum id velit consectetur ac lobortis dolor vestibulum. Aliquam vel est turpis, vel scelerisque arcu. Cras eu justo ac lectus condimentum porttitor a at enim. Integer quis quam et sem interdum tincidunt. Aliquam eget interdum ligula. Sed imperdiet varius ultricies. Nunc sollicitudin, arcu eget feugiat porta, sem tortor bibendum turpis, vitae interdum dolor tortor id tellus. Fusce non arcu at mi interdum euismod in et ante. Ut tempus varius dui id pretium. Etiam leo massa, placerat bibendum feugiat sed, tincidunt non sem. Quisque in urna libero, sed pulvinar felis. Nunc porta semper condimentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam ut sem a lacus hendrerit sollicitudin. 
+                                        </div>                                                                     	                                                                           
+                                    </div>
+                                </div><!-- End .powerwidget -->
+
+                                <!-- New widget -->
+                                
+                                <div class="powerwidget" id="widget2">
+                                    <header>
+                                    	<h2>Music Toolbar</h2>                                  
+                                    </header>
+                                    <div>
+                                        <div class="toolbar">
+                                            <div class="left">
+                                                <a href="javascript:void(0);" class="button-icon">
+                                                    <span class="arrow-left-end-10 plix-10"></span>
+                                                </a>
+                                                <a href="javascript:void(0);" class="button-icon">
+                                                    <span class="arrow-right-end-10 plix-10"></span>
+                                                </a>
+                                                <span class="separator"><!-- seperator --></span>                                                  
+                                                <a href="javascript:void(0);" class="button-icon">
+                                                    <span class="arrow-left-10 plix-10"></span>
+                                                </a>
+                                                <a href="javascript:void(0);" class="button-icon">
+                                                    <span class="stop-10 plix-10"></span>
+                                                </a>
+                                                <a href="javascript:void(0);" class="button-icon">
+                                                    <span class="pause-10 plix-10"></span>
+                                                </a>  
+                                                <a href="javascript:void(0);" class="button-icon">
+                                                    <span class="play-10 plix-10"></span>
+                                                </a>                                                  
+                                                <a href="javascript:void(0);" class="button-icon">
+                                                    <span class="arrow-right-10 plix-10"></span>
+                                                </a>                                                   
+                                            </div><!-- End .left -->
+                                            <div class="right">
+                                                <div class="toolbar-window">2:47 <span>/ 5:31</span></div>
+                                                <span class="separator"><!-- seperator --></span> 
+                                                <a href="javascript:void(0);" class="button-icon">
+                                                    <span class="folder-10 plix-10"></span>
+                                                </a>                                                    
+                                            </div><!-- End .right -->
+                                        </div><!-- End .toolbar -->
+
+                                        <div class="inner-spacer">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et nisl lacus, eget tempus justo. Proin mollis ipsum id velit consectetur ac lobortis dolor vestibulum. Aliquam vel est turpis, vel scelerisque arcu. Cras eu justo ac lectus condimentum porttitor a at enim. Integer quis quam et sem interdum tincidunt. Aliquam eget interdum ligula. Sed imperdiet varius ultricies. Nunc sollicitudin, arcu eget feugiat porta, sem tortor bibendum turpis, vitae interdum dolor tortor id tellus. Fusce non arcu at mi interdum euismod in et ante. Ut tempus varius dui id pretium. Etiam leo massa, placerat bibendum feugiat sed, tincidunt non sem. Quisque in urna libero, sed pulvinar felis. Nunc porta semper condimentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam ut sem a lacus hendrerit sollicitudin. 
+                                        </div>                                                                     	                                                                           
+                                    </div>
+                                </div><!-- End .powerwidget -->                            
+                            
+                                <!-- New widget -->
+                                
+                                <div class="powerwidget" id="widget3">
+                                    <header>
+                                    	<h2>Combi Toolbar</h2>                                  
+                                    </header>
+                                    <div>
+                                        <div class="toolbar">
+                                            <div class="left">
+                                               <ul class="e-splitmenu" id="demo-menu-2">
+                                                    <li><span>Dropdown</span><a href="javascript:void(0);"><span class="arrow-down-10 plix-10"></span></a>
+                                                    
+                                                         <div>
+                                                            <ul>
+                                                                <li><a href="javascript:void(0);">Sub link</a></li>
+                                                                <li><a href="javascript:void(0);">Sub link</a></li>
+                                                                <li><a href="javascript:void(0);">Sub link</a></li>
+                                                                <li><a href="javascript:void(0);">Sub link</a></li>
+                                                            </ul>                                      
+                                                        </div>                               
+                
+                                                    </li>
+                                                </ul>
+                                                <span class="separator"><!-- seperator --></span>                                                
+                                                <a href="javascript:void(0);" class="button-icon">
+                                                    <span class="home-10 plix-10"></span>
+                                                </a>
+                                                <div class="icon-group"> 
+                                                    <a href="javascript:void(0);"><span class="pencil-10 plix-10"></span></a>
+                                                    <span></span>
+                                                    <a href="javascript:void(0);"><span class="trashcan-10 plix-10"></span></a>
+                                                    <span></span>
+                                                    <a href="javascript:void(0);"><span class="folder-10 plix-10"></span></a>                                          
+                                                </div>
+                                                <div class="preloader">
+                                                    <span></span>
+                                                </div>
+                                            </div><!-- End .left -->
+                                            <div class="right">
+                                                <div class="preloader">
+                                                    <span></span>
+                                                </div>
+                                                <a href="javascript:void(0);" class="button-icon">
+                                                    <span class="arrow-down-10 plix-10"></span>
+                                                </a>
+                                                <span class="separator"><!-- seperator --></span> 
+                                                <a href="javascript:void(0);" class="button-text-icon"><span class="plus-10 plix-10"></span> Open</a>
+                                            </div><!-- End .right -->
+                                        </div><!-- End .toolbar -->
+
+                                        <div class="inner-spacer">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et nisl lacus, eget tempus justo. Proin mollis ipsum id velit consectetur ac lobortis dolor vestibulum. Aliquam vel est turpis, vel scelerisque arcu. Cras eu justo ac lectus condimentum porttitor a at enim. Integer quis quam et sem interdum tincidunt. Aliquam eget interdum ligula. Sed imperdiet varius ultricies. Nunc sollicitudin, arcu eget feugiat porta, sem tortor bibendum turpis, vitae interdum dolor tortor id tellus. Fusce non arcu at mi interdum euismod in et ante. Ut tempus varius dui id pretium. Etiam leo massa, placerat bibendum feugiat sed, tincidunt non sem. Quisque in urna libero, sed pulvinar felis. Nunc porta semper condimentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam ut sem a lacus hendrerit sollicitudin. 
+                                        </div>                                                                     	                                                                           
+                                    </div>
+                                </div><!-- End .powerwidget -->                              
+
+                                <!-- New widget -->
+                                
+                                <div class="powerwidget" id="widget4">
+                                    <header>
+                                    	<h2>Example 1</h2>                                  
+                                    </header>
+                                    <div>
+                                        <div class="toolbar">
+                                           <div class="left">
+                                                <ul class="widget-navigation">
+                                                    <li><a href="javascript:void(0);" title="" class="first">First</a></li>
+                                                    <li><a href="javascript:void(0);" title="" class="prev">Prev</a></li>
+                                                    <li><a href="javascript:void(0);" title="" class="active">1</a></li>
+                                                    <li><a href="javascript:void(0);" title="" class="num">2</a></li>
+                                                    <li><a href="javascript:void(0);" title="" class="num">3</a></li>
+                                                    <li>...</li>
+                                                    <li><a href="javascript:void(0);" title="" class="num">24</a></li>
+                                                    <li><a href="javascript:void(0);" title="" class="next">Next</a></li>
+                                                    <li><a href="javascript:void(0);" title="" class="last">Last</a></li>
+                                                </ul>
+                                            </div><!-- End .left -->
+                                            <div class="right">
+                                                <select name="" class="bulk-actions">
+                                                    <option value="">Bulk Actions</option>
+                                                    <option value="">Edit</option>
+                                                    <option value="">Delete</option>
+                                                </select>
+                                                <input type="submit" value="Apply" class="button-text"/>
+                                            </div><!-- End .right -->
+                                        </div><!-- End .toolbar -->
+
+                                        <div class="inner-spacer">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et nisl lacus, eget tempus justo. Proin mollis ipsum id velit consectetur ac lobortis dolor vestibulum. Aliquam vel est turpis, vel scelerisque arcu. Cras eu justo ac lectus condimentum porttitor a at enim. Integer quis quam et sem interdum tincidunt. Aliquam eget interdum ligula. Sed imperdiet varius ultricies. Nunc sollicitudin, arcu eget feugiat porta, sem tortor bibendum turpis, vitae interdum dolor tortor id tellus. Fusce non arcu at mi interdum euismod in et ante. Ut tempus varius dui id pretium. Etiam leo massa, placerat bibendum feugiat sed, tincidunt non sem. Quisque in urna libero, sed pulvinar felis. Nunc porta semper condimentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam ut sem a lacus hendrerit sollicitudin. 
+                                        </div>                                                                     	                                                                           
+                                    </div>
+                                </div><!-- End .powerwidget -->                              
+
+                               <!-- New widget -->
+                                
+                                <div class="powerwidget" id="widget5">
+                                    <header>
+                                    	<h2>Example 2</h2>                                  
+                                    </header>
+                                    <div>
+                                       <div class="toolbar">
+                                           <div class="left">
+                                                <a href="javascript:void(0);" class="button-icon">
+                                                    <span class="upload-10 plix-10"></span>
+                                                </a>
+                                                <span class="separator"><!-- seperator --></span>
+                                                <span class="label">Displaying 1–20 of 476</span>    
+                                            </div><!-- End .left -->
+                                            <div class="right">
+                                                <div class="icon-group">
+                                                    <a class="selected" href="javascript:void(0);">
+                                                    <span class="grid-10 plix-10"></span>
+                                                    </a>
+                                                    <span></span>
+                                                    <a href="javascript:void(0);">
+                                                    <span class="rows-10 plix-10"></span>
+                                                    </a>
+                                                </div> 
+                                                <span class="separator"><!-- seperator --></span>                                                
+                                                <select name="" class="per-page">
+                                                    <option value="">10</option>
+                                                    <option value="">20</option>
+                                                    <option value="">30</option>
+                                                    <option value="">40</option>
+                                                    <option value="">50</option>                                                        
+                                                </select>
+                                            </div><!-- End .right -->
+                                        </div><!-- End .toolbar -->
+
+                                        <div class="inner-spacer">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et nisl lacus, eget tempus justo. Proin mollis ipsum id velit consectetur ac lobortis dolor vestibulum. Aliquam vel est turpis, vel scelerisque arcu. Cras eu justo ac lectus condimentum porttitor a at enim. Integer quis quam et sem interdum tincidunt. Aliquam eget interdum ligula. Sed imperdiet varius ultricies. Nunc sollicitudin, arcu eget feugiat porta, sem tortor bibendum turpis, vitae interdum dolor tortor id tellus. Fusce non arcu at mi interdum euismod in et ante. Ut tempus varius dui id pretium. Etiam leo massa, placerat bibendum feugiat sed, tincidunt non sem. Quisque in urna libero, sed pulvinar felis. Nunc porta semper condimentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam ut sem a lacus hendrerit sollicitudin. 
+                                        </div>                                                                     	                                                                           
+                                    </div>
+                                </div><!-- End .powerwidget -->                              
+
+                                <!-- New widget -->
+                                
+                                <div class="powerwidget" id="widget6">
+                                    <header>
+                                    	<h2>Changed position</h2>                                  
+                                    </header>
+                                    <div>
+                                        <div class="inner-spacer">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et nisl lacus, eget tempus justo. Proin mollis ipsum id velit consectetur ac lobortis dolor vestibulum. Aliquam vel est turpis, vel scelerisque arcu. Cras eu justo ac lectus condimentum porttitor a at enim. Integer quis quam et sem interdum tincidunt. Aliquam eget interdum ligula. Sed imperdiet varius ultricies. Nunc sollicitudin, arcu eget feugiat porta, sem tortor bibendum turpis, vitae interdum dolor tortor id tellus. Fusce non arcu at mi interdum euismod in et ante. Ut tempus varius dui id pretium. Etiam leo massa, placerat bibendum feugiat sed, tincidunt non sem. Quisque in urna libero, sed pulvinar felis. Nunc porta semper condimentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam ut sem a lacus hendrerit sollicitudin. 
+                                        </div>    
+                                                                            
+                                        <div class="toolbar toolbar-bottom">
+                                            <div class="left">
+                                                <a href="javascript:void(0);" class="button-icon">
+                                                    <span class="min-10 plix-10"></span>
+                                                </a>
+                                                <a href="javascript:void(0);" class="button-icon">
+                                                    <span class="plus-10 plix-10"></span>
+                                                </a>
+                                                <span class="separator"><!-- seperator --></span>                                                 
+                                                <a href="javascript:void(0);" class="button-icon">
+                                                    <span class="home-10 plix-10"></span>
+                                                </a>
+                                                <a href="javascript:void(0);" class="button-icon">
+                                                    <span class="folder-10 plix-10"></span>
+                                                </a>
+                                                <a href="javascript:void(0);" class="button-icon">
+                                                    <span class="trashcan-10 plix-10"></span>
+                                                </a>
+                                                <span class="separator"><!-- seperator --></span> 
+                                                <a href="javascript:void(0);" class="button-icon">
+                                                    <span class="tags-10 plix-10"></span>
+                                                </a>                                                 
+                                            </div><!-- End .left -->
+                                            <div class="right">
+                                                <div class="preloader">
+                                                    <span></span>
+                                                </div>
+                                                <input type="text" placeholder="Search"/>
+                                            </div><!-- End .right -->
+                                        </div><!-- End .toolbar -->
+                                    </div>
+                                </div><!-- End .powerwidget -->
+
+                                <!-- New widget -->
+                                
+                                <div class="powerwidget" id="widget7">
+                                    <header>
+                                    	<h2>CSS dropdown</h2>                                  
+                                    </header>
+                                    <div>                                   
+                                        <div class="toolbar">
+                                            <div class="left">
+                                            	<ul class="css-menu">
+                                                    <li>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="javascript:void(0);"><span class="bookmark-10 plix-10"></span> Bookmarks</a>
+                                                            </li> 
+                                                            <li>
+                                                                <a href="javascript:void(0);"><span class="comment-10 plix-10"></span> Comments</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);"><span class="tags-10 plix-10"></span> Tags</a>
+                                                            </li>                                                                                                                      
+                                                        </ul>  
+                                                        <a href="javascript:void(0);"><span class="home-10 plix-10"></span> Dashboard</a>    
+                                                    </li>    
+                                                    <li>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="javascript:void(0);"><span class="document-10 plix-10"></span> Documents</a>
+                                                            </li> 
+                                                            <li>
+                                                                <a href="javascript:void(0);"><span class="trashcan-10 plix-10"></span> Trashcan</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);"><span class="pencil-10 plix-10"></span> New folder</a>
+                                                            </li> 
+                                                            <li>
+                                                                <a href="javascript:void(0);"><span class="delete-10 plix-10"></span> Delete folder</a>
+                                                            </li>                                                                                                                    
+                                                        </ul>  
+                                                        <a href="javascript:void(0);"><span class="folder-10 plix-10"></span> Directory</a>     
+                                                    </li>                                                 
+                                                </ul>                                            	                                            
+                                            </div><!-- End .left -->
+                                            <div class="right">
+                                           		<ul class="css-menu">
+                                                    <li>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="javascript:void(0);">Server 1</a>
+                                                            </li> 
+                                                            <li>
+                                                                <a href="javascript:void(0);">Server 2</a>
+                                                            </li> 
+                                                            <li>
+                                                                <a href="javascript:void(0);">Server 3</a>
+                                                            </li> 
+                                                            <li>
+                                                                <a href="javascript:void(0);">Server 4</a>
+                                                            </li>                                                                                                                   
+                                                        </ul>  
+                                                        <a href="javascript:void(0);">Server</a>    
+                                                    </li> 
+                                                   <li>
+                                                        <a href="javascript:void(0);"><span class="stats-10 plix-10"></span> Statistics</a>
+                                                   </li> 
+                                                </ul>
+                                            </div><!-- End .right -->
+                                        </div><!-- End .toolbar -->
+
+                                        <div class="inner-spacer">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et nisl lacus, eget tempus justo. Proin mollis ipsum id velit consectetur ac lobortis dolor vestibulum. Aliquam vel est turpis, vel scelerisque arcu. Cras eu justo ac lectus condimentum porttitor a at enim. Integer quis quam et sem interdum tincidunt. Aliquam eget interdum ligula. Sed imperdiet varius ultricies. Nunc sollicitudin, arcu eget feugiat porta, sem tortor bibendum turpis, vitae interdum dolor tortor id tellus. Fusce non arcu at mi interdum euismod in et ante. Ut tempus varius dui id pretium. Etiam leo massa, placerat bibendum feugiat sed, tincidunt non sem. Quisque in urna libero, sed pulvinar felis. Nunc porta semper condimentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam ut sem a lacus hendrerit sollicitudin.
+
+										<div class="spacer-10"><!-- spacer 10px --></div> 
+                                         
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et nisl lacus, eget tempus justo. Proin mollis ipsum id velit consectetur ac lobortis dolor vestibulum. Aliquam vel est turpis, vel scelerisque arcu. Cras eu justo ac lectus condimentum porttitor a at enim. Integer quis quam et sem interdum tincidunt. Aliquam eget interdum ligula. Sed imperdiet varius ultricies. Nunc sollicitudin, arcu eget feugiat porta, sem tortor bibendum turpis, vitae interdum dolor tortor id tellus. Fusce non arcu at mi interdum euismod in et ante. Ut tempus varius dui id pretium. Etiam leo massa, placerat bibendum feugiat sed, tincidunt non sem. Quisque in urna libero, sed pulvinar felis. Nunc porta semper condimentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam ut sem a lacus hendrerit sollicitudin. 
+                                        </div>                                          
+                                    </div>
+                                </div><!-- End .powerwidget -->                                
+                            </section>  
+                                                                                                                      
+                            <div class="clear"><!-- New row --></div> 
+                                                                                                                                                                                                       
+                            <!-- End grid -->
+                                                   
+                       </div><!-- End #content-main-inner --> 
+                    </div><!-- End #content-main --> 
+                </div><!-- End #content-inner --> 
+                
+                <!-- CONTENT FOOTER -->
+                
+                <footer id="content-footer">
+                    <div class="left">
+						<div class="left">
+                               <a href="javascript:void(0);" class="button-icon tip-s" title="Some action">
+                                  <span class="folder-10 plix-10"></span>
+                              </a>                                                        
+                              <a href="javascript:void(0);" class="button-icon tip-s" title="Some action">
+                                  <span class="pencil-10 plix-10"></span>
+                              </a>
+                          </div><!-- End .left -->
+                          <div class="right">
+                              <a href="javascript:void(0);" class="button-icon tip-s" title="Some action">
+                                  <span class="refresh-10 plix-10"></span>
+                              </a> 
+                          </div> <!-- End .right --> 
+                    </div><!-- End .left --> 
+                    <div class="right">
+                    	<div class="left">
+                    	Copyright © 2012 <a href="http://bit.ly/ldjfWQ">CreativeMilk</a>
+                        </div><!-- End .left -->
+                        <div class="right">
+                        	<div class="theme-version">Version 1.1</div>
+                        </div><!-- End .right -->
+                    </div><!-- End .right -->                
+                </footer><!-- End #content-footer -->                 
+            </div><!-- End #content-border --> 
+        </div><!-- End #content --> 
+            
+    </div><!-- End #container -->
+    
+    <!-- scroll to top link -->
+    <div id="scrolltotop"><span></span></div> 
+    
+</body>
+</html>

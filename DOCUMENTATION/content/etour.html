@@ -1,0 +1,250 @@
+<section>
+    <h2>eTour</h2>
+    <p>eTour is a plugin that allows you to take your visitors on a trip true your site, showing them, for example the new features of your site. 
+    You can choose between 3 types of tours, 'timer', 'step' and 'all'.</p>
+    
+    <div class="spacer-30"></div>
+
+    <h3>Basic</h3>
+    <p>Build your own tour.</p>
+    
+    <div class="spacer-30"></div>
+
+    <h3>How to use</h3>
+    <p>How to use HTML elements.</p>
+    
+    <div class="spacer-10"></div>
+                                   
+    <pre>&lt;a href="#" id="start-tour"&gt;Start the tour&lt;/a&gt;
+    ...
+    ...
+    
+    &lt;div id="step-1" style="display:none;"&gt;
+    content goes here
+&lt;/div&gt;
+    </pre>
+    
+    <div class="spacer-30"></div>
+
+    <h3>Usage plugin</h3>
+    <p>How to use our custom made jQuery plugins.</p>
+    
+    <div class="spacer-10"></div>
+                                                                      
+    <pre>$('#start-tour').eTour({
+    type: 'step',
+    time: '00:30',
+    showTimer: true,
+    showArrow: true,
+    timerLabel: 'Next step in: ',
+    stopButton: '#e-tour-stop',
+    draggable: false,
+    effectSpeed:500,
+    easyCancel: true,
+    endLabel: 'End',
+    step:[
+            {
+                hookTo: '#widget1',
+                content: '#step-1',
+                width: 500,
+                title: 'The first step',
+                arrowPosition: 'rb',
+                offsetY: 0,
+                offsetX: 0,
+                prevLabel: 'Go back',
+                nextLabel: 'Continue',
+                center: 'hook',
+                onShow: function(){}
+            },
+            { //more steps },
+            { //more steps },
+            { //more steps }							
+    ],
+    onStop: function(){}
+});</pre>
+
+	<div class="spacer-30"></div>
+
+    <h3>Plugin options</h3>
+    <p>Most of our custom made jQuery plugins have options/settings.</p>
+    
+    <div class="spacer-10"></div>
+                                         
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Plugin options</th>
+                <th scope="col">Type</th>
+                <th scope="col">Default</th>
+                <th scope="col">Desctription</th>
+                <th class="tbversion" scope="col">Since</th>
+            </tr>                                            
+        </thead> 
+        <tbody>
+            <tr>
+                <td>type</td>
+                <td>string</td>
+                <td>step</td>
+                <td>This is the type of tour option, you can choose between 'timer', which will automate the tour, 'step', this will allow you to go trough all 
+                of the steps with a click(prev/next) and 'all', which will show all of the steps at once.</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>time</td>
+                <td>time format</td>
+                <td>00:30</td>
+                <td>You can set a time if you are using the type 'timer'. Notice that that you can set a time up to almost an hour, so you have to use the time format as displayed!</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>showTimer</td>
+                <td>boolean</td>
+                <td>true</td>
+                <td>Show the countdown timer if you are using the type 'timer'.</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>showArrow</td>
+                <td>boolean</td>
+                <td>true</td>
+                <td>You can remove the arrows and let the steps float more(using the offsetX and offsetY).</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>timerLabel</td>
+                <td>string</td>
+                <td>Next step in:</td>
+                <td>The label that is used for the type 'timer' with the options 'showTimer' set to true.</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>stopButton</td>
+                <td>string</td>
+                <td>#e-tour-stop'</td>
+                <td>This is the link to the stop button, which allows you to stop the tour.</td>
+                <td>1.0</td>
+            </tr>                                                
+            <tr>
+                <td>draggable</td>
+                <td>boolean</td>
+                <td>false</td>
+                <td>Allow users to drag the steps.</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>effectSpeed</td>
+                <td>number(integer)</td>
+                <td>500</td>
+                <td>Set the speed of the effects(show and hide steps).</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>easyCancel</td>
+                <td>boolean</td>
+                <td>true</td>
+                <td>Easy cancel is if a user wants to stop the tour it can just click outside the steps and the tour will stop.</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>endLabel</td>
+                <td>string</td>
+                <td>End:</td>
+                <td>The label that is used for the type 'step' end button, which you can find in every last step.</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td colspan="5">step: { [
+            </tr> 
+            <tr>
+                <td>hookTo</td>
+                <td>string</td>
+                <td></td>
+                <td>This is the div(or other element) where you want to the step to hook to(connect).</td>
+                <td>1.0</td>
+            </tr>                                                
+            <tr>
+                <td>content</td>
+                <td>string</td>
+                <td></td>
+                <td>To make this plugin easier, you can link to the content of the step, this way you wont have to add the text to the plugin itselfe, 
+                and you can use markup in the content if you want.</td>
+                <td>1.0</td>
+            </tr>   
+            <tr>
+                <td>width</td>
+                <td>number(integer)</td>
+                <td>300</td>
+                <td>You have to set the width of the step.</td>
+                <td>1.0</td>
+            </tr>   
+            <tr>
+                <td>arrowPosition</td>
+                <td>string</td>
+                <td>rb</td>
+                <td>This is where the arrow will connect to. You can choose between every corner and the middle of each side. Choose betweem 'rt', 'rm'
+                , 'rb', 'br', 'bm', 'bl', 'lb', 'lm', 'lt', 'tl', 'tm', 'tr' (tr = top right, lm = left middle)</td>
+                <td>1.0</td>
+            </tr>                                                
+            <tr>
+                <td>offsetY</td>
+                <td>number(integer)</td>
+                <td>0</td>
+                <td>Offset Y. You can use negative value's(example: -45).</td>
+                <td>1.0</td>
+            </tr>  
+            <tr>
+                <td>offsetX</td>
+                <td>number(integer)</td>
+                <td>0</td>
+                <td>Offset X. You can use negative value's(example: -45).</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>prevLabel</td>
+                <td>string</td>
+                <td>Go back</td>
+                <td>The label of the previous/back button used by the type 'step'.</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>nextLabel</td>
+                <td>string</td>
+                <td>Continue</td>
+                <td>The label of the next button used by the type 'step'.</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>center</td>
+                <td>string</td>
+                <td>hook</td>
+                <td>You can choose between centering the hook or the step. If the hook is bigger than the window it will center the step instead of the hook. Choose between 'hook' or 'step'.</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>onShow</td>
+                <td>function</td>
+                <td>function(){}</td>
+                <td>Callback function that runs when the step is showen.</td>
+                <td>1.0</td>
+            </tr>                                                                                                                                                                                                   
+            <tr>
+                <td colspan="5">]}
+            </tr> 
+            <tr>
+                <td>onStop</td>
+                <td>function</td>
+                <td>function(){}</td>
+                <td>Callback function that runs after the tour has finished.</td>
+                <td>1.0</td>
+            </tr>                                                                                               
+        </tbody>                                             
+    </table>
+    
+    <div class="spacer-30"></div>
+                     
+    <h3>Globally And Per-Call Overridable Options</h3>
+    <p>This plugin has per-call(as the example above shows) and globally overridable options. Globally options can be used to override the default options, this is best used if you want to override the plugin options by default, this will prevent any issues with the plugin, as you dont have to change any thing in the plugin core it self. 
+    <br/><br/><b>How to use: </b><mark>$.fn.pluginName.key = 'value';</mark></p>
+    
+    <div class="spacer-30"></div>
+</section>     

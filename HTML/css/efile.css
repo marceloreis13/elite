@@ -1,0 +1,56 @@
+/*
+ * ************************************************************* *
+ * Name        : eFile                                           *
+ * Description : CSS for the file inputs styling plugin          *
+ * Version     : Version 1                                       *
+ * Author      : CreativeMilk                                    *
+ * Author URI  : www.creativemilk.net                            *
+ * Updated     : --/--/----                                      *
+ * Copyright   : (c) 2011 CreativeMilk                           *
+ * ************************************************************* *
+ */
+
+.e-file{
+	height   : 31px;
+	position : relative;
+	overflow : hidden;	
+}
+.e-file-wrapper{
+	position   : absolute;
+	left       : 0;
+	top        : 0;
+	opacity    : 0; /* only opacity */
+	-ms-filter : "progid:DXImageTransform.Microsoft.Alpha(opacity=00)";
+}
+.e-file-input{
+	height : 28px;
+	cursor : default;
+}
+.e-file-button{
+	height                             : 28px;
+	padding                            : 0 10px;
+	line-height                        : 28px;
+	position                           : absolute;
+	right                              : 1px;
+	top                                : 1px;
+	display                            : block;
+	text-align                         : center;
+	cursor                             : default;
+	-webkit-border-top-right-radius    : 3px;	
+	-webkit-border-bottom-right-radius : 3px;	
+	-moz-border-radius-topright        : 3px;	
+	-moz-border-radius-bottomright     : 3px;	
+	border-top-right-radius            : 3px;	
+	border-bottom-right-radius         : 3px;	
+}
+.e-file:hover .e-file-button{
+	border : none!important;
+}
+
+/*
+ * ===============================================================
+ * NEW IN v1.1
+ * ===============================================================
+ */
+ 
+ 

@@ -1,0 +1,1586 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>  <html class="ie ie6 lte9 lte8 lte7 no-js"> <![endif]-->
+<!--[if IE 7]>     <html class="ie ie7 lte9 lte8 lte7 no-js"> <![endif]-->
+<!--[if IE 8]>     <html class="ie ie8 lte9 lte8 no-js">      <![endif]-->
+<!--[if IE 9]>     <html class="ie ie9 lte9 no-js">           <![endif]-->
+<!--[if gt IE 9]>  <html class="no-js">                       <![endif]-->
+<!--[if !IE]><!--> <html class="no-js">                       <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>ELITE - A Powerfull Responsive Admin Theme</title>
+       
+    <!-- // Mobile meta/files // -->
+
+	<!-- For third-generation iPad with high-resolution Retina display: -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
+    <!-- For iPhone 4with high-resolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/mobile/apple-touch-icon-114x114.png" />
+    <!-- For first-generation iPad: -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/mobile/apple-touch-icon-72x72.png" />
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <link rel="apple-touch-icon-precomposed" href="images/mobile/apple-touch-icon.png" />
+    <!-- For nokia devices: -->
+    <link rel="shortcut icon" href="images/apple-touch-icon.png" />
+    <!-- 320x460 for iPhone 3GS -->
+    <link rel="apple-touch-startup-image" media="(max-device-width: 480px) and not (-webkit-min-device-pixel-ratio: 2)" href="images/mobile/splash-320x460.png" />
+    <!-- 640x920 for retina display -->
+    <link rel="apple-touch-startup-image" media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" href="images/mobile/splash-640x920-retina.png" />
+    <!-- iPad Portrait 768x1004 -->
+    <link rel="apple-touch-startup-image" media="(min-device-width: 768px) and (orientation: portrait)" href="images/mobile/splash-768x1004.png" />
+    <!-- iPad Landscape 1024x748 -->
+    <link rel="apple-touch-startup-image" media="(min-device-width: 768px) and (orientation: landscape)" href="images/mobile/splash-1024x748.png" />
+    <!-- iPad 3 Portrait 1536x2008 -->
+    <link rel="apple-touch-startup-image" media="(min-device-width: 1536px) and (orientation: portrait)" href="images/mobile/splash-1536x2008-retina.png" />
+    <!-- iPad 3 Landscape 2048x1536 -->
+    <link rel="apple-touch-startup-image" media="(min-device-width: 2048px) and (orientation: landscape)" href="images/mobile/splash-2048x1496-retina.png" />
+    <!-- Transform to webapp: -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Fullscreen mode: -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- Viewport for older phones - http://davidbcalhoun.com/tag/handheldfriendly -->
+    <meta name="HandheldFriendly" content="true"/>   
+    <!-- Viewport - http://davidbcalhoun.com/tag/handheldfriendly -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> 
+    <!-- This file contains some fixes, splash screen and web app code --> 
+    <script src="js/mobiledevices.js"></script>
+    
+    <!-- // Internet Explore // -->
+
+    <!-- IE9 Pinned Sites: http://msdn.microsoft.com/en-us/library/gg131029.aspx -->
+    <meta name="application-name" content="Elite Admin Skin">
+    <meta name="msapplication-tooltip" content="Cross-platform admin skin.">
+    <meta name="msapplication-starturl" content="http://themes.creativemilk.net/elite/html/index.html">
+    <!-- These custom tasks are examples, you need to edit them to show actual pages -->
+    <meta name="msapplication-task" content="name=Home;action-uri=http://themes.creativemilk.net/elite/html/index.html;icon-uri=http://themes.creativemilk.net/elite/html/images/favicons/favicon.ico">
+    <meta http-equiv="cleartype" content="on" /> 
+    
+    <!--[if lt IE 8]>
+	<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+    <![endif]-->
+            
+    <!-- // Stylesheets // -->
+
+    <!-- Framework -->
+    <link rel="stylesheet" href="css/framework.css"/>
+    <!-- Main -->
+    <link rel="stylesheet" href="css/style.css"/>
+    <!-- jQuery UI --> 
+    <link rel="stylesheet" href="css/ui/jquery.ui.base.css"/>
+    <!-- Styling -->
+    <link rel="stylesheet" href="css/theme/darkblue.css" id="themesheet"/>
+	<!--[if IE 7]>
+	<link rel="stylesheet" href="css/destroy-ie6-ie7.css"/>
+    <![endif]-->
+      
+    <!-- // Misc // -->
+    
+    <link rel="shortcut icon" href="images/favicons/favicon.ico" />
+    
+    <!-- // jQuery/UI core // -->
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>!window.jQuery && document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>
+    <script src="http://code.jquery.com/ui/1.8.22/jquery-ui.min.js"></script>
+    <script>!window.jQueryUI && document.write('<script src="js/jquery-ui-1.8.22.min.js"><\/script>')</script>   
+
+    <!-- // Thirdparty plugins // -->
+    
+    <!-- Touch helper -->  
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <!-- MouseWheel -->  
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <!-- UI Spinner -->
+	<script src="js/jquery.ui.spinner.js"></script>
+    <!-- Tooltip -->               
+    <script src="js/tipsy.js"></script>
+    <!-- Treeview -->                         
+    <script src="js/treeview.js"></script>
+    <!-- Calendar -->                         
+    <script src="js/fullcalendar.min.js"></script> 
+    <!-- selectToUISlider -->                
+    <script src="js/selectToUISlider.jQuery.js"></script> 
+    <!-- context Menu -->         
+    <script src="js/jquery.contextMenu.js"></script> 
+    <!-- File Explore -->              
+    <script src="js/elfinder.min.js"></script> 
+    <!-- AutoGrow Textarea -->                   
+    <script src="js/autogrow-textarea.js"></script> 
+    <!-- Resizable Textarea -->               
+    <script src="js/textarearesizer.min.js"></script>
+    <!-- HTML5 WYSIWYG -->  
+    <script src="wysiwyghtml5/parser_rules/advanced.js"></script>
+	<script src="wysiwyghtml5/dist/wysihtml5-0.3.0.js"></script>    
+    <!-- Lightbox -->                      
+    <script src="js/jquery.colorbox-min.js"></script>
+    <!-- DataTables -->
+    <script src="js/jquery.dataTables.min.js"></script> 
+    <!-- Masked inputs -->
+    <script src="js/jquery.maskedinput-1.3.min.js"></script> 
+    <!-- IE7 JSON FIX -->
+    <script src="js/json2.js"></script> 
+     <!-- HTML5 audio player -->
+    <script src="audiojs/audiojs/audio.min.js"></script>
+    
+    <!-- // Custom theme plugins // -->
+    
+    <!-- Stylesheet switcher --> 
+    <script src="js/e_styleswitcher.1.1.min.js"></script>                 
+    <!-- Widgets -->
+    <script src="js/powerwidgets.1.2.min.js"></script>
+    <!-- Widgets panel -->
+    <script src="js/powerwidgetspanel.1.2.min.js"></script>
+    <!-- Select styling -->
+    <script src="js/e_select.2.0.min.js"></script>    
+    <!-- Checkbox solution -->
+    <script src="js/e_checkbox.1.0.min.js"></script>
+    <!-- Radio button replacement -->
+    <script src="js/e_radio.1.0.min.js"></script>    
+    <!-- Tabs -->
+    <script src="js/e_tabs.1.1.min.js"></script>
+    <!-- File styling -->
+    <script src="js/e_file.1.0.min.js"></script>    
+    <!-- MainMenu -->
+    <script src="js/e_mainmenu.1.0.min.js"></script>
+    <!-- Menu -->
+    <script src="js/e_menu.1.1.min.js"></script>
+    <!-- Input to textarea popup -->
+    <script src="js/e_inputexpand.1.0.min.js"></script>
+    <!-- Progressbar -->
+    <script src="js/e_progressbar.1.0.min.js"></script>
+    <!-- Scrollbar replacemt -->
+    <script src="js/e_scrollbar.1.0.min.js"></script> 
+    <!-- Onscreen keyboard -->
+    <script src="js/e_oskeyboard.1.0.min.js"></script>
+    <!-- Textarea limiter -->
+    <script src="js/e_textarealimiter.1.0.min.js"></script>
+    <!-- Contact form with validation -->
+    <script src="js/e_contactform.1.1.min.js"></script>
+    <!-- Responsive table helper -->
+    <script src="js/e_responsivetable.1.0.min.js"></script>
+    <!-- Gallery -->
+    <script src="js/e_gallery.1.0.min.js"></script>
+    <!-- Live search -->
+    <script src="js/e_livesearch.1.0.min.js"></script>
+    <!-- Notify -->
+    <script src="js/e_notify.1.0.min.js"></script>  
+    <!-- Countdown -->  
+    <script src="js/e_countdown.1.0.min.js"></script> 
+    <!-- Clone script -->
+    <script src="js/e_clone.1.0.min.js"></script> 
+    <!-- Chained inputs -->
+    <script src="js/e_chainedinputs.1.0.min.js"></script>
+    <!-- Show password -->     
+    <script src="js/e_showpassword.1.0.js"></script>        
+    <!-- All plugins are set here -->
+    <script src="js/plugins.js"></script>
+    <!-- Custom code -->
+    <script src="js/main.js"></script>  
+    
+    <!-- // HTML5/CSS3 support // -->
+
+    <script src="js/modernizr.min.js"></script>
+     
+</head>
+<body class="layout_fluid layout_responsive">
+
+    <!-- this part can be removed, its just here 
+         to let you switch between styles and layout sizes -->
+    <div id="e-styleswitcher">
+        <div class="e-styleswitcher-inner">
+            <div class="e-styleswitcher-arrow"><img src="images/icons/plix-16/white/arrow-right-16.png" alt="" /></div>
+            <div class="box">
+            	<h4>Styles</h4>
+                <select id="choose-styling">
+                	<option value="strangeblue">Strange blue</option>
+                    <option value="black">Black</option>
+                    <option value="darkblue">Dark blue</option>
+                    <option value="lightgrey">Light grey</option>
+                </select>
+            </div>    
+            <div class="box">
+            	<h4>Layout sizes</h4>                
+                <select id="set-layout-size">
+                	<option value="layout_fluid">fluid</option>
+                    <option value="layout_768">768</option>
+                    <option value="layout_960">960</option>
+                    <option value="layout_1024">1024</option>
+                    <option value="layout_1200">1200</option>
+                    <option value="layout_1600">1600</option>
+                </select>
+            </div> 
+            <div class="box">
+            	<h4>Responsive</h4>                
+                <select id="set-layout-responsive">
+                	<option value="layout_responsive">yes</option>
+                    <option value="">no</option>
+                </select>
+            </div>
+            <div class="box">
+            	<h4>Get theme</h4>                
+                <select id="get-theme">
+                	<option value="">no</option>
+                    <option value="yes">yes</option>
+                </select>
+            </div>                         
+        </div>
+    </div>
+   
+	<div id="container">
+    
+        <!-- MAIN HEADER -->
+                
+        <header id="header">
+        	<div id="header-border">
+                <div id="header-inner">
+                
+                    <div class="left">
+                        <a href="index.html" id="logo">ELITE</a>
+                    </div><!-- End .left -->
+                    
+                    <div class="right">
+                        <!-- eMenu -->
+                        <nav>
+                            <ul class="e-splitmenu" id="header-menu">
+                                <li><span>Menu</span><a href="javascript:void(0);"><span class="arrow-down-10 plix-10"></span></a>
+                                
+                                     <div>
+                                        <ul>
+                                            <li><a href="index.html"><span class="stats2-10 plix-10"></span> Stats</a></li>
+                                            <li><a href="index.html"><span class="lock-10 plix-10"></span> Security</a></li>
+                                            <li><a href="index.html"><span class="download-10 plix-10"></span> Downloads</a></li>
+                                        </ul>                                      
+                                    </div>                               
+
+                                </li>
+                                <li><span>Settings</span><a href="javascript:void(0);"><span class="arrow-down-10 plix-10"></span></a>
+                                
+                                     <div>
+                                        <ul>
+                                            <li><a href="index.html"><span class="home-10 plix-10"></span> Basic Settings</a></li>
+                                            <li><a href="index.html"><span class="settings-10 plix-10"></span> Site Settings</a></li>
+                                            <li><a href="index.html"><span class="comment-10 plix-10"></span> User Settings</a></li>
+                                            <li><a href="index.html"><span class="bookmark-10 plix-10"></span> Server Settings</a></li>
+                                        </ul>                                      
+                                    </div>
+                                    
+                                </li>
+                        		<li class="e-menu-profile">
+                                    <a href="javascript:void(0);"><span class="arrow-down-10 plix-10"></span></a> 
+                                    <img src="images/avatar.jpg" alt=""/>
+                                    
+                                    <div>
+                                        <ul>
+                                            <li><a href="index.html"><span class="mail-10 plix-10"></span> Inbox</a></li>
+                                            <li><a href="index.html"><span class="upload-10 plix-10"></span> Settings</a></li>
+                                            <li><a href="index.html"><span class="info-10 plix-10"></span> Logout</a></li>
+                                        </ul>                                      
+                                    </div> 
+                                            
+                                </li>
+                            </ul>
+                        </nav>
+                    </div><!-- End .right --> 
+                    
+                </div><!-- End #header-border --> 
+            </div><!-- End #header-inner -->  
+                
+		</header><!-- End #header -->
+        
+        <!-- CONTENT -->
+                 
+        <div id="content">
+            <div id="content-border">
+            
+                <!-- CONTENT HEADER -->
+                
+                <header id="content-header">
+                    <div class="left">
+                    	<a href="javascript:void(0);" id="toggle-mainmenu" class="button-icon tip-s" title="Toggle Main Menu"><span class="arrow-up-10 plix-10"></span></a>
+                        
+                        <!-- main search form -->
+                        <form method="post" id="mainsearch">
+                            <input type="text" placeholder="Live search..." name="" autocomplete="off"/>
+                            <input type="submit" value="" />
+                        </form>
+                    </div><!-- End .left --> 
+                    <div class="right">
+                    	<!-- sidebar switch -->
+                    	<a href="javascript:void(0);" id="toggle-sidebar" class="button-icon tip-s" title="Switch Main Menu"><span class="arrow-left-10 plix-10"></span></a>
+                        
+                        <!-- breadcrumbs -->
+                        <nav id="main-breadcrumbs">
+                            <ul>
+                                <li class="bc-tab-first">
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="index.html">Form Elements</a>
+                                </li>
+                                <li class="bc-tab-last">Forms</li>
+                            </ul>          
+                        </nav>
+                        
+                        <!-- demo dialog button -->
+                        <a href="javascript:void(0);" id="open-main-dialog" class="button-text-icon tip-w" title="Some tooltip pointing right"><span class="fullscreen-10 plix-10"></span> Dialog</a>
+                        
+                        <!-- the main page dialog -->
+                        <div id="main-page-dialog" title="Welcome to Elite" style="display:none">
+                        <img src="images/jquery-ui-logo.png" alt="" class="dummy-img-dialog"/>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet est et mauris ornare lobortis dignissim quis massa. Donec ullamcorper turpis ac lectus semper commodo. Mauris tincidunt, erat et tempor interdum, dolor metus consectetur dui, eu accumsan augue augue a erat. Fusce justo nibh, tristique vitae pretium ut, venenatis nec felis. Curabitur congue tempor ultricies. Proin quis libero dignissim neque posuere pharetra vel adipiscing massa. Sed sit amet erat ac arcu sodales aliquam. Nam tellus sapien, ornare in tincidunt vel, ultricies id quam.
+						</div>
+                        
+                        <span class="preloader"></span>
+                        
+                        <!-- widgets controls -->
+                        <div id="widgets-controls">
+                            <span class="preloader"></span> 
+                            <div class="icon-group"> 
+                                <a href="javascript:void(0);" class="changeto-grid selected tip-s" title="Show grid"><span class="grid-10 plix-10"></span></a>
+                                <span></span>
+                                <a href="javascript:void(0);" class="changeto-rows tip-s" title="Show rows"><span class="rows-10 plix-10"></span></a>
+                            </div>
+                            
+                            <!-- widgets management switch -->
+                            <a href="javascript:void(0);" class="button-icon tip-s" title="Manage widgets" id="powerwidget-panel-switch"><span class="settings-10 plix-10"></span></a>
+                        </div>
+                    </div><!-- End .right -->                
+                
+				</header><!-- End #content-header --> 
+                                
+                <div id="content-inner">
+                    
+                    <!-- SIDEBAR -->
+                    
+                    <aside>
+                    
+                    	<!-- SIDEBAR PROFILE -->
+                        
+                    	<div id="sidebar-profile">
+                            <div id="main-avatar">
+                            	<span class="indicator">38</span>
+                                <img src="images/avatar.jpg" alt=""/>
+                            </div>
+                            <div id="profile-info">
+                                <div>
+                                    <a href="javascript:void(0);"><b>Administrator</b></a>
+                                    <a href="javascript:void(0);">Profile settings</a>
+                                    <a href="javascript:void(0);">Server settings</a>
+                                    <a href="javascript:void(0);">Logout</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- MAIN MENU -->
+                        
+                        <nav id="main-menu">
+                            <ul>
+                                <li><a href="index.html"><span class="home-16 plix-16"></span> Dashboard</a></li>
+                                <li class="no-mobile"><a href="documentation.html"><span class="note-16 plix-16"></span> Documentation</a>
+                                
+                                    <ul>
+                                    	<li><a href="doc-accordion.html">Accordion</a></li> 
+                                    	<li><a href="doc-breadcrumbs.html">Breadcrumbs</a></li>
+                                        <li><a href="doc-buttons.html">Buttons</a></li>
+                                        <li><a href="doc-calendar.html">Calendar</a></li>
+                                        <li><a href="doc-charts.html">Charts</a></li>
+                                        <li><a href="doc-dialogs.html">Dialogs</a></li>
+                                        <li><a href="doc-editors.html">Editors</a></li>
+                                        <li><a href="doc-fileexplore.html">File Explore</a></li>
+                                        <li><a href="doc-forms.html">Forms</a></li>
+                                        <li><a href="doc-grid.html">Grid</a></li>
+                                        <li><a href="doc-icons.html">Icons</a></li>
+                                        <li><a href="doc-listsblocks.html">Lists &amp; Blocks</a></li>
+                                        <li><a href="doc-media.html">Media</a></li>
+                                        <li><a href="doc-menus.html">Menus</a></li>
+                                        <li><a href="doc-misc.html">Misc</a></li>
+                                        <li><a href="doc-search.html">Search</a></li>
+                                        <li><a href="doc-tables.html">Tables</a></li>
+                                        <li><a href="doc-tabs.html">Tabs</a></li>
+                                        <li><a href="doc-toolbars.html">Toolbars</a></li> 
+                                        <li><a href="doc-widgets.html">Widgets</a></li>
+                                        <li><a href="doc-wizard.html">Wizard</a></li>                                          
+                                    </ul> 
+                                                                   
+                                </li>
+                                <li><a href="calendar.html"><span class="calendar-16 plix-16"></span>Calendar<span class="color-indicator">28</span></a></li>
+                                <li class="menu-open page-active"><a href="javascript:void(0);"><span class="postcard-16 plix-16"></span> Form Elements <span class="button-icon"><span class="min-10 plix-10"></span></span></a>
+
+                                    <ul>
+                                    	<li><a href="editors.html">Editors</a></li>
+                                    	<li class="page-active"><a href="forms.html">Forms</a></li>
+                                        <li><a href="login.html">Login form 1</a></li>
+                                        <li><a href="login-2.html">Login form 2</a></li>
+                                        <li><a href="login-3.html">Login form 3</a></li>
+                                        <li><a href="login-4.html">Login form 4</a></li>
+                                        <li><a href="search.html">Search</a></li>
+                                        <li><a href="wizard.html">Wizard</a></li>                                        
+                                    </ul>
+                                
+                                </li>
+                                <li><a href="media.html"><span class="image-16 plix-16"></span> Media</a></li>
+                                <li><a href="planning.html"><span class="pencil-16 plix-16"></span> Planning</a></li>
+                                <li><a href="maps.html"><span class="map-16 plix-16"></span> Google Maps <span class="indicator tip-w" title="Some tip goes here">tooltip</span></a></li>
+                                <li><a href="fileexplore.html"><span class="folder-16 plix-16"></span> File Explore</a></li> 
+                                <li><a href="javascript:void(0);"><span class="warning-16 plix-16"></span> Error pages<span class="button-icon"><span class="plus-10 plix-10"></span></span></a>
+
+                                    <ul>
+                                    	<li><a href="400.html">400</a></li>
+                                    	<li><a href="401.html">401</a></li>
+                                        <li><a href="403.html">403</a></li>
+                                        <li><a href="404.html">404</a></li>
+                                        <li><a href="500.html">500</a></li>
+                                        <li><a href="503.html">503</a></li>                                         
+                                    </ul>
+                                
+                                </li>                                                               
+                                <li><a href="widgets.html"><span class="rows4-16 plix-16"></span> Widgets</a></li>
+                                <li><a href="tables.html"><span class="cells-16 plix-16"></span> Tables</a></li>
+                                <li><a href="charts.html"><span class="stats2-16 plix-16"></span> Charts </a></li>
+                                <li><a href="javascript:void(0);"><span class="controls-16 plix-16"></span> Interface Elements <span class="button-icon"><span class="plus-10 plix-10"></span></span> </a>
+                                
+                                    <ul>
+                                    	<li><a href="accordion.html">Accordion</a></li>                                        
+                                        <li><a href="breadcrumbs.html">Breadcrumbs</a></li>
+                                        <li><a href="buttons.html">Buttons</a></li>
+                                        <li><a href="dialogs.html">Dialogs</a></li>
+                                        <li><a href="icons.html">Icons</a></li>
+                                        <li><a href="listsblocks.html">Lists &amp; Blocks</a></li>
+                                        <li><a href="menus.html">Menus</a></li>
+                                        <li><a href="misc.html">Misc</a></li>
+                                        <li><a href="tabs.html">Tabs</a></li>
+                                        <li><a href="toolbars.html">Toolbars</a></li>
+                                    </ul>           
+                                                           
+                                </li>
+                                <li><a href="grid.html"><span class="layout3-16 plix-16"></span> Grid <span class="indicator">960</span></a></li>
+                            </ul>
+                        </nav>                      
+                    </aside>
+                    
+                    <!-- sidebar meta stats -->
+                    <div id="sidebar-meta">
+                    	<div id="sidebar-meta-inner">
+                        	<div>
+                                <p class="left">Space</p> 
+                                <p class="right">4,551 MB / 10 GB</p>
+                            </div>
+                            <div class="pbar">
+                               <span style="width:50%"></span>                            
+                            </div>
+                        	<div>
+                                <p class="left">Traffic</p> 
+                                <p class="right">8,001 MB / 10 GB</p>
+                            </div>
+                            <div class="pbar">
+                               <span style="width:81%"></span>                            
+                            </div>
+                        </div>  
+                    </div> 
+                     
+                    <!-- CONTENT -->
+                    
+					<div id="content-main">
+                        <div id="content-main-inner">
+
+                            <!-- widgets management panel --> 
+                            <div id="powerwidgetspanel" class="powerwidgetspanel">
+                                <header>
+                                    <h2>Power widgets panel</h2>
+                                </header>
+                                <div class="powerwidgetspanel-widget" data-widget-id="widget1">
+                                    <input type="checkbox"/>
+                                    <label>AJAX form with validation</label>
+                                </div>
+                                <div class="powerwidgetspanel-widget" data-widget-id="widget2">
+                                    <input type="checkbox"/>
+                                    <label>Checkbox &amp; radio</label>                         
+                                </div>
+                                <div class="powerwidgetspanel-widget" data-widget-id="widget3">
+                                    <input type="checkbox"/>
+                                    <label>Datepicker</label>
+                                </div>
+                                <div class="powerwidgetspanel-widget" data-widget-id="widget4">
+                                    <input type="checkbox"/>
+                                    <label>Spinners</label>
+                                </div>                             
+                                <div class="powerwidgetspanel-widget" data-widget-id="widget5">
+                                    <input type="checkbox"/>
+                                    <label>Misc</label>                           
+                                </div>
+                                <div class="powerwidgetspanel-widget" data-widget-id="widget6">
+                                    <input type="checkbox"/>
+                                    <label>eClone</label>
+                                </div>
+                                <div class="powerwidgetspanel-widget" data-widget-id="widget7">
+                                    <input type="checkbox"/>
+                                    <label>eSelect</label>
+                                </div>
+                                <div class="powerwidgetspanel-widget" data-widget-id="widget8">
+                                    <input type="checkbox"/>
+                                    <label>Textarea</label>
+                                </div>
+                                <div class="powerwidgetspanel-widget" data-widget-id="widget9">
+                                    <input type="checkbox"/>
+                                    <label>Input grid (with cell lines)</label>
+                                </div> 
+                                <div class="powerwidgetspanel-widget" data-widget-id="widget10">
+                                    <input type="checkbox"/>
+                                    <label>Horizontal sliders</label>
+                                </div>
+                                <div class="powerwidgetspanel-widget" data-widget-id="widget11">
+                                    <input type="checkbox"/>
+                                    <label>Vertical sliders</label>
+                                </div>
+                                <div class="powerwidgetspanel-widget" data-widget-id="widget12">
+                                    <input type="checkbox"/>
+                                    <label>Select to UI slider</label>
+                                </div> 
+                                <div class="powerwidgetspanel-widget" data-widget-id="widget13">
+                                    <input type="checkbox"/>
+                                    <label>Masked inputs (with cell lines)</label>
+                                </div>                                                               
+                            </div>
+                            
+                            <div class="page-header">                    
+                                <h2>Forms</h2>
+                                <span class="page-helper">1.1</span>
+                                <a href="doc-forms.html" class="page-helper">Documentation</a>
+                                 <a href="javascript:void(0);" class="page-helper empty-local-storage">Clear storage</a>
+                                <p>Grid based forms and form elements.</p>
+                            </div>                   
+                            <!-- Start grid -->
+
+                            <section class="g_1">
+
+                                <!-- New widget -->
+                                
+                                 <div class="powerwidget" id="widget1">
+                                    <header>
+                                    	<h2>AJAX form with validation</h2>                                  
+                                    </header>
+                                    <div> 
+                                        <div class="inner-spacer">  
+                                            <form id="form-validation" method="post" action="ajax/form-dummy.php">
+                                                <fieldset>
+                                                <legend contenteditable="true">I am a legend but you can edit me...</legend>
+                                                    <div class="g_1_4">
+                                                        <label for="af-present">Present:</label> 
+                                                    </div>
+                                                    <div class="g_3_4_last">
+                                                        <input type="text" id="af-present" name="" data-validation-type="present" />
+                                                        <span class="field-helper">This is a field helper text line...</span>
+                                                    </div>
+                                                    
+                                                    <div class="spacer-20"><!-- spacer 20px --></div>
+                                                    
+                                                    <div class="g_1_4">
+                                                        <label for="af-email">Email:</label> 
+                                                    </div>
+                                                    <div class="g_3_4_last">
+                                                        <input type="text" id="af-email" name="" data-validation-type="email" data-validation-label="This email is not valid!" />
+                                                    </div>
+                                                    
+                                                    <div class="spacer-20"><!-- spacer 20px --></div>
+                                                    
+                                                    <div class="g_1_4">
+                                                        <label for="af-password1">Password 1:</label> 
+                                                    </div>
+                                                    <div class="g_3_4_last">
+                                                        <input type="password" id="af-password1" name="" data-validation-type="password" data-validation-label="The passwords dont match!"/> 
+                                                    </div>
+                                                    
+                                                    <div class="spacer-20"><!-- spacer 20px --></div>
+                                                    
+                                                    <div class="g_1_4">
+                                                        <label for="af-password2">Password 2:</label> 
+                                                    </div>
+                                                    <div class="g_3_4_last">
+                                                        <input type="password" id="af-password2" name="" data-validation-type="password" data-validation-label="The passwords dont match!"/> 
+                                                    </div>
+                                                    
+                                                    <div class="spacer-20"><!-- spacer 20px --></div>
+                                                    
+                                                    <div class="g_1_4">
+                                                        <label for="af-url">Url:</label> 
+                                                    </div>
+                                                    <div class="g_3_4_last">
+                                                        <input type="text" id="af-url" name="" data-validation-type="url" data-validation-label="The passwords dont match!"/> 
+                                                    </div>
+        
+                                                    <div class="spacer-20"><!-- spacer 20px --></div>
+                                                    
+                                                    <div class="g_1_4">
+                                                        <label for="af-letters">Letters:</label> 
+                                                    </div>
+                                                    <div class="g_3_4_last">
+                                                        <input type="text" id="af-letters" name="" data-validation-type="letters" data-validation-label="Only letters are allowed!" />
+                                                    </div>
+                                                    
+                                                    <div class="spacer-20"><!-- spacer 20px --></div>
+        
+                                                    <div class="g_1_4">
+                                                        <label for="af-match">Match:(value = test)</label> 
+                                                    </div>
+                                                    <div class="g_3_4_last">
+                                                        <input type="text" id="af-match" name="" data-validation-type="match" data-validation-match="test" />
+                                                    </div>
+                                                    
+                                                    <div class="spacer-20"><!-- spacer 20px --></div>
+        
+                                                    <div class="g_1_4">
+                                                        <label for="af-ip">IP:(255.255.255.255)</label> 
+                                                    </div>
+                                                    <div class="g_3_4_last">
+                                                        <input type="text" id="af-ip" name="" data-validation-type="ip" />
+                                                    </div>  
+                                                    
+                                                    <div class="spacer-20"><!-- spacer 20px --></div>
+        
+                                                    <div class="g_1_4">
+                                                        <label for="af-date">Date:(00-00-0000)</label> 
+                                                    </div>
+                                                    <div class="g_3_4_last">
+                                                        <input type="text" id="af-date" name="" data-validation-type="date" />
+                                                    </div> 
+                                                     
+                                                    <div class="spacer-20"><!-- spacer 20px --></div>
+                                                    
+                                                    <div class="g_1_4">
+                                                        <label for="af-ci">Present:</label>
+                                                        <span class="field-helper">This part is a custom build plugin called 'echainedinputs'.</span>  
+                                                    </div> 
+                                                    <div class="g_3_4_last">
+                                                        <div class="g_1_3">
+                                                            <input type="text" id="af-ci" name="" data-validation-type="present" data-chained-group="field1" maxlength="6" />
+                                                            <span class="field-helper">Maxlength = 6</span>   
+                                                        </div>
+                                                        <div class="g_1_3">
+                                                            <input type="text" name="" data-validation-type="present" data-chained-group="field1" maxlength="8" />
+                                                            <span class="field-helper">Maxlength = 8</span>   
+                                                        </div>
+                                                        <div class="g_1_3_last">
+                                                            <input type="text" name="" data-validation-type="present" data-chained-group="field1" maxlength="3"/>
+                                                            <span class="field-helper">Maxlength = 3</span>   
+                                                        </div>                                                                                                                                                        
+                                                    </div> 
+                                                                                                                                     
+                                                    <div class="spacer-20"><!-- spacer 20px --></div>
+                                                    
+                                                    <div class="g_1_4">
+                                                        <label>Present:</label>
+                                                    </div> 
+                                                    <div class="g_3_4_last">
+                                                        <select name="" data-validation-type="present">
+                                                            <option value="">-- select option --</option>
+                                                            <option value="a">Option 1</option>
+                                                            <option value="b">Option 2</option>
+                                                            <option value="c" selected>Option 3</option>
+                                                            <option value="d">Option 4</option>
+                                                            <option value="e">Option 5</option>
+                                                        </select>
+                                                    </div>
+
+                                                    <div class="spacer-20"><!-- spacer 20px --></div>
+                                                            
+                                                    <div class="g_1_4"> 
+                                                        <label class="g_1_3">Present:</label>
+                                                    </div>
+                                                    <div class="g_3_4_last">
+                                                        <select name="" multiple="multiple" data-validation-type="present">
+                                                            <option value="opt1">Option 1</option>
+                                                            <option value="opt2">Option 2</option>
+                                                            <option value="opt3">Option 3</option>
+                                                            <option value="opt4">Option 4</option>
+                                                            <option value="opt5">Option 5</option>
+                                                            <option value="opt6">Option 6</option>
+                                                            <option value="opt7">Option 7</option>
+                                                            <option value="opt8">Option 8</option>
+                                                            <option value="opt9">Option 9</option>
+                                                            <option value="opt10">Option 10</option>                                                        
+                                                        </select>
+                                                        <span class="field-helper">You can select multiple values.</span> 	
+                                                    </div>   
+                                            
+                                                    <div class="spacer-20"><!-- spacer 20px --></div>
+                                                    
+                                                    <div class="g_1_4">                                      
+                                                        <label for="af-present3">Present:(min 5 - max 100)</label> 
+                                                    </div>
+                                                    <div class="g_3_4_last"> 
+                                                        <textarea name="" id="af-present3" data-validation-type="present" data-validation-minimum="5" data-validation-maximum="100"></textarea>
+                                                    </div>
+                                                    
+                                                    <div class="spacer-20"><!-- spacer 20px --></div>
+                                                                                            
+                                                    <div class="g_1_4">
+                                                        <label>Present:</label>
+                                                    </div> 
+                                                    <div class="g_3_4_last">
+                                                        <input type="checkbox" id="af-present4" name=""  data-validation-type="present"  data-validation-label="You must accept the terms!"/>
+                                                        <label for="af-present4">Yes, I accept the terms</label>
+                                                     
+                                                        <input type="submit" value="Submit" class="button-text"/>
+                                                    </div> 
+                                                </fieldset>                                                                              
+                                            </form>
+                                        </div>                                               
+                                 	</div>
+                                </div><!-- End .powerwidget -->
+
+							</section>
+                            
+                            <div class="clear"><!-- New row --></div>
+                                                       
+                            <section class="g_1_2">
+                            
+                                <!-- New widget -->
+                                
+                                <div class="powerwidget" id="widget2">
+                                    <header>
+                                    	<h2>Checkbox &amp; radio buttons</h2>                                  
+                                    </header>
+                                    <div>
+                                        <div class="inner-spacer">   
+                                            <div class="g_1_3">                                  
+                                                <label>Checkbox:</label>
+                                            </div> 
+                                            <div class="g_2_3_last">
+                                                <div class="g_1">
+                                                    <input type="checkbox" name="" id="form-checkbox-1"/>
+                                                    <label for="form-checkbox-1">Option 1</label>
+                                                </div>
+                                                <div class="g_1">
+                                                    <input type="checkbox" name="" id="form-checkbox-2" checked />
+                                                    <label for="form-checkbox-2">Option 2 (checked)</label>
+                                                </div>
+                                                <div class="g_1">
+                                                    <input type="checkbox" name="" id="form-checkbox-3"/>
+                                                    <label for="form-checkbox-3">Option 3</label>
+                                                </div>
+                                                <div class="g_1">
+                                                    <input type="checkbox" name="" id="form-checkbox-4" disabled/>
+                                                    <label for="form-checkbox-4">Option 4(disabled)</label>
+                                                </div>
+                                                <div class="g_1">
+                                                    <input type="checkbox" name="" id="form-checkbox-5" checked />
+                                                    <label for="form-checkbox-5">Option 5 (checked)</label>
+                                                </div>	
+                                            </div>
+                                                                                                                              
+                                            <div class="spacer-20"><!-- spacer 20px --></div>
+                                            
+                                            <div class="g_1_3"> 
+                                                <label>Radio:</label> 
+                                            </div>
+                                            <div class="g_2_3_last">
+                                                <div class="g_1">
+                                                    <input type="radio" name="radio-demo-1" id="form-radio-1"/>
+                                                    <label for="form-radio-1">Option 1</label>
+                                                </div>
+                                                <div class="g_1">
+                                                    <input type="radio" name="radio-demo-1" id="form-radio-2" disabled/>
+                                                    <label for="form-radio-2">Option 2 (disabled)</label>
+                                                </div>
+                                                <div class="g_1">
+                                                    <input type="radio" name="radio-demo-1" id="form-radio-3" checked="checked"/>
+                                                    <label for="form-radio-3">Option 3 (checked)</label>
+                                                </div>
+                                                <div class="g_1">
+                                                    <input type="radio" name="radio-demo-1" id="form-radio-4"/>
+                                                    <label for="form-radio-4">Option 4</label>
+                                                </div>
+                                                <div class="g_1">
+                                                    <input type="radio" name="radio-demo-1" id="form-radio-5"/>
+                                                    <label for="form-radio-5">Option 5</label>
+                                                </div>		
+                                            </div>
+                                                
+                                            <div class="spacer-20"><!-- spacer 20px --></div>
+    
+                                            <label class="g_1_3">Mass select:</label> 
+                                            <div class="g_2_3_last e-checkbox-section">
+                                                <div class="g_1">
+                                                    <input type="checkbox" name="" id="form-checkbox-21"/>
+                                                    <label for="form-checkbox-1">Option 1</label>
+                                                </div>
+                                                <div class="g_1">
+                                                    <input type="checkbox" name="" id="form-checkbox-22" checked/>
+                                                    <label for="form-checkbox-22">Option 2 (checked)</label>
+                                                </div>
+                                                <div class="g_1">
+                                                    <input type="checkbox" name="" id="form-checkbox-23"/>
+                                                    <label for="form-checkbox-23">Option 3</label>
+                                                </div>
+                                                <div class="g_1">
+                                                    <input type="checkbox" name="" id="form-checkbox-24" disabled/>
+                                                    <label for="form-checkbox-24">Option 4(disabled)</label>
+                                                </div>
+                                                <div class="g_1">
+                                                    <input type="checkbox" name="" id="form-checkbox-25" checked/>
+                                                    <label for="form-checkbox-25">Option 5 (checked)</label>
+                                                </div>
+                                                <div class="spacer-20"><!-- spacer 20px --></div>
+                                                <div class="g_1">
+                                                    <input type="checkbox" name="" id="form-checkbox-26" class="e-checkbox-trigger"/>
+                                                    <label for="form-checkbox-26">Select/unselect all</label>
+                                                </div>		
+                                            </div>
+                                            
+                                            <div class="spacer-20"><!-- spacer 20px --></div>
+                                               
+                                            <div class="g_1_3">                                  
+                                                <label>label left:</label>
+                                            </div> 
+                                            <div class="g_2_3_last">
+                                                <div class="g_1">
+                                                     <label for="form-checkbox-11">Option 1</label>
+                                                     <input type="checkbox" name="" id="form-checkbox-11"/>                                        	
+                                                </div>
+                                                <div class="g_1">
+                                                     <label for="form-checkbox-12">Option 2</label>
+                                                     <input type="radio" name="ll-radio" id="form-checkbox-12"/>                                        	
+                                                </div>
+                                            </div>  
+                                        </div>    
+                                    </div>
+                                </div><!-- End .powerwidget -->
+                                                                                             
+                            </section>    
+
+                            <section class="g_1_2_last">
+                            
+                                <!-- New widget -->
+                                
+                                 <div class="powerwidget" id="widget3">
+                                    <header>
+                                    	<h2>Datepicker</h2>                                  
+                                    </header>
+                                    <div>
+                                        <div class="inner-spacer">   
+                                            <div class="g_1_3">
+                                                <label for="datepicker-icon">Inline:</label> 
+                                            </div>
+                                            <div id="datepicker-inline" class="g_2_3_last"></div>	
+                                             
+                                            <div class="spacer-20"><!-- spacer 20px --></div>
+                                            
+                                            <div class="g_1_3">	                                                                
+                                                <label for="datepicker-default">Default:</label>
+                                            </div>     
+                                            <div class="g_2_3_last">
+                                                <input type="text" name=""  id="datepicker-default" class="datepicker" />
+                                            </div>
+                                            
+                                            <div class="spacer-20"><!-- spacer 20px --></div>
+                                            
+                                            <div class="g_1_3">
+                                                <label for="datepicker-icon">Icon trigger:</label> 
+                                            </div>
+                                            <div class="g_2_3_last">
+                                                <input type="text" name=""  id="datepicker-icon" class="datepicker" />
+                                            </div>
+                                            
+                                            <div class="spacer-20"><!-- spacer 20px --></div>
+                                                    
+                                            <div class="g_1_3">
+                                                <label for="datepicker-icon">Populate alternate field:</label>
+                                            </div> 
+                                            <div class="g_2_3_last">
+                                                <input type="text" name="" id="datepicker-alt" class="datepicker" />
+                                                <input type="text" name="" id="alternate" class="datepicker" />	
+                                            </div>
+                                         </div>                                          
+                                     </div>
+                                </div><!-- End .powerwidget -->
+                            
+                                <!-- New widget -->
+                                
+                                 <div class="powerwidget" id="widget4">
+                                    <header>
+                                    	<h2>Spinners</h2>                                  
+                                    </header>
+                                    <div>
+                                        <div class="inner-spacer">                                      	
+                                            <div class="g_1_3">                                 
+                                                <label for="spinner1">Default:</label>
+                                            </div> 
+                                            <div class="g_1_3"> 
+                                                <input type="text" id="spinner1" name="" value="5" />
+                                            </div>
+                                            
+                                            <div class="spacer-20"><!-- spacer 20px --></div>
+                                            
+                                            <div class="g_1_3">                                 
+                                                <label for="spinner2">Decimal:</label>
+                                            </div> 
+                                            <div class="g_1_3"> 
+                                                <input type="text" id="spinner2" name="" value="5.06" />
+                                            </div>
+                                            
+                                            <div class="spacer-20"><!-- spacer 20px --></div>
+                                            
+                                            <div class="g_1_3">                                 
+                                                <label for="spinner3">Range(between 0 and 10):</label>
+                                            </div> 
+                                            <div class="g_1_3"> 
+                                                <input type="text" id="spinner3" name="" />
+                                            </div>                                                                                  
+                                        </div>
+                                    </div>   
+                                </div><!-- End .powerwidget -->
+                            </section> 
+                                                        
+                            <div class="clear"><!-- New row --></div> 
+
+                            <section class="g_1_2">
+                            
+                                <!-- New widget -->
+                                
+                                 <div class="powerwidget" id="widget5">
+                                    <header>
+                                    	<h2>Misc</h2>                                  
+                                    </header>
+                                    <div> 
+                                    	<div class="inner-spacer">
+
+                                            <div class="g_1_3">                                 
+                                                <label for="onscreen-keyboard">eOsKeyboard:</label>
+                                            </div> 
+                                            <div class="g_2_3_last"> 
+                                                <input type="text" id="onscreen-keyboard" name=""/>
+                                            </div>
+                                                                                        
+                                            <div class="spacer-20"><!-- spacer 20px --></div>
+                                            
+                                            <div class="g_1_3">
+                                                <label for="fplaceholder">HTML5 placeholder:</label>
+                                            </div> 
+                                            <div class="g_2_3_last">     
+                                                <input type="text" name="" placeholder="Placeholder text..." id="fplaceholder"/>
+                                            </div>
+
+                                            <div class="spacer-20"><!-- spacer 20px --></div>
+                                            
+                                            <div class="g_1_3">                                 
+                                                <label>eFile:</label>
+                                            </div> 
+                                            <div class="g_2_3_last"> 
+                                                <input type="file" name=""/>
+                                            </div>
+                                            
+                                            <div class="spacer-20"><!-- spacer 20px --></div>
+                                                                                                                             
+                                            <div class="g_1_3">
+                                                <label for="autocomplete">eInputExpand:</label>
+                                            </div> 
+                                            <div class="g_2_3_last">     
+                                                <input type="text" name="" id="inputexpand"/>
+                                            </div>  
+
+                                            <div class="spacer-20"><!-- spacer 20px --></div>
+                                                                                                                             
+                                            <div class="g_1_3">
+                                                <label for="autocomplete">eShowPassword:</label>
+                                            </div> 
+                                            <div class="g_2_3_last">     
+                                                <input type="password" name="" id="passwordfield"/>
+                                                 <div class="spacer-10"><!-- spacer 20px --></div>
+                                                <a href="javascript:void(0);" class="button-icon-text clone-trigger" id="show-password">Show password<span class="lock-10 plix-10"></span></a>
+                                            </div> 
+                                                                               
+                                            <div class="spacer-20"><!-- spacer 20px --></div>
+                                            
+                                            <div class="g_1_3">
+                                                <label for="autocomplete">AutoComplete:</label>
+                                            </div> 
+                                            <div class="g_2_3_last">     
+                                                <input type="text" name="" id="autocomplete"/>
+                                            </div>
+
+                                            <div class="spacer-20"><!-- spacer 20px --></div>
+                                            
+                                            <div class="g_1_3">
+                                                <label for="fmultibar">Multibar:</label>
+                                            </div> 
+                                            <div class="g_2_3_last"> 
+                                            	<div class="multibar">    
+                                                    <input type="text" name="" placeholder="Placeholder text..." id="fmultibar"/>
+                                                    <div>
+                                                    <a href="javascript:void(0);"><span class="home-10 plix-10"></span></a>
+                                                    <a href="javascript:void(0);"><span class="settings-10 plix-10"></span></a>
+                                                    <a href="javascript:void(0);"><span class="mail-10 plix-10"></span></a>
+                                                    <a href="javascript:void(0);"><span class="folder-10 plix-10"></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>                                             
+                                        </div>       
+                                 	</div>
+                                </div><!-- End .powerwidget -->
+
+                            </section>
+                                                            
+                            <section class="g_1_2_last">
+                            
+                                <!-- New widget -->
+                                
+                                 <div class="powerwidget" id="widget6">
+                                    <header>
+                                    	<h2>eClone</h2>                                  
+                                    </header>
+                                    <div> 
+                                    	<div class="inner-spacer">
+                                            <div class="g_1_3">                                 
+                                                <label>eClone:</label>
+                                            </div> 
+                                            <div class="g_2_3_last clone-range">
+                                            	<div class="g_1"> 
+                                                	<input type="text" name=""/>
+                                                    
+                                                     <div class="spacer-20"><!-- spacer 20px --></div>
+                                                </div>
+                                                
+                                            	<div class="g_1"> 
+                                                	<input type="text" name=""/>
+                                                    
+                                                     <div class="spacer-20"><!-- spacer 20px --></div>
+                                                </div>
+                                                
+                                            	<div class="g_1"> 
+                                                	<input type="text" name=""/>
+                                                    
+                                                     <div class="spacer-20"><!-- spacer 20px --></div>
+                                                </div>
+                                                
+                                            	<div class="g_1 not-clone"> 
+                                                	<a href="javascript:void(0);" class="button-icon-text clone-trigger">Add new row<span class="plus-10 plix-10"></span></a>
+                                                </div>                                                                                                 
+                                            </div>
+                                            
+                                        </div>       
+                                 	</div>
+                                </div><!-- End .powerwidget -->                                                                                             
+
+                                <!-- New widget -->
+                                
+                                 <div class="powerwidget" id="widget7">
+                                    <header>
+                                    	<h2>eSelect</h2>                                  
+                                    </header>
+                                    <div>
+                                        <div class="inner-spacer">                                         
+                                            <div class="g_1_3">                                     
+                                                <label class="g_1_3">Basic:</label>
+                                            </div>
+                                            <div class="g_2_3_last">  
+                                                <select name="">
+                                                    <option value="">Option 1</option>
+                                                    <option value="">Option 2</option>
+                                                     <option value="" selected="selected">Option 3(selected)</option>
+                                                    <option value="">Option 4</option>
+                                                    <option value="" class="seperator">Option 5</option>
+                                                    <option value="">Option 6</option>
+                                                    <option value="">Option 7</option>
+                                                </select>
+                                            </div>
+                                            
+                                            <div class="spacer-20"><!-- spacer 20px --></div>
+                                                    
+                                            <div class="g_1_3"> 
+                                                <label class="g_1_3">Multiple:</label>
+                                            </div>
+                                            <div class="g_2_3_last">
+                                                <select name=""  multiple="multiple">
+                                                    <option value="">Option 1</option>
+                                                    <option value="" selected="selected">Option 2(selected)</option>
+                                                    <option value="">Option 3</option>
+                                                    <option value="">Option 4</option>
+                                                    <option value="">Option 5</option>
+                                                    <option value="">Option 6</option>
+                                                    <option value="">Option 7</option>
+                                                    <option value="">Option 8</option>
+                                                    <option value="">Option 9</option>
+                                                    <option value="">Option 10</option>                                                        
+                                                </select>
+                                                <span class="field-helper">You can select multiple values.</span> 	
+                                            </div>  
+                                            
+                                            <div class="spacer-20"><!-- spacer 20px --></div>
+                                                    
+                                            <div class="g_1_3"> 
+                                                <label class="g_1_3">Size attribute:</label>
+                                            </div>
+                                            <div class="g_2_3_last">
+                                                <select name="" size="3">
+                                                    <option value="">Option 1</option>
+                                                    <option value="">Option 2</option>
+                                                    <option value="" selected="selected">Option 3(selected)</option>
+                                                    <option value="">Option 4</option>
+                                                    <option value="">Option 5</option>
+                                                    <option value="">Option 6</option>
+                                                    <option value="">Option 7</option>
+                                                    <option value="">Option 8</option>
+                                                    <option value="">Option 9</option>
+                                                    <option value="">Option 10</option>                                                        
+                                                </select>
+                                                <span class="field-helper">You can select only 1 value.</span> 
+                                            </div>                
+                                        </div>                       
+                                 	</div>
+                                </div><!-- End .powerwidget -->
+                                                                                             
+                            </section>
+                            
+                            <div class="clear"><!-- New row --></div>
+
+							<section class="g_1">
+                            
+                                <!-- New widget -->
+                                
+                                 <div class="powerwidget" id="widget13">
+                                    <header>
+                                    	<h2>Masked inputs (with cell lines)</h2>                                  
+                                    </header>
+                                    <div> 
+                                    	<div class="inner-spacer set-cells">
+                                        
+                                            <div class="spacer-5"><!-- spacer 5px --></div>
+                                            
+                                            <div class="g_1_3">
+                                                <label for="mask_date">Date (99/99/9999):</label>
+                                            </div> 
+                                            <div class="g_2_3_last">     
+                                                <input type="text" name="" id="mask_date"/>
+                                            </div>
+                                            
+                                            <div class="spacer-10"><!-- spacer 10px --></div> 
+                                            
+                                            <hr/>	
+                                            		                                        
+                                            <div class="spacer-10"><!-- spacer 10px --></div> 
+                                            
+                                            <div class="g_1_3">
+                                                <label for="mask_phone">Phone ((999) 999-9999):</label>
+                                            </div> 
+                                            <div class="g_2_3_last">     
+                                                <input type="text" name="" id="mask_phone"/>
+                                            </div>
+                                            
+                                            <div class="spacer-10"><!-- spacer 10px --></div> 
+                                            
+                                            <hr/>	
+                                            		                                        
+                                            <div class="spacer-10"><!-- spacer 10px --></div> 
+
+                                            <div class="g_1_3">
+                                                <label for="mask_extphone">Phone ((999) 999-9999? x99999")):</label>
+                                            </div> 
+                                            <div class="g_2_3_last">     
+                                                <input type="text" name="" id="mask_extphone"/>
+                                            </div>
+                                            
+                                            <div class="spacer-10"><!-- spacer 10px --></div> 
+                                            
+                                            <hr/>	
+                                            		                                        
+                                            <div class="spacer-10"><!-- spacer 10px --></div> 
+
+                                            <div class="g_1_3">
+                                                <label for="mask_tin">Tax ID (99-9999999):</label>
+                                            </div> 
+                                            <div class="g_2_3_last">     
+                                                <input type="text" name="" id="mask_tin"/>
+                                            </div> 
+                                               
+                                            <div class="spacer-10"><!-- spacer 10px --></div> 
+                                            
+                                            <hr/>	
+                                            		                                        
+                                            <div class="spacer-10"><!-- spacer 10px --></div> 
+
+                                            <div class="g_1_3">
+                                                <label for="mask_ssn">SSN (999-99-9999):</label>
+                                            </div> 
+                                            <div class="g_2_3_last">     
+                                                <input type="text" name="" id="mask_ssn"/>
+                                            </div> 
+                                                                                           
+                                            <div class="spacer-10"><!-- spacer 10px --></div> 
+                                            
+                                            <hr/>	
+                                            		                                        
+                                            <div class="spacer-10"><!-- spacer 10px --></div> 
+
+                                            <div class="g_1_3">
+                                                <label for="mask_product">Product Key (a*-999-a999):</label>
+                                            </div> 
+                                            <div class="g_2_3_last">     
+                                                <input type="text" name="" id="mask_product"/>
+                                            </div>  
+                                                                                          
+                                            <div class="spacer-10"><!-- spacer 10px --></div> 
+                                            
+                                            <hr/>	
+                                            		                                        
+                                            <div class="spacer-10"><!-- spacer 10px --></div> 
+
+                                            <div class="g_1_3">
+                                                <label for="mask_eyescript">Eye Script (~9.99 ~9.99 999):</label>
+                                            </div> 
+                                            <div class="g_2_3_last">     
+                                                <input type="text" name="" id="mask_eyescript"/>
+                                            </div>      
+                                            
+                                            <div class="spacer-5"><!-- spacer 5px --></div>                                
+                                        </div>       
+                                 	</div>
+                                </div><!-- End .powerwidget -->
+                            </section>
+                            
+                            <div class="clear"><!-- New row --></div> 
+
+                            <section class="g_1">
+                            
+                                <!-- New widget -->
+                                
+                                 <div class="powerwidget" id="widget8">
+                                    <header>
+                                    	<h2>Textarea</h2>                                  
+                                    </header>
+                                    <div>
+                                    	<div class="inner-spacer">	
+                                            <div class="g_1_3">                                      
+                                                <label>Basic:</label> 
+                                            </div>
+                                            <div class="g_2_3_last"> 
+                                                <textarea name=""></textarea>
+                                            </div>
+                                            
+                                            <div class="spacer-20"><!-- spacer 20px --></div>
+                                            
+                                            <div class="g_1_3">
+                                                <label>Autogrow:</label>
+                                            </div>
+                                            <div class="g_2_3_last">  
+                                                <textarea name="" class=" autogrow-textarea"></textarea>
+                                            </div>
+                                            
+                                            <div class="spacer-20"><!-- spacer 20px --></div>
+                                                
+                                            <div class="g_1_3"> 
+                                                <label>Resizable:</label>
+                                            </div> 
+                                            <div class="g_2_3_last">
+                                                <!-- this need to be wrapped for the plugin -->
+                                                <textarea name="" class="resizable-textarea"></textarea>
+                                            </div>
+                                            
+                                            <div class="spacer-20"><!-- spacer 20px --></div>
+                                                
+                                            <div class="g_1_3"> 
+                                                <label>eTextareaLimiter: (Max limit 250)</label>
+                                            </div>
+                                            <div class="g_2_3_last">  
+                                                <textarea name="" id="textarea-limiter" maxlength="250"></textarea>
+                                            </div>
+                                        </div>    
+                                    </div>
+                                </div><!-- End .powerwidget -->                                                                                       
+                            </section>
+                            
+                            <div class="clear"><!-- New row --></div> 
+                            
+                            <section class="g_1">
+                            
+                                <!-- New widget -->
+                                
+                                <div class="powerwidget" id="widget9">
+                                    <header>
+                                    	<h2>Input Grid (with cell lines)</h2>                                  
+                                    </header>
+                                    <div>
+                                        <div class="inner-spacer">
+                                            <div class="g_1">  
+                                                <input type="text" name="" value="g_1"/>
+                                            </div>
+                                            
+                                            <div class="spacer-10"><!-- spacer 10px --></div> 
+                                            
+                                            <hr/>	
+                                            		                                        
+                                            <div class="spacer-10"><!-- spacer 10px --></div> 
+                                                
+                                            <div class="g_1_2">   
+                                                <input type="text" name="" value="g_1_2"/>
+                                            </div>
+                                            <div class="g_1_2_last">  
+                                                <input type="text" name="" value="g_1_2_last"/>
+                                            </div>
+                                            
+                                            <div class="spacer-10"><!-- spacer 10px --></div> 
+                                            
+                                            <hr/>	
+                                            		                                        
+                                            <div class="spacer-10"><!-- spacer 10px --></div> 
+                                            
+                                            <div class="g_1_3">
+                                                <input type="text" name="" value="g_1_3"/>
+                                            </div>
+                                            <div class="g_1_3">  
+                                                <input type="text" name="" value="g_1_3"/>
+                                            </div>
+                                            <div class="g_1_3_last">  
+                                                <input type="text" name="" value="g_1_3_last"/>
+                                            </div>
+                                            
+                                            <div class="spacer-10"><!-- spacer 10px --></div> 
+                                            
+                                            <hr/>	
+                                            		                                        
+                                            <div class="spacer-10"><!-- spacer 10px --></div> 
+                                            
+                                            <div class="g_1_4">  
+                                                <input type="text" name="" value="g_1_4"/>
+                                            </div>
+                                            <div class="g_1_4">  
+                                                <input type="text" name="" value="g_1_4"/>
+                                            </div>
+                                            <div class="g_1_4">
+                                                <input type="text" name="" value="g_1_4"/>
+                                            </div>
+                                            <div class="g_1_4_last">  
+                                                <input type="text" name="" value="g_1_4_last"/>
+                                            </div>
+                                            	                                        
+                                            <div class="spacer-10"><!-- spacer 10px --></div> 
+                                            
+                                            <hr/>	
+                                            		                                        
+                                            <div class="spacer-10"><!-- spacer 10px --></div> 
+                                             
+                                            <div class="g_1">
+                                                For more examples go to the grid page <a href="grid.html">here</a>.
+                                            </div><!-- End .row -->                                                                                 
+                                        </div>
+                                    </div>    
+                                </div><!-- End .powerwidget -->                                                             
+                            </section>
+                            
+							<div class="clear"><!-- New row --></div>
+
+                            <section class="g_1_2">
+                            
+                                <!-- New widget -->
+                                
+                                <div class="powerwidget" id="widget10">
+                                    <header>
+                                    	<h2>Horizontal Sliders</h2>                                  
+                                    </header>
+                                    <div>
+                                        <div class="inner-spacer">
+                                            <div class="g_1_3"> 
+                                                <label>Basic slider:</label>
+                                            </div>
+                                            <div class="g_2_3_last">
+                                                <div id="basic-ui-slider"></div>
+                                            </div>
+                                            
+                                            <div class="spacer-20"><!-- spacer 20px --></div>                                       
+                                            
+                                            <div class="g_1_3"> 
+                                                <label>Range with fixed maximum:</label> 
+                                            </div>
+                                            <div class="g_2_3_last">
+                                                <p>Maximum: <input type="text" id="amount" style="width:2.5em"/></p>
+                                                <div id="slider-range-max"></div>
+                                            </div>
+                                                
+                                            <div class="spacer-20"><!-- spacer 20px --></div>
+                                            
+                                            <div class="g_1_3"> 
+                                                <label>Range slider:</label>
+                                            </div>     
+                                            <div class="g_2_3_last">                                      
+                                                <p>Minimum number: <input type="text" id="amount1" style="width:6em"/></p>
+                                                <div id="slider-range"></div>
+                                            </div> 
+                                            
+                                            <div class="spacer-20"><!-- spacer 20px --></div> 
+                                           
+                                            <div class="g_1_3"> 
+                                                <label>Range with fixed mimium:</label> 
+                                            </div>
+                                            <div class="g_2_3_last">                                       
+                                                <p>Maximum price: <input type="text" id="amount2" style="width:6em"/></p>
+                                                <div id="slider-range-min"></div>
+                                            </div>                                                                       
+                                        </div>
+                                    </div>   
+                                </div><!-- End .powerwidget -->
+                            </section>
+                                                          
+                            <section class="g_1_2_last">
+                            
+                                <!-- New widget -->
+                                
+                                <div class="powerwidget" id="widget11">
+                                    <header>
+                                    	<h2>Vertical Sliders</h2>                                  
+                                    </header>
+                                    <div>
+                                        <div class="inner-spacer">
+                                            <div class="g_1_3"> 
+                                                <label>Vertical slider:</label>
+                                            </div> 
+                                            <div class="g_2_3_last"> 
+                                            	<div class="vertical-slider-wrapper">                                     
+                                                    <input type="text" id="amount10" style="width:2.5em"/>
+                                                    <div id="slider-vertical" style="height:180px;"></div>
+                                                </div>
+                                            </div> 
+                                            
+                                            <div class="spacer-20"><!-- spacer 20px --></div>  
+                                       
+                                            <div class="g_1_3"> 
+                                                <label>Vertical range slider:</label>
+                                            </div> 
+                                            <div class="g_2_3_last">                                       
+                                                <p>Target sales goal (Millions): <input type="text" id="amount11" style="width:6em"/></p>
+                                                <div id="slider-range-vertical" style="height:180px;"></div>
+                                            </div>    
+                                           
+                                            <div class="spacer-20"><!-- spacer 20px --></div> 
+                                            
+                                            <div class="g_1_3"> 
+                                                <label>Multiple vertical sliders:</label> 
+                                            </div>    
+                                            <div class="g_2_3_last">
+                                            	<div class="vertical-slider-wrapper">                                     
+                                                    <input type="text" id="amount12" style="width:2.5em"/>
+                                                    <div id="slider-vertical-1" style="height:180px;"></div>
+                                                </div>
+                                            	<div class="vertical-slider-wrapper">                                     
+                                                    <input type="text" id="amount13" style="width:2.5em"/>
+                                                    <div id="slider-vertical-2" style="height:180px;"></div>
+                                                </div>
+                                            	<div class="vertical-slider-wrapper">                                     
+                                                    <input type="text" id="amount14" style="width:2.5em"/>
+                                                    <div id="slider-vertical-3" style="height:180px;"></div>
+                                                </div>  
+                                            	<div class="vertical-slider-wrapper">                                     
+                                                    <input type="text" id="amount15" style="width:2.5em"/>
+                                                    <div id="slider-vertical-4" style="height:180px;"></div>
+                                                </div> 
+                                            	<div class="vertical-slider-wrapper">                                     
+                                                    <input type="text" id="amount16" style="width:2.5em"/>
+                                                    <div id="slider-vertical-5" style="height:180px;"></div>
+                                                </div>                                                                                                                                              
+                                            </div>    
+                                        </div>
+                                    </div>   
+                                </div><!-- End .powerwidget -->
+                            </section> 
+
+							<div class="clear"><!-- New row --></div> 
+
+                            <section class="g_1">
+                            
+                                <!-- New widget -->
+                                
+                                <div class="powerwidget" id="widget12">
+                                    <header>
+                                    	<h2>Select to UI slider</h2>                                  
+                                    </header>
+                                    <div>
+                                        <div class="inner-spacer">
+                                            <div class="g_1_4">
+                                                <label>Select to Ui slider:</label> 
+                                            </div>
+                                            <div class="g_3_4_last">
+                                                <form action="#" id="select-to-ui-slider">
+                                                    <fieldset>
+                                                        <label for="valueA">Start Date:</label>
+                                                        <select name="valueA" id="valueA">
+                                                                <option value="01">Jan</option>
+                                                                <option value="02">Feb</option>                                            
+                                                                <option value="03" selected="selected">Mar</option>
+                                                                <option value="03">Apr</option>
+                                                                <option value="03">May</option>
+                                                                <option value="06">Jun</option>
+                                                                <option value="07">Jul</option>
+                                                                <option value="08">Aug</option>
+                                                                <option value="09">Sep</option>
+                                                                <option value="10">Oct</option>
+                                                                <option value="11">Nov</option>
+                                                                <option value="12">Dec</option>
+                                                        </select>
+                                                
+                                                        <label for="valueB">End Date:</label>
+                                                        <select name="valueB" id="valueB">
+                                                                <option value="01">Jan</option>
+                                                                <option value="02">Feb</option>                                            
+                                                                <option value="03">Mar</option>
+                                                                <option value="03">Apr</option>
+                                                                <option value="03">May</option>
+                                                                <option value="06">Jun</option>
+                                                                <option value="07">Jul</option>
+                                                                <option value="08" selected="selected">Aug</option>
+                                                                <option value="09">Sep</option>
+                                                                <option value="10">Oct</option>
+                                                                <option value="11">Nov</option>
+                                                                <option value="12">Dec</option>
+                                                        </select>
+                                                    </fieldset>
+                                                </form>
+                                            </div>
+                                        </div>                                                                                     
+                                    </div>
+                                </div><!-- End .powerwidget -->
+                            </section>
+                                                                                                                                                  
+                            <div class="clear"><!-- New row --></div>                                    
+                                                          
+                            <!-- End grid -->
+                                                   
+                       </div><!-- End #content-main-inner --> 
+                    </div><!-- End #content-main --> 
+                </div><!-- End #content-inner --> 
+                
+                <!-- CONTENT FOOTER -->
+                
+                <footer id="content-footer">
+                    <div class="left">
+						<div class="left">
+                               <a href="javascript:void(0);" class="button-icon tip-s" title="Some action">
+                                  <span class="folder-10 plix-10"></span>
+                              </a>                                                        
+                              <a href="javascript:void(0);" class="button-icon tip-s" title="Some action">
+                                  <span class="pencil-10 plix-10"></span>
+                              </a>
+                          </div><!-- End .left -->
+                          <div class="right">
+                              <a href="javascript:void(0);" class="button-icon tip-s" title="Some action">
+                                  <span class="refresh-10 plix-10"></span>
+                              </a> 
+                          </div> <!-- End .right --> 
+                    </div><!-- End .left --> 
+                    <div class="right">
+                    	<div class="left">
+                    	Copyright © 2012 <a href="http://bit.ly/ldjfWQ">CreativeMilk</a>
+                        </div><!-- End .left -->
+                        <div class="right">
+                        	<div class="theme-version">Version 1.1</div>
+                        </div><!-- End .right -->
+                    </div><!-- End .right -->                
+                </footer><!-- End #content-footer -->                 
+            </div><!-- End #content-border --> 
+        </div><!-- End #content --> 
+            
+    </div><!-- End #container -->
+    
+    <!-- scroll to top link -->
+    <div id="scrolltotop"><span></span></div> 
+    
+</body>
+</html>

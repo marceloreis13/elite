@@ -1,0 +1,53 @@
+/*
+ * ************************************************************* *
+ * Name        : eScrollbar                                      *
+ * Description : CSS for the scrollbar replacment                *
+ * Version     : Version 1                                       *
+ * Author      : CreativeMilk                                    *
+ * Author URI  : www.creativemilk.net                            *
+ * Updated     : --/--/----                                      *
+ * Copyright   : (c) 2011 CreativeMilk                           *
+ * ************************************************************* *
+ */
+ 
+.e-scrollbar{
+	height                : 12em;
+	position              : relative;
+	overflow              : hidden;
+	-webkit-border-radius : 3px;
+	-khtml-border-radius  : 3px;
+	-moz-border-radius    : 3px;
+	border-radius         : 3px;	
+}
+.e-scrollbar-inner{
+	position : absolute;
+	top      : 0;
+	left     : 0;
+	padding  : 10px 26px 10px 10px;
+}
+.e-scrollbar-handle{
+	width                              : 15px;
+	height                             : 12em;
+	position                           : absolute;
+	right                              : 0;
+	top                                : 0;
+	-webkit-border-top-right-radius    : 3px;
+	-webkit-border-bottom-right-radius : 3px;
+	-moz-border-radius-topright        : 3px;
+	-moz-border-radius-bottomright     : 3px;
+	border-top-right-radius            : 3px;
+	border-bottom-right-radius         : 3px;
+}
+.e-scrollbar-handle span{
+	width               : 100%;
+	position            : absolute;
+	top                 : 0;
+	right               : 0;
+	background-position : center center;
+	background-repeat   : no-repeat;	
+}
+
+
+
+
+

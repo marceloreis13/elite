@@ -1,0 +1,227 @@
+/*
+ * ************************************************************* *
+ * Name        : Forms                                           *
+ * Description : CSS for the forms.                              *
+ * Version     : Version 1                                       *
+ * Author      : CreativeMilk                                    *
+ * Author URI  : www.creativemilk.net                            *
+ * Updated     : --/--/----                                      *
+ * Copyright   : (c) 2011 CreativeMilk                           *
+ * ************************************************************* *
+ */
+ 
+/*
+ * ===============================================================
+ * FORMS
+ * ===============================================================
+ */
+ 
+ /*
+input[type="button"],
+input[type="checkbox"],
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="file"],
+input[type="hidden"],
+input[type="image"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="radio"],
+input[type="range"],
+input[type="reset"],
+input[type="search"],
+input[type="submit"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"] 
+*/
+input[type="button"],
+input[type="checkbox"],
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="file"],
+input[type="hidden"],
+input[type="image"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="radio"], 
+input[type="range"],
+input[type="reset"],
+input[type="search"],
+input[type="submit"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"]{
+	font-size : 13px;					
+}
+input[type="checkbox"],
+input[type="radio"]{
+	height    : 13px;
+	font-size : 24px;
+	padding   : 0;
+	float     : left;
+}
+input[type="submit"]{
+	-webkit-box-shadow : 0 0 0;
+	-moz-box-shadow    : 0 0 0;
+	box-shadow         : 0 0 0;
+}
+form input[type="submit"],
+form button[type="submit"]{
+	float  : right;
+	margin : 0;
+}
+input.datepicker{
+	float  : left;
+	width  : 9em;
+	margin : 0 5px 0 0;
+}
+.ui-datepicker-trigger{
+	float  : left;
+	margin : 6px 0 0 -27px;
+}
+.field-helper{
+	width      : 100%;
+	float      : left;
+	margin     : 5px 0 0 0;
+	font-size  : 11px;
+	font-style : italic;
+}
+.autogrow-textarea{
+	overflow : hidden!important
+}
+.resizable-textarea{
+	float : left;
+	width : 100%;
+}
+.resizable-textarea textarea{
+	-webkit-border-bottom-right-radius : 0;	
+	-webkit-border-bottom-left-radius  : 0;
+	-moz-border-radius-bottomright     : 0;
+	-moz-border-radius-bottomleft      : 0;
+	border-bottom-right-radius         : 0;
+	border-bottom-left-radius          : 0;	
+}
+.grippie{
+	border-style                       : solid;
+	border-width                       : 0 0.083em 0.083em 0.083em;
+	cursor                             : s-resize;
+	height                             : 9px;
+	overflow                           : hidden;
+	clear                              : both;    
+	background-repeat                  : no-repeat;
+	background-position                : center center;	
+	-webkit-border-bottom-right-radius : 3px;	
+	-webkit-border-bottom-left-radius  : 3px;
+	-moz-border-radius-bottomright     : 3px;
+	-moz-border-radius-bottomleft      : 3px;
+	border-bottom-right-radius         : 3px;
+	border-bottom-left-radius          : 3px;	
+}
+.inputlabel-row input{
+	float  : left;
+	margin : 3px 0 0 0;
+}
+.inputlabel-row label{
+	float  : left;
+	margin : 0 0 0 5px;
+}
+.e-textarealimiter-maximum{
+	float       : right;
+	height      : 24px;
+	line-height : 24px;
+	width       : auto;
+	padding     : 0 10px;
+	margin      : 5px 0 0 5px;
+}
+
+/* eClone. ----------- */
+
+.clone-trigger{
+	float:right;
+	margin:0;
+}
+
+/* Sliders. ----------- */
+ 
+#basic-ui-slider{
+	margin : 5px 0 0 0;
+}
+body #amount,
+body #amount1,
+body #amount2,
+body #amount10,
+body #amount11{
+	margin : 0 0 5px 5px;
+	float  : none;
+}
+#eq span{
+	height : 120px; float : left; margin : 0 30px 0 0;
+}
+#valueA,
+#valueB{
+	width  : 60px;
+	margin : 0 5px 0 0;
+} 
+.vertical-slider-wrapper{
+	float  : left;
+	margin : 0 10px 0 0;
+} 
+.vertical-slider-wrapper input{
+	float      : none;
+	margin     : 0 0 10px 0!important;
+	padding    : 0;
+	text-align : center;
+}
+.vertical-slider-wrapper > div{
+	margin : 0 0 0 10px!important;	
+}
+
+/* Multibar. ----------- */
+
+div.multibar{
+	height : 60px;
+}
+div.multibar input{
+	-webkit-border-radius           : 0;
+	-khtml-border-radius            : 0;
+	-moz-border-radius              : 0;
+	border-radius                   : 0;
+	-webkit-border-top-left-radius  : 3px;
+	-webkit-border-top-right-radius : 3px;
+	-moz-border-radius-topleft      : 3px;
+	-moz-border-radius-topright     : 3px;
+	border-top-left-radius          : 3px;
+	border-top-right-radius         : 3px;
+	clear                           : both;
+	float                           : none;
+}
+div.multibar > div{
+	height     : 30px;
+	border-top : none;
+}
+.multibar > div > a{
+	height   : 30px;
+	width    : 30px;
+	float    : left;
+	position : relative;
+}
+
+
+
+
+
+
+

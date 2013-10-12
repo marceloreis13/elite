@@ -1,0 +1,394 @@
+/*
+ * ************************************************************* *
+ * Name        : List & Blocks                                   *
+ * Description : CSS for the lists & blocks styles.              *
+ * Version     : Version 1                                       *
+ * Author      : CreativeMilk                                    *
+ * Author URI  : www.creativemilk.net                            *
+ * Updated     : --/--/----                                      *
+ * Copyright   : (c) 2011 CreativeMilk                           *
+ * ************************************************************* *
+ */
+ 
+/* Basic list ----------- */
+
+.basic-list{
+	list-style : none;
+	overflow   : auto;
+	margin     : 0 0 -5px 0;
+}
+.basic-list li{
+	height      : 30px;
+	padding     : 0 10px 0 35px;
+	margin      : 0 0 5px 0;
+	position    : relative;
+	line-height : 30px;
+}
+.basic-list li img{
+	width    : 16px;
+	height   : 16px;
+	position : absolute;
+	left     : 10px;
+	top      : 50%;
+	margin   : -8px 0 0 0;
+}
+.basic-list li .handle{
+	width    : 13px;
+	height   : 13px;
+	position : absolute;
+	left     : 10px;
+	top      : 50%;
+	margin   : -6px 0 0 0;
+	cursor   : move;	
+}
+
+/* Split icon block. ----------- */
+  
+.icon-text-block{
+	float  : left;
+	height : 62px;
+	width  : 200px;
+	margin : 0 5px 5px 0;
+}
+.icon-text-block a{
+	float  : left;
+	height : 62px;
+	width  : 200px;
+}
+.icon-text-block div{
+	height   : 62px;
+	width    : 120px;
+	float    : left;
+	position : relative;
+	margin   : 0 0 0 10px;
+}
+.icon-text-block div:first-child{
+	height   : 62px;
+	width    : 64px;
+	float    : left;
+	position : relative;
+	margin   : 0;
+}
+.icon-text-block div:first-child span{
+	height   : 32px;
+	width    : 32px;
+	position : absolute;
+	left     : 50%;
+	top      : 50%;
+	margin   : -16px 0 0 -16px;
+}
+.icon-text-block a h3{
+	width     : 100%;
+	float     : left;
+	font-size : 14px;
+	margin    : 10px 0 0 0;
+}
+.icon-text-block a span{
+	width     : 100%;
+	float     : left;
+	font-size : 11px;
+}
+
+/* Info block ----------- */
+
+.info-block{
+	height                : 80px;
+	width                 : 80px;
+	float                 : left;
+	margin                : 0 5px 5px 0;
+	position              : relative;
+	-moz-border-radius    : 3px;
+	-webkit-border-radius : 3px;
+	border-radius         : 3px;	
+}
+.info-block a{
+	height : 100%;
+	width  : 100%;
+	float  : left;
+}
+.info-block span{
+	width       : 100%;
+	height      : 34px;
+	float       : left;
+	line-height : 30px;
+	text-align  : center;
+	font-size   : 11px;
+}
+.info-block span:first-child{
+	width       : 100%;
+	height      : 60%;
+	float       : left;
+	line-height : 50px;
+	font-size   : 26px;
+	font-weight : bold;	
+	text-align  : center;
+}
+.info-bar{
+	position              : relative;
+	-moz-border-radius    : 3px;
+	-webkit-border-radius : 3px;
+	border-radius         : 3px;
+	overflow              : auto;
+	padding               : 5px 0 0 5px;	
+}
+
+/* Icon blocks ----------- */
+  
+.icon-block{
+	float                 : left;
+	height                : 80px;
+	width                 : 80px;
+	margin                : 0 5px 5px 0;
+	position              : relative;
+	-moz-border-radius    : 3px;
+	-webkit-border-radius : 3px;
+	border-radius         : 3px;	
+}
+.icon-block .indicator{
+	height                : 20px;
+	width                 : 20px;
+	line-height           : 20px;
+	text-align            : center;
+	font-size             : 10px;
+	padding               : 0;
+	position              : absolute;
+	top                   : 5px;
+	right                 : 5px;
+	font-size             : 10px;
+	-moz-border-radius    : 3px;
+	-webkit-border-radius : 3px;
+	border-radius         : 3px;
+	z-index               : 100;
+}
+.icon-block a{
+	float  : left;
+	height : 100%;
+	width  : 100%;
+}
+.icon-block a span{
+	width      : 100%;
+	text-align : center;
+	position   : absolute;
+	left       : 0;
+	bottom     : 5px;
+	margin     : -6px 0 0 0;
+	font-size  : 11px;
+}
+.icon-block a .plix-32{
+	width    : 32px;
+	height   : 32px;
+	position : absolute;
+	left     : 50%;
+	top      : 50%;
+	margin   : -26px 0 0 -16px;
+}
+
+/* Info list ----------- */
+
+.info-list{
+	list-style : none;
+}
+.info-list li{
+	height      : 50px;
+	position    : relative;
+	line-height : 50px;
+}
+.info-list li:first-child{
+	font-weight : bold;
+	border-top  : none
+}
+.info-list .total{
+	width       : 60px;
+	float       : left;
+	font-weight : bold;
+	text-align  : center;
+}
+.info-list .desc{
+	float  : left;
+	margin : 0 0 0 10px;
+}
+.info-list .sum{
+	width      : 80px;
+	float      : right;
+	text-align : center;
+}
+
+/* Stats list ----------- */
+
+.stats-list{
+	list-style : none;
+	margin     : 0 0 -5px 0;
+}
+.stats-list li{
+	height : 30px;
+	margin : 0 0 5px 0;
+}
+.stats-list div{
+	width    : 50px;
+	height   : 20px;
+	float    : left;
+	margin   : 5px 0 0 0;
+	position : relative;
+}
+.stats-list li > div{
+	height : 20px;
+}
+.stats-list a{
+	display : block;
+	height  : 30px;
+}
+.stats-list h3{
+	height      : 30px;
+	float       : left;
+	line-height : 30px;
+	margin      : 0 0 0 10px;
+	font-size   : 12px;
+}
+.stats-list a > span{
+	width       : 60px;
+	height      : 20px;
+	float       : right;
+	line-height : 20px;
+	margin      : 5px 0 0 0;
+	padding     : 0 10px;
+	text-align  : right;
+	font-weight : bold;
+}
+
+/* User list. ----------- */
+
+.user-list{
+	list-style : none;	
+}
+.user-list > li{
+	width    : 100%;
+	float    : left;
+	position : relative;
+	padding  : 10px 0 10px 0;	
+}
+.user-list > li:first-child{
+	border-top : none;
+}
+.user-list .thumb{
+	width  : 62px;
+	height : 62px;
+	float  : left;
+	margin : 0 0 0 10px;
+}
+.user-list .thumb img{
+	width  : 100%;
+	height : 100%;
+	float  : left;
+}
+.user-list ul{
+	width        : auto;
+	list-style   : none;
+	padding-left : 84px;
+}
+.user-list ul li{
+	width      : 100%;
+	float      : left;
+}
+.user-list h3{
+	width       : auto;
+	float       : left;
+	font-size   : 14px;
+	line-height : 14px;
+	margin      : 0 0 7px 0;
+	font-style  : normal;
+}
+.user-list .ctrls .button-icon{
+	margin : 0 5px 5px 0;
+}
+.user-list .ctrls{
+    width    : 70px;
+	position : absolute;
+	right    : 5px;
+	top      : 10px;
+}
+
+/* Split tags. ----------- */
+
+.split-tag{
+	height                : 24px;
+	width                 : auto;
+	float                 : left;
+	margin                : 0 5px 5px 0;
+	padding               : 0;
+	position              : relative;
+	line-height           : 24px;
+	-moz-border-radius    : 3px;
+	-webkit-border-radius : 3px;
+	border-radius         : 3px;
+}
+.split-tag a{
+	height  : 24px;
+	width   : auto;
+	float   : left;
+	padding : 0 10px;
+}
+.split-tag > div{
+	height   : 24px;
+	width    : 23px;
+	float    : left;
+	position : relative;
+}
+.split-tag input{
+	position : absolute;
+	right    : 5px;
+	top      : 50%;
+	margin   : -7px 0 0 0;
+}
+.split-tag .e-checkbox{
+	height : 24px;
+	width  : 24px;
+	
+}
+.split-tag .e-checkbox .e-checkbox-img {
+	left : 5px;
+}
+
+/* Contacts. ----------- */
+
+.contact-box header{
+	height : 60px;
+	margin : 10px;
+}
+.contact-avatar{
+	width  : 58px;
+	height : 58px;
+	float  : left;
+}
+.contact-avatar img{
+	width  : 100%;
+	height : 100%;
+	float  : left;
+}
+.contact-box header h3{
+	padding     : 0 0 0 70px;
+	font-size   : 14px;
+	line-height : 14px;
+	margin      : 0 0 4px 0;
+}
+.contact-box header p{
+	padding    : 0 0 0 70px;
+	font-style : italic;
+}
+.contact-sum{
+	margin  : 0 10px 10px 10px;
+	display : none
+}
+.contact-box footer{
+	height : 28px;
+}
+.contact-box footer a{
+	height      : 28px;
+	width       : 28px;
+	float       : left;
+	line-height : 28px;
+	position    : relative;
+}
+.contact-box footer a:last-child{
+	float        : right;
+	border-right : none;
+}

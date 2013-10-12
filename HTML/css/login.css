@@ -1,0 +1,340 @@
+/*
+ * ************************************************************* *
+ * Name        : Login                                           *
+ * Description : CSS for all login pages.                        *
+ * Version     : Version 1                                       *
+ * Author      : CreativeMilk                                    *
+ * Author URI  : www.creativemilk.net                            *
+ * Updated     : --/--/----                                      *
+ * Copyright   : (c) 2011 CreativeMilk                           *
+ * ************************************************************* *
+ */
+ 
+/*
+ * ===============================================================
+ * IMPORT CSS FILES 
+ * ===============================================================
+ */
+ 
+@import url('framework.css');
+@import url('buttons-icons.css');
+@import url('forms.css');
+@import url('menu.css');
+@import url('echeckbox.css');
+@import url('econtactform.css');
+@import url('eshowpassword.css');
+@import url('thirdparty-custom.css');
+@import url('demo.css');
+
+/*
+ * ===============================================================
+ * BASIC CSS SELECTORS
+ * ===============================================================
+ */
+ 
+html{
+	font-family : Arial, Helvetica, sans-serif;
+	font-size   : 12px;
+	line-height : 20px;        
+	height      : 100%;
+	min-width   : 100%;
+}
+body{	
+	width      : 100%;
+	min-height : 100%;
+}
+
+/*
+ * ===============================================================
+ * LOGIN FORM
+ * ===============================================================
+ */
+
+#login,
+#login-combi,
+#login-sn,
+#login-clean{
+	height   : 100%;
+	width    : 460px;
+	margin   : 0 auto;
+	position : relative;
+}
+#login,
+#login-clean{
+	width : 310px;
+}
+#login-clean{
+	margin-top : 100px;
+}
+#logo{
+	width  : 100%;
+	height : 50px;
+	float  : left;
+	margin : 20px 0;
+}
+#logo h1{
+	width          : auto;
+	height         : 50px;
+	line-height    : 50px;
+	float          : left;
+	font-size      : 36px;
+	letter-spacing : -2px;
+}
+#logo .e-splitmenu{
+	float  : right;
+	margin : 10px 0 0 0;
+}
+#logo .e-splitmenu li{
+	margin : 0;
+}
+.dialog{
+	margin : 0 0 10px 0;
+}
+#login-outher{
+	width : 100%;
+	float : left;
+}
+#login-inner{
+	margin : 5px;		
+}
+#login-clean #login-inner{
+	margin : 0 15px 15px 15px;		
+}
+#login-outher header{
+	height                          : 50px;
+	padding                         : 0 0 0 10px;	
+	line-height                     : 50px;
+	-webkit-border-top-right-radius : 3px;
+	-webkit-border-top-left-radius  : 3px;		
+	-moz-border-radius-topright     : 3px;
+	-moz-border-radius-topleft      : 3px;
+	border-top-right-radius         : 3px;
+	border-top-left-radius          : 3px;		
+}
+#login-outher header h2{
+	width               : auto;
+	float               : left;
+	font-size           : 13px;
+}
+#login-clean #login-outher header{
+	padding               : 5px 0;	
+	-webkit-border-radius : 0;
+	-moz-border-radius    : 0;
+	border-radius         : 0;
+	background            : none;
+	border-top            : none;	
+}
+#login-clean #login-outher header h2{
+	width       : auto;
+	float       : left;
+	font-size   : 18px;
+	font-weight : normal;
+}
+#login-outher header .e-splitmenu{
+	float  : right;
+	margin : 10px 5px 0 0;
+}
+.e-splitmenu > li > a > img{
+	position : absolute;
+	left     : 50%;
+	top      : 50%;
+	margin   : -5px 0 0 -8px;
+}
+.e-splitmenu > li li{
+	position : relative;
+}
+.e-splitmenu > li li a img{
+	position : absolute;
+	right    : 10px;
+	top      : 50%;
+	margin   : -5px 0 0 0;
+}
+#login-content{
+	position : relative;
+}
+#login #login-content{
+	position : relative;
+	padding  : 15px 10px;
+}
+#login-combi #login-content{
+	position : relative;
+	padding  : 20px 10px 15px 10px;
+}
+#login-content-inner{
+	margin : 0 0 0 160px;
+}
+#login-outher label{
+	width       : auto;
+	float       : left;
+	font-weight : bold;
+}
+#login-outher .forgot-password{
+	float       : right;
+	height      : 30px;
+    line-height : 30px;
+}
+#login-combi #login-outher .forgot-password{
+	float           : left;
+	text-decoration : underline;
+}
+#login-outher .forgot-password:hover{
+	text-decoration : underline;
+}
+#login-outher [type="submit"]{
+	float  : right;
+	margin : 0;
+}
+.remember-box{
+	width  : auto;
+	float  : left;
+	margin : 0 5px 0 0;
+}
+.remember-box label{
+	font-weight : normal;
+}
+#login-outher h3{
+	font-size : 14px;
+	margin    : 3px 0 5px 0;
+}
+#login-outher,
+#login-inner{
+	-webkit-border-radius   : 3px;
+	-moz-border-radius      : 3px;
+	border-radius           : 3px;	
+	-webkit-background-clip : padding-box; 
+	-moz-background-clip    : padding; 
+	background-clip         : padding-box;		
+}
+
+/* Social network login. ----------- */
+
+#login-outher .etabs{
+	border : none;
+}
+#tab-menu{
+	width      : 160px;
+	float      : left;
+	margin     : 0 0 40px -161px;
+	list-style : none;
+}
+#tab-menu li{
+	width    : 100%;
+	float    : left;
+	position : relative;
+	border   : none;
+}
+#tab-menu li:first-child a{
+	border-top : none!important;
+}
+#tab-menu li a{
+	height      : 50px;
+	display     : block;
+	padding     : 0 10px 0 36px;
+	font-weight : bold;
+	line-height : 50px;
+	border-left : none;
+}
+#tab-menu li a img{
+	position : absolute;
+	left     : 10px;
+	top      : 50%;
+	margin   : -8px 0 0 0;
+}
+#tab-menu .etabs-active{
+	width : 161px;
+}
+#login-sn .etabs-content{
+	padding : 10px;
+	display : none;
+	border  : none;
+	float   : left;
+	width   : 267px;
+}
+.etabs-content p{
+	margin : 0 0 20px 0;
+}
+
+/* Combi login. ----------- */
+
+#login-combi header ul.etabs{
+	height     : 51px;
+	float      : right;
+	list-style : none;
+}
+.ie8 #login-combi header ul.etabs{
+	margin : 1px 0 0 0;
+}
+#login-combi header .etabs li{
+	float        : left;
+	height       : 50px;
+	float        : left;
+	margin       : 0;
+	border-right : none;
+	border-top   : none;
+}
+#login-combi .etabs li a{
+	height      : 50px;
+	width       : auto;
+	float       : left;
+	line-height : 50px;
+	padding     : 0 10px;
+}
+#login-combi .etabs-content{
+	display : none;
+	border  : none;
+}
+
+/* Footer. ----------- */
+
+#footer{
+	width     : 100%;
+	float     : left;
+	margin    : 5px 0 0 0;
+	font-size : 11px;
+}
+#footer a:hover{
+	text-decoration : underline;
+}
+#login #footer{
+	width      : 100%;
+	text-align : center
+}
+#login-clean #footer{
+	text-align:center
+}
+
+/* Clearfix. ----------- */
+
+.dialog:before,
+.dialog:after,
+#login-content:before,
+#login-content:after,
+#login-content-inner:before,
+#login-content-inner:after{
+	content     : "\0020";
+	display     : block;
+	height      : 0;
+	overflow    : hidden; 
+	font-size   : 0;
+	line-height : 0;
+	visibility  : hidden;
+}
+.dialog:after,
+#login-content:after,
+#login-content-inner:after{
+	clear : both; 
+}
+.dialog,
+#login-content:after,
+#login-content-inner:after{
+	zoom : 1;/*IE*/
+}
+
+/* mobile */
+@media all and (max-width : 599px){
+	
+	#e-styleswitcher{
+		display : none;
+	}
+	
+}

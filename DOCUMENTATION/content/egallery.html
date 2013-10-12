@@ -1,0 +1,213 @@
+<section>
+    <h2>eGallery</h2>
+    <p>This gallery gives you a good overview of your files, it also allows you to filter(in a easy way) items and delete them with dragg and drop.</p>
+    
+    <div class="spacer-30"></div>
+
+    <h3>How to use</h3>
+    <p>How to use HTML elements.</p>
+                 
+    <div class="spacer-10"></div>
+    
+    <pre>&lt;div class="e-gallery" id="e-gallery"&gt;
+    &lt;header&gt;
+    &lt;!-- Filters --&gt;
+    &lt;ul class="e-gallery-filter"&gt;
+        &lt;li&gt;&lt;a href="#all" class="active"&gt;All&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#2010"&gt;2010&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#2011"&gt;2011&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#2012"&gt;2012&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;                                     
+    &lt;/header&gt;
+    &lt;!-- Trash bin --&gt;
+    &lt;div class="e-gallery-trashbin"&gt;&lt;/div&gt;
+    &lt;!-- Image info --&gt;
+    &lt;ul&gt;
+    &lt;li data-gallery-filter="2011"&gt;
+        &lt;h3&gt;Gallery image 1&lt;/h3&gt;
+        &lt;div&gt;
+            &lt;img src="images/media/img1-thumb.jpg" alt="" /&gt;
+        &lt;/div&gt;
+        &lt;a href="images/media/img1.jpg" class="button-icon btn-lightbox pirobox_gall" rel="gallery" title="Some title goes here"&gt;
+            &lt;span class="magnifyglass-10 plix-10"&gt;&lt;/span&gt;
+        &lt;/a&gt;
+        &lt;a href="#" class="button-icon btn-delete"&gt;
+            &lt;span class="trashcan-10 plix-10"&gt;&lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+    ...
+    ...
+    ...
+    &lt;/ul&gt;
+&lt;/div&gt;</pre>
+
+	<div class="spacer-30"></div>
+      
+    <h3>Usage Data Atributes</h3>
+    <p>Data atrributes are used by some of our custom plugins to set/get data.</p>
+    
+    <div class="spacer-10"></div>
+                           
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">HTML5 data attributes</th>
+                <th scope="col">Class</th>
+                <th scope="col">Example</th>
+                <th scope="col">Desctription</th>
+                <th class="tbversion" scope="col">Since</th>
+            </tr>                                            
+        </thead> 
+        <tbody>
+            <tr>
+                <td>data-gallery-filter</td>
+                <td>li</td>
+                <td>2010</td>
+                <td>These are used by the filter to filter the gallery. In order to get this working you must put this value in the filter buttons href attribute(see demo how to).</td>
+                <td>1.0</td>
+            </tr>                                                                                                                                  
+        </tbody>
+    </table> 
+    
+    <div class="spacer-30"></div>
+    
+    <h3>Usage classes</h3>
+    <p>Defined classes related to a piece of code or plugin.</p> 
+    
+    <div class="spacer-10"></div>               
+                                                                                                                                  
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Available class</th>
+                <th scope="col">Element</th>
+                <th scope="col">Desctription</th>
+                <th class="tbversion" scope="col">Since</th>
+            </tr>                                            
+        </thead> 
+        <tbody>
+            <tr>
+                <td>e-gallery</td>
+                <td>div</td>
+                <td>Main gallery class.</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>e-gallery-filter</td>
+                <td>ul</td>
+                <td>Gallery filter class.</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>e-gallery-trashbin</td>
+                <td>div</td>
+                <td>Trash bin class.</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>button-icon</td>
+                <td>a</td>
+                <td>Pixel button class. More button can be found <a href="buttons.html">here</a>.</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>pirobox_gall</td>
+                <td>a</td>
+                <td>Lightbox class, this element must also have the rel attribute "gallery".</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>magnifyglass-10, trashcan-10</td>
+                <td>span</td>
+                <td>Pixel icons. More icons can be found <a href="icons.html">here</a>.</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>plix-10</td>
+                <td></td>
+                <td>Custom icon size class.</td>
+                <td>1.0</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <div class="spacer-30"></div>
+
+    <h3>Usage plugin</h3>
+    <p>How to use our custom made jQuery plugins.</p>
+    
+    <div class="spacer-10"></div>
+                                                        
+    <pre>$('#galleryidgoeshere').eGallery({
+    draggable: true,
+    clearTrash: true,
+    opacityFilter: 0.3,
+    activeClass: 'active',
+    labelButton: 'Empty',
+    labelTrash: 'Dragg to delete'	
+});</pre> 
+
+	<div class="spacer-30"></div>        
+
+    <h3>Plugin options</h3>
+    <p>Most of our custom made jQuery plugins have options/settings.</p> 
+    
+    <div class="spacer-10"></div>                  
+                              
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Plugin options</th>
+                <th scope="col">Type</th>
+                <th scope="col">Default</th>
+                <th scope="col">Desctription</th>
+                <th class="tbversion" scope="col">Since</th>
+            </tr>                                            
+        </thead> 
+        <tbody>
+            <tr>
+                <td>draggable</td>
+                <td>boolean</td>
+                <td>true</td>
+                <td>Allow a user to dragg an image to the trash bin.</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>clearTrash</td>
+                <td>boolean</td>
+                <td>true</td>
+                <td>Allow a user to empty the trash bin(all items in the trash bin can be reverted).</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>opacityFilter</td>
+                <td>number(float)</td>
+                <td>0.3</td>
+                <td>Opacity of the filtered items.</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>activeClass</td>
+                <td>string</td>
+                <td>active</td>
+                <td>Active indicator class for the filter buttons.</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>labelTrash</td>
+                <td>string</td>
+                <td>Dragg to delete</td>
+                <td>Helper text thats located in the trash bin.</td>
+                <td>1.0</td>
+            </tr>                                                                                                                                 
+       </tbody>                                           
+    </table>
+    
+    <div class="spacer-30"></div>
+     
+    <h3>Globally And Per-Call Overridable Options</h3>
+    <p>This plugin has per-call(as the example above shows) and globally overridable options. Globally options can be used to override the default options, this is best used if you want to override the plugin options by default, this will prevent any issues with the plugin, as you dont have to change any thing in the plugin core it self. 
+    <br/><br/><b>How to use: </b><mark>$.fn.pluginName.key = 'value';</mark></p> 
+    
+    <div class="spacer-30"></div>                                                     
+</section> 

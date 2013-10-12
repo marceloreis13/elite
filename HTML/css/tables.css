@@ -1,0 +1,186 @@
+/*
+ * ************************************************************* *
+ * Name        : Tables                                          *
+ * Description : CSS for tables.                                 *
+ * Version     : Version 1                                       *
+ * Author      : CreativeMilk                                    *
+ * Author URI  : www.creativemilk.net                            *
+ * Updated     : --/--/----                                      *
+ * Copyright   : (c) 2011 CreativeMilk                           *
+ * ************************************************************* *
+ */
+ 
+/* Basic table. ----------- */
+
+.table-wrapper{
+	margin : -1px;
+}
+body .basic-table{
+	width : 100%;
+}
+.basic-table th,
+.basic-table tfoot td{
+	min-height  : 40px;
+	line-height : 40px;
+	padding     : 5px 10px;
+	font-weight : bold;
+}
+.basic-table td{
+	min-height  : 30px;
+	line-height : 30px;
+	padding     : 5px 10px;
+}
+.basic-table tbody td > ul{
+	width      : 100%;
+	float      : left;
+	list-style : none;
+	margin     : 0;
+}
+.basic-table tbody td > ul li{
+	width       : 100%;
+	line-height : 20px;
+	float       : left;
+	margin      : 0;
+}
+.basic-table tbody td a:hover{
+	text-decoration : underline;
+}
+.basic-table tfoot tr td{
+	font-weight : bold;
+}
+
+/* Clean table. ----------- */
+
+body .clean-table{
+	width  : 100%;
+	margin : 0 0 -1px 0;
+}
+.clean-table thead{
+	height : 30px;
+}
+.clean-table th,
+.clean-table tfoot td{
+	min-height  : 40px;
+	line-height : 40px;
+	padding     : 5px 10px;
+	font-weight : bold;
+}
+.clean-table td{
+	min-height  : 40px;
+	line-height : 40px;
+	padding     : 5px 10px;
+}
+.clean-table tbody td > ul{
+	width      : 100%;
+	float      : left;
+	list-style : none;
+	margin     : 5px 0;
+}
+.clean-table tbody td > ul li{
+	width       : 100%;
+	line-height : 20px;
+	float       : left;
+	margin      : 0;
+}
+.clean-table tbody td a:hover{
+	text-decoration : underline;
+}
+
+/* Table examples. ----------- */
+
+.tb-checkbox{
+	width : 14px;
+}
+th .e-checkbox,
+td .e-checkbox{
+	margin : 6px 0 0 0;
+}
+table .button-icon-text,
+table .button-text-icon{
+	margin : 5px 0 0 0;
+	float  : right;
+}
+table  .button-icon{
+	margin : 5px 5px 0 0;
+}
+.basic-table .tb-thumb{
+	width : 60px;
+}
+.basic-table .thumb{
+	width  : 60px;
+	height : 38px;
+	float  : left;
+	margin : 0;
+}
+tbody .right{
+	margin:0 -5px 0 0;
+}
+.basic-table .thumb img{
+	width  : 100%;
+	height : 100%;
+	float  : left;
+}
+.basic-table .tag{
+	height      : 20px;
+	line-height : 20px
+}
+.basic-table .tb-tags a:hover{
+	text-decoration : none;
+}
+table td ul.e-splitmenu{
+	width  : auto;
+	float  : right;
+	margin : 5px 0 0 0;
+}
+table td ul.e-splitmenu > li{
+	width:6.667em;
+}
+.tb-progressbar{
+	width : 7.833em;
+}
+.basic-table .e-progressbar{
+	height                : 16px;
+	margin                : 5px 0!important;
+	-webkit-border-radius : 0;
+	-moz-border-radius    : 0;
+	border-radius         : 0;	
+}
+.basic-table .e-progressbar span{
+	height                : 16px;
+	-webkit-border-radius : 0;
+	-moz-border-radius    : 0;
+	border-radius         : 0;	
+}
+.tb-numbers{
+	width : 54px;
+}
+.tb-indicator{
+	width : 140px;
+}
+.basic-table .indicator{
+	width   : 16px;
+	height  : 16px;
+	float   : left;
+	padding : 1px;
+	margin  : 5px 0 0 3.083em!important;
+}
+.basic-table .indicator:first-child{
+	margin  : 5px 0 0 0!important;
+}
+.basic-table .indicator span{
+	width  : 16px;
+	height : 16px;
+	float  : left;
+}
+.basic-table .tb-description{
+	width : 264px;
+}
+.basic-table .tb-promocode{
+	width : 120px;
+}
+.basic-table .tb-countdown{
+	width : 264px;
+}
+th .button-text-icon{
+	font-weight : normal;
+}

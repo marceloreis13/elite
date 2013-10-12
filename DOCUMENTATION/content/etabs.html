@@ -1,0 +1,166 @@
+<section>
+    <h2>eTabs</h2>
+    <p>This is an unique tabs plugin, it allows you to save the open tab in to the localstorage, 
+    this means that it will remember the open tab(option). The second thing is that it has an responsive option, this means that if
+    there are to many tabs and to little space it will go into responsive mode, changing the layout of the tabs. 
+    For an example go to the <a href="../HTML/doc-forms.html">documentation form</a> page.</p>
+    
+    <div class="spacer-30"></div>
+                               
+    <h3>How to use</h3>
+    <p>How to use HTML elements.</p>
+    
+    <div class="spacer-10"></div>                                                            
+
+    <pre>&lt;ul class="etabs"&gt;
+    &lt;li class="etabs-active"&gt;&lt;a href="#etab1"&gt;Tab 1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#etab2"&gt;Tab 2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#etab3" data-tab-source="ajax/etab-ajax.php"&gt;AJAX loaded tab&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;  
+    &lt;div id="etab1" class="etabs-content"&gt;
+    &lt;!-- content goes here --&gt;
+    &lt;/div&gt; 
+    &lt;div id="etab2" class="etabs-content"&gt;
+    &lt;!-- content goes here --&gt;
+    &lt;/div&gt; 
+    &lt;div id="etab3" class="etabs-content"&gt;
+&lt;/div&gt;</pre>
+
+	<div class="spacer-30"></div>
+
+    <h3>Usage Data Atributes</h3>
+    <p>Data atrributes are used by some of our custom plugins to set/get data.</p>
+    
+    <div class="spacer-10"></div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">HTML5 data attributes</th>
+                <th scope="col">Element</th>
+                <th scope="col">Example</th>
+                <th scope="col">Desctription</th>
+                <th class="tbversion" scope="col">Since</th>
+            </tr>                                            
+        </thead> 
+        <tbody>
+            <tr>
+                <td>data-tab-source</td>
+                <td>a</td>
+                <td>ajax-tab.php</td>
+                <td>Allow a tab to use an AJAX loaded file.</td>
+                <td>1.0</td>
+            </tr>
+         </tbody>
+    </table> 
+    
+    <div class="spacer-30"></div>  
+
+    <h3>Usage classes</h3>
+    <p>Defined classes related to a piece of code or plugin.</p>
+    
+    <div class="spacer-10"></div>
+                                                        
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Available class</th>
+                <th scope="col">Element</th>
+                <th scope="col">Desctription</th>
+                <th class="tbversion" scope="col">Since</th>
+            </tr>                                            
+        </thead> 
+        <tbody>
+            <tr>
+                <td>etabs</td>
+                <td>ul</td>
+                <td>Main class for the tabs.</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>etabs-content</td>
+                <td>div</td>
+                <td>Main class for the tabs content.</td>
+                <td>1.0</td>
+            </tr>                                          
+            <tr>
+                <td>etabs-active</td>
+                <td>li</td>
+                <td>Tab active class.</td>
+                <td>1.0</td>
+            </tr>                                        
+        </tbody>
+    </table> 
+    
+    <div class="spacer-30"></div>                                   
+                           
+    <h3>Usage plugin</h3>
+    <p>How to use our custom made jQuery plugins.</p>  
+    
+    <div class="spacer-10"></div>                   
+                                                                                                      
+    <pre>jQuery('#parentcontainerid').eTabs({
+    selected: 3,
+    storeTab: true,
+    responsive: false,
+    onSwitch: function(){ }                                            
+});</pre>
+
+	<div class="spacer-30"></div>
+
+    <h3>Plugin options</h3>
+    <p>Most of our custom made jQuery plugins have options/settings.</p>
+    
+    <div class="spacer-10"></div>
+                                                                           
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Plugin options</th>
+                <th scope="col">Type</th>
+                <th scope="col">Default</th>
+                <th scope="col">Desctription</th>
+                <th class="tbversion" scope="col">Since</th>
+            </tr>                                            
+        </thead> 
+        <tbody>
+            <tr>
+                <td>selected</td>
+                <td>number(integer)</td>
+                <td>1</td>
+                <td>You can choose which tab should be open at start. The second tab = 2, the third tab = 3.</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>storeTab</td>
+                <td>boolean</td>
+                <td>true</td>
+                <td>You can save the selected tab to the local storage.</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>responsive</td>
+                <td>boolean</td>
+                <td>false</td>
+                <td>You can use the option responsive to display the tabs in a better way if there are to many tabs and to little space.</td>
+                <td>1.0</td>
+            </tr>                      
+            <tr>
+                <td>onSwitch</td>
+                <td>function</td>
+                <td>function(){ }</td>
+                <td>Callback function that runs after the switch of a tab.</td>
+                <td>1.0</td>
+            </tr>                                                                     
+        </tbody>                                             
+    </table>
+    
+    <div class="spacer-30"></div>
+    
+    <h3>Globally And Per-Call Overridable Options</h3>
+    <p>This plugin has per-call(as the example above shows) and globally overridable options. Globally options can be used to override the default options, this is best used if you want to override the plugin options by default, this will prevent any issues with the plugin, as you dont have to change any thing in the plugin core it self. 
+    <br/><br/><b>How to use: </b><mark>$.fn.pluginName.key = 'value';</mark></p>
+    
+    <div class="spacer-30"></div>
+                 
+</section>     

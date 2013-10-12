@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>  <html class="ie ie6 lte9 lte8 lte7 no-js"> <![endif]-->
+<!--[if IE 7]>     <html class="ie ie7 lte9 lte8 lte7 no-js"> <![endif]-->
+<!--[if IE 8]>     <html class="ie ie8 lte9 lte8 no-js">      <![endif]-->
+<!--[if IE 9]>     <html class="ie ie9 lte9 no-js">           <![endif]-->
+<!--[if gt IE 9]>  <html class="no-js">                       <![endif]-->
+<!--[if !IE]><!--> <html class="no-js">                       <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>ELITE - A Powerfull Responsive Admin Theme</title>
+       
+    <!-- // Mobile meta/files // -->
+
+	<!-- For third-generation iPad with high-resolution Retina display: -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
+    <!-- For iPhone 4with high-resolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/mobile/apple-touch-icon-114x114.png" />
+    <!-- For first-generation iPad: -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/mobile/apple-touch-icon-72x72.png" />
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <link rel="apple-touch-icon-precomposed" href="images/mobile/apple-touch-icon.png" />
+    <!-- For nokia devices: -->
+    <link rel="shortcut icon" href="images/apple-touch-icon.png" />
+    <!-- 320x460 for iPhone 3GS -->
+    <link rel="apple-touch-startup-image" media="(max-device-width: 480px) and not (-webkit-min-device-pixel-ratio: 2)" href="images/mobile/splash-320x460.png" />
+    <!-- 640x920 for retina display -->
+    <link rel="apple-touch-startup-image" media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" href="images/mobile/splash-640x920-retina.png" />
+    <!-- iPad Portrait 768x1004 -->
+    <link rel="apple-touch-startup-image" media="(min-device-width: 768px) and (orientation: portrait)" href="images/mobile/splash-768x1004.png" />
+    <!-- iPad Landscape 1024x748 -->
+    <link rel="apple-touch-startup-image" media="(min-device-width: 768px) and (orientation: landscape)" href="images/mobile/splash-1024x748.png" />
+    <!-- iPad 3 Portrait 1536x2008 -->
+    <link rel="apple-touch-startup-image" media="(min-device-width: 1536px) and (orientation: portrait)" href="images/mobile/splash-1536x2008-retina.png" />
+    <!-- iPad 3 Landscape 2048x1536 -->
+    <link rel="apple-touch-startup-image" media="(min-device-width: 2048px) and (orientation: landscape)" href="images/mobile/splash-2048x1496-retina.png" />
+    <!-- Transform to webapp: -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Fullscreen mode: -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- Viewport for older phones - http://davidbcalhoun.com/tag/handheldfriendly -->
+    <meta name="HandheldFriendly" content="true"/>   
+    <!-- Viewport - http://davidbcalhoun.com/tag/handheldfriendly -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> 
+    <!-- This file contains some fixes, splash screen and web app code --> 
+    <script src="js/mobiledevices.js"></script>
+    
+    <!-- // Internet Explore // -->
+    
+    <!-- IE9 Pinned Sites: http://msdn.microsoft.com/en-us/library/gg131029.aspx -->
+    <meta name="application-name" content="Elite Admin Skin">
+    <meta name="msapplication-tooltip" content="Cross-platform admin skin.">
+    <meta name="msapplication-starturl" content="http://themes.creativemilk.net/elite/html/index.html">
+    <!-- These custom tasks are examples, you need to edit them to show actual pages -->
+    <meta name="msapplication-task" content="name=Home;action-uri=http://themes.creativemilk.net/elite/html/index.html;icon-uri=http://themes.creativemilk.net/elite/html/images/favicons/favicon.ico">
+    <meta http-equiv="cleartype" content="on" /> 
+    
+    <!--[if lt IE 8]>
+	<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+    <![endif]-->
+            
+    <!-- // Stylesheets // -->
+
+    <!-- Framework -->
+    <link rel="stylesheet" href="css/framework.css"/>
+    <!-- Main -->
+    <link rel="stylesheet" href="css/style.css"/>
+    <!-- jQuery UI --> 
+    <link rel="stylesheet" href="css/ui/jquery.ui.base.css"/>
+    <!-- Styling -->
+    <link rel="stylesheet" href="css/theme/darkblue.css" id="themesheet"/>
+	<!--[if IE 7]>
+	<link rel="stylesheet" href="css/destroy-ie6-ie7.css"/>
+    <![endif]-->
+      
+    <!-- // Misc // -->
+    
+    <link rel="shortcut icon" href="images/favicons/favicon.ico" />
+    
+    <!-- // jQuery/UI core // -->
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>!window.jQuery && document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>
+    <script src="http://code.jquery.com/ui/1.8.22/jquery-ui.min.js"></script>
+    <script>!window.jQueryUI && document.write('<script src="js/jquery-ui-1.8.22.min.js"><\/script>')</script>
+    
+    <!-- // Thirdparty plugins // -->
+    
+    <!-- Touch helper -->  
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <!-- MouseWheel -->  
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <!-- UI Spinner -->
+	<script src="js/jquery.ui.spinner.js"></script>
+    <!-- Tooltip -->               
+    <script src="js/tipsy.js"></script>
+    <!-- Treeview -->                         
+    <script src="js/treeview.js"></script>
+    <!-- Calendar -->                         
+    <script src="js/fullcalendar.min.js"></script> 
+    <!-- selectToUISlider -->                
+    <script src="js/selectToUISlider.jQuery.js"></script> 
+    <!-- context Menu -->         
+    <script src="js/jquery.contextMenu.js"></script> 
+    <!-- File Explore -->              
+    <script src="js/elfinder.min.js"></script> 
+    <!-- AutoGrow Textarea -->                   
+    <script src="js/autogrow-textarea.js"></script> 
+    <!-- Resizable Textarea -->               
+    <script src="js/textarearesizer.min.js"></script>
+    <!-- HTML5 WYSIWYG -->  
+    <script src="wysiwyghtml5/parser_rules/advanced.js"></script>
+	<script src="wysiwyghtml5/dist/wysihtml5-0.3.0.js"></script>    
+    <!-- Lightbox -->                      
+    <script src="js/jquery.colorbox-min.js"></script>
+    <!-- DataTables -->
+    <script src="js/jquery.dataTables.min.js"></script>            
+    <!-- Masked inputs -->
+    <script src="js/jquery.maskedinput-1.3.min.js"></script> 
+    <!-- IE7 JSON FIX -->
+    <script src="js/json2.js"></script>
+    <!-- HTML5 audio player -->
+    <script src="audiojs/audiojs/audio.min.js"></script> 
+             
+    <!-- // Custom theme plugins // -->
+    
+    <!-- Stylesheet switcher --> 
+    <script src="js/e_styleswitcher.1.1.min.js"></script>                 
+    <!-- Widgets -->
+    <script src="js/powerwidgets.1.2.min.js"></script>
+    <!-- Widgets panel -->
+    <script src="js/powerwidgetspanel.1.2.min.js"></script>
+    <!-- Select styling -->
+    <script src="js/e_select.2.0.min.js"></script>    
+    <!-- Checkbox solution -->
+    <script src="js/e_checkbox.1.0.min.js"></script>
+    <!-- Radio button replacement -->
+    <script src="js/e_radio.1.0.min.js"></script>    
+    <!-- Tabs -->
+    <script src="js/e_tabs.1.1.min.js"></script>
+    <!-- File styling -->
+    <script src="js/e_file.1.0.min.js"></script>    
+    <!-- MainMenu -->
+    <script src="js/e_mainmenu.1.0.min.js"></script>
+    <!-- Menu -->
+    <script src="js/e_menu.1.1.min.js"></script>
+    <!-- Input popup box -->
+    <script src="js/e_inputexpand.1.0.min.js"></script>
+    <!-- Progressbar -->
+    <script src="js/e_progressbar.1.0.min.js"></script>
+    <!-- Scrollbar replacemt -->
+    <script src="js/e_scrollbar.1.0.min.js"></script> 
+    <!-- Onscreen keyboard -->
+    <script src="js/e_oskeyboard.1.0.min.js"></script>
+    <!-- Textarea limiter -->
+    <script src="js/e_textarealimiter.1.0.min.js"></script>
+    <!-- Contact form with validation -->
+    <script src="js/e_contactform.1.1.min.js"></script>
+    <!-- Responsive table helper -->
+    <script src="js/e_responsivetable.1.0.min.js"></script>
+    <!-- Gallery -->
+    <script src="js/e_gallery.1.0.min.js"></script>
+    <!-- Live search -->
+    <script src="js/e_livesearch.1.0.min.js"></script>
+    <!-- Notify -->
+    <script src="js/e_notify.1.0.min.js"></script>  
+    <!-- Countdown -->  
+    <script src="js/e_countdown.1.0.min.js"></script> 
+    <!-- Clone script -->
+    <script src="js/e_clone.1.0.min.js"></script> 
+    <!-- Chained inputs -->
+    <script src="js/e_chainedinputs.1.0.min.js"></script>
+    <!-- Show password -->     
+    <script src="js/e_showpassword.1.0.min.js"></script>        
+    <!-- All plugins are set here -->
+    <script src="js/plugins.js"></script>
+    <!-- Custom code -->
+    <script src="js/main.js"></script>
+    
+    <!-- // HTML5/CSS3 support // -->
+
+    <script src="js/modernizr.min.js"></script>
+                
+</head>
+<body class="layout_fluid layout_responsive"> 
+
+    <!-- this part can be removed, its just here 
+         to let you switch between styles and layout sizes -->
+    <div id="e-styleswitcher">
+        <div class="e-styleswitcher-inner">
+            <div class="e-styleswitcher-arrow"><img src="images/icons/plix-16/white/arrow-right-16.png" alt="" /></div>
+            <div class="box">
+            	<h4>Styles</h4>
+                <select id="choose-styling">
+                	<option value="strangeblue">Strange blue</option>
+                    <option value="black">Black</option>
+                    <option value="darkblue">Dark blue</option>
+                    <option value="lightgrey">Light grey</option>
+                </select>
+            </div>    
+            <div class="box">
+            	<h4>Layout sizes</h4>                
+                <select id="set-layout-size">
+                	<option value="layout_fluid">fluid</option>
+                    <option value="layout_768">768</option>
+                    <option value="layout_960">960</option>
+                    <option value="layout_1024">1024</option>
+                    <option value="layout_1200">1200</option>
+                    <option value="layout_1600">1600</option>
+                </select>
+            </div> 
+            <div class="box">
+            	<h4>Responsive</h4>                
+                <select id="set-layout-responsive">
+                	<option value="layout_responsive">yes</option>
+                    <option value="">no</option>
+                </select>
+            </div>
+            <div class="box">
+            	<h4>Get theme</h4>                
+                <select id="get-theme">
+                	<option value="">no</option>
+                    <option value="yes">yes</option>
+                </select>
+            </div>                         
+        </div>
+    </div>
+  
+	<div id="container">
+    
+        <!-- MAIN HEADER -->
+                
+        <header id="header">
+        	<div id="header-border">
+                <div id="header-inner">
+                
+                    <div class="left">
+                        <a href="index.html" id="logo">ELITE</a>
+                    </div><!-- End .left -->
+                    
+                    <div class="right">
+                        <!-- eMenu -->
+                        <nav>
+                            <ul class="e-splitmenu" id="header-menu">
+                                <li><span>Menu</span><a href="javascript:void(0);"><span class="arrow-down-10 plix-10"></span></a>
+                                
+                                     <div>
+                                        <ul>
+                                            <li><a href="index.html"><span class="stats2-10 plix-10"></span> Stats</a></li>
+                                            <li><a href="index.html"><span class="lock-10 plix-10"></span> Security</a></li>
+                                            <li><a href="index.html"><span class="download-10 plix-10"></span> Downloads</a></li>
+                                        </ul>                                      
+                                    </div>                               
+
+                                </li>
+                                <li><span>Settings</span><a href="javascript:void(0);"><span class="arrow-down-10 plix-10"></span></a>
+                                
+                                     <div>
+                                        <ul>
+                                            <li><a href="index.html"><span class="home-10 plix-10"></span> Basic Settings</a></li>
+                                            <li><a href="index.html"><span class="settings-10 plix-10"></span> Site Settings</a></li>
+                                            <li><a href="index.html"><span class="comment-10 plix-10"></span> User Settings</a></li>
+                                            <li><a href="index.html"><span class="bookmark-10 plix-10"></span> Server Settings</a></li>
+                                        </ul>                                      
+                                    </div>
+                                    
+                                </li>
+                        		<li class="e-menu-profile">
+                                    <a href="javascript:void(0);"><span class="arrow-down-10 plix-10"></span></a> 
+                                    <img src="images/avatar.jpg" alt=""/>
+                                    
+                                    <div>
+                                        <ul>
+                                            <li><a href="index.html"><span class="mail-10 plix-10"></span> Inbox</a></li>
+                                            <li><a href="index.html"><span class="upload-10 plix-10"></span> Settings</a></li>
+                                            <li><a href="index.html"><span class="info-10 plix-10"></span> Logout</a></li>
+                                        </ul>                                      
+                                    </div> 
+                                            
+                                </li>
+                            </ul>
+                        </nav>
+                    </div><!-- End .right --> 
+                    
+                </div><!-- End #header-border --> 
+            </div><!-- End #header-inner -->  
+                
+		</header><!-- End #header -->
+        
+        <!-- CONTENT -->
+                 
+        <div id="content">
+            <div id="content-border">
+            
+                <!-- CONTENT HEADER -->
+                
+                <header id="content-header">
+                    <div class="left">
+                    	<a href="javascript:void(0);" id="toggle-mainmenu" class="button-icon tip-s" title="Toggle Main Menu"><span class="arrow-up-10 plix-10"></span></a>
+                        
+                        <!-- main search form -->
+                        <form method="post" id="mainsearch">
+                            <input type="text" placeholder="Live search..." name="" autocomplete="off"/>
+                            <input type="submit" value="" />
+                        </form>
+                    </div><!-- End .left --> 
+                    <div class="right">
+                    	<!-- sidebar switch -->
+                    	<a href="javascript:void(0);" id="toggle-sidebar" class="button-icon tip-s" title="Switch Main Menu"><span class="arrow-left-10 plix-10"></span></a>
+                        
+                        <!-- breadcrumbs -->
+                        <nav id="main-breadcrumbs">
+                            <ul>
+                                <li class="bc-tab-first">
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="documentation.html">Documentation</a>
+                                </li>
+                                <li class="bc-tab-last">Tables</li>
+                            </ul>          
+                        </nav>
+                        
+                        <!-- demo dialog button -->
+                        <a href="javascript:void(0);" id="open-main-dialog" class="button-text-icon tip-w" title="Some tooltip pointing right"><span class="fullscreen-10 plix-10"></span> Dialog</a>
+                        
+                        <!-- the main page dialog -->
+                        <div id="main-page-dialog" title="Welcome to Elite" style="display:none">
+                        <img src="images/jquery-ui-logo.png" alt="" class="dummy-img-dialog"/>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet est et mauris ornare lobortis dignissim quis massa. Donec ullamcorper turpis ac lectus semper commodo. Mauris tincidunt, erat et tempor interdum, dolor metus consectetur dui, eu accumsan augue augue a erat. Fusce justo nibh, tristique vitae pretium ut, venenatis nec felis. Curabitur congue tempor ultricies. Proin quis libero dignissim neque posuere pharetra vel adipiscing massa. Sed sit amet erat ac arcu sodales aliquam. Nam tellus sapien, ornare in tincidunt vel, ultricies id quam.
+						</div>
+                        
+                        <!-- widgets controls -->
+                        <div id="widgets-controls">
+							<ul class="e-splitmenu" id="page-actions">
+                                <li><span>Actions</span><a href="javascript:void(0);"><span class="settings-10 plix-10"></span></a>
+                                
+                                     <div>
+                                        <ul>
+                                            <li><a href="index.html"><span class="pencil-10 plix-10"></span>Edit</a></li>
+                                            <li><a href="index.html"><span class="document-10 plix-10"></span>View</a></li>
+                                            <li><a href="index.html"><span class="trashcan-10 plix-10"></span> Delete</a></li>
+                                        </ul>                                      
+                                    </div>                               
+
+                                </li>
+                        	</ul>                        
+                        </div>                    
+                    </div><!-- End .right -->                
+                
+				</header><!-- End #content-header --> 
+                                
+                <div id="content-inner">
+                    
+                    <!-- SIDEBAR -->
+                    
+                    <aside>
+                    
+                    	<!-- SIDEBAR PROFILE -->
+                        
+                    	<div id="sidebar-profile">
+                            <div id="main-avatar">
+                            	<span class="indicator">38</span>
+                                <img src="images/avatar.jpg" alt=""/>
+                            </div>
+                            <div id="profile-info">
+                                <div>
+                                    <a href="javascript:void(0);"><b>Administrator</b></a>
+                                    <a href="javascript:void(0);">Profile settings</a>
+                                    <a href="javascript:void(0);">Server settings</a>
+                                    <a href="javascript:void(0);">Logout</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- MAIN MENU -->
+                        
+                        <nav id="main-menu">
+                            <ul>
+                                <li><a href="index.html"><span class="home-16 plix-16"></span> Dashboard</a></li>
+                                <li class="page-active menu-open no-mobile"><a href="documentation.html"><span class="note-16 plix-16"></span> Documentation</a>
+                                
+                                    <ul>
+                                    	<li><a href="doc-accordion.html">Accordion</a></li> 
+                                    	<li><a href="doc-breadcrumbs.html">Breadcrumbs</a></li>
+                                        <li><a href="doc-buttons.html">Buttons</a></li>
+                                        <li><a href="doc-calendar.html">Calendar</a></li>
+                                        <li><a href="doc-charts.html">Charts</a></li>
+                                        <li><a href="doc-dialogs.html">Dialogs</a></li>
+                                        <li><a href="doc-editors.html">Editors</a></li>
+                                        <li><a href="doc-fileexplore.html">File Explore</a></li>
+                                        <li><a href="doc-forms.html">Forms</a></li>
+                                        <li><a href="doc-grid.html">Grid</a></li>
+                                        <li><a href="doc-icons.html">Icons</a></li>
+                                        <li><a href="doc-listsblocks.html">Lists &amp; Blocks</a></li>
+                                        <li><a href="doc-media.html">Media</a></li>
+                                        <li><a href="doc-menus.html">Menus</a></li>
+                                        <li><a href="doc-misc.html">Misc</a></li>
+                                        <li><a href="doc-search.html">Search</a></li>
+                                        <li class="page-active"><a href="doc-tables.html">Tables</a></li>
+                                        <li><a href="doc-tabs.html">Tabs</a></li>
+                                        <li><a href="doc-toolbars.html">Toolbars</a></li> 
+                                        <li><a href="doc-widgets.html">Widgets</a></li>
+                                        <li><a href="doc-wizard.html">Wizard</a></li>                                          
+                                    </ul 
+                                                                   
+                                ></li>
+                                <li><a href="calendar.html"><span class="calendar-16 plix-16"></span>Calendar<span class="color-indicator">28</span></a></li>
+                                <li><a href="javascript:void(0);"><span class="postcard-16 plix-16"></span> Form Elements <span class="button-icon"><span class="plus-10 plix-10"></span></span></a>
+
+                                    <ul>
+                                    	<li><a href="editors.html">Editors</a></li>
+                                    	<li><a href="forms.html">Forms</a></li>
+                                        <li><a href="login.html">Login form 1</a></li>
+                                        <li><a href="login-2.html">Login form 2</a></li>
+                                        <li><a href="login-3.html">Login form 3</a></li>
+                                        <li><a href="login-4.html">Login form 4</a></li>
+                                        <li><a href="search.html">Search</a></li>
+                                        <li><a href="wizard.html">Wizard</a></li>                                         
+                                    </ul>
+                                
+                                </li>
+                                <li><a href="media.html"><span class="image-16 plix-16"></span> Media</a></li>
+                                <li><a href="planning.html"><span class="pencil-16 plix-16"></span> Planning</a></li>
+                                <li><a href="maps.html"><span class="map-16 plix-16"></span> Google Maps <span class="indicator tip-w" title="Some tip goes here">tooltip</span></a></li>
+                                <li><a href="fileexplore.html"><span class="folder-16 plix-16"></span> File Explore</a></li> 
+                                <li><a href="javascript:void(0);"><span class="warning-16 plix-16"></span> Error pages<span class="button-icon"><span class="plus-10 plix-10"></span></span></a>
+
+                                    <ul>
+                                    	<li><a href="400.html">400</a></li>
+                                    	<li><a href="401.html">401</a></li>
+                                        <li><a href="403.html">403</a></li>
+                                        <li><a href="404.html">404</a></li>
+                                        <li><a href="500.html">500</a></li>
+                                        <li><a href="503.html">503</a></li>                                         
+                                    </ul>
+                                
+                                </li>                                                               
+                                <li><a href="widgets.html"><span class="rows4-16 plix-16"></span> Widgets</a></li>
+                                <li><a href="tables.html"><span class="cells-16 plix-16"></span> Tables</a></li>
+                                <li><a href="charts.html"><span class="stats2-16 plix-16"></span> Charts </a></li>
+                                <li><a href="javascript:void(0);"><span class="controls-16 plix-16"></span> Interface Elements <span class="button-icon"><span class="plus-10 plix-10"></span></span></a>
+                                
+                                    <ul>
+                                      	<li><a href="accordion.html">Accordion</a></li>                                        
+                                        <li><a href="breadcrumbs.html">Breadcrumbs</a></li>
+                                        <li><a href="buttons.html">Buttons</a></li>
+                                        <li><a href="dialogs.html">Dialogs</a></li>
+                                        <li><a href="icons.html">Icons</a></li>
+                                        <li><a href="listsblocks.html">Lists &amp; Blocks</a></li>
+                                        <li><a href="menus.html">Menus</a></li>
+                                        <li><a href="misc.html">Misc</a></li>
+                                        <li><a href="tabs.html">Tabs</a></li>
+                                        <li><a href="toolbars.html">Toolbars</a></li>
+                                    </ul>           
+                                                           
+                                </li>
+                                <li><a href="grid.html"><span class="layout3-16 plix-16"></span> Grid <span class="indicator">960</span></a></li>
+                            </ul>
+                        </nav>                      
+                    </aside>
+                    
+                    <!-- sidebar meta stats -->
+                    <div id="sidebar-meta">
+                    	<div id="sidebar-meta-inner">
+                        	<div>
+                                <p class="left">Space</p> 
+                                <p class="right">4,551 MB / 10 GB</p>
+                            </div>
+                            <div class="pbar">
+                               <span style="width:50%"></span>                            
+                            </div>
+                        	<div>
+                                <p class="left">Traffic</p> 
+                                <p class="right">8,001 MB / 10 GB</p>
+                            </div>
+                            <div class="pbar">
+                               <span style="width:81%"></span>                            
+                            </div>
+                        </div>  
+                    </div> 
+                     
+                    <!-- CONTENT -->
+                    
+					<div id="content-main">
+                        <div id="content-main-inner">
+
+                            <div class="page-header">
+                                <h2>Tables</h2>
+                                <span class="page-helper">1.0</span>
+                                <a href="tables.html" class="page-helper">Examples</a>
+                                <p>Documentation about the tables.</p>
+                            </div> 
+                                                     
+                            <!-- Start grid -->
+                                 
+                            <section class="g_1">
+                                <div class="doc-wrap" id="doc-tabs">
+
+                                    <ul class="etabs">
+                                        <li class="etabs-active"><a href="#etab1">Tables</a></li>
+                                        <li><a href="#etab2">eResponsiveTable</a></li>
+                                        <li><a href="#etab3">Third-party</a></li>
+                                    </ul>  
+                                    
+                                    <div id="etab1" class="etabs-content"> 
+                                        <div class="doc-intro">
+                                            <h3>Tables</h3>
+                                            <p>Third-party plugins are not documented here because they have there own documentation.</p>
+                                        </div> 
+                                        
+                                        <div class="section-header">
+                                            <h3>Basic</h3>
+                                            <p>Easy to use tables with the option to be responsive.</p>
+                                        </div>    
+                                                                       
+                                        <div class="spacer-15"><!-- spacer 15px --></div>
+                                        
+                                        <div class="section-header">
+                                            <h3>How to use</h3>
+                                            <p>How to use HTML elements.</p>
+                                        </div>
+                                        
+                                        <div class="demo-code">
+                                            <b>Markup</b>
+                                            <span class="toggle-min"></span>
+                                            <pre class="htmlCode">&lt;div class="table-wrapper"&gt;
+    &lt;table class="basic-table"&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th scope="col"&gt;First Name&lt;/th&gt;
+                &lt;th scope="col"&gt;Last Name&lt;/th&gt;
+                &lt;th scope="col"&gt;Company&lt;/th&gt;
+                &lt;th scope="col"&gt;Phone&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;                                                    
+            &lt;tr&gt;
+                &lt;td&gt;Xander&lt;/td&gt;
+                &lt;td&gt;Raganhar&lt;/td&gt;
+                &lt;td&gt;Apple&lt;/td&gt;
+                &lt;td&gt;+011 - 430 -990 - 56&lt;/td&gt;
+            &lt;/tr&gt;
+            ...
+            ...
+            ...                                      
+        &lt;/tbody&gt;
+        &lt;tfoot&gt;
+            &lt;tr&gt;
+                &lt;td&gt;First Name&lt;/td&gt;
+                &lt;td&gt;Last Name&lt;/td&gt;
+                &lt;td&gt;Company&lt;/td&gt;
+                &lt;td&gt;Phone&lt;/td&gt;                                                   
+            &lt;/tr&gt;
+        &lt;/tfoot&gt;
+    &lt;/table&gt;
+&lt;/div&gt;</pre>
+                                        </div>  
+
+                                        <div class="section-header">
+                                            <h3>Clean table</h3>
+                                            <p>Clean table with less styling.</p>
+                                        </div>    
+                                                                       
+                                        <div class="spacer-15"><!-- spacer 15px --></div>
+                                        
+                                        <div class="section-header">
+                                            <h3>How to use</h3>
+                                            <p>How to use HTML elements.</p>
+                                        </div>
+                                        
+                                        <div class="demo-code">
+                                            <b>Markup</b>
+                                            <span class="toggle-min"></span>
+                                            <pre class="htmlCode">&lt;table class="clean-table" id="clean-table"&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th scope="col"&gt;First name&lt;/th&gt;
+            &lt;th scope="col"&gt;Last name&lt;/th&gt;
+            &lt;th scope="col"&gt;Dob&lt;/th&gt;
+            &lt;th scope="col"&gt;Gender&lt;/th&gt;
+            &lt;th scope="col"&gt;Email&lt;/th&gt;
+            &lt;th scope="col"&gt;&lt;a href="javascript:void(0);" class="button-text-icon" id="open-add-user"&gt;Add &lt;span class="plus-10 plix-10"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/th&gt; 
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;        
+        &lt;tr&gt;
+            &lt;td&gt;Hugh&lt;/td&gt;
+            &lt;td&gt;Garett&lt;/td&gt;
+            &lt;td&gt;12/03/1990&lt;/td&gt;
+            &lt;td&gt;Male&lt;/td&gt;
+            &lt;td&gt;unkown@someserver.com&lt;/td&gt;
+            &lt;td&gt;
+                &lt;div class="right"&gt;
+                    &lt;a href="javascript:void(0);" class="button-icon tip-s" title="Edit user"&gt;&lt;span class="pencil-10 plix-10"&gt;&lt;/span&gt;&lt;/a&gt;
+                    &lt;a href="javascript:void(0);" class="button-icon tip-s" title="Delete user"&gt;&lt;span class="trashcan-10 plix-10"&gt;&lt;/span&gt;&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        ...
+        ...
+        ...
+     &lt;/tbody&gt;   
+     &lt;tfoot&gt;
+        &lt;tr&gt;
+            &lt;td colspan="6"&gt;
+                &lt;div class="left"&gt;02/11/2012&lt;/div&gt;
+                &lt;div class="right"&gt;5 users in the database&lt;/div&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+     &lt;/tfoot&gt;
+&lt;/table&gt;</pre>
+                                        </div>                                        
+
+                                        <div class="section-header">
+                                            <h3>Table example 1</h3>
+                                            <p>Table example with lighbox and the custom emenu plugin.</p>
+                                        </div>    
+                                                                       
+                                        <div class="spacer-15"><!-- spacer 15px --></div>
+                                        
+                                        <div class="section-header">
+                                            <h3>How to use</h3>
+                                            <p>How to use HTML elements.</p>
+                                        </div>
+                                        
+                                        <div class="demo-code">
+                                            <b>Markup</b>
+                                            <span class="toggle-min"></span>
+                                            <pre class="htmlCode">&lt;div class="table-wrapper"&gt; 
+    &lt;form class="e-checkbox-section" id="table-example1"&gt;
+        &lt;table class="basic-table" id="tableexample1"&gt;
+            &lt;thead&gt;
+                &lt;tr&gt;
+                    &lt;th scope="col" class="tb-checkbox"&gt;&lt;input type="checkbox" name="" class="e-checkbox-trigger"/&gt;&lt;/th&gt;
+                    &lt;th scope="col" class="tb-thumb"&gt;Thumb&lt;/th&gt;
+                    &lt;th scope="col"&gt;Title&lt;/th&gt;
+                    &lt;th scope="col"&gt;Details&lt;/th&gt;
+                    &lt;th scope="col"&gt;Tags&lt;/th&gt;
+                    &lt;th scope="col"&gt;&lt;a href="javascript:void(0);" class="button-text-icon open-add-image"&gt;Add &lt;span class="plus-10 plix-10"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/th&gt; 
+                &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;                
+                &lt;tr&gt;
+                    &lt;td&gt;&lt;input type="checkbox" name=""/&gt;&lt;/td&gt;
+                    &lt;td&gt;
+                        &lt;a href="images/media/img1.jpg" class="button-icon thumb pirobox_gall" media="gallery" title="Some title"&gt;
+                            &lt;img src="images/media/img1-thumb.jpg" alt=""/&gt;
+                        &lt;/a&gt;
+                    &lt;/td&gt;
+                    &lt;td&gt;
+                        &lt;ul&gt;
+                            &lt;li&gt;
+                                &lt;a href="javascript:void(0);"&gt;
+                                    &lt;b&gt;Sed fermentum suscipit&lt;/b&gt;
+                                &lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li&gt;
+                                &lt;small&gt;images/media/2010/sed-fermentum-suscipit.jpg&lt;/small&gt;
+                            &lt;/li&gt;                                                                   
+                        &lt;/ul&gt;
+                    &lt;/td&gt;
+                    &lt;td&gt;
+                        &lt;ul&gt;
+                            &lt;li&gt;
+                                800 x 800
+                            &lt;/li&gt;
+                            &lt;li&gt;
+                                98,2 kb
+                            &lt;/li&gt;                                                                   
+                        &lt;/ul&gt;
+                    &lt;/td&gt;
+                    &lt;td&gt;
+                        &lt;a href="javascript:void(0);" class="tag green"&gt;Project&lt;/a&gt;
+                        &lt;a href="javascript:void(0);" class="tag blue"&gt;Creative&lt;/a&gt;
+                        &lt;a href="javascript:void(0);" class="tag purple"&gt;Colors&lt;/a&gt;                                                              
+                    &lt;/td&gt; 
+                    &lt;td&gt;
+                        &lt;ul class="e-splitmenu table-splitmenu"&gt;
+                            &lt;li&gt;&lt;span&gt;Actions&lt;/span&gt;&lt;a href="javascript:void(0);"&gt;&lt;span class="arrow-down-10 plix-10"&gt;&lt;/span&gt;&lt;/a&gt;
+                            
+                                 &lt;div&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;&lt;a href="javascript:void(0);"&gt;&lt;span class="magnifyglass2-10 plix-10"&gt;&lt;/span&gt; View image&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="javascript:void(0);"&gt;&lt;span class="pencil-10 plix-10"&gt;&lt;/span&gt; Edit image&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="javascript:void(0);"&gt;&lt;span class="trashcan-10 plix-10"&gt;&lt;/span&gt; Delete image&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;                                      
+                                &lt;/div&gt;                               
+    
+                            &lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+                ...
+                ...
+                ...
+            &lt;/tbody&gt;
+            &lt;tfoot&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;&lt;input type="checkbox" name="" class="e-checkbox-trigger"/&gt;&lt;/td&gt;
+                    &lt;td&gt;Thumb&lt;/td&gt;
+                    &lt;td&gt;Title&lt;/td&gt;
+                    &lt;td&gt;Details&lt;/td&gt;
+                    &lt;td&gt;Tags&lt;/td&gt; 
+                    &lt;td&gt;&lt;a href="javascript:void(0);" class="button-text-icon open-add-image"&gt;Add &lt;span class="plus-10 plix-10"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/tfoot&gt;
+        &lt;/table&gt;
+    &lt;/form&gt;
+    &lt;/div&gt;</pre>
+                                        </div> 
+
+                                        <div class="section-header">
+                                            <h3>Table example 2</h3>
+                                            <p>Table example with the custom made progressbar plugin.</p>
+                                        </div>    
+                                                                       
+                                        <div class="spacer-15"><!-- spacer 15px --></div>
+                                        
+                                        <div class="section-header">
+                                            <h3>How to use</h3>
+                                            <p>How to use HTML elements.</p>
+                                        </div>
+                                        
+                                        <div class="demo-code">
+                                            <b>Markup</b>
+                                            <span class="toggle-min"></span>
+                                            <pre class="htmlCode">&lt;div class="table-wrapper"&gt;  
+&lt;table class="basic-table" id="tableexample2"&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th scope="col"&gt;Client&lt;/th&gt;
+            &lt;th scope="col"&gt;Project&lt;/th&gt;
+            &lt;th scope="col" class="tb-numbers"&gt;Milestone&lt;/th&gt;
+            &lt;th scope="col" class="tb-numbers"&gt;Days left&lt;/th&gt;
+            &lt;th scope="col" class="tb-indicator"&gt;Quoted / Invoiced / Paid&lt;/th&gt;
+            &lt;th scope="col" class="tb-progressbar"&gt;Progress&lt;/th&gt; 
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;        
+        &lt;tr&gt;
+            &lt;td&gt;Envato&lt;/td&gt;
+            &lt;td&gt;New landings page&lt;/td&gt;
+            &lt;td&gt;2.1.1&lt;/td&gt;
+            &lt;td&gt;7&lt;/td&gt;
+            &lt;td&gt;
+                &lt;span class="indicator tip-s" title="Quoted"&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;
+                &lt;span class="indicator tip-s" title="Invoiced"&gt;&lt;/span&gt;
+                &lt;span class="indicator tip-s" title="Paid"&gt;&lt;/span&gt;
+            &lt;/td&gt;
+            &lt;td&gt;
+                &lt;div class="e-progressbar" data-progressbar-value="50" data-progressbar-color="#ffffff"&gt;&lt;/div&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        ...
+        ...
+        ...
+    &lt;/tbody&gt;
+    &lt;tfoot&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Client&lt;/td&gt;
+            &lt;td&gt;Project&lt;/td&gt;
+            &lt;td&gt;Milestone&lt;/td&gt;
+            &lt;td&gt;Days left&lt;/td&gt; 
+            &lt;td&gt;Quoted / Invoiced / Paid&lt;/td&gt;
+            &lt;td&gt;Progress&lt;/td&gt;                                                    
+        &lt;/tr&gt;
+    &lt;/tfoot&gt;
+&lt;/table&gt;
+&lt;/div&gt;</pre>
+                                        </div> 
+
+                                        <div class="section-header">
+                                            <h3>Table example 3</h3>
+                                            <p>Table example with the custom made countdown plugin.</p>
+                                        </div>    
+                                                                       
+                                        <div class="spacer-15"><!-- spacer 15px --></div>
+                                        
+                                        <div class="section-header">
+                                            <h3>How to use</h3>
+                                            <p>How to use HTML elements.</p>
+                                        </div>
+                                        
+                                        <div class="demo-code">
+                                            <b>Markup</b>
+                                            <span class="toggle-min"></span>
+                                            <pre class="htmlCode">&lt;div class="table-wrapper"&gt;  
+    &lt;table class="basic-table" id="tableexample3"&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th scope="col" class="tb-promocode"&gt;Promo Code&lt;/th&gt;
+                &lt;th scope="col"&gt;Promotion&lt;/th&gt;
+                &lt;th scope="col" class="tb-description"&gt;Description&lt;/th&gt;
+                &lt;th scope="col" class="tb-countdown"&gt;Ends in&lt;/th&gt; 
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;                                                    
+            &lt;tr&gt;
+                &lt;td&gt;DF-39066-A SP01&lt;/td&gt;
+                &lt;td&gt;Envato&lt;/td&gt;
+                &lt;td&gt;Free Ebook&lt;/td&gt;
+                &lt;td&gt;
+                    &lt;div id="project-cndw-1"&gt;&lt;/div&gt;
+                &lt;/td&gt;
+            &lt;/tr&gt;
+            ...
+            ...
+            ...
+        &lt;/tbody&gt;
+        &lt;tfoot&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Promo Code&lt;/td&gt;
+                &lt;td&gt;Promotion&lt;/td&gt;
+                &lt;td&gt;Description&lt;/td&gt;
+                &lt;td&gt;Ends in&lt;/td&gt;                                                  
+            &lt;/tr&gt;
+        &lt;/tfoot&gt;
+    &lt;/table&gt;
+&lt;/div&gt;</pre>
+                                        </div>                                         
+                                            
+                                        <div class="section-header">
+                                            <h3>Usage classes</h3>
+                                            <p>Defined classes related to a piece of code or plugin.</p>
+                                        </div>
+                                                                                                                                            
+                                        <table class="doc-table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Available class</th>
+                                                    <th scope="col">Element</th>
+                                                    <th scope="col">Desctription</th>
+                                                    <th class="tbversion" scope="col">Since</th>
+                                                </tr>                                            
+                                            </thead> 
+                                            <tbody>
+                                                <tr>
+                                                    <td>table-wrapper</td>
+                                                    <td>div</td>
+                                                    <td>Basi table wrapper class. This is used as a quick fix for the basic tables fo fix a layout issue.</td>
+                                                    <td>1.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>basic-table</td>
+                                                    <td>table</td>
+                                                    <td>Main basic table class. The table must have this class to prevent issues with other plugins that are used that have there own table styling(example: jQuery ui Calendar is a table).</td>
+                                                    <td>1.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>clean-table</td>
+                                                    <td>table</td>
+                                                    <td>Main clean table class. This layout is bigger than the basic table class. The table must have this class to prevent issues with other plugins that are used that have there own table styling((example: jQuery ui Calendar is a table).</td>
+                                                    <td>1.0</td>
+                                                </tr>                                                
+                                                <tr>
+                                                    <td>e-checkbox-section, e-checkbox-trigger, e-checkbox-trigger</td>
+                                                    <td></td>
+                                                    <td>Classes for the custom made checkbox plugin. More about this plugin can be found <a href="forms.html">here</a>.</td>
+                                                    <td>1.0</td>
+                                                </tr>                                                
+                                                <tr>
+                                                    <td>tb-checkbox</td>
+                                                    <td>th</td>
+                                                    <td>Class for the a checkbox element. This column has a fixed width.</td>
+                                                    <td>1.0</td>
+                                                </tr>                                               
+                                                <tr>
+                                                    <td>tb-thumb</td>
+                                                    <td>th</td>
+                                                    <td>Class for a small image(thumbnail). This column has a fixed width.</td>
+                                                    <td>1.0</td>
+                                                </tr> 
+                                                <tr>
+                                                    <td>tag</td>
+                                                    <td>a</td>
+                                                    <td>Class for a tag</td>
+                                                    <td>1.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>green, blue, purple</td>
+                                                    <td>a</td>
+                                                    <td>Custom tag colors.</td>
+                                                    <td>1.0</td>
+                                                </tr> 
+                                                <tr>
+                                                    <td>e-splitmenu</td>
+                                                    <td>ul</td>
+                                                    <td>Class for the custom made emenu plugin(split version). More about this plugin can be found <a href="menus.html">here</a>.</td>
+                                                    <td>1.0</td>
+                                                </tr>                                                                                                                                                     
+                                                <tr>
+                                                    <td>tb-numbers</td>
+                                                    <td>th</td>
+                                                    <td>Class for numbers. This column has a fixed width.</td>
+                                                    <td>1.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>tb-indicator</td>
+                                                    <td>th</td>
+                                                    <td>Class for 3 indicator blocks. This column has a fixed width.</td>
+                                                    <td>1.0</td>
+                                                </tr>  
+                                                <tr>
+                                                    <td>indicator</td>
+                                                    <td>span</td>
+                                                    <td>Used for a small indicator block used in the parent column tb-indicator.</td>
+                                                    <td>1.0</td>
+                                                </tr> 
+                                                <tr>
+                                                    <td>tb-progressbar</td>
+                                                    <td>th</td>
+                                                    <td>Class for a progressbar. This column has a fixed width.</td>
+                                                    <td>1.0</td>
+                                                </tr>                                                 
+                                                <tr>
+                                                    <td>e-progressbar</td>
+                                                    <td>div</td>
+                                                    <td>Class for the custom made progressbar plugin. More about this plugin can be found <a href="misc.html">here</a>.</td>
+                                                    <td>1.0</td>
+                                                </tr> 
+                                                <tr>
+                                                    <td>tb-promocode</td>
+                                                    <td>th</td>
+                                                    <td>Class for a promotion code. This column has a fixed width.</td>
+                                                    <td>1.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>tb-description</td>
+                                                    <td>th</td>
+                                                    <td>Class for a description. This column has a fixed width.</td>
+                                                    <td>1.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>tb-countdown</td>
+                                                    <td>th</td>
+                                                    <td>Class for a countdown. This column has a fixed width.</td>
+                                                    <td>1.0</td>
+                                                </tr>                                                                                                                                                   
+                                                <tr>
+                                                    <td>tip-s</td>
+                                                    <td></td>
+                                                    <td>Class for the tooltip plugin. More about this plugin can be found <a href="misc.html">here</a>.</td>
+                                                    <td>1.0</td>
+                                                </tr>                                                                                                                                           
+                                                <tr>
+                                                    <td>pirobox_gall</td>
+                                                    <td></td>
+                                                    <td>Class for the lightbox plugin. More about this plugin can be found <a href="media.html">here</a>.</td>
+                                                    <td>1.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>button-icon</td>
+                                                    <td>a</td>
+                                                    <td>Pixel icons. More about the buttons can be found <a href="buttons.html">here</a>.</td>
+                                                    <td>1.0</td>
+                                                </tr> 
+                                                <tr>
+                                                    <td>button-icon-text</td>
+                                                    <td>a</td>
+                                                    <td>Button with a pixel icon and text. More about the buttons can be found <a href="buttons.html">here</a>.</td>
+                                                    <td>1.0</td>
+                                                </tr>                                                                                                   
+                                                <tr>
+                                                    <td>magnifyglass2-10, pencil-10, trashcan-10, arrow-down-10</td>
+                                                    <td>span</td>
+                                                    <td>Pixel icons. More icons can be found <a href="icons.html">here</a>.</td>
+                                                    <td>1.0</td>
+                                                </tr> 
+                                                <tr>
+                                                    <td>plix-10</td>
+                                                    <td>span</td>
+                                                    <td>Custom icon size class.</td>
+                                                    <td>1.0</td>
+                                                </tr>  
+                                            </tbody>
+                                        </table>
+                                    </div><!-- End tab -->  
+                                    
+                                    <div id="etab2" class="etabs-content">
+                                        <div class="doc-intro">
+                                            <h3>eResponsiveTable</h3>
+                                            <p>This is a simple helper plugin which basically does nothing else than adding a different class to each column. This class is used in combination with media queries to make the table responsive. This plugin is easy to use.</p>
+                                        </div> 
+                                        
+                                        <div class="section-header">
+                                            <h3>Basic</h3>
+                                            <p>Simple helper plugin.</p>
+                                        </div>
+    
+                                        <div class="spacer-15"><!-- spacer 15px --></div>
+                                                                            
+                                        <div class="section-header">
+                                            <h3>Usage plugin</h3>
+                                            <p>How to use our custom made jQuery plugins.</p>
+                                        </div>
+                                                                                                              
+                                        <div class="demo-code">
+                                            <b>Markup</b>
+                                            <span class="toggle-min"></span>
+                                            <pre class="jsCode">jQuery('#parentcontainerid').eResponsiveTable({
+	className: 'rt-'                                          
+});</pre>
+                                        </div> 
+                                        
+                                        <div class="section-header">
+                                            <h3>Plugin options</h3>
+                                            <p>Most of our custom made jQuery plugins have options/settings.</p>
+                                        </div>  
+                                                                                                  
+                                        <table class="doc-table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Plugin options</th>
+                                                    <th scope="col">Type</th>
+                                                    <th scope="col">Default</th>
+                                                    <th scope="col">Desctription</th>
+                                                    <th class="tbversion" scope="col">Since</th>
+                                                </tr>                                            
+                                            </thead> 
+                                            <tbody>
+                                                <tr>
+                                                    <td>className</td>
+                                                    <td>string</td>
+                                                    <td>rt-</td>
+                                                    <td>This is the main name of the column class. With the default class the first column will be 'rt-1', the second 'rt-2' and so on.</td>
+                                                    <td>1.0</td>
+                                                </tr>
+                                           </tbody>                                         
+                                        </table>
+                                        
+                                        <div class="section-header">
+                                            <h3>Globally And Per-Call Overridable Options</h3>
+                                            <p>This plugin has per-call(as the example above shows) and globally overridable options. Globally options can be used to override the default options, this is best used if you want to override the plugin options by default, this will prevent any issues with the plugin, as you dont have to change any thing in the plugin core it self. How to use: <mark>$.fn.pluginName.key = 'value';</mark></p>
+                                        </div>
+                                    </div><!-- End tab --> 
+                                    
+ 									<div id="etab3" class="etabs-content">
+                                        <div class="doc-intro">
+                                            <h3>Third-party plugins</h3>
+                                            <p>Third-party plugins are not documented here because they have there own documentation.</p>
+                                        </div> 
+                                        
+                                    	<div class="section-header">
+                                            <h3>DataTables</h3>
+                                            <p>Powerfull jQuery table management plugin.</p>
+                                        </div> 
+
+                                        <div class="tp-wrapper">
+                                        This is a third party plugin, for information about how to use this plugin and examples please visit 
+                                        <a href="http://datatables.net/index">this site</a>.
+                                        </div>                                                
+									</div><!-- End tab -->                                        
+                            	</div>        
+                            </section>                           
+                            
+                            <div class="clear"><!-- New row --></div> 
+
+                            <!-- End grid -->
+                                                   
+                       </div><!-- End #content-main-inner --> 
+                    </div><!-- End #content-main --> 
+                </div><!-- End #content-inner --> 
+                
+                <!-- CONTENT FOOTER -->
+                
+                <footer id="content-footer">
+                    <div class="left">
+						<div class="left">
+                               <a href="javascript:void(0);" class="button-icon tip-s" title="Some action">
+                                  <span class="folder-10 plix-10"></span>
+                              </a>                                                        
+                              <a href="javascript:void(0);" class="button-icon tip-s" title="Some action">
+                                  <span class="pencil-10 plix-10"></span>
+                              </a>
+                          </div><!-- End .left -->
+                          <div class="right">
+                              <a href="javascript:void(0);" class="button-icon tip-s" title="Some action">
+                                  <span class="refresh-10 plix-10"></span>
+                              </a> 
+                          </div> <!-- End .right --> 
+                    </div><!-- End .left --> 
+                    <div class="right">
+                    	<div class="left">
+                    	Copyright © 2012 <a href="http://bit.ly/ldjfWQ">CreativeMilk</a>
+                        </div><!-- End .left -->
+                        <div class="right">
+                        	<div class="theme-version">Version 1.1</div>
+                        </div><!-- End .right -->
+                    </div><!-- End .right -->                
+                </footer><!-- End #content-footer -->                 
+            </div><!-- End #content-border --> 
+        </div><!-- End #content --> 
+            
+    </div><!-- End #container -->
+    
+    <!-- scroll to top link -->
+    <div id="scrolltotop"><span></span></div> 
+    
+</body>
+</html>

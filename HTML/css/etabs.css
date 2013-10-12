@@ -1,0 +1,170 @@
+/*
+ * ************************************************************* *
+ * Name        : eTabs                                           *
+ * Description : CSS for the etabs.                              *
+ * Version     : Version 1                                       *
+ * Author      : CreativeMilk                                    *
+ * Author URI  : www.creativemilk.net                            *
+ * Updated     : --/--/----                                      *
+ * Copyright   : (c) 2011 CreativeMilk                           *
+ * ************************************************************* *
+ */
+
+ul.etabs{
+	list-style : none;
+}
+.etabs > li{
+	float       : left;
+	height      : 48px;
+	line-height : 48px;
+	margin      : 0 0 -1px 0;
+}
+.etabs > li a{
+	height      : 48px;
+	width       : auto;
+	float       : left;
+	line-height : 48px;
+	padding     : 0 10px;
+	position    : relative;
+}
+.etabs-content{
+	padding    : 10px;
+	display    : none;
+	border-top : none!important;
+}
+
+/* Vertical tabs. ----------- */
+
+.etabs-vertical-inner{
+	margin : 0 0 0 160px;
+}
+.etabs-vertical .etabs{
+	width  : 161px;
+	height : auto;
+	float  : left;
+	border : none;
+	margin : 0 0 0 -160px;
+}
+.etabs-vertical .etabs > li{
+	width  : 160px;
+	height : 48px;
+	float  : left;
+	margin : 0;
+}
+.etabs-vertical .etabs > li a{
+	height      : 48px;
+	width       : 140px;
+	float       : left;
+	line-height : 48px;
+}
+.etabs-vertical .etabs-content{
+	border : none!important;
+}
+
+/* Fixed tabs. ----------- */
+
+.powerwidget > div > div > .etabs{
+	border           : none;
+	background-image : none;
+}
+.powerwidget > div > div > ul.etabs li{
+	background-image : none;
+}
+.powerwidget > div > div > .etabs-content{
+	border : none;	
+}
+
+/* Fixed eTabs in e-block. ----------- */
+
+.e-block header ul.etabs{
+	height : 52px;		
+	float  : left;
+	border : none!important;
+}
+.e-block header .etabs li{
+	height        : 50px;
+	float         : left;
+	margin        : 0;
+	border-bottom : none;
+	border-left   : none;
+	border-top    : none;
+}
+.e-block header .right .etabs li{
+	height        : 50px;
+	float         : left;
+	margin        : 0;
+	border-top    : none;
+	border-right  : none;
+}
+.e-block .etabs li a{
+	height      : 50px;
+	width       : auto;
+	float       : left;
+	line-height : 50px;
+	padding     : 0 10px;
+}
+.e-block .etabs-content{
+	padding : 0;
+	border  : none;
+}
+
+/* Tabs to select. ----------- */
+
+.etabs-to-select{
+	position : relative;
+	width    : auto;
+}
+.etabs-to-select ul.etabs{
+	height     : 50px;
+	list-style : none;
+	width      : auto;
+	overflow   : hidden;
+}
+.etabs-to-select .etabs > li{
+	width       : 100%;
+	height      : 50px;
+	line-height : 50px;
+	margin      : 0;
+	border      : none;
+}
+.etabs-to-select .etabs > li a{
+	height      : 48px;
+	line-height : 48px;
+	padding     : 0 10px;
+	margin      : 0 50px;
+	float       : none;
+	display     : block;
+}
+.etabs-to-select .etabs li,
+.etabs-to-select .etabs .etabs-active{
+	border-bottom : none!important;
+}
+.etabs-arrow-left,
+.etabs-arrow-right{
+	width    : 50px;
+	height   : 50px;
+	position : absolute;
+	top      : 0;
+	cursor   : pointer;
+}
+.etabs-arrow-left span,
+.etabs-arrow-right span{
+	width     : 10px;
+	height    : 10px;
+	position  : absolute;
+	left      : 50%;
+	top       : 50%;
+	margin    : -5px 0 0 -5px;
+}
+.etabs-arrow-left{
+	left : 0;
+}
+.etabs-arrow-right{
+	right : 0;
+}
+.etabs-arrow-left span{
+	background-repeat : no-repeat;
+}
+.etabs-arrow-right span{
+	background-repeat : no-repeat;
+}

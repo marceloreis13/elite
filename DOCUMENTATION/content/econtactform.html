@@ -1,0 +1,180 @@
+<section>
+    <h2>eContactForm</h2>
+    <p>You can use this plugin for your contact forms, the plugin has a powerfull validation engine which has a lot of validation types (included a regex validation type so that you can use your own custom made validation type). You can choose between sending the form with AJAX or not.
+    </p>
+    
+    <div class="spacer-30"></div>
+         
+    <h3>How to use</h3>
+    <p>How to use HTML elements.</p>
+    
+    <div class="spacer-10"></div>
+                                                                                                                             
+    <pre>&lt;form id="formid" method="post" action="pathtofile.php"&gt;
+    &lt;input type="text" name="" data-validation-type="present" data-validation-label="There is nothing here!" data-validation-minimum="5" data-validation-maximum="100" /&gt;
+    &lt;input type="text" name="" data-validation-type="match" data-validation-match="test" data-validation-label="The value isn't correct!" /&gt;
+    &lt;input type="text" name="" data-validation-type="regex" data-validation-regex="/^[A-Za-z ]+$/" data-validation-label="Letters are only allowed!" /&gt;
+    ...
+    ...
+    ...
+    &lt;input type="submit" value="Submit" class="button-text" /&gt;
+&lt;/form&gt;</pre>
+
+	<div class="spacer-30"></div>
+                           
+    <h3>Usage Data Atributes</h3>
+    <p>Data atrributes are used by some of our custom plugins to set/get data.</p>
+    
+    <div class="spacer-10"></div>
+                            
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">HTML5 data attributes</th>
+                <th scope="col">Element</th>
+                <th scope="col">Example</th>
+                <th scope="col">Desctription</th>
+                <th class="tbversion" scope="col">Since</th>
+            </tr>                                            
+        </thead> 
+        <tbody>
+            <tr>
+                <td>data-validation-type</td>
+                <td>input</td>
+                <td>present | url | email | numbers | date | letters | regex | password | match | ip</td>
+                <td>These are the validation types: present: checks if the field has any data(min en max can be set separately), url: checks for a valid url, email: checks for a valid email, date: checks for a valid date(00-00-0000), letters: allows only letters, regex: can be used if you want to check for a custom pattern, password: checks if both password are the same, match: can be used to validate a custom word or string or such, this is the same as the regex validation type, ip: checks for a valid ip adddress(255.255.255.255).</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>data-validation-label</td>
+                <td>input</td>
+                <td></td>
+                <td>This is used for the error indication text, if the field isn't valid you can set you own custom text, if u dont use this custom label it will use a default line, which you can set in the plugin options.</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>data-validation-minimum</td>
+                <td>input</td>
+                <td></td>
+                <td>This is the minimum value that has to be present. This is used in combination with the present, letters, numbers and password validation type(s). Default is 0.</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>data-validation-maximum</td>
+                <td>input</td>
+                <td></td>
+                <td>This is the maximum value that can be present. This is used in combination with the present, letters, numbers and password validation type(s).</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>data-validation-match</td>
+                <td>input</td>
+                <td></td>
+                <td>This can be used to validate a field with a fixed value. This is used in combination with the match validation type.</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>data-validation-regex</td>
+                <td>input</td>
+                <td></td>
+                <td>This can be used to validate a field with custom regex pattern. This is used in combination with the regex validation type.</td>
+                <td>1.0</td>
+            </tr>                                            
+        </tbody>
+    </table> 
+    
+    <div class="spacer-30"></div>
+
+    <h3>Usage plugin</h3>
+    <p>How to use our custom made jQuery plugins.</p>
+    
+    <div class="spacer-10"></div>
+                                                                                      
+    <pre>$('div#formid').eContactForm({
+    labelError: 'This field is required!',
+    labelSuccess: 'Your message has been send successfully!',
+    labelFail: 'The form has not been send, please try it again!',
+    keydown: true,
+    useAjax: true 
+    before: function(){ },
+    after: function(){ }                              
+});</pre>
+
+	<div class="spacer-30"></div>
+                
+    <h3>Plugin options</h3>
+    <p>Most of our custom made jQuery plugins have options/settings.</p> 
+    
+    <div class="spacer-10"></div>                       
+                                
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Plugin options</th>
+                <th scope="col">Type</th>
+                <th scope="col">Default</th>
+                <th scope="col">Desctription</th>
+                <th class="tbversion" scope="col">Since</th>
+            </tr>                                            
+        </thead> 
+        <tbody>
+            <tr>
+                <td>labelError</td>
+                <td>string</td>
+                <td>This field is required!</td>
+                <td>Default valdidation message.</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>labelSuccess</td>
+                <td>string</td>
+                <td>Your message has been send successfully!</td>
+                <td>Default send message.</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>labelFail</td>
+                <td>string</td>
+                <td>The form has not been send, please try it again!</td>
+                <td>Default fail to send message.</td>
+                <td>1.0</td>
+            </tr>                                               
+            <tr>
+                <td>keydown</td>
+                <td>boolean</td>
+                <td>true</td>
+                <td>This will hide the error label of a field that has to be re-validated.</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>useAjax</td>
+                <td>boolean</td>
+                <td>true</td>
+                <td>Use AJAX to send your form.</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>before</td>
+                <td>function</td>
+                <td>function(){ }</td>
+                <td>Callback function that runs at start.</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>after</td>
+                <td>function</td>
+                <td>function(){ }</td>
+                <td>Callback function that runs at the end.</td>
+                <td>1.0</td>
+            </tr>                                                                                                                                            
+        </tbody>
+    </table>
+    
+    <div class="spacer-30"></div>
+    
+    <h3>Globally And Per-Call Overridable Options</h3>
+    <p>This plugin has per-call(as the example above shows) and globally overridable options. Globally options can be used to override the default options, this is best used if you want to override the plugin options by default, this will prevent any issues with the plugin, as you dont have to change any thing in the plugin core it self. 
+    <br/><br/><b>How to use: </b><mark>$.fn.pluginName.key = 'value';</mark></p> 
+    
+    <div class="spacer-30"></div>           
+</section>     

@@ -1,0 +1,159 @@
+/*
+ * ************************************************************* *
+ * Name        : eSelect                                         *
+ * Description : CSS for the select fields                       *
+ * Version     : Version 1                                       *
+ * Author      : CreativeMilk                                    *
+ * Author URI  : www.creativemilk.net                            *
+ * Updated     : --/--/----                                      *
+ * Copyright   : (c) 2011 CreativeMilk                           *
+ * ************************************************************* *
+ */
+
+/* Regular select. ----------- */
+
+.e-select{
+	position : relative;
+}
+.e-select-inner{
+	height                : 28px;
+	-webkit-border-radius : 3px;
+	-khtml-border-radius  : 3px;
+	-moz-border-radius    : 3px;
+	border-radius         : 3px;
+	z-index               : 9000;
+}
+.e-select-selected{
+	height      : 100%;
+	width       : auto;
+	float       : left;
+	line-height : 28px;
+	overflow    : hidden;
+	padding     : 0 0 0 10px;
+}
+.e-select-trigger{
+	height                             : 100%;
+	width                              : 28px;
+	float                              : right;
+	position                           : relative;
+	margin                             : 0 0 0 10px;
+	-webkit-border-top-right-radius    : 3px;	
+	-webkit-border-bottom-right-radius : 3px;	
+	-moz-border-radius-topright        : 3px;	
+	-moz-border-radius-bottomright     : 3px;	
+	border-top-right-radius            : 3px;	
+	border-bottom-right-radius         : 3px;	
+}
+.e-select:hover div.e-select-trigger{
+	border : none;
+}
+.e-select-trigger span{
+	height   : 10px;
+	width    : 10px;
+	position : absolute;
+	left     : 50%;
+	top      : 50%;
+	margin   : -5px 0 0 -5px;
+}
+.e-select-options{
+	width    : 100%;
+	position : absolute;
+	top      : 2.417em;
+	left     : 0;
+	display  : none;
+	z-index  : 9001;
+}
+.e-select-options ul{
+	-webkit-border-radius : 3px;
+	-khtml-border-radius  : 3px;
+	-moz-border-radius    : 3px;
+	border-radius         : 3px;
+}
+.e-select-options ul li{
+	height        : 30px;
+	line-height   : 30px;
+	padding       : 0 10px;
+	cursor        : default;
+}
+.e-select-options ul li:first-child{
+	-webkit-border-top-left-radius  : 3px;
+	-webkit-border-top-right-radius : 3px;
+	-moz-border-radius-topleft      : 3px;
+	-moz-border-radius-topright     : 3px;
+	border-top-left-radius          : 3px;
+	border-top-right-radius         : 3px;
+}
+.e-select-options ul li:last-child{
+	-webkit-border-bottom-right-radius : 3px;
+	-webkit-border-bottom-left-radius  : 3px;
+	-moz-border-radius-bottomright     : 3px;
+	-moz-border-radius-bottomleft      : 3px;
+	border-bottom-right-radius         : 3px;
+	border-bottom-left-radius          : 3px;
+}
+
+/* Multiple select. ----------- */
+
+.e-select-multiple{
+	height                : 120px;
+	position              : relative;
+	overflow              : hidden;
+	-webkit-border-radius : 3px;
+	-khtml-border-radius  : 3px;
+	-moz-border-radius    : 3px;
+	border-radius         : 3px;	
+	}
+.e-select-multiple-inner{
+	width    : 100%;
+	position : absolute;
+	top      : 0;
+	left     : 0;
+	padding  : 0 0 6px 0;
+}
+.e-select-multiple-inner ul{
+	padding : 0 10px 0 0;
+}
+.e-select-multiple-inner ul li{
+	height        : 30px;
+	line-height   : 30px;
+	padding       : 0 10px;
+	cursor        : default;
+	position      : relative;
+}
+.e-select-multiple-inner ul li:first-child{
+	-webkit-border-top-left-radius  : 3px;
+	-webkit-border-top-right-radius : 3px;
+	-moz-border-radius-topleft      : 3px;
+	-moz-border-radius-topright     : 3px;
+	border-top-left-radius          : 3px;
+	border-top-right-radius         : 3px;
+}
+.e-select-multiple-inner ul li:last-child{
+	-webkit-border-bottom-right-radius : 3px;
+	-webkit-border-bottom-left-radius  : 3px;
+	-moz-border-radius-bottomright     : 3px;
+	-moz-border-radius-bottomleft      : 3px;
+	border-bottom-right-radius         : 3px;
+	border-bottom-left-radius          : 3px;
+}
+.e-select-multiple-handle{
+	width                              : 15px;
+	height                             : 100%;
+	position                           : absolute;
+	right                              : 0;
+	top                                : 0;
+	-webkit-border-top-right-radius    : 3px;
+	-webkit-border-bottom-right-radius : 3px;
+	-moz-border-radius-topright        : 3px;
+	-moz-border-radius-bottomright     : 3px;
+	border-top-right-radius            : 3px;
+	border-bottom-right-radius         : 3px;
+}
+.e-select-multiple-handle span{
+	width               : 100%;
+	position            : absolute;
+	top                 : 0;
+	right               : 0;
+	background-position : center center;
+	background-repeat   : no-repeat;	
+}

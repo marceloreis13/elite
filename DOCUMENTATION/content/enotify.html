@@ -1,0 +1,448 @@
+<section>                        
+    <h2>eNotify</h2>
+    <p>eNotify is a powerfull notification plugin that allows you to show growls, notification and pre-loaders.</p>
+    
+    <div class="spacer-30"></div>
+    
+    <h3>eGrowl</h3>
+    <p>Powerfull growl notifications.</p>
+    
+    <div class="spacer-10"></div>
+
+    <pre>$.e_notify.growl({
+     title: 'Sticky growl',
+     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel arcu est. Suspendisse laoreet nisl nec magna feugiat.',
+     image: 'images/growl-1.jpg',
+     position: 'right-top',
+     delay: 0,
+     time: 2500,
+     speed: 400,
+     effect: 'fade',
+     sticky: true,
+     closable: true,
+     maxOpen:3,
+     className:'',
+     onShow: function(){},
+     onHide: function(){}
+});</pre>
+
+    <div class="spacer-30"></div>
+    
+    <h3>Plugin options</h3>
+    <p>Most of our custom made jQuery plugins have options/settings.</p>
+    
+    <div class="spacer-10"></div>
+                                                                                              
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Plugin options</th>
+                <th scope="col">Type</th>
+                <th scope="col">Required</th>
+                <th scope="col">Desctription</th>
+                <th class="tbversion" scope="col">Since</th>
+            </tr>                                            
+        </thead> 
+        <tbody>
+            <tr>
+                <td>title</td>
+                <td>string</td>
+                <td>yes*</td>
+                <td>This is the title of the growl.</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>text</td>
+                <td>string</td>
+                <td>yes*</td>
+                <td>This is the text of the growl.</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>image</td>
+                <td>string</td>
+                <td>no</td>
+                <td>This is an optional image. The size of the image is 40 x 40.</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>position</td>
+                <td>string</td>
+                <td>yes</td>
+                <td>This is the position of the growl. You can choose from 4 different positions, right-top, right-bottom, left-top, left-bottom.</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>delay</td>
+                <td>number(integer)</td>
+                <td>no</td>
+                <td>Show a growl with a delay.</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>time</td>
+                <td>number(integer)</td>
+                <td>yes**</td>
+                <td>This is the time that a growl is visible.</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>speed</td>
+                <td>number(integer)</td>
+                <td>yes</td>
+                <td>This is the speed of the of the effect.</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>effect</td>
+                <td>string</td>
+                <td>yes</td>
+                <td>The type of effect.</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>sticky</td>
+                <td>boolean</td>
+                <td>no</td>
+                <td>You can set a growl to sticky mode, this means the growl wont be removed after xxx seconds.</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>closable</td>
+                <td>boolean</td>
+                <td>yes</td>
+                <td>Allow users to remove the growl.</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>maxOpen</td>
+                <td>number(integer)</td>
+                <td>no</td>
+                <td>You can set per growl the number of open growls per placeholder(position).</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>className</td>
+                <td>string</td>
+                <td>no</td>
+                <td>You can style the growl by using a custom classname.</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>onShow</td>
+                <td>function</td>
+                <td>no</td>
+                <td>Run a function on show of a growl.</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>onHide</td>
+                <td>function</td>
+                <td>no</td>
+                <td>Run a function on hide of a growl(auto hide or manual removing).</td>
+                <td>1.0</td>
+            </tr>                                                                                            
+       </tbody> 
+       <tfoot>
+           <tr>
+                <td colspan="5">* a growl always needs a title <b>or</b> text, the rest can be removed. ** the time isn't required if you set the option 'sticky' to true.
+                </td>
+            </tr>                                            
+       </tfoot>                                                                                                                                              
+    </table>
+    
+    <div class="spacer-30"></div>
+                                 
+    <h3>eLoader</h3>
+    <p>Basic pre-loader indicator.</p>
+    
+    <div class="spacer-10"></div>
+  
+    <pre>$.e_notify.loader({
+     image: 'images/loaders/type2/light/32.gif',
+     position: 'center',
+     imageSize: '32 | 32',
+     delay: 0,
+     time: 1200,
+     speed: 100,
+     opacity: 0.5,
+     onShow: function(){},
+     onHide: function(){}
+});</pre>
+
+	<div class="spacer-30"></div>
+    
+    <h3>Plugin options</h3>
+    <p>Most of our custom made jQuery plugins have options/settings.</p>
+    
+     <div class="spacer-10"></div>
+                                      
+	<table class="table">
+        <thead>
+              <tr>
+                  <th scope="col">Plugin options</th>
+                  <th scope="col">Type</th>
+                  <th scope="col">Required</th>
+                  <th scope="col">Desctription</th>
+                  <th class="tbversion" scope="col">Since</th>
+              </tr>                                            
+          </thead> 
+          <tbody>
+              <tr>
+                  <td>image</td>
+                  <td>string</td>
+                  <td>no</td>
+                  <td>You can choose your own loader image.</td>
+                  <td>1.0</td>
+              </tr> 
+              <tr>
+                  <td>position</td>
+                  <td>string</td>
+                  <td>yes</td>
+                  <td>This is the position of the growl. You can choose from 5 different positions, right-top, right-bottom, left-top, left-bottom, center.</td>
+                  <td>1.0</td>
+              </tr> 
+              <tr>
+                  <td>imageSize</td>
+                  <td>string</td>
+                  <td>yes</td>
+                  <td>This is the dimension of the image 'height | width'.</td>
+                  <td>1.0</td>
+              </tr>                                                 
+              <tr>
+                  <td>delay</td>
+                  <td>number(integer)</td>
+                  <td>no</td>
+                  <td>Show the loader with a delay.</td>
+                  <td>1.0</td>
+              </tr> 
+              <tr>
+                  <td>time</td>
+                  <td>number(integer)</td>
+                  <td>yes</td>
+                  <td>This is the time that the loader is visible.</td>
+                  <td>1.0</td>
+              </tr>
+              <tr>
+                  <td>speed</td>
+                  <td>number(integer)</td>
+                  <td>yes</td>
+                  <td>This is the speed of the of the effect.</td>
+                  <td>1.0</td>
+              </tr> 
+              <tr>
+                  <td>opacity</td>
+                  <td>number(float)</td>
+                  <td>yes</td>
+                  <td>This is the opacity of the overlay background.</td>
+                  <td>1.0</td>
+              </tr>
+              <tr>
+                  <td>onShow</td>
+                  <td>function</td>
+                  <td>no</td>
+                  <td>Run a function on show of the loader.</td>
+                  <td>1.0</td>
+              </tr> 
+              <tr>
+                  <td>onHide</td>
+                  <td>function</td>
+                  <td>no</td>
+                  <td>Run a function on hide of the loader.</td>
+                  <td>1.0</td>
+              </tr>                                                                                            
+         </tbody>                                                                                                                                             
+	</table>
+    
+    <div class="spacer-30"></div>
+
+    <h3>eNotification</h3>
+    <p>Basic notification messages.</p>
+    
+    <div class="spacer-10"></div>
+  
+    <pre>$.e_notify.notification({
+     text: 'This notification message, has the custom class called "notification-warning".',
+     position: 'top',
+     target: '',
+     delay: 0,
+     time: 2500,
+     speed: 500,
+     effect: 'slide',
+     sticky: true,
+     closable: true,
+     className:'notification-warning',
+     onShow: function(){},
+     onHide: function(){}
+});</pre>
+
+    <div class="spacer-30"></div>
+     
+    <h3>Plugin options</h3>
+    <p>Most of our custom made jQuery plugins have options/settings.</p>
+    
+    <div class="spacer-10"></div>
+                                                                                                 
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Plugin options</th>
+                <th scope="col">Type</th>
+                <th scope="col">Required</th>
+                <th scope="col">Desctription</th>
+                <th class="tbversion" scope="col">Since</th>
+            </tr>                                            
+        </thead> 
+        <tbody>
+            <tr>
+                <td>text</td>
+                <td>string</td>
+                <td>yes</td>
+                <td>The text of the notification.</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>position</td>
+                <td>string</td>
+                <td>yes*</td>
+                <td>This is the position of the notification. You can choose from 2 different positions, top, bottom.</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>target</td>
+                <td>string</td>
+                <td>no</td>
+                <td>Instead of using a position you can use a target, this alows you to add a notification anywhere you want.</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>delay</td>
+                <td>number(integer)</td>
+                <td>no</td>
+                <td>Show the notification with a delay.</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>time</td>
+                <td>number(integer)</td>
+                <td>yes</td>
+                <td>This is the time that a notification is visible.</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>speed</td>
+                <td>number(integer)</td>
+                <td>yes</td>
+                <td>This is the speed of the of the effect.</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>effect</td>
+                <td>string</td>
+                <td>yes</td>
+                <td>This is the effect of the notification.</td>
+                <td>1.0</td>
+            </tr>
+           <tr>
+                <td>sticky</td>
+                <td>boolean</td>
+                <td>no</td>
+                <td>You can set the notification to sticky mode, this means the notification wont be removed after xxx seconds.</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>closable</td>
+                <td>boolean</td>
+                <td>yes</td>
+                <td>Allow users to remove the notification.</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>className</td>
+                <td>string</td>
+                <td>no</td>
+                <td>You can style the notification by using a custom classname. We have already made the custom classes: notification-success, notification-warning, notification-info, notification-error, notification-msg, notification-success-widget, notification-warning-widget, notification-info-widget, notification-error-widget, notification-msg-widget. Notifications do have a default class.
+</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>onShow</td>
+                <td>function</td>
+                <td>no</td>
+                <td>Run a function on show of the notification.</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>onHide</td>
+                <td>function</td>
+                <td>no</td>
+                <td>Run a function on hide of the notification.</td>
+                <td>1.0</td>
+            </tr>                                                                                                                                             
+       </tbody> 
+       <tfoot>
+            <tr>
+                <td colspan="5">
+                * you dont have to use the position option if you use a target.
+                </td>
+            </tr>                                           
+       </tfoot>                                                                                                                                              
+    </table>
+    
+    <div class="spacer-30"></div>  
+
+    <h3>eClear</h3>
+    <p>Remove all open, growls or notifications.</p>
+    
+    <div class="spacer-10"></div>
+
+    <pre>$.e_notify.clear({
+	type: 'notification',
+	beforeClear: function(){},
+	afterClear: function(){}
+});</pre>
+    
+    <div class="spacer-30"></div>
+    
+    <h3>Plugin options</h3>
+    <p>Most of our custom made jQuery plugins have options/settings.</p>
+    
+    <div class="spacer-10"></div>
+                                                                                             
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Plugin options</th>
+                <th scope="col">Type</th>
+                <th scope="col">Required</th>
+                <th scope="col">Desctription</th>
+                <th class="tbversion" scope="col">Since</th>
+            </tr>                                            
+        </thead> 
+        <tbody>
+            <tr>
+                <td>type</td>
+                <td>string</td>
+                <td>no</td>
+                <td>Choose what to delete, you can choose beteen, notification and growl.</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>beforeClear</td>
+                <td>function</td>
+                <td>no</td>
+                <td>Run a function before removing.</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>afterClear</td>
+                <td>function</td>
+                <td>no</td>
+                <td>Run a function after everything is removed.</td>
+                <td>1.0</td>
+            </tr>                                                                                            
+       </tbody>                                                                                                                                              
+    </table>                                                                              
+
+    <div class="spacer-30"></div>             
+</section>     

@@ -1,0 +1,258 @@
+/*
+ * ************************************************************* *
+ * Name        : Media                                           *
+ * Description : CSS for the media styles.                       *
+ * Version     : Version 1                                       *
+ * Author      : CreativeMilk                                    *
+ * Author URI  : www.creativemilk.net                            *
+ * Updated     : --/--/----                                      *
+ * Copyright   : (c) 2011 CreativeMilk                           *
+ * ************************************************************* *
+ */
+ 
+/*
+ * ===============================================================
+ * BASIC MEDIA
+ * ===============================================================
+ */
+
+.media-basic{
+	float      : left;
+	list-style : none;
+	margin     : 0 0 -10px 0;
+}
+.media-basic li{
+	width                : 162px;
+	height               : 110px;	
+	float                : left;
+	margin               : 0 10px 10px 0;
+	position             : relative;
+	-webkit-border-radius: 3px;
+	-moz-border-radius   : 3px;
+	border-radius        : 3px;	
+}
+.media-basic li > div{
+	width                 : 156px;
+	height                : 104px;	
+	float                 : left;
+	margin                : 3px;
+	overflow              : hidden;
+	-webkit-border-radius : 3px;
+	-moz-border-radius    : 3px;
+	border-radius         : 3px;	
+}
+.media-basic li div img{
+	width  : 100%;
+	height : 100%;
+	float  : left;	
+}
+.media-basic li > div > div{
+	width                 : 70px;
+	height                : 30px;
+	padding               : 5px 0 5px 5px;
+	position              : absolute;
+	bottom                : 3px;
+	right                 : 3px;
+	z-index               : 100;
+}
+
+/*
+ * ===============================================================
+ * EGALLERY
+ * ===============================================================
+ */
+
+.e-gallery header{
+	height      : 30px;
+	padding     : 10px 50px 10px 10px;
+	line-height : 30px;
+}
+.e-gallery-filter li{
+	float      : left;
+	list-style : none;
+	margin     : 0 5px 0 0;
+}
+.e-gallery-filter li a{
+	height      : 28px;
+	float       : left;
+	padding     : 0 10px;
+	line-height : 28px;
+}
+.e-gallery > ul{
+	float   : left;
+	margin  : 0 0 -10px 0;
+	padding : 10px;
+}
+.e-gallery > ul li{
+	width      : 152px;
+	height     : 176px;
+	float      : left;
+	margin     : 0 10px 10px 0;
+	padding    : 5px;
+	list-style : none;
+	z-index    : 2;
+}
+.e-gallery > ul li h3{
+	height      : 28px;
+	line-height : 28px;
+	text-align  : center;
+	font-size   : 12px;
+	font-weight : normal;	
+}
+.e-gallery > ul div{
+	width   : 150px;
+	height  : 8.667em;
+	float   : left;
+	display : block;
+	margin  : 5px 0;
+}
+.e-gallery > ul div img{
+	width  : 100%;
+	height : 100%;
+	float  : left;
+}
+.e-gallery .button-icon{
+	width  : 28px;
+	height : 28px;
+}
+.e-gallery .btn-lightbox{
+	float : left;
+}
+.e-gallery .btn-delete{
+	float  : right;
+	margin : 0;
+}
+.e-gallery .ui-draggable{
+	z-index : 10;
+}
+
+/* Trash. ----------- */
+
+.e-gallery-trashbin{
+	width    : 100%;
+	float    : left;
+	position : relative;
+	display  : none;
+}
+body .e-gallery-trashbin > div{
+	overflow   : auto;
+	margin     : 0;
+	z-index    : 1;
+	padding    : 10px 10px 0 10px;
+	border-top : none;
+}
+.e-gallery-trashbin > div > div{
+	width   : 100%;
+	float   : left;
+	padding : 5px 0;
+}
+.e-gallery-trashbin > div > div span{
+	height      : 26px;
+	width       : auto;
+	float       : left;
+	line-height : 26px;
+	font-size   : 11px;
+}
+.e-gallery-trashbin .emptybin{
+	height      : 24px;
+	width       : auto;
+	float       : right;
+	line-height : 24px;
+	padding     : 0 10px;
+	font-size   : 11px;
+}
+.e-gallery-trashbin > div ul{
+	width      : 100%;
+	min-height : 6.333em;
+	float      : left;
+}
+.e-gallery-trashbin > div ul li{
+	width      : 4.417em;
+	height     : 4.5em;
+	float      : left;
+	margin     : 0 10px 10px 0;
+	padding    : 5px;
+	list-style : none;
+}
+.e-gallery-trashbin > div h3,
+.e-gallery-trashbin > div .button-icon{
+	display : none!important;
+}
+.e-gallery-trashbin > div ul li div{
+	width   : 51px;
+	height  : 38px;
+	float   : left;
+	display : block;
+	margin  : 0;
+}
+.e-gallery-trashbin > div ul li div{
+	width   : 51px;
+	height  : 38px;
+	float   : left;
+	display : block;
+	margin  : 0;
+}
+.e-gallery-trashbin > div ul li div img{
+	width  : 100%;
+	height : 100%;
+	float  : left;
+}
+.e-gallery .ui-state-highlight{
+	border : none;
+}
+.e-gallery-trashbin > div .btn-undo{
+	width       : 100%;
+	height      : 20px;
+	float       : left;
+	font-size   : 10px;
+	text-align  : center;
+}
+.e-gallery-state-active{ }
+
+.e-gallery > ul li h3,
+.e-gallery > ul li,
+.e-gallery-filter li a,
+.e-gallery > ul div,
+.e-gallery-trashbin ul li,
+.e-gallery-trashbin > div > div a{
+	-webkit-border-radius : 3px;
+	-khtml-border-radius  : 3px;
+	-moz-border-radius    : 3px;
+    border-radius         : 3px;
+}
+
+/*
+ * ===============================================================
+ * MINIMAL MEDIA
+ * ===============================================================
+ */
+ 
+.media-minimal{
+	width  : 100%;
+	float  : left;
+	margin : 0 0 -10px 0;
+}
+.media-minimal > a{
+	width                 : 6em;
+	height                : 6em;
+	float                 : left;
+	margin                : 0 10px 10px 0;
+	padding               : 3px;
+	-webkit-border-radius : 3px;
+	-khtml-border-radius  : 3px;
+	-moz-border-radius    : 3px;
+    border-radius         : 3px;	
+}
+.media-minimal a img{
+	width  : 100%;
+	height : 100%;
+	float  : left;	
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,52 @@
+/*
+ * ************************************************************* *
+ * Name        : eProgressbar                                    *
+ * Description : CSS for the progressbar styles.                 *
+ * Version     : Version 1                                       *
+ * Author      : CreativeMilk                                    *
+ * Author URI  : www.creativemilk.net                            *
+ * Updated     : --/--/----                                      *
+ * Copyright   : (c) 2011 CreativeMilk                           *
+ * ************************************************************* *
+ */
+ 
+.e-progressbar{
+	height                : 26px;
+	padding               : 1px;
+	overflow              : hidden;
+	position              : relative;
+	-moz-border-radius    : 3px;
+	-webkit-border-radius : 3px;
+	border-radius         : 3px;
+	line-height           : 26px;
+}
+.e-progressbar > span{
+	height                : 26px;
+	float                 : left;
+	text-align            : right;
+	-moz-border-radius    : 3px;
+	-webkit-border-radius : 3px;
+	border-radius         : 3px;
+}
+.e-progressbar > span span{
+	float       : right;
+	margin      : 0 5px 0 0;
+	font-size   : 11px;
+	font-weight : bold;
+}
+
+/* Sizes. ----------- */
+
+.e-progressbar-small,
+.e-progressbar-small > span{
+	height      : 16px;
+	line-height : 16px;
+}
+.e-progressbar-big,
+.e-progressbar-big > span{
+	height      : 3.833em;
+	line-height : 3.833em;
+}
+.e-progressbar-big > span span{
+	font-size : 12px;
+}

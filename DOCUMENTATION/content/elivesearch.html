@@ -1,0 +1,160 @@
+<section>
+    <h2>eLiveSearch</h2>
+    <p>Powerfull AJAX search plugin, which allows you to search a database. You can use it with minimal settings or use up to 10 extra search parameters. This theme has 2 search fields, one located on every page at the left top, and one on the search page.</p>
+
+	<div class="spacer-30"></div>
+    
+    <h3>How to use</h3>
+    <p>How to use HTML elements.</p>
+                                       
+    <div class="spacer-10"></div>
+    
+    <pre>&lt;form id="searchid"&gt;
+	&lt;input type="text" autocomplete="off" placeholder="Live search..."/&gt;
+&lt;/form&gt;</pre>
+
+	<div class="spacer-30"></div>
+                                          
+    <h3>Usage plugin</h3>
+    <p>How to use our custom made jQuery plugins.</p>
+                                                                          
+    <div class="spacer-10"></div>
+    
+    <pre>$('form#searchid').eLiveSearch({
+    file: 'pathtothesearchtemplate.php',
+    target: '#search-results',
+    maxResults: 5,
+    order: 'random',
+    live: true,
+    minChar: 3,
+    liveDelay: 1000,
+    effect: 'slide',
+    speed: 400,
+    closeClass: 'close-search',
+    param1: '',
+    param2: '',
+    param3: '',
+    param4: '',
+    param5: '',
+    param6: '',
+    param7: '',
+    param8: '',
+    param9: '',
+    param10: '',
+    afterLoad: function(){ }
+});</pre>
+
+	<div class="spacer-30"></div>
+
+    <h3>Plugin options</h3>
+    <p>Most of our custom made jQuery plugins have options/settings.</p>
+    
+    <div class="spacer-10"></div>
+                                                              
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Plugin options</th>
+                <th scope="col">Type</th>
+                <th scope="col">Default</th>
+                <th scope="col">Desctription</th>
+                <th class="tbversion" scope="col">Since</th>
+            </tr>                                            
+        </thead> 
+        <tbody>
+            <tr>
+                <td>file</td>
+                <td>string</td>
+                <td></td>
+                <td>The path to the search template file. You can leave this empty and it will use the action attribute in the form it self(if present).</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>target</td>
+                <td>string</td>
+                <td></td>
+                <td>The target area where the results will be showen.</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>maxResults</td>
+                <td>number(integer)</td>
+                <td>5</td>
+                <td>The max number of returned results.</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>order</td>
+                <td>string</td>
+                <td>random</td>
+                <td>The order of the returned results. You can use 'random', 'asc' and 'desc'.</td>
+                <td>1.0</td>
+            </tr>                                                  
+            <tr>
+                <td>live</td>
+                <td>boolean</td>
+                <td>true</td>
+                <td>You can choose between live search of by using the submit button.</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>minChar</td>
+                <td>number(integer)</td>
+                <td>5</td>
+                <td>Set a minimum number of characters when to show the found results.</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>liveDelay</td>
+                <td>number(integer)</td>
+                <td>1000</td>
+                <td>This delay is to prevent the animation on every keyup. This works only if the live option is set to true.</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>effect</td>
+                <td>string</td>
+                <td>slide</td>
+                <td>Type of effect to show the results. You can choose between 'slide' and 'fade'.</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>speed</td>
+                <td>number(integer)</td>
+                <td>400</td>
+                <td>The speed of the effect.</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>closeClass</td>
+                <td>string</td>
+                <td></td>
+                <td>You can use a close class to close the found results placeholder.</td>
+                <td>1.0</td>
+            </tr> 
+            <tr>
+                <td>param1</td>
+                <td>string</td>
+                <td></td>
+                <td>You can use up to 10 extra parameters to use in your search template. This must be input(text) or elements that have a selected attribute(select, checkbox, radio). 
+                Notice that checkbox and radio buttons should be wrapped before you can use theme.</td>
+                <td>1.0</td>
+            </tr>                                                                                              
+            <tr>
+                <td>afterLoad</td>
+                <td>function</td>
+                <td>function(){}</td>
+                <td>Callback function that runs when the results has returned.</td>
+                <td>1.0</td>
+            </tr>                                                                                               
+        </tbody>                                             
+    </table>
+    
+    <div class="spacer-30"></div>
+                                                          
+    <h3>Globally And Per-Call Overridable Options</h3>
+    <p>This plugin has per-call(as the example above shows) and globally overridable options. Globally options can be used to override the default options, this is best used if you want to override the plugin options by default, this will prevent any issues with the plugin, as you dont have to change any thing in the plugin core it self. 
+    <br/><br/><b>How to use: </b><mark>$.fn.pluginName.key = 'value';</mark></p> 
+      
+    <div class="spacer-30"></div>            
+</section>     

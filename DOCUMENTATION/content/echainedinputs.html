@@ -1,0 +1,90 @@
+<section>         
+    <h2>eChainedInput</h2>
+    <p>You can chain input fields to each other by using this plugin, the inputs grouped by using the attribute 'data-chained-group', and are triggerd by the 'maxlength' attribute.</p>  
+    
+    <div class="spacer-30"></div>                  
+                    
+    <h3>How to use</h3>
+    <p>How to use HTML elements.</p>
+                                                                                                         
+    <div class="spacer-10"></div> 
+    
+    <pre>&lt;input type="text" name="" data-chained-group="field1" maxlength="6"/&gt;
+&lt;input type="text" name="" data-chained-group="field1" maxlength="16"/&gt;
+&lt;input type="text" name="" data-chained-group="field1" maxlength="2"/&gt;</pre>
+
+	<div class="spacer-30"></div>
+            
+    <h3>Usage Data Atributes</h3>
+    <p>Data atrributes are used by some of our custom plugins to set/get data.</p>
+    
+    <div class="spacer-10"></div> 
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">HTML5 data attributes</th>
+                <th scope="col">Element</th>
+                <th scope="col">Example</th>
+                <th scope="col">Desctription</th>
+                <th class="tbversion" scope="col">Since</th>
+            </tr>                                            
+        </thead> 
+        <tbody>
+            <tr>
+                <td>data-chained-group</td>
+                <td>input</td>
+                <td></td>
+                <td>This data attribut connects the input to each other. All the input which you want to group should have an unique name.</td>
+                <td>1.0</td>
+            </tr>                                           
+        </tbody>
+    </table> 
+    
+    <div class="spacer-30"></div>
+
+    <h3>Usage plugin</h3>
+    <p>How to use our custom made jQuery plugins.</p>
+    
+    <div class="spacer-10"></div> 
+                                                                                                                   
+    <pre>$('form').eChainedInput({
+	callback: function(){ }	
+});</pre>
+
+    <div class="spacer-30"></div>
+                            
+    <h3>Plugin options</h3>
+    <p>Most of our custom made jQuery plugins have options/settings.</p>
+    
+    <div class="spacer-10"></div> 
+                                                     
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Plugin options</th>
+                <th scope="col">Type</th>
+                <th scope="col">Default</th>
+                <th scope="col">Desctription</th>
+                <th class="tbversion" scope="col">Since</th>
+            </tr>                                            
+        </thead> 
+            <tr>
+                <td>callback</td>
+                <td>function</td>
+                <td>function(){}</td>
+                <td>Callback function that runs after the last input has reached it's maxlength. </td>
+                <td>1.0</td>
+            </tr>                                                                                                 
+        </tbody>                                           
+    </table>
+    
+    <div class="spacer-30"></div>
+   
+    <h3>Globally And Per-Call Overridable Options</h3>
+    <p>This plugin has per-call(as the example above shows) and globally overridable options. Globally options can be used to override the default options, this is best used if you want to override the plugin options by default, this will prevent any issues with the plugin, as you dont have to change any thing in the plugin core it self. 
+    <br/><br/><b>How to use: </b><mark>$.fn.pluginName.key = 'value';</mark></p>  
+    
+    <div class="spacer-30"></div>                        
+
+</section> 

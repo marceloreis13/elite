@@ -1,0 +1,8 @@
+.ui-spinner {height:2.333em;position: relative; margin:0 0 0 -16px; float:left}
+.ui-spinner .ui-spinner-up{border-bottom:none;}
+.ui-spinner .ui-spinner-down{border-top:none;}
+.ui-spinner .ui-spinner-button{height:50%; position:relative; width:1.333em}
+.ui-spinner .ui-icon{ position:absolute;left:50%; top:50%; margin:-8px 0 0 -8px;}
+.ui-spinner-buttons {position: absolute;height:2.333em;}
+.ui-spinner-button {overflow: hidden}
+.ui-spinner .ui-icon-triangle-1-n{ margin:-8px 0 0 -7px;}

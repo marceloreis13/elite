@@ -1,0 +1,87 @@
+/*
+ * ************************************************************* *
+ * Name        : Planning                                        *
+ * Description : CSS for the planning page                       *
+ * Version     : Version 1                                       *
+ * Author      : CreativeMilk                                    *
+ * Author URI  : www.creativemilk.net                            *
+ * Updated     : --/--/----                                      *
+ * Copyright   : (c) 2011 CreativeMilk                           *
+ * ************************************************************* *
+ */
+
+/* Appointment planner. ----------- */
+
+.appointment-planner:first-child{
+	width   : 100%;
+	display : block
+}
+.appointment-planner > header{
+	height      : 30px;
+	margin      : 0 0 10px 0;
+	padding     : 10px;
+	line-height : 30px;
+}
+.appointment-planner > header h3{
+	font-weight : normal;
+}
+.appointment-planner .ap-header-row{
+	height : 50px;
+}
+.appointment-planner .ap-time-row{
+	height : 30px;
+}
+.appointment-planner .day-block-header-empty,
+.appointment-planner .day-block-header{
+	width      : 17%;
+	float      : left;	
+	text-align : center;
+}
+.appointment-planner .day-block-header h3{
+	font-size : 14px;
+}
+.appointment-planner .day-block-header-empty > div{
+	height  : 40px;
+	padding : 5px 0;	
+	margin  : 0;
+}
+.appointment-planner .day-block-header > div{
+	height  : 40px;
+	padding : 5px 0;	
+}
+.appointment-planner .time-block > div,
+.appointment-planner .day-block > div{
+	height : 30px;
+}
+.appointment-planner .time-block > div{
+	padding : 0 0 0 10px;
+}
+.appointment-planner .time-block,
+.appointment-planner .day-block{
+	height      : 31px;
+	width       : 17%;
+	float       : left;	
+	line-height : 31px;
+}
+.appointment-planner .day-block-header-empty,
+.appointment-planner .time-block{
+	width : 15%;
+}
+.appointment-planner .day-block .e-radio{
+	left        : 50%;
+	height      : 100%;
+	margin-left : -7px;
+}
+#appointment-info > p{
+	height      : 30px;
+	line-height : 30px;
+	font-weight : bold;
+}
+#appointment-info-box{
+	height                  : 22.417em;
+	padding                 : 10px;
+	-webkit-border-radius   : 3px;
+	-khtml-border-radius    : 3px;
+	-moz-border-radius      : 3px;
+	border-radius           : 3px;	
+}

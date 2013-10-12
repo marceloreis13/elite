@@ -1,0 +1,1922 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>  <html class="ie ie6 lte9 lte8 lte7 no-js"> <![endif]-->
+<!--[if IE 7]>     <html class="ie ie7 lte9 lte8 lte7 no-js"> <![endif]-->
+<!--[if IE 8]>     <html class="ie ie8 lte9 lte8 no-js">      <![endif]-->
+<!--[if IE 9]>     <html class="ie ie9 lte9 no-js">           <![endif]-->
+<!--[if gt IE 9]>  <html class="no-js">                       <![endif]-->
+<!--[if !IE]><!--> <html class="no-js">                       <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>ELITE - A Powerfull Responsive Admin Theme</title>
+       
+    <!-- // Mobile meta/files // -->
+
+	<!-- For third-generation iPad with high-resolution Retina display: -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
+    <!-- For iPhone 4with high-resolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/mobile/apple-touch-icon-114x114.png" />
+    <!-- For first-generation iPad: -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/mobile/apple-touch-icon-72x72.png" />
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <link rel="apple-touch-icon-precomposed" href="images/mobile/apple-touch-icon.png" />
+    <!-- For nokia devices: -->
+    <link rel="shortcut icon" href="images/apple-touch-icon.png" />
+    <!-- 320x460 for iPhone 3GS -->
+    <link rel="apple-touch-startup-image" media="(max-device-width: 480px) and not (-webkit-min-device-pixel-ratio: 2)" href="images/mobile/splash-320x460.png" />
+    <!-- 640x920 for retina display -->
+    <link rel="apple-touch-startup-image" media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" href="images/mobile/splash-640x920-retina.png" />
+    <!-- iPad Portrait 768x1004 -->
+    <link rel="apple-touch-startup-image" media="(min-device-width: 768px) and (orientation: portrait)" href="images/mobile/splash-768x1004.png" />
+    <!-- iPad Landscape 1024x748 -->
+    <link rel="apple-touch-startup-image" media="(min-device-width: 768px) and (orientation: landscape)" href="images/mobile/splash-1024x748.png" />
+    <!-- iPad 3 Portrait 1536x2008 -->
+    <link rel="apple-touch-startup-image" media="(min-device-width: 1536px) and (orientation: portrait)" href="images/mobile/splash-1536x2008-retina.png" />
+    <!-- iPad 3 Landscape 2048x1536 -->
+    <link rel="apple-touch-startup-image" media="(min-device-width: 2048px) and (orientation: landscape)" href="images/mobile/splash-2048x1496-retina.png" />
+    <!-- Transform to webapp: -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Fullscreen mode: -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- Viewport for older phones - http://davidbcalhoun.com/tag/handheldfriendly -->
+    <meta name="HandheldFriendly" content="true"/>   
+    <!-- Viewport - http://davidbcalhoun.com/tag/handheldfriendly -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> 
+    <!-- This file contains some fixes, splash screen and web app code --> 
+    <script src="js/mobiledevices.js"></script>
+    
+    <!-- // Internet Explore // -->
+    
+    <!-- IE9 Pinned Sites: http://msdn.microsoft.com/en-us/library/gg131029.aspx -->
+    <meta name="application-name" content="Elite Admin Skin">
+    <meta name="msapplication-tooltip" content="Cross-platform admin skin.">
+    <meta name="msapplication-starturl" content="http://themes.creativemilk.net/elite/html/index.html">
+    <!-- These custom tasks are examples, you need to edit them to show actual pages -->
+    <meta name="msapplication-task" content="name=Home;action-uri=http://themes.creativemilk.net/elite/html/index.html;icon-uri=http://themes.creativemilk.net/elite/html/images/favicons/favicon.ico">
+    <meta http-equiv="cleartype" content="on" /> 
+    
+    <!--[if lt IE 8]>
+	<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+    <![endif]-->
+            
+    <!-- // Stylesheets // -->
+
+    <!-- Framework -->
+    <link rel="stylesheet" href="css/framework.css"/>
+    <!-- Main -->
+    <link rel="stylesheet" href="css/style.css"/>
+    <!-- jQuery UI --> 
+    <link rel="stylesheet" href="css/ui/jquery.ui.base.css"/>
+    <!-- Styling -->
+    <link rel="stylesheet" href="css/theme/darkblue.css" id="themesheet"/>
+	<!--[if IE 7]>
+	<link rel="stylesheet" href="css/destroy-ie6-ie7.css"/>
+    <![endif]-->
+      
+    <!-- // Misc // -->
+    
+    <link rel="shortcut icon" href="images/favicons/favicon.ico" />
+    
+    <!-- // jQuery/UI core // -->
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>!window.jQuery && document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>
+    <script src="http://code.jquery.com/ui/1.8.22/jquery-ui.min.js"></script>
+    <script>!window.jQueryUI && document.write('<script src="js/jquery-ui-1.8.22.min.js"><\/script>')</script>
+    
+    <!-- // Thirdparty plugins // -->
+    
+    <!-- Touch helper -->  
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <!-- MouseWheel -->  
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <!-- UI Spinner -->
+	<script src="js/jquery.ui.spinner.js"></script>
+    <!-- Tooltip -->               
+    <script src="js/tipsy.js"></script>
+    <!-- Treeview -->                         
+    <script src="js/treeview.js"></script>
+    <!-- Calendar -->                         
+    <script src="js/fullcalendar.min.js"></script> 
+    <!-- selectToUISlider -->                
+    <script src="js/selectToUISlider.jQuery.js"></script> 
+    <!-- context Menu -->         
+    <script src="js/jquery.contextMenu.js"></script> 
+    <!-- File Explore -->              
+    <script src="js/elfinder.min.js"></script> 
+    <!-- AutoGrow Textarea -->                   
+    <script src="js/autogrow-textarea.js"></script> 
+    <!-- Resizable Textarea -->               
+    <script src="js/textarearesizer.min.js"></script>
+    <!-- HTML5 WYSIWYG -->  
+    <script src="wysiwyghtml5/parser_rules/advanced.js"></script>
+	<script src="wysiwyghtml5/dist/wysihtml5-0.3.0.js"></script>    
+    <!-- Lightbox -->                      
+    <script src="js/jquery.colorbox-min.js"></script>
+    <!-- DataTables -->
+    <script src="js/jquery.dataTables.min.js"></script>            
+    <!-- Masked inputs -->
+    <script src="js/jquery.maskedinput-1.3.min.js"></script> 
+    <!-- IE7 JSON FIX -->
+    <script src="js/json2.js"></script>
+    <!-- HTML5 audio player -->
+    <script src="audiojs/audiojs/audio.min.js"></script> 
+             
+    <!-- // Custom theme plugins // -->
+    
+    <!-- Stylesheet switcher --> 
+    <script src="js/e_styleswitcher.1.1.min.js"></script>                 
+    <!-- Widgets -->
+    <script src="js/powerwidgets.1.2.min.js"></script>
+    <!-- Widgets panel -->
+    <script src="js/powerwidgetspanel.1.2.min.js"></script>
+    <!-- Select styling -->
+    <script src="js/e_select.2.0.min.js"></script>    
+    <!-- Checkbox solution -->
+    <script src="js/e_checkbox.1.0.min.js"></script>
+    <!-- Radio button replacement -->
+    <script src="js/e_radio.1.0.min.js"></script>    
+    <!-- Tabs -->
+    <script src="js/e_tabs.1.1.min.js"></script>
+    <!-- File styling -->
+    <script src="js/e_file.1.0.min.js"></script>    
+    <!-- MainMenu -->
+    <script src="js/e_mainmenu.1.0.min.js"></script>
+    <!-- Menu -->
+    <script src="js/e_menu.1.1.min.js"></script>
+    <!-- Input popup box -->
+    <script src="js/e_inputexpand.1.0.min.js"></script>
+    <!-- Progressbar -->
+    <script src="js/e_progressbar.1.0.min.js"></script>
+    <!-- Scrollbar replacemt -->
+    <script src="js/e_scrollbar.1.0.min.js"></script> 
+    <!-- Onscreen keyboard -->
+    <script src="js/e_oskeyboard.1.0.min.js"></script>
+    <!-- Textarea limiter -->
+    <script src="js/e_textarealimiter.1.0.min.js"></script>
+    <!-- Contact form with validation -->
+    <script src="js/e_contactform.1.1.min.js"></script>
+    <!-- Responsive table helper -->
+    <script src="js/e_responsivetable.1.0.min.js"></script>
+    <!-- Gallery -->
+    <script src="js/e_gallery.1.0.min.js"></script>
+    <!-- Live search -->
+    <script src="js/e_livesearch.1.0.min.js"></script>
+    <!-- Notify -->
+    <script src="js/e_notify.1.0.min.js"></script>  
+    <!-- Countdown -->  
+    <script src="js/e_countdown.1.0.min.js"></script> 
+    <!-- Clone script -->
+    <script src="js/e_clone.1.0.min.js"></script> 
+    <!-- Chained inputs -->
+    <script src="js/e_chainedinputs.1.0.min.js"></script>
+    <!-- Show password -->     
+    <script src="js/e_showpassword.1.0.min.js"></script>        
+    <!-- All plugins are set here -->
+    <script src="js/plugins.js"></script>
+    <!-- Custom code -->
+    <script src="js/main.js"></script>    
+
+    <!-- // HTML5/CSS3 support // -->
+
+    <script src="js/modernizr.min.js"></script>
+                
+</head>
+<body class="layout_fluid layout_responsive"> 
+
+    <!-- this part can be removed, its just here 
+         to let you switch between styles and layout sizes -->
+    <div id="e-styleswitcher">
+        <div class="e-styleswitcher-inner">
+            <div class="e-styleswitcher-arrow"><img src="images/icons/plix-16/white/arrow-right-16.png" alt="" /></div>
+            <div class="box">
+            	<h4>Styles</h4>
+                <select id="choose-styling">
+                	<option value="strangeblue">Strange blue</option>
+                    <option value="black">Black</option>
+                    <option value="darkblue">Dark blue</option>
+                    <option value="lightgrey">Light grey</option>
+                </select>
+            </div>    
+            <div class="box">
+            	<h4>Layout sizes</h4>                
+                <select id="set-layout-size">
+                	<option value="layout_fluid">fluid</option>
+                    <option value="layout_768">768</option>
+                    <option value="layout_960">960</option>
+                    <option value="layout_1024">1024</option>
+                    <option value="layout_1200">1200</option>
+                    <option value="layout_1600">1600</option>
+                </select>
+            </div> 
+            <div class="box">
+            	<h4>Responsive</h4>                
+                <select id="set-layout-responsive">
+                	<option value="layout_responsive">yes</option>
+                    <option value="">no</option>
+                </select>
+            </div>
+            <div class="box">
+            	<h4>Get theme</h4>                
+                <select id="get-theme">
+                	<option value="">no</option>
+                    <option value="yes">yes</option>
+                </select>
+            </div>                         
+        </div>
+    </div>
+  
+	<div id="container">
+    
+        <!-- MAIN HEADER -->
+                
+        <header id="header">
+        	<div id="header-border">
+                <div id="header-inner">
+                
+                    <div class="left">
+                        <a href="index.html" id="logo">ELITE</a>
+                    </div><!-- End .left -->
+                    
+                    <div class="right">
+                        <!-- eMenu -->
+                        <nav>
+                            <ul class="e-splitmenu" id="header-menu">
+                                <li><span>Menu</span><a href="javascript:void(0);"><span class="arrow-down-10 plix-10"></span></a>
+                                
+                                     <div>
+                                        <ul>
+                                            <li><a href="index.html"><span class="stats2-10 plix-10"></span> Stats</a></li>
+                                            <li><a href="index.html"><span class="lock-10 plix-10"></span> Security</a></li>
+                                            <li><a href="index.html"><span class="download-10 plix-10"></span> Downloads</a></li>
+                                        </ul>                                      
+                                    </div>                               
+
+                                </li>
+                                <li><span>Settings</span><a href="javascript:void(0);"><span class="arrow-down-10 plix-10"></span></a>
+                                
+                                     <div>
+                                        <ul>
+                                            <li><a href="index.html"><span class="home-10 plix-10"></span> Basic Settings</a></li>
+                                            <li><a href="index.html"><span class="settings-10 plix-10"></span> Site Settings</a></li>
+                                            <li><a href="index.html"><span class="comment-10 plix-10"></span> User Settings</a></li>
+                                            <li><a href="index.html"><span class="bookmark-10 plix-10"></span> Server Settings</a></li>
+                                        </ul>                                      
+                                    </div>
+                                    
+                                </li>
+                        		<li class="e-menu-profile">
+                                    <a href="javascript:void(0);"><span class="arrow-down-10 plix-10"></span></a> 
+                                    <img src="images/avatar.jpg" alt=""/>
+                                    
+                                    <div>
+                                        <ul>
+                                            <li><a href="index.html"><span class="mail-10 plix-10"></span> Inbox</a></li>
+                                            <li><a href="index.html"><span class="upload-10 plix-10"></span> Settings</a></li>
+                                            <li><a href="index.html"><span class="info-10 plix-10"></span> Logout</a></li>
+                                        </ul>                                      
+                                    </div> 
+                                            
+                                </li>
+                            </ul>
+                        </nav>
+                    </div><!-- End .right --> 
+                    
+                </div><!-- End #header-border --> 
+            </div><!-- End #header-inner -->  
+                
+		</header><!-- End #header -->
+        
+        <!-- CONTENT -->
+                 
+        <div id="content">
+            <div id="content-border">
+            
+                <!-- CONTENT HEADER -->
+                
+                <header id="content-header">
+                    <div class="left">
+                    	<a href="javascript:void(0);" id="toggle-mainmenu" class="button-icon tip-s" title="Toggle Main Menu"><span class="arrow-up-10 plix-10"></span></a>
+                        
+                        <!-- main search form -->
+                        <form method="post" id="mainsearch">
+                            <input type="text" placeholder="Live search..." name="" autocomplete="off"/>
+                            <input type="submit" value="" />
+                        </form>
+                    </div><!-- End .left --> 
+                    <div class="right">
+                    	<!-- sidebar switch -->
+                    	<a href="javascript:void(0);" id="toggle-sidebar" class="button-icon tip-s" title="Switch Main Menu"><span class="arrow-left-10 plix-10"></span></a>
+                        
+                        <!-- breadcrumbs -->
+                        <nav id="main-breadcrumbs">
+                            <ul>
+                                <li class="bc-tab-first">
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="documentation.html">Documentation</a>
+                                </li>
+                                <li class="bc-tab-last">Widgets</li>
+                            </ul>          
+                        </nav>
+                        
+                        <!-- demo dialog button -->
+                        <a href="javascript:void(0);" id="open-main-dialog" class="button-text-icon tip-w" title="Some tooltip pointing right"><span class="fullscreen-10 plix-10"></span> Dialog</a>
+                        
+                        <!-- the main page dialog -->
+                        <div id="main-page-dialog" title="Welcome to Elite" style="display:none">
+                        <img src="images/jquery-ui-logo.png" alt="" class="dummy-img-dialog"/>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet est et mauris ornare lobortis dignissim quis massa. Donec ullamcorper turpis ac lectus semper commodo. Mauris tincidunt, erat et tempor interdum, dolor metus consectetur dui, eu accumsan augue augue a erat. Fusce justo nibh, tristique vitae pretium ut, venenatis nec felis. Curabitur congue tempor ultricies. Proin quis libero dignissim neque posuere pharetra vel adipiscing massa. Sed sit amet erat ac arcu sodales aliquam. Nam tellus sapien, ornare in tincidunt vel, ultricies id quam.
+						</div>
+                        
+                        <!-- grid controls -->
+                        <nav>
+							<ul class="e-splitmenu" id="page-actions">
+                                <li><span>Actions</span><a href="javascript:void(0);"><span class="settings-10 plix-10"></span></a>
+                                
+                                     <div>
+                                        <ul>
+                                            <li><a href="index.html"><span class="pencil-10 plix-10"></span>Edit</a></li>
+                                            <li><a href="index.html"><span class="document-10 plix-10"></span>View</a></li>
+                                            <li><a href="index.html"><span class="trashcan-10 plix-10"></span> Delete</a></li>
+                                        </ul>                                      
+                                    </div>                               
+
+                                </li>
+                        	</ul>
+                         </nav>
+                    </div><!-- End .right -->                
+                
+				</header><!-- End #content-header --> 
+                                
+                <div id="content-inner">
+                    
+                    <!-- SIDEBAR -->
+                    
+                    <aside>
+                    
+                    	<!-- SIDEBAR PROFILE -->
+                        
+                    	<div id="sidebar-profile">
+                            <div id="main-avatar">
+                            	<span class="indicator">38</span>
+                                <img src="images/avatar.jpg" alt=""/>
+                            </div>
+                            <div id="profile-info">
+                                <div>
+                                    <a href="javascript:void(0);"><b>Administrator</b></a>
+                                    <a href="javascript:void(0);">Profile settings</a>
+                                    <a href="javascript:void(0);">Server settings</a>
+                                    <a href="javascript:void(0);">Logout</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- MAIN MENU -->
+                        
+                        <nav id="main-menu">
+                            <ul>
+                                <li><a href="index.html"><span class="home-16 plix-16"></span> Dashboard</a></li>
+                                <li class="page-active menu-open no-mobile"><a href="documentation.html"><span class="note-16 plix-16"></span> Documentation</a>
+                                
+                                    <ul>
+                                    	<li><a href="doc-accordion.html">Accordion</a></li> 
+                                    	<li><a href="doc-breadcrumbs.html">Breadcrumbs</a></li>
+                                        <li><a href="doc-buttons.html">Buttons</a></li>
+                                        <li><a href="doc-calendar.html">Calendar</a></li>
+                                        <li><a href="doc-charts.html">Charts</a></li>
+                                        <li><a href="doc-dialogs.html">Dialogs</a></li>
+                                        <li><a href="doc-editors.html">Editors</a></li>
+                                        <li><a href="doc-fileexplore.html">File Explore</a></li>
+                                        <li><a href="doc-forms.html">Forms</a></li>
+                                        <li><a href="doc-grid.html">Grid</a></li>
+                                        <li><a href="doc-icons.html">Icons</a></li>
+                                        <li><a href="doc-listsblocks.html">Lists &amp; Blocks</a></li>
+                                        <li><a href="doc-media.html">Media</a></li>
+                                        <li><a href="doc-menus.html">Menus</a></li>
+                                        <li><a href="doc-misc.html">Misc</a></li>
+                                        <li><a href="doc-search.html">Search</a></li>
+                                        <li><a href="doc-tables.html">Tables</a></li>
+                                        <li><a href="doc-tabs.html">Tabs</a></li>
+                                        <li><a href="doc-toolbars.html">Toolbars</a></li> 
+                                        <li class="page-active"><a href="doc-widgets.html">Widgets</a></li>
+                                        <li><a href="doc-wizard.html">Wizard</a></li>                                          
+                                    </ul> 
+                                                                   
+                                </li>
+                                <li><a href="calendar.html"><span class="calendar-16 plix-16"></span>Calendar<span class="color-indicator">28</span></a></li>
+                                <li><a href="javascript:void(0);"><span class="postcard-16 plix-16"></span> Form Elements <span class="button-icon"><span class="plus-10 plix-10"></span></span></a>
+
+                                    <ul>
+                                    	<li><a href="editors.html">Editors</a></li>
+                                    	<li><a href="forms.html">Forms</a></li>
+                                        <li><a href="login.html">Login form 1</a></li>
+                                        <li><a href="login-2.html">Login form 2</a></li>
+                                        <li><a href="login-3.html">Login form 3</a></li>
+                                        <li><a href="login-4.html">Login form 4</a></li>
+                                        <li><a href="search.html">Search</a></li>
+                                        <li><a href="wizard.html">Wizard</a></li>                                         
+                                    </ul>
+                                
+                                </li>
+                                <li><a href="media.html"><span class="image-16 plix-16"></span> Media</a></li>
+                                <li><a href="planning.html"><span class="pencil-16 plix-16"></span> Planning</a></li>
+                                <li><a href="maps.html"><span class="map-16 plix-16"></span> Google Maps <span class="indicator tip-w" title="Some tip goes here">tooltip</span></a></li>
+                                <li><a href="fileexplore.html"><span class="folder-16 plix-16"></span> File Explore</a></li> 
+                                <li><a href="javascript:void(0);"><span class="warning-16 plix-16"></span> Error pages<span class="button-icon"><span class="plus-10 plix-10"></span></span></a>
+
+                                    <ul>
+                                    	<li><a href="400.html">400</a></li>
+                                    	<li><a href="401.html">401</a></li>
+                                        <li><a href="403.html">403</a></li>
+                                        <li><a href="404.html">404</a></li>
+                                        <li><a href="500.html">500</a></li>
+                                        <li><a href="503.html">503</a></li>                                         
+                                    </ul>
+                                
+                                </li>                                                               
+                                <li><a href="widgets.html"><span class="rows4-16 plix-16"></span> Widgets</a></li>
+                                <li><a href="tables.html"><span class="cells-16 plix-16"></span> Tables</a></li>
+                                <li><a href="charts.html"><span class="stats2-16 plix-16"></span> Charts </a></li>
+                                <li><a href="javascript:void(0);"><span class="controls-16 plix-16"></span> Interface Elements <span class="button-icon"><span class="plus-10 plix-10"></span></span></a>
+                                
+                                    <ul>
+                                      	<li><a href="accordion.html">Accordion</a></li>                                        
+                                        <li><a href="breadcrumbs.html">Breadcrumbs</a></li>
+                                        <li><a href="buttons.html">Buttons</a></li>
+                                        <li><a href="dialogs.html">Dialogs</a></li>
+                                        <li><a href="icons.html">Icons</a></li>
+                                        <li><a href="listsblocks.html">Lists &amp; Blocks</a></li>
+                                        <li><a href="menus.html">Menus</a></li>
+                                        <li><a href="misc.html">Misc</a></li>
+                                        <li><a href="tabs.html">Tabs</a></li>
+                                        <li><a href="toolbars.html">Toolbars</a></li>
+                                    </ul>           
+                                                           
+                                </li>
+                                <li><a href="grid.html"><span class="layout3-16 plix-16"></span> Grid <span class="sindicator">10</span></a></li>
+                            </ul>
+                        </nav>                      
+                    </aside>
+                    
+                    <!-- sidebar meta stats -->
+                    <div id="sidebar-meta">
+                    	<div id="sidebar-meta-inner">
+                        	<div>
+                                <p class="left">Space</p> 
+                                <p class="right">4,551 MB / 10 GB</p>
+                            </div>
+                            <div class="pbar">
+                               <span style="width:50%"></span>                            
+                            </div>
+                        	<div>
+                                <p class="left">Traffic</p> 
+                                <p class="right">8,001 MB / 10 GB</p>
+                            </div>
+                            <div class="pbar">
+                               <span style="width:81%"></span>                            
+                            </div>
+                        </div>  
+                    </div> 
+                     
+                    <!-- CONTENT -->
+                    
+					<div id="content-main">
+                        <div id="content-main-inner">
+
+                            <div class="page-header">
+                                <h2>Widgets &amp; Non-widgets</h2>
+                                <span class="page-helper">1.0</span>
+                                <a href="widgets.html" class="page-helper">Examples</a>
+                                <p>Documentation about widgets &amp; non-widgets.</p>
+                            </div> 
+                                                     
+                            <!-- Start grid -->
+                            
+                            <section class="g_1">
+                                <div class="doc-wrap" id="doc-tabs">
+                                
+                                    <ul class="etabs">
+                                        <li class="etabs-active"><a href="#etab1">PowerWidgets</a></li>
+                                        <li><a href="#etab2">PowerWidgetsPanel</a></li>
+                                        <li><a href="#etab3">Blocks</a></li>
+                                    </ul>
+                                    
+                                    <div id="etab1" class="etabs-content">
+                                        <div class="doc-intro">
+                                            <h3>Power Widgets</h3>
+                                            <p>
+One of the main features of this theme are the power widgets, these widgets are used to display content in a organized and customizable way. All widgets have main settings and single options(done with HTML5 data attributes), this allows each widget to be flexible. The widgets are used in combination with our custom grid, this way you can set up your own custom layout of widgets.
+</p>
+<a href="http://codecanyon.net/item/power-widgets-manage-and-display-your-content/2901689">http://codecanyon.net/item/power-widgets-manage-and-display-your-content/2901689</a>
+                                        </div> 
+                                                                            
+                                         <div class="section-header">
+                                            <h3>Basic</h3>
+                                            <p>Powerfull widgets.</p>
+                                        </div>
+    
+                                        <div class="spacer-15"><!-- spacer 15px --></div>
+                                        
+                                        <div class="section-header">
+                                            <h3>How to use</h3>
+                                            <p>How to use HTML elements.</p>
+                                        </div>
+                                                                           
+                                        <div class="demo-code">
+                                            <b>Markup</b>
+                                            <span class="toggle-min"></span>
+                                             <pre>&lt;div class="powerwidget" id="widget-id"&gt;
+    &lt;header&gt;
+        &lt;h2&gt;Widget Title&lt;/h2&gt;                           
+    &lt;/header&gt;
+    &lt;div&gt;
+        &lt;!-- content goes here --&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+                                        </div> 
+                                        
+                                        <div class="section-header">
+                                            <h3>Usage Data Atributes (dataset)</h3>
+                                            <p>Data atrributes are used by some of our custom plugins to set/get data.</p>
+                                        </div>
+        
+                                        <table class="doc-table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Plugin options</th>
+                                                    <th scope="col">Type</th>
+                                                    <th scope="col">Default</th>
+                                                    <th scope="col">Desctription</th>
+                                                    <th scope="col" class="w35">Full</th>
+                                                    <th scope="col" class="w35">Lite *</th>
+                                                    <th scope="col" class="w40">Since</th>
+                                                </tr>                                            
+                                            </thead> 
+                                            <tbody>
+                                                <tr>
+                                                    <td>grid</td>
+                                                    <td>string</td>
+                                                    <td></td>
+                                                    <td>This is the class or element that are used for the sorting(if option sortable is set to true) of a widget.</td>
+                                                    <td>yes</td>
+                                                    <td>yes</td>
+                                                    <td>1.0</td>
+                                                </tr>                                                  
+                                                <tr>
+                                                    <td>widgets</td>
+                                                    <td>string</td>
+                                                    <td>.powerwidget</td>
+                                                    <td>Widgets class.</td>
+                                                    <td>yes</td>
+                                                    <td>yes</td>
+                                                    <td>1.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>localStorage</td>
+                                                    <td>boolean</td>
+                                                    <td>true</td>
+                                                    <td>Everyting is saved in to the local storage, but you can turn this off.</td>
+                                                    <td>yes</td>
+                                                    <td>yes</td>
+                                                    <td>1.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>deleteSettingsKey</td>
+                                                    <td>string</td>
+                                                    <td></td>
+                                                    <td>You can delete the local storage settings key(if you are using local storage). The settings key is used to store things, style and title.
+                                                    This must be an unique(just for that page) Id or class for example: '#thelink'.</td>
+                                                    <td>yes</td>
+                                                    <td>yes</td>
+                                                    <td>1.0</td>
+                                                </tr> 
+                                                <tr>
+                                                    <td>settingsKeyLabel</td>
+                                                    <td>string</td>
+                                                    <td>Reset settings?</td>
+                                                    <td>Set the text for the 'deleteSettingsKey' confirm dialog.</td>
+                                                    <td>yes</td>
+                                                    <td>yes</td>
+                                                    <td>1.0</td>
+                                                </tr> 
+                                                <tr>
+                                                    <td>deletePositionKey</td>
+                                                    <td>string</td>
+                                                    <td></td>
+                                                    <td>You can delete the local storage position key(if you are using local storage). The positions key is used to store the position of the widgets.
+                                                    This must be an unique(just for that page) Id or class for example: '#thelink'.</td>
+                                                    <td>yes</td>
+                                                    <td>yes</td>
+                                                    <td>1.0</td>
+                                                </tr> 
+                                                <tr>
+                                                    <td>settingsKeyLabel</td>
+                                                    <td>string</td>
+                                                    <td>Reset positions?</td>
+                                                    <td>Set the text for the 'deletePositionKey' confirm dialog.</td>
+                                                    <td>yes</td>
+                                                    <td>yes</td>
+                                                    <td>1.0</td>
+                                                </tr>                    
+                                                <tr>
+                                                    <td>sortable</td>
+                                                    <td>boolean</td>
+                                                    <td>true</td>
+                                                    <td>You can allow widgets to be sortable.</td>
+                                                    <td>yes</td>
+                                                    <td>yes</td>
+                                                    <td>1.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>buttonsHidden</td>
+                                                    <td>boolean</td>
+                                                    <td>false</td>
+                                                    <td>If you are using action button, you can set them to visible, or hidden. If you choose hidden(value true) the buttons will be 
+                                                    showen if you hover over the widgets header.</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr>  
+                                                <tr>
+                                                    <td>toggleButton</td>
+                                                    <td>boolean</td>
+                                                    <td>true</td>
+                                                    <td>Show a toggle button.</td>
+                                                    <td>yes</td>
+                                                    <td>yes</td>
+                                                    <td>1.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>toggleClass</td>
+                                                    <td>string</td>
+                                                    <td>min-10 | plus-10</td>
+                                                    <td>The button class, active and non-active state. The two classes must be seperated by a '|' in order to work.</td>
+                                                    <td>yes</td>
+                                                    <td>yes</td>
+                                                    <td>1.0</td>
+                                                </tr> 
+                                                <tr>
+                                                    <td>toggleSpeed</td>
+                                                    <td>number(integer)</td>
+                                                    <td>200</td>
+                                                    <td>The speed of the collapsable effect.</td>
+                                                    <td>yes</td>
+                                                    <td>yes</td>
+                                                    <td>1.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>onToggle</td>
+                                                    <td>function</td>
+                                                    <td>function(){}</td>
+                                                    <td>Callback function that runs if you toggle a widget.</td>
+                                                    <td>yes</td>
+                                                    <td>yes</td>
+                                                    <td>1.0</td>
+                                                </tr> 
+                                                <tr>
+                                                    <td>deleteButton</td>
+                                                    <td>boolean</td>
+                                                    <td>true</td>
+                                                    <td>Show a delete button.</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>deleteClass</td>
+                                                    <td>string</td>
+                                                    <td>trashcan-10</td>
+                                                    <td>The button class.</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr> 
+                                                <tr>
+                                                    <td>deleteSpeed</td>
+                                                    <td>number(integer)</td>
+                                                    <td>200</td>
+                                                    <td>The speed of the deleting effect.</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>onDelete</td>
+                                                    <td>function</td>
+                                                    <td>function(){}</td>
+                                                    <td>Callback function that runs once the widget has been deleted.</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr> 
+                                                <tr>
+                                                    <td>editButton</td>
+                                                    <td>boolean</td>
+                                                    <td>true</td>
+                                                    <td>Show a edit button.</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>editPlaceholder</td>
+                                                    <td>string</td>
+                                                    <td></td>
+                                                    <td>The class of the edit box wrapper, which contains the title input and styling setters(see the markup demo above for an example).</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr> 
+                                                <tr>
+                                                    <td>editClass</td>
+                                                    <td>string</td>
+                                                    <td>pencil-10 | delete-10</td>
+                                                    <td>The edit class, active and non-active state. The two classes must be seperated by a '|' in order to work.</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr> 
+                                                <tr>
+                                                    <td>editSpeed</td>
+                                                    <td>number(integer)</td>
+                                                    <td>200</td>
+                                                    <td>The speed of the edit effect.</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>onEdit</td>
+                                                    <td>function</td>
+                                                    <td>function(){}</td>
+                                                    <td>Callback function that runs once you close the edit box.</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr>                     
+                                                <tr>
+                                                    <td>fullscreenButton</td>
+                                                    <td>boolean</td>
+                                                    <td>true</td>
+                                                    <td>Show a fullscreen button.</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>fullscreenClass</td>
+                                                    <td>string</td>
+                                                    <td>fullscreen-10 | normalscreen-10</td>
+                                                    <td>The fullscreen class, active and non-active state. The two classes must be seperated by a '|' in order to work.</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr> 
+                                                <tr>
+                                                    <td>fullscreenDiff</td>
+                                                    <td>number(integer)</td>
+                                                    <td>3</td>
+                                                    <td>If you change the layout fo the widget, you can use this to make sure the that fullscreen is fullscreen(if needed).</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>onfullscreen</td>
+                                                    <td>function</td>
+                                                    <td>function(){}</td>
+                                                    <td>Callback function that runs once you go to fullscreen mode.</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>customButton</td>
+                                                    <td>boolean</td>
+                                                    <td>true</td>
+                                                    <td>Show a custom button.</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>customClass</td>
+                                                    <td>string</td>
+                                                    <td></td>
+                                                    <td>The custom class, active and non-active state. The two classes must be seperated by a '|' in order to work.</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr> 
+                                                <tr>
+                                                    <td>customStart</td>
+                                                    <td>function</td>
+                                                    <td>function(){}</td>
+                                                    <td>Callback function that runs once you start the custom button.</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr> 
+                                                <tr>
+                                                    <td>customEnd</td>
+                                                    <td>function</td>
+                                                    <td>function(){}</td>
+                                                    <td>Callback function that runs once you end the custom button.</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr>                  
+                                                <tr>
+                                                    <td>buttonOrder</td>
+                                                    <td>string</td>
+                                                    <td>%refresh% %delete% %custom% %edit% %fullscreen% %toggle%</td>
+                                                    <td>You can change the order of the buttons</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr>    
+                                                <tr>
+                                                    <td>opacity</td>
+                                                    <td>number(float)</td>
+                                                    <td>1.0</td>
+                                                    <td>The opacity of the widgets once you drag them.</td>
+                                                    <td>yes</td>
+                                                    <td>yes</td>
+                                                    <td>1.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>dragHandle</td>
+                                                    <td>string</td>
+                                                    <td>> header</td>
+                                                    <td>Choose the element that you want to use as an drag handle. The widgets main class is the parents class.</td>
+                                                    <td>yes</td>
+                                                    <td>yes</td>
+                                                    <td>1.0</td>
+                                                </tr> 
+                                                <tr>
+                                                    <td>placeholderClass</td>
+                                                    <td>string</td>
+                                                    <td>powerwidget-placeholder</td>
+                                                    <td>This is the class thats used for the placeholder.</td>
+                                                    <td>yes</td>
+                                                    <td>yes</td>
+                                                    <td>1.0</td>
+                                                </tr> 
+                                                <tr>
+                                                    <td>indicator</td>
+                                                    <td>boolean</td>
+                                                    <td>true</td>
+                                                    <td>Shows a animated image if there has been made a change in the widget(AJAX, deleting, toggle...).</td>
+                                                    <td>yes</td>
+                                                    <td>yes</td>
+                                                    <td>1.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>indicatorTime</td>
+                                                    <td>number(integer)</td>
+                                                    <td>600</td>
+                                                    <td>The speed of the indicator image(animated loader image). This is in milliseconds.</td>
+                                                    <td>yes</td>
+                                                    <td>yes</td>
+                                                    <td>1.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>ajax</td>
+                                                    <td>boolean</td>
+                                                    <td>true</td>
+                                                    <td>Allow widgets to use ajax.</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>loadingLabel</td>
+                                                    <td>string</td>
+                                                    <td>loading...</td>
+                                                    <td>Placeholder text at the start of every page load.</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr>                                                                                                            
+                                                <tr>
+                                                    <td>timestampPlaceholder</td>
+                                                    <td>string</td> 
+                                                    <td></td>
+                                                    <td>Show a timestamp form the last update. Only use classes.</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr> 
+                                                <tr>
+                                                    <td>timestampFormat</td>
+                                                    <td>string</td>
+                                                    <td>Last update: %m%/%d%/%y% %h%:%i%:%s%</td>
+                                                    <td>Choose the output format.</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>refreshButton</td>
+                                                    <td>boolean</td> 
+                                                    <td>true</td>
+                                                    <td>Allow users to refresh the ajax content manually.</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr> 
+                                                <tr>
+                                                    <td>refreshClass</td>
+                                                    <td>string</td>
+                                                    <td>refresh-10</td>
+                                                    <td>The class of the refresh button.</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr>                             
+                                                <tr>
+                                                    <td>labelError</td>
+                                                    <td>string</td>
+                                                    <td>Sorry but there was a error:</td>
+                                                    <td>Label of the ajax error(label + error code(s)).</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr> 
+                                                <tr>
+                                                    <td>labelUpdated</td>
+                                                    <td>string</td>
+                                                    <td>Last Update:</td>
+                                                    <td>Label for the timestamp, which will be showen every time it has been updated.</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>labelRefresh</td>
+                                                    <td>string</td>
+                                                    <td>Refresh</td>
+                                                    <td>Label for the refresh button, this button will allow u to refresh the ajax content.</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr> 
+                                                <tr>
+                                                    <td>afterLoad</td>
+                                                    <td>function</td>
+                                                    <td>function(){}</td>
+                                                    <td>Callback function that runs if the widget loads any ajax content.</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>rtl</td>
+                                                    <td>boolean</td>
+                                                    <td>false</td>
+                                                    <td>Need rtl, use this.</td>
+                                                    <td>yes</td>
+                                                    <td>yes</td>
+                                                    <td>1.0</td>
+                                                </tr>                            
+                                            </tbody>
+                                            <tfoot>                    
+                                                <tr>
+                                                    <td colspan="7">* Lite version of the plugin which only has a couple of basic features.</td>
+                                                </tr> 
+                                            </tfoot>                                                                                                                                              
+                                        </table> 
+
+                                        <div class="section-header">
+                                            <h3>Usage classes</h3>
+                                            <p>Defined classes related to a piece of code or plugin.</p>
+                                        </div>
+                                                                                                                                            
+                                        <table class="doc-table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Available class</th>
+                                                    <th scope="col">Element</th>
+                                                    <th scope="col">Desctription</th>
+                                                    <th class="tbversion" scope="col">Since</th>
+                                                </tr>                                            
+                                            </thead> 
+                                            <tbody>
+                                                <tr>
+                                                    <td>powerwidget</td>
+                                                    <td>div</td>
+                                                    <td>Main widget class.</td>
+                                                    <td>1.0</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <div class="section-header">
+                                            <h3>Usage plugin</h3>
+                                            <p>How to use our custom made jQuery plugins.</p>
+                                        </div>
+                                                                                                              
+                                        <div class="demo-code">
+                                            <b>Markup</b>
+                                            <span class="toggle-min"></span>
+<pre class="jsCode">$('div#content').powerWidgets({
+    grid: '',
+    widgets: '.powerwidget',
+    localStorage: true,
+    deleteSettingsKey: '',
+    settingsKeyLabel: 'Reset settings?',
+    deletePositionKey: '',
+    positionKeyLabel: 'Reset position?',
+    sortable: true,
+    buttonsHidden: false,
+    toggleButton: true,
+    toggleClass: 'min-10 | plus-10',
+    toggleSpeed: 200,
+    onToggle: function(){},
+    deleteButton: true,
+    deleteClass: 'trashcan-10',
+    deleteSpeed: 200,
+    onDelete: function(){},
+    editButton: true,
+    editPlaceholder: '',
+    editClass: 'pencil-10 | delete-10',
+    editSpeed: 200,
+    onEdit: function(){},
+    fullscreenButton: true,
+    fullscreenClass: 'fullscreen-10 | normalscreen-10',	
+    fullscreenDiff: 3,		
+    onFullscreen: function(){},
+    customButton: true,
+    customClass: '',
+    customStart: function(){},
+    customEnd: function(){},
+    buttonOrder: '%refresh% %delete% %custom% %edit% %fullscreen% %toggle%',
+    opacity: 1.0,
+    dragHandle: '> header',
+    placeholderClass: 'powerwidget-placeholder',
+    indicator: true,
+    indicatorTime: 600,
+    ajax: true,
+    loadingLabel: 'loading...',
+    timestampPlaceholder: '',
+    timestampFormat: 'Last update: %m%/%d%/%y% %h%:%i%:%s%',
+    refreshButton: true,
+    refreshButtonClass: 'refresh-10',
+    labelError:'Sorry but there was a error:',
+    labelUpdated: 'Last Update:',
+    labelRefresh: 'Refresh',
+    labelDelete: 'Delete widget:',
+    afterLoad: function(){},	
+    rtl: false	});</pre>
+                                        </div> 
+                                        
+                                        <div class="section-header">
+                                            <h3>Usage plugin(lite version)</h3>
+                                            <p>How to use the plugin.</p>
+                                        </div>
+                    
+                    					<div class="demo-code">
+											<pre>$('#thismustbeanid').powerWidgetsLite({ // see list below for options });</pre>
+                   					    </div> 
+                    
+                                        <div class="section-header">
+                                            <h3>Plugin options</h3>
+                                            <p>Most of our custom made jQuery plugins have options/settings.</p>
+                                        </div>  
+                                                                                               
+                                        <table class="doc-table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Plugin options</th>
+                                                    <th scope="col">Type</th>
+                                                    <th scope="col">Default</th>
+                                                    <th scope="col">Desctription</th>
+                                                    <th scope="col" class="w35">Full</th>
+                                                    <th scope="col" class="w35">Lite *</th>
+                                                    <th scope="col" class="w40">Since</th>
+                                                </tr>                                            
+                                            </thead> 
+                                            <tbody>
+                                                <tr>
+                                                    <td>grid</td>
+                                                    <td>string</td>
+                                                    <td></td>
+                                                    <td>This is the class or element that are used for the sorting(if option sortable is set to true) of a widget.</td>
+                                                    <td>yes</td>
+                                                    <td>yes</td>
+                                                    <td>1.0</td>
+                                                </tr>                                                  
+                                                <tr>
+                                                    <td>widgets</td>
+                                                    <td>string</td>
+                                                    <td>.powerwidget</td>
+                                                    <td>Widgets class.</td>
+                                                    <td>yes</td>
+                                                    <td>yes</td>
+                                                    <td>1.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>localStorage</td>
+                                                    <td>boolean</td>
+                                                    <td>true</td>
+                                                    <td>Everyting is saved in to the local storage, but you can turn this off.</td>
+                                                    <td>yes</td>
+                                                    <td>yes</td>
+                                                    <td>1.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>deleteSettingsKey</td>
+                                                    <td>string</td>
+                                                    <td></td>
+                                                    <td>You can delete the local storage settings key(if you are using local storage). The settings key is used to store things, style and title.
+                                                    This must be an unique(just for that page) Id or class for example: '#thelink'.</td>
+                                                    <td>yes</td>
+                                                    <td>yes</td>
+                                                    <td>1.0</td>
+                                                </tr> 
+                                                <tr>
+                                                    <td>settingsKeyLabel</td>
+                                                    <td>string</td>
+                                                    <td>Reset settings?</td>
+                                                    <td>Set the text for the 'deleteSettingsKey' confirm dialog.</td>
+                                                    <td>yes</td>
+                                                    <td>yes</td>
+                                                    <td>1.0</td>
+                                                </tr> 
+                                                <tr>
+                                                    <td>deletePositionKey</td>
+                                                    <td>string</td>
+                                                    <td></td>
+                                                    <td>You can delete the local storage position key(if you are using local storage). The positions key is used to store the position of the widgets.
+                                                    This must be an unique(just for that page) Id or class for example: '#thelink'.</td>
+                                                    <td>yes</td>
+                                                    <td>yes</td>
+                                                    <td>1.0</td>
+                                                </tr> 
+                                                <tr>
+                                                    <td>settingsKeyLabel</td>
+                                                    <td>string</td>
+                                                    <td>Reset positions?</td>
+                                                    <td>Set the text for the 'deletePositionKey' confirm dialog.</td>
+                                                    <td>yes</td>
+                                                    <td>yes</td>
+                                                    <td>1.0</td>
+                                                </tr>                    
+                                                <tr>
+                                                    <td>sortable</td>
+                                                    <td>boolean</td>
+                                                    <td>true</td>
+                                                    <td>You can allow widgets to be sortable.</td>
+                                                    <td>yes</td>
+                                                    <td>yes</td>
+                                                    <td>1.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>buttonsHidden</td>
+                                                    <td>boolean</td>
+                                                    <td>false</td>
+                                                    <td>If you are using action button, you can set them to visible, or hidden. If you choose hidden(value true) the buttons will be 
+                                                    showen if you hover over the widgets header.</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr>  
+                                                <tr>
+                                                    <td>toggleButton</td>
+                                                    <td>boolean</td>
+                                                    <td>true</td>
+                                                    <td>Show a toggle button.</td>
+                                                    <td>yes</td>
+                                                    <td>yes</td>
+                                                    <td>1.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>toggleClass</td>
+                                                    <td>string</td>
+                                                    <td>min-10 | plus-10</td>
+                                                    <td>The button class, active and non-active state. The two classes must be seperated by a '|' in order to work.</td>
+                                                    <td>yes</td>
+                                                    <td>yes</td>
+                                                    <td>1.0</td>
+                                                </tr> 
+                                                <tr>
+                                                    <td>toggleSpeed</td>
+                                                    <td>number(integer)</td>
+                                                    <td>200</td>
+                                                    <td>The speed of the collapsable effect.</td>
+                                                    <td>yes</td>
+                                                    <td>yes</td>
+                                                    <td>1.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>onToggle</td>
+                                                    <td>function</td>
+                                                    <td>function(){}</td>
+                                                    <td>Callback function that runs if you toggle a widget.</td>
+                                                    <td>yes</td>
+                                                    <td>yes</td>
+                                                    <td>1.0</td>
+                                                </tr> 
+                                                <tr>
+                                                    <td>deleteButton</td>
+                                                    <td>boolean</td>
+                                                    <td>true</td>
+                                                    <td>Show a delete button.</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>deleteClass</td>
+                                                    <td>string</td>
+                                                    <td>trashcan-10</td>
+                                                    <td>The button class.</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr> 
+                                                <tr>
+                                                    <td>deleteSpeed</td>
+                                                    <td>number(integer)</td>
+                                                    <td>200</td>
+                                                    <td>The speed of the deleting effect.</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>onDelete</td>
+                                                    <td>function</td>
+                                                    <td>function(){}</td>
+                                                    <td>Callback function that runs once the widget has been deleted.</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr> 
+                                                <tr>
+                                                    <td>editButton</td>
+                                                    <td>boolean</td>
+                                                    <td>true</td>
+                                                    <td>Show a edit button.</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>editPlaceholder</td>
+                                                    <td>string</td>
+                                                    <td></td>
+                                                    <td>The class of the edit box wrapper, which contains the title input and styling setters(see the markup demo above for an example).</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr> 
+                                                <tr>
+                                                    <td>editClass</td>
+                                                    <td>string</td>
+                                                    <td>pencil-10 | delete-10</td>
+                                                    <td>The edit class, active and non-active state. The two classes must be seperated by a '|' in order to work.</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr> 
+                                                <tr>
+                                                    <td>editSpeed</td>
+                                                    <td>number(integer)</td>
+                                                    <td>200</td>
+                                                    <td>The speed of the edit effect.</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>onEdit</td>
+                                                    <td>function</td>
+                                                    <td>function(){}</td>
+                                                    <td>Callback function that runs once you close the edit box.</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr>                     
+                                                <tr>
+                                                    <td>fullscreenButton</td>
+                                                    <td>boolean</td>
+                                                    <td>true</td>
+                                                    <td>Show a fullscreen button.</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>fullscreenClass</td>
+                                                    <td>string</td>
+                                                    <td>fullscreen-10 | normalscreen-10</td>
+                                                    <td>The fullscreen class, active and non-active state. The two classes must be seperated by a '|' in order to work.</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr> 
+                                                <tr>
+                                                    <td>fullscreenDiff</td>
+                                                    <td>number(integer)</td>
+                                                    <td>3</td>
+                                                    <td>If you change the layout fo the widget, you can use this to make sure the that fullscreen is fullscreen(if needed).</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>onfullscreen</td>
+                                                    <td>function</td>
+                                                    <td>function(){}</td>
+                                                    <td>Callback function that runs once you go to fullscreen mode.</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>customButton</td>
+                                                    <td>boolean</td>
+                                                    <td>true</td>
+                                                    <td>Show a custom button.</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>customClass</td>
+                                                    <td>string</td>
+                                                    <td></td>
+                                                    <td>The custom class, active and non-active state. The two classes must be seperated by a '|' in order to work.</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr> 
+                                                <tr>
+                                                    <td>customStart</td>
+                                                    <td>function</td>
+                                                    <td>function(){}</td>
+                                                    <td>Callback function that runs once you start the custom button.</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr> 
+                                                <tr>
+                                                    <td>customEnd</td>
+                                                    <td>function</td>
+                                                    <td>function(){}</td>
+                                                    <td>Callback function that runs once you end the custom button.</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr>                  
+                                                <tr>
+                                                    <td>buttonOrder</td>
+                                                    <td>string</td>
+                                                    <td>%refresh% %delete% %custom% %edit% %fullscreen% %toggle%</td>
+                                                    <td>You can change the order of the buttons</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr>    
+                                                <tr>
+                                                    <td>opacity</td>
+                                                    <td>number(float)</td>
+                                                    <td>1.0</td>
+                                                    <td>The opacity of the widgets once you drag them.</td>
+                                                    <td>yes</td>
+                                                    <td>yes</td>
+                                                    <td>1.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>dragHandle</td>
+                                                    <td>string</td>
+                                                    <td>> header</td>
+                                                    <td>Choose the element that you want to use as an drag handle. The widgets main class is the parents class.</td>
+                                                    <td>yes</td>
+                                                    <td>yes</td>
+                                                    <td>1.0</td>
+                                                </tr> 
+                                                <tr>
+                                                    <td>placeholderClass</td>
+                                                    <td>string</td>
+                                                    <td>powerwidget-placeholder</td>
+                                                    <td>This is the class thats used for the placeholder.</td>
+                                                    <td>yes</td>
+                                                    <td>yes</td>
+                                                    <td>1.0</td>
+                                                </tr> 
+                                                <tr>
+                                                    <td>indicator</td>
+                                                    <td>boolean</td>
+                                                    <td>true</td>
+                                                    <td>Shows a animated image if there has been made a change in the widget(AJAX, deleting, toggle...).</td>
+                                                    <td>yes</td>
+                                                    <td>yes</td>
+                                                    <td>1.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>indicatorTime</td>
+                                                    <td>number(integer)</td>
+                                                    <td>600</td>
+                                                    <td>The speed of the indicator image(animated loader image). This is in milliseconds.</td>
+                                                    <td>yes</td>
+                                                    <td>yes</td>
+                                                    <td>1.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>ajax</td>
+                                                    <td>boolean</td>
+                                                    <td>true</td>
+                                                    <td>Allow widgets to use ajax.</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>loadingLabel</td>
+                                                    <td>string</td>
+                                                    <td>loading...</td>
+                                                    <td>Placeholder text at the start of every page load.</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr>                                                                                                            
+                                                <tr>
+                                                    <td>timestampPlaceholder</td>
+                                                    <td>string</td> 
+                                                    <td></td>
+                                                    <td>Show a timestamp form the last update. Only use classes.</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr> 
+                                                <tr>
+                                                    <td>timestampFormat</td>
+                                                    <td>string</td>
+                                                    <td>Last update: %m%/%d%/%y% %h%:%i%:%s%</td>
+                                                    <td>Choose the output format.</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>refreshButton</td>
+                                                    <td>boolean</td> 
+                                                    <td>true</td>
+                                                    <td>Allow users to refresh the ajax content manually.</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr> 
+                                                <tr>
+                                                    <td>refreshClass</td>
+                                                    <td>string</td>
+                                                    <td>refresh-10</td>
+                                                    <td>The class of the refresh button.</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr>                             
+                                                <tr>
+                                                    <td>labelError</td>
+                                                    <td>string</td>
+                                                    <td>Sorry but there was a error:</td>
+                                                    <td>Label of the ajax error(label + error code(s)).</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr> 
+                                                <tr>
+                                                    <td>labelUpdated</td>
+                                                    <td>string</td>
+                                                    <td>Last Update:</td>
+                                                    <td>Label for the timestamp, which will be showen every time it has been updated.</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>labelRefresh</td>
+                                                    <td>string</td>
+                                                    <td>Refresh</td>
+                                                    <td>Label for the refresh button, this button will allow u to refresh the ajax content.</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr> 
+                                                <tr>
+                                                    <td>afterLoad</td>
+                                                    <td>function</td>
+                                                    <td>function(){}</td>
+                                                    <td>Callback function that runs if the widget loads any ajax content.</td>
+                                                    <td>yes</td>
+                                                    <td>no</td>
+                                                    <td>1.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>rtl</td>
+                                                    <td>boolean</td>
+                                                    <td>false</td>
+                                                    <td>Need rtl, use this.</td>
+                                                    <td>yes</td>
+                                                    <td>yes</td>
+                                                    <td>1.0</td>
+                                                </tr>                            
+                                            </tbody>
+                                            <tfoot>                    
+                                                <tr>
+                                                    <td colspan="7">* Lite version of the plugin which only has a couple of basic features.</td>
+                                                </tr> 
+                                            </tfoot>                                                                                                                                              
+										</table>
+                                        
+                                        <div class="section-header">
+                                            <h3>Globally And Per-Call Overridable Options</h3>
+                                            <p>This plugin has per-call(as the example above shows) and globally overridable options. Globally options can be used to override the default options, this is best used if you want to override the plugin options by default, this will prevent any issues with the plugin, as you dont have to change any thing in the plugin core it self. How to use: <mark>$.fn.pluginName.key = 'value';</mark></p>
+                                        </div>                                        
+                                    </div><!-- End tab --> 
+
+                                    <div id="etab2" class="etabs-content">
+                                        <div class="doc-intro">
+                                            <h3>Power Widgets Panel</h3>
+                                            <p>This theme allows you to use a widgetspanel as a management tool for the power widgets. You can remove this panel/plugin if you want, because the Power widgets plugin doesn't need the eWidgetPanel plugin to work.</p>
+                                        </div> 
+                                                                            
+                                         <div class="section-header">
+                                            <h3>Basic</h3>
+                                            <p>Powerfull widgets.</p>
+                                        </div>
+    
+                                        <div class="spacer-15"><!-- spacer 15px --></div>
+                                        
+                                        <div class="section-header">
+                                            <h3>How to use</h3>
+                                            <p>How to use HTML elements.</p>
+                                        </div>
+                                                                           
+                                        <div class="demo-code">
+                                            <b>Markup</b>
+                                            <span class="toggle-min"></span>
+                                            <pre>&lt;div id="changeme" class="powerwidgetspanel"&gt;
+    &lt;header&gt;
+        &lt;h2&gt;Power widgets panel&lt;/h2&gt;
+    &lt;/header&gt;
+    
+    &lt;div class="powerwidgetspanel-widget" data-widget-id="widget1"&gt;
+        &lt;input type="checkbox" checked/&gt;
+        &lt;label&gt;Basic widget&lt;/label&gt;
+    &lt;/div&gt;
+    
+    ...
+    ...
+    ...
+&lt;/div&gt;</pre>
+                                        </div> 
+                                        
+                                        <div class="section-header">
+                                            <h3>Usage Data Atributes (dataset)</h3>
+                                            <p>Data atrributes are used by some of our custom plugins to set/get data.</p>
+                                        </div>
+        
+                                        <table class="doc-table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">HTML5 data attributes</th>
+                                                    <th scope="col">Element</th>
+                                                    <th scope="col">Example</th>
+                                                    <th scope="col">Desctription</th>
+                                                    <th class="tbversion" scope="col">Since</th>
+                                                </tr>                                            
+                                            </thead> 
+                                            <tbody>                                                
+                                                <tr>
+                                                    <td>data-widget-id</td>
+                                                    <td>div</td>
+                                                    <td>widget1</td>
+                                                    <td>This is the link to the widget, so this must match the widgets ID.</td>
+                                                    <td>1.0</td>
+                                                </tr>                                                                                                                                       
+                                            </tbody>
+                                        </table> 
+
+                                        <div class="section-header">
+                                            <h3>Usage classes</h3>
+                                            <p>Defined classes related to a piece of code or plugin.</p>
+                                        </div>
+                                                                                                                                            
+                                        <table class="doc-table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Available class</th>
+                                                    <th scope="col">Element</th>
+                                                    <th scope="col">Desctription</th>
+                                                    <th class="tbversion" scope="col">Since</th>
+                                                </tr>                                            
+                                            </thead> 
+                                            <tbody>
+                                                <tr>
+                                                    <td>powerwidgetspanel-widget</td>
+                                                    <td>div</td>
+                                                    <td>Main widget checkbox holder class.</td>
+                                                    <td>1.0</td>
+                                                </tr>                                            
+                                            </tbody>
+                                        </table>
+                                        
+                                        <div class="section-header">
+                                            <h3>Usage plugin</h3>
+                                            <p>How to use our custom made jQuery plugins.</p>
+                                        </div>
+                                                                                                              
+                                        <div class="demo-code">
+                                            <b>Markup</b>
+                                            <span class="toggle-min"></span>
+                                            <pre>$('#powerwidgetspanel').powerWidgetsPanel({
+    target: '#options',
+    widgets: '.powerwidget',
+    localStorage: true,
+    trigger: '',
+    triggerClass:'plus-10 | min-10',
+    effectPanel: 'slide',
+    speedPanel: 200,
+    effectWidget: 'slide',
+    speedWidget: 200,
+    onToggle: function(){}
+});</pre>
+                                        </div> 
+                                        
+                                        <div class="section-header">
+                                            <h3>Plugin options</h3>
+                                            <p>Most of our custom made jQuery plugins have options/settings.</p>
+                                        </div>  
+                                                                                               
+                                        <table class="doc-table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Plugin options</th>
+                                                    <th scope="col">Type</th>
+                                                    <th scope="col">Default</th>
+                                                    <th scope="col">Desctription</th>
+                                                    <th class="tbversion" scope="col">Since</th>
+                                                </tr>                                            
+                                            </thead> 
+                                            <tbody>
+                                                <tr>
+                                                    <td>target</td>
+                                                    <td>string</td>
+                                                    <td></td>
+                                                    <td>This is the id of the wrapper that holds the widgets. This must match the id of the powerwidgets plugin.</td>
+                                                    <td>1.0</td>
+                                                </tr>                                                  
+                                                <tr>
+                                                    <td>widgets</td>
+                                                    <td>string</td>
+                                                    <td>.powerwidget</td>
+                                                    <td>Widgets class.</td>
+                                                    <td>1.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>localStorage</td>
+                                                    <td>boolean</td>
+                                                    <td>true</td>
+                                                    <td>Everyting is saved in to the local storage, but you can turn this off.</td>
+                                                    <td>1.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>trigger</td>
+                                                    <td>string</td>
+                                                    <td></td>
+                                                    <td>This is the trigger that shows or hides the panel. You dont have to use this.</td>
+                                                    <td>1.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>triggerClass</td>
+                                                    <td>string</td>
+                                                    <td>plus-10 | min-10</td>
+                                                    <td>The trigger button class, active and non-active state. The two classes must be seperated by a '|' in order to work.</td>
+                                                    <td>1.0</td>
+                                                </tr> 
+                                                <tr>
+                                                    <td>effectPanel</td>
+                                                    <td>string</td>
+                                                    <td>slide</td>
+                                                    <td>The effect of the panel. You can choose between 'slide' and 'fade'.</td>
+                                                    <td>1.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>effectPanel</td>
+                                                    <td>number(integer)</td>
+                                                    <td>200</td>
+                                                    <td>The speed of the panel effect.</td>
+                                                    <td>1.0</td>
+                                                </tr> 
+                                                <tr>
+                                                    <td>effectWidget</td>
+                                                    <td>string</td>
+                                                    <td>slide</td>
+                                                    <td>The effect of the widget. You can choose between 'slide' and 'fade'.</td>
+                                                    <td>1.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>effectWidget</td>
+                                                    <td>number(integer)</td>
+                                                    <td>200</td>
+                                                    <td>The speed of the widget effect.</td>
+                                                    <td>1.0</td>
+                                                </tr> 
+                                                <tr>
+                                                    <td>onToggle</td>
+                                                    <td>function</td>
+                                                    <td>function(){}</td>
+                                                    <td>Callback function that runs if you toggle the panel.</td>
+                                                    <td>1.0</td>
+                                                </tr>                                                                                                               
+                                            </tbody>                                                                                                                                             
+										</table>
+                                        
+                                        <div class="section-header">
+                                            <h3>Globally And Per-Call Overridable Options</h3>
+                                            <p>This plugin has per-call(as the example above shows) and globally overridable options. Globally options can be used to override the default options, this is best used if you want to override the plugin options by default, this will prevent any issues with the plugin, as you dont have to change any thing in the plugin core it self. How to use: <mark>$.fn.pluginName.key = 'value';</mark></p>
+                                        </div>                                        
+                                    </div><!-- End tab --> 
+
+									<div id="etab3" class="etabs-content"> 
+                                        <div class="doc-intro">
+                                            <h3>Non-widgets(e-blocks)</h3>
+                                            <p>One of the main features of this theme are the power widgets, but if you don't need or simply don't want to use these widgets you can use the basic blocks, these blocks dont have any options or settings and are fixed. Most things that fit in a widget should fit in a block. Notice that widgets can be sortable, blocks arn't.</p>
+                                        </div> 
+                                                                              
+                                        <div class="section-header">
+                                            <h3>Basic</h3>
+                                            <p>Simple replacements for widgets.</p>
+                                        </div>
+                                        
+                                        <div class="spacer-15"><!-- spacer 15px --></div>
+                                        
+                                        <div class="section-header">
+                                            <h3>How to use</h3>
+                                            <p>How to use HTML elements.</p>
+                                        </div> 
+                                        
+                                        <div class="demo-code">
+                                            <b>Markup</b>
+                                            <span class="toggle-min"></span>
+                                            <pre class="htmlCode">&lt;div class="e-block" id="block-id"&gt;
+    &lt;header&gt;
+        &lt;h2&gt;Block Title&lt;/h2&gt;                           
+    &lt;/header&gt;
+    &lt;div&gt;
+    &lt;!-- content goes here --&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+                                        </div> 
+
+                                        <div class="section-header">
+                                            <h3>Icon &amp; indicator</h3>
+                                            <p>Simple replacements for widgets.</p>
+                                        </div>
+                                        
+                                        <div class="spacer-15"><!-- spacer 15px --></div>
+                                        
+                                        <div class="section-header">
+                                            <h3>How to use</h3>
+                                            <p>How to use HTML elements.</p>
+                                        </div> 
+                                        
+                                        <div class="demo-code">
+                                            <b>Markup</b>
+                                            <span class="toggle-min"></span>
+                                            <pre class="htmlCode">&lt;div class="e-block" id="block-id"&gt;
+    &lt;header&gt;
+        &lt;span class="icon-day-calendar"&gt;&lt;/span&gt;
+        &lt;h2>Icon and indicator&lt;/h2&gt;
+        &lt;span class="indicator"&gt;147&lt;/span&gt;                                
+    &lt;/header&gt;
+    &lt;div&gt;
+    &lt;!-- content goes here --&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+                                        </div> 
+
+                                        <div class="section-header">
+                                            <h3>Title &amp; etabs right</h3>
+                                            <p>Simple replacements for widgets.</p>
+                                        </div>
+                                        
+                                        <div class="spacer-15"><!-- spacer 15px --></div>
+                                        
+                                        <div class="section-header">
+                                            <h3>How to use</h3>
+                                            <p>How to use HTML elements.</p>
+                                        </div> 
+                                        
+                                        <div class="demo-code">
+                                            <b>Markup</b>
+                                            <span class="toggle-min"></span>
+                                            <pre class="htmlCode">&lt;div class="e-block" id="block-id"&gt;
+    &lt;header&gt;
+        &lt;h2&gt;e-block with title and tabs&lt;/h2&gt;
+        &lt;div class="right"&gt;
+            &lt;ul class="etabs"&gt;
+                &lt;li class="etabs-active"&gt;&lt;a href="#etab1"&gt;Tab 1&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#etab2"&gt;Tab 2&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt; 
+        &lt;/div&gt;                        
+    &lt;/header&gt;
+    &lt;div&gt;
+        &lt;div id="etab1" class="etabs-content"&gt;
+        &lt;!-- content goes here --&gt;
+        &lt;/div&gt; 
+        &lt;div id="etab2" class="etabs-content"&gt;
+        &lt;!-- content goes here --&gt;
+        &lt;/div&gt; 
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+                                        </div> 
+
+                                        <div class="section-header">
+                                            <h3>Non-widgets - etabs left</h3>
+                                            <p>Simple replacements for widgets.</p>
+                                        </div>
+                                        
+                                        <div class="spacer-15"><!-- spacer 15px --></div>
+                                        
+                                        <div class="section-header">
+                                            <h3>How to use</h3>
+                                            <p>How to use HTML elements.</p>
+                                        </div> 
+                                        
+                                        <div class="demo-code">
+                                            <b>Markup</b>
+                                            <span class="toggle-min"></span>
+                                            <pre class="htmlCode">&lt;div class="e-block" id="block-id"&gt;
+    &lt;header&gt;
+        &lt;ul class="etabs"&gt;
+            &lt;li class="etabs-active"&gt;&lt;a href="#etab1"&gt;Tab 1&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#etab2"&gt;Tab 2&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;                        
+    &lt;/header&gt;
+    &lt;div&gt;
+        &lt;div id="etab1" class="etabs-content"&gt;
+        &lt;!-- content goes here --&gt;
+        &lt;/div&gt; 
+        &lt;div id="etab2" class="etabs-content"&gt;
+        &lt;!-- content goes here --&gt;
+        &lt;/div&gt; 
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+                                        </div> 
+                                                                                                                
+                                	</div><!-- End tab -->  
+                                </div>
+                            </section>
+                            
+                            <div class="clear"><!-- New row --></div> 
+                                                                                                                                           
+                            <!-- End grid -->
+                                                   
+                       </div><!-- End #content-main-inner --> 
+                    </div><!-- End #content-main --> 
+                </div><!-- End #content-inner --> 
+                
+                <!-- CONTENT FOOTER -->
+                
+                <footer id="content-footer">
+                    <div class="left">
+						<div class="left">
+                               <a href="javascript:void(0);" class="button-icon tip-s" title="Some action">
+                                  <span class="folder-10 plix-10"></span>
+                              </a>                                                        
+                              <a href="javascript:void(0);" class="button-icon tip-s" title="Some action">
+                                  <span class="pencil-10 plix-10"></span>
+                              </a>
+                          </div><!-- End .left -->
+                          <div class="right">
+                              <a href="javascript:void(0);" class="button-icon tip-s" title="Some action">
+                                  <span class="refresh-10 plix-10"></span>
+                              </a> 
+                          </div> <!-- End .right --> 
+                    </div><!-- End .left --> 
+                    <div class="right">
+                    	<div class="left">
+                    	Copyright © 2012 <a href="http://bit.ly/ldjfWQ">CreativeMilk</a>
+                        </div><!-- End .left -->
+                        <div class="right">
+                        	<div class="theme-version">Version 1.1</div>
+                        </div><!-- End .right -->
+                    </div><!-- End .right -->                
+                </footer><!-- End #content-footer -->                 
+            </div><!-- End #content-border --> 
+        </div><!-- End #content --> 
+            
+    </div><!-- End #container -->
+    
+    <!-- scroll to top link -->
+    <div id="scrolltotop"><span></span></div> 
+    
+</body>
+</html>

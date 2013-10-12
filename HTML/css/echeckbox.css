@@ -1,0 +1,92 @@
+/*
+ * ************************************************************* *
+ * Name        : eCheckbox                                       *
+ * Description : CSS for the checkbox styling plugin             *
+ * Version     : Version 1                                       *
+ * Author      : CreativeMilk                                    *
+ * Author URI  : www.creativemilk.net                            *
+ * Updated     : --/--/----                                      *
+ * Copyright   : (c) 2011 CreativeMilk                           *
+ * ************************************************************* *
+ */
+
+input[type="checkbox"]{
+	display : none;
+}
+.e-checkbox{
+	min-width             : 30px;
+	height                : 30px;
+	float                 : left;
+	position              : relative;
+	-webkit-border-radius : 3px;
+	-khtml-border-radius  : 3px;
+	-moz-border-radius    : 3px;
+	border-radius         : 3px;
+	cursor                : pointer;
+}
+.e-checkbox-active{
+}
+.e-checkbox input{
+	z-index  : 0;
+	margin   : 0;
+	position : absolute;
+	left     : 1px!important;
+	top      : 0.167em!important;
+}
+.e-checkbox label{
+	width       : auto;
+	float       : left;
+	height      : 30px;
+	line-height : 30px;
+	margin      : 0 0 0 21px;
+	font-weight : normal;
+}
+.labelleft label{
+	margin : 0 24px 0 0;
+}
+.e-checkbox-img{
+	width               : 16px;
+	height              : 16px;
+	position            : absolute;
+	top                 : 50%;
+	margin              : -9px 0 0 0;
+	left                : 0;
+	z-index             : 2;
+	background-repeat   : no-repeat;
+	background-position : 0 0;
+	cursor              : pointer;
+}
+.labelleft .e-checkbox-img{
+	width               : 16px;
+	height              : 16px;
+	position            : absolute;
+	top                 : 50%;
+	margin              : -9px 0 0 0;
+	left                : auto;
+	right               : 0!important;
+	z-index             : 2;
+	background-repeat   : no-repeat;
+	background-position : 0 0;
+	cursor              : pointer;
+}
+.e-checkbox-normal .e-checkbox-img,
+.e-checkbox-normal.e-checkbox-disabled .e-checkbox-img:hover{
+	background-position : 0 0;
+}
+.e-checkbox-normal .e-checkbox-img:hover{
+	background-position : 0 -16px;
+}
+.e-checkbox-active .e-checkbox-img,
+.e-checkbox-active.e-checkbox-disabled .e-checkbox-img:hover{
+	background-position : 0 -32px;
+}
+.e-checkbox-active .e-checkbox-img:hover{
+	background-position : 0 -48px;
+}
+.e-checkbox-disabled .e-checkbox-img{
+	opacity    : 0.5;
+	-ms-filter : "progid:DXImageTransform.Microsoft.Alpha(opacity=50)";
+}
+.e-checkbox-disabled .e-checkbox-img{
+	cursor : default;
+}
